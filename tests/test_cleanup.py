@@ -1,6 +1,6 @@
 import unittest
 import os, sys
-from filter import cleanup
+from app import cleanup
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
