@@ -1,6 +1,7 @@
 import unittest
-import os, sys
+import os, os.path, sys
 from app import cleanup
+from pyfits import header
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
@@ -9,16 +10,17 @@ __location__ = os.path.realpath(
 class TestCleanupMethods(unittest.TestCase):
 
     def test_parse(self):
-       # filename = os.path.join(__location__, 'test_raw.fits')
-       # output = cleanup.load(filename)
+        filename = 'test_spt.fits'
 
-       # print(output)
-    # check that s.split fails when the separator is not a string
-    # with self.assertRaises(TypeError):
-    #    s.split(2)
+        # only try to open file if it exists
+        if os.path.isfile(filename):
+            data, hdr = cleanup.load(filename)
+            imghdr = header.Header(hdr)
 
-        assert 1 == 1
+            assert imghdr.get('XTENSION') == 'IMAGE'
+            assert imghdr.get('BITPIX') == 16
 
+            #print(imghdr)
 
 if __name__ == '__main__':
     unittest.main()
