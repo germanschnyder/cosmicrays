@@ -18,11 +18,12 @@ install:
   - conda config --add channels soft-matter
   - conda create -n testenv --yes $DEPS pip nose setuptools python=$TRAVIS_PYTHON_VERSION
   - source activate testenv
-  # for debugging...
-  - echo $PATH
-  - which python
-  - conda info
-  - conda list
+  - conda install -n testenv numpy scipy nose
+  - pip install coverage coveralls
+  # Also get optional dependencies (CVXPY, which depends on CVXOPT and SCS).
+  - pip install cvxopt
+  - pip install scs
+  - pip install cvxpy
   - pip install -r requirements.txt
 
 script: nosetests --nologcapture -a '!slow'
