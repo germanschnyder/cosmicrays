@@ -24,10 +24,6 @@ install:
   - source activate testenv
   - conda install -n testenv numpy scipy nose
   - pip install coverage coveralls
-  # Also get optional dependencies (CVXPY, which depends on CVXOPT and SCS).
-  - pip install cvxopt
-  - pip install scs
-  - pip install cvxpy
   - pip install -r requirements.txt
 
 script:
