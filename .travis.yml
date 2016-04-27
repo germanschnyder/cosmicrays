@@ -26,4 +26,5 @@ install:
   - pip install cvxpy
   - pip install -r requirements.txt
 
-script: nosetests --nologcapture -a '!slow'
+script:
+    - nosetests --verbosity=2 --with-coverage --cover-package=qutip qutip
