@@ -28,3 +28,5 @@ install:
 
 script:
     - nosetests --verbosity=2 --with-coverage --cover-package=filter --cover-package=process
+
+after_success: coveralls
