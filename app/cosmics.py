@@ -632,7 +632,7 @@ class cosmicsimage:
 
 # FITS import - export
 
-def fromfits(infilename, hdu=0, verbose=True):
+def fromfits(infilename: object, hdu: object = 0, verbose: object = True) -> object:
     """
 	Reads a FITS file and returns a 2D numpy array of the data.
 	Use hdu to specify which HDU you want (default = primary = 0)
