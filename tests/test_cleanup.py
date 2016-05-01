@@ -1,35 +1,32 @@
 import unittest
 import os, os.path, sys
+
 from app import cleanup
-from app.image import Image
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
 
 
 class TestCleanupMethods(unittest.TestCase):
-
     def test_parse_raw(self):
-
         filename = 'test_raw.fits'
 
         # only try to open file if it exists
         if os.path.isfile(filename):
             img = cleanup.load(filename)
 
-            assert img.extension == 'IMAGE'
             assert img.bitpix == 16
-            assert img.charge_inject is None
+            assert img.file_type == 'SCI', "file type is %r" % img.file_type
+            assert img.charge_inject == "NONE", "charge inject is %r" % img.charge_inject
+            assert img.flash_current == "ZERO", "flash current is %r " % img.flash_current
+            assert img.target_name == "DARK", "target name is %r" % img.target_name
+            assert img.is_dark, "img type is %r " % img.target_name
 
-    def test_parse_spt(self):
+            # Test extension
+            print(img.extension_info)
+            imgext = img.extension("IMAGE", "SCI", 1)
+            assert imgext.get("XTENSION") == "IMAGE", "extension name is %r" % imgext.get("XTENSION")
 
-        filename = 'test_spt.fits'
-
-        # only try to open file if it exists
-        if os.path.isfile(filename):
-            img = cleanup.load(filename)
-
-            assert img.charge_inject == 'NONE'
 
 if __name__ == '__main__':
     unittest.main()
