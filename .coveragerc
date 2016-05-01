@@ -3,6 +3,8 @@
 branch = True
 include =
     app/*
+omit =
+    cosmics.py
 
 [report]
 # Regexes for lines to exclude from consideration
