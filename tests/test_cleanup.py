@@ -9,7 +9,7 @@ __location__ = os.path.realpath(
 
 class TestCleanupMethods(unittest.TestCase):
     def test_parse_raw(self):
-        filename = 'test_raw.fits'
+        filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
 
         # only try to open file if it exists
         if os.path.isfile(filename):
