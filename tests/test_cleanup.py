@@ -2,6 +2,7 @@ import unittest
 import os, os.path, sys
 
 from app import cleanup
+from app.image import ImageExtension, Image
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
@@ -21,12 +22,16 @@ class TestCleanupMethods(unittest.TestCase):
             assert img.flash_current == "ZERO", "flash current is %r " % img.flash_current
             assert img.target_name == "DARK", "target name is %r" % img.target_name
             assert img.is_dark, "img type is %r " % img.target_name
+            assert img.data is not None
 
-            # Test extension
-            print(img.extension_info)
-            imgext = img.extension("IMAGE", "SCI", 1)
-            assert imgext.get("XTENSION") == "IMAGE", "extension name is %r" % imgext.get("XTENSION")
+            # Test extensions
+            assert len(img.extension_info) == 6
+            sci_1_ext = img.extension(ImageExtension("SCI", "IMAGE", 1))
+            assert sci_1_ext.get("XTENSION") == "IMAGE", "extension name is %r" % sci_1_ext.get("XTENSION")
+            assert img.extension(ImageExtension("DOESNT", "EXISTS", 2)) is None
 
+            with self.assertRaises(AssertionError):
+                Image(img.data, None)
 
 if __name__ == '__main__':
     unittest.main()

@@ -14,6 +14,7 @@ def load(filepath):
     primary = Header(pyfits.getheader(filepath, 0))
     headers = [primary]
     extcount = int(primary.get("NEXTEND", 0))
+
     for idx in range(1, extcount):
         ext = Header(pyfits.getheader(filepath, idx))
         headers.append(ext)

@@ -2,6 +2,26 @@ from pyfits.header import Header
 from numpy.core import ndarray
 
 
+class ImageExtension(object):
+
+    @property
+    def name(self):
+        return self.__name
+
+    @property
+    def version(self):
+        return self.__version
+
+    @property
+    def type(self):
+        return self.__type
+
+    def __init__(self, name: str, type: str, version: int):
+        self.__name = name
+        self.__type = type
+        self.__version = version
+
+
 class Image(object):
     def __get_header(self, name):
         return self.__primary_headers.get(name)
@@ -36,15 +56,17 @@ class Image(object):
 
     @property
     def extension_info(self):
-        return [(ext.get("XTENSION"), ext.get("EXTNAME"), ext.get("EXTVER")) for ext in self.__extensions]
+        return [ImageExtension(ext.get("XTENSION"), ext.get("EXTNAME"), ext.get("EXTVER")) for ext in self.__extensions]
 
-    def extension(self, type, name, version) -> Header:
+    def extension(self, info: ImageExtension) -> Header:
         return next((ext for ext in self.__extensions
-                     if ext.get("XTENSION") == type and
-                     ext.get("EXTNAME") == name and
-                     int(ext.get("EXTVER")) == version), None)
+                     if ext.get("XTENSION") == info.type and
+                     ext.get("EXTNAME") == info.name and
+                     int(ext.get("EXTVER")) == info.version), None)
 
     def __init__(self, data: ndarray, headers):
+        assert headers is not None, "You must specify at least primary headers"
+        assert len(headers) > 0, "You must specify at least primary headers"
         self.__data = data
         self.__primary_headers = headers[0]
         if len(headers) > 1:
