@@ -25,7 +25,7 @@ class TestCleanupMethods(unittest.TestCase):
             assert img.data is not None
 
             # Test extensions
-            assert len(img.extension_info) == 6, "Extensions count is %r" % len(img.extension_info)
+            assert len(img.extension_info) == 5, "Extensions count is %r" % len(img.extension_info)
             sci_1_ext = img.extension(ImageExtension("SCI", "IMAGE", 1))
             assert sci_1_ext.get("XTENSION") == "IMAGE", "extension name is %r" % sci_1_ext.get("XTENSION")
             assert img.extension(ImageExtension("DOESNT", "EXISTS", 2)) is None
