@@ -1,3 +1,9 @@
+import os
+import numpy as np
+import scipy.signal as signal
+import scipy.ndimage as ndimage
+import pyfits
+
 """
 About
 =====
@@ -56,12 +62,7 @@ Malte Tewes, January 2010
 
 __version__ = '0.4'
 
-import os
-import numpy as np
-import math
-import scipy.signal as signal
-import scipy.ndimage as ndimage
-import pyfits
+
 
 # We define the laplacian kernel to be used
 laplkernel = np.array([[0.0, -1.0, 0.0], [-1.0, 4.0, -1.0], [0.0, -1.0, 0.0]])
@@ -83,7 +84,7 @@ dilstruct[4, 4] = 0
 # and is used to dilate saturated stars and connect cosmic rays.
 
 
-class cosmicsimage:
+class CosmicsImage:
     def __init__(self, rawarray, pssl=0.0, gain=2.2, readnoise=10.0, sigclip=5.0, sigfrac=0.3, objlim=5.0,
                  satlevel=50000.0, verbose=True):
         """
@@ -140,7 +141,7 @@ class cosmicsimage:
         if self.pssl != 0.0:
             stringlist.append("Using a previously subtracted sky level of %f" % self.pssl)
 
-        if self.satstars != None:
+        if self.satstars is not None:
             stringlist.append("Saturated star mask : %i pixels" % np.sum(self.satstars))
 
         return "\n".join(stringlist)
@@ -150,7 +151,7 @@ class cosmicsimage:
 		Finds and labels the cosmic "islands" and returns a list of dicts containing their positions.
 		This is made on purpose for visualizations a la f2n.drawstarslist, but could be useful anyway.
 		"""
-        if verbose == None:
+        if verbose is None:
             verbose = self.verbose
         if verbose:
             print("Labeling mask pixels ...")
@@ -191,7 +192,7 @@ class cosmicsimage:
             dilmask = ndimage.morphology.binary_dilation(self.mask, structure=dilstruct, iterations=1, mask=None,
                                                          output=None, border_value=0, origin=0, brute_force=False)
         else:
-            dismask = self.mask.copy()
+            dilmask = self.mask.copy()
 
         return dilmask
 
@@ -208,9 +209,9 @@ class cosmicsimage:
 		But for the true L.A.Cosmic, we don't use this, i.e. we use the full mask at each iteration.
 
 		"""
-        if verbose == None:
+        if verbose is None:
             verbose = self.verbose
-        if mask == None:
+        if mask is None:
             mask = self.mask
 
         if verbose:
@@ -233,7 +234,7 @@ class cosmicsimage:
 
         # The medians will be evaluated in this padarray, skipping the np.Inf.
         # Now in this copy called padarray, we also put the saturated stars to np.Inf, if available :
-        if self.satstars != None:
+        if self.satstars is not None:
             padarray[2:w + 2, 2:h + 2][self.satstars] = np.Inf
         # Viva python, I tested this one, it works...
 
@@ -294,7 +295,7 @@ class cosmicsimage:
 		This can then be used to avoid these regions in cosmic detection and cleaning procedures.
 		Slow ...
 		"""
-        if verbose == None:
+        if verbose is None:
             verbose = self.verbose
         if verbose:
             print("Detecting saturated stars ...")
@@ -351,11 +352,11 @@ class cosmicsimage:
 		Returns the mask of saturated stars after finding them if not yet done.
 		Intended mainly for external use.
 		"""
-        if verbose == None:
+        if verbose is None:
             verbose = self.verbose
         if not self.satlevel > 0:
             raise RuntimeError("Cannot determine satstars : you gave satlevel <= 0 !")
-        if self.satstars == None:
+        if self.satstars is None:
             self.findsatstars(verbose=verbose)
         return self.satstars
 
@@ -378,7 +379,7 @@ class cosmicsimage:
         """
 		Estimates the background level. This could be used to fill pixels in large cosmics.
 		"""
-        if self.backgroundlevel == None:
+        if self.backgroundlevel is None:
             self.backgroundlevel = np.median(self.rawarray.ravel())
         return self.backgroundlevel
 
@@ -401,7 +402,7 @@ class cosmicsimage:
 	
 		"""
 
-        if verbose == None:
+        if verbose is None:
             verbose = self.verbose
 
         if verbose:
@@ -444,7 +445,7 @@ class cosmicsimage:
             print("  %5i candidate pixels" % nbcandidates)
 
         # At this stage we use the saturated stars to mask the candidates, if available :
-        if self.satstars != None:
+        if self.satstars is not None:
             if verbose:
                 print("Masking saturated stars ...")
             candidates = np.logical_and(np.logical_not(self.satstars), candidates)
@@ -499,7 +500,7 @@ class cosmicsimage:
         finalsel = np.logical_and(sp > self.sigcliplow, finalsel)
 
         # Again, we have to kick out pixels on saturated stars :
-        if self.satstars != None:
+        if self.satstars is not None:
             if verbose:
                 print("Masking saturated stars ...")
             finalsel = np.logical_and(np.logical_not(self.satstars), finalsel)
@@ -593,7 +594,7 @@ class cosmicsimage:
 		Stops if no cosmics are found or if maxiter is reached.
 		"""
 
-        if self.satlevel > 0 and self.satstars == None:
+        if self.satlevel > 0 and self.satstars is None:
             self.findsatstars(verbose=True)
 
         print("Starting %i L.A.Cosmic iterations ..." % maxiter)
@@ -627,7 +628,6 @@ class cosmicsimage:
 # 	Applies the full artillery of the function fullarray() directly on FITS files.
 # 	"""
 # 	pass
-
 
 
 # FITS import - export
