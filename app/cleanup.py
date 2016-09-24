@@ -1,8 +1,8 @@
 from app.image import Image
 from numpy.core import array
-from pyfits import Header
+from astropy.io.fits import Header
 from external.cosmics import CosmicsImage
-import pyfits
+import astropy.io.fits as pyfits
 
 
 def load(filepath):

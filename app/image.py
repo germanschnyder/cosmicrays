@@ -1,4 +1,4 @@
-from pyfits.header import Header
+from astropy.io.fits.header import Header
 from numpy.core import ndarray
 
 
