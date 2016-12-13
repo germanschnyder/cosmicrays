@@ -1,5 +1,6 @@
 import unittest
 import os, os.path, sys
+import math
 
 from lib import calc_pos
 
@@ -15,9 +16,9 @@ class TestCalcPosMethods(unittest.TestCase):
 
         lon, lat, height = calc_pos.calc_pos(spt_file_path, raw_file_path)
 
-        assert lon == 177.60277060584357, "Longitude is %r" % lon
-        assert lat == -19.234216331408884, "Latitude is %r" % lat
-        assert height == 564.6053939531912, "Height is %r" % height
+        assert math.isclose(lon, 177.60277060584357), "Longitude is %r" % lon
+        assert math.isclose(lat, -19.234216331408884), "Latitude is %r" % lat
+        assert math.isclose(height, 564.6053939531912), "Height is %r" % height
 
 
 if __name__ == '__main__':
