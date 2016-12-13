@@ -3,8 +3,8 @@ import os, os.path, sys
 
 import numpy
 
-from app import cleanup
-from app.image import ImageExtension, Image
+from lib import cleanup
+from common.image import ImageExtension, Image
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
@@ -54,6 +54,7 @@ class TestCleanupMethods(unittest.TestCase):
 
             # CR count must be the mask returned by script
             assert cr == numpy.sum(mask), "I found %r cr" % cr
+
 
 if __name__ == '__main__':
     unittest.main()
