@@ -2,9 +2,7 @@
 [run]
 branch = True
 include =
-    app/*
-omit =
-    cosmics.py
+    lib/*
 
 [report]
 # Regexes for lines to exclude from consideration

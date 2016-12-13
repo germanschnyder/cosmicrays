@@ -27,6 +27,6 @@ install:
   - pip install -r requirements.txt
 
 script:
-    - nosetests --verbosity=2 --with-coverage --cover-package=app
+    - nosetests --verbosity=2 --with-coverage --cover-package=lib
 
 after_success: coveralls
