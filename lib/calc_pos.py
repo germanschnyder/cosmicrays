@@ -160,7 +160,7 @@ def ecef2geodetic(x, y, z, semia, ecc) -> object:
 	return phi, lam, h
 
 	
-def calc_pos(prefixFilename) -> object:
+def calc_pos(sptFilePath, rawFilePath) -> object:
 #prefixFilename = 'C:/Users/Fabricio/Desktop/images/ic74c9gmq'
 
 
@@ -172,8 +172,8 @@ def calc_pos(prefixFilename) -> object:
 
 	tok=['DATE-OBS','TIME-OBS','EXPTIME','POSTNSTX','POSTNSTY','POSTNSTZ']
 
-	hdulist_spt = fits.open(prefixFilename+'_spt.fits')
-	hdulist_raw = fits.open(prefixFilename+'_raw.fits')
+	hdulist_spt = fits.open(sptFilePath)
+	hdulist_raw = fits.open(rawFilePath)
 
 	POSTNSTX = hdulist_spt[0].header["POSTNSTX"]
 	POSTNSTY = hdulist_spt[0].header["POSTNSTY"]

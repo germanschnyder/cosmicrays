@@ -1,8 +1,9 @@
-from app.image import Image
-from numpy.core import array
-from astropy.io.fits import Header
-from external.cosmics import CosmicsImage
 import astropy.io.fits as pyfits
+from astropy.io.fits import Header
+from numpy.core import array
+
+from external.cosmics import CosmicsImage
+from common.image import Image
 
 
 def load(filepath):
