@@ -1,9 +1,8 @@
 import unittest
 import os, os.path, sys
-
 import numpy
 
-from lib import cleanup
+from lib import crutils
 from common.image import ImageExtension, Image
 
 __location__ = os.path.realpath(
@@ -16,7 +15,7 @@ class TestCleanupMethods(unittest.TestCase):
 
         # only try to open file if it exists
         if os.path.isfile(filename):
-            img = cleanup.load(filename)
+            img = crutils.load(filename)
 
             assert img.bitpix == 16
             assert img.file_type == 'SCI', "file type is %r" % img.file_type
@@ -25,6 +24,7 @@ class TestCleanupMethods(unittest.TestCase):
             assert img.target_name == "DARK", "target name is %r" % img.target_name
             assert img.is_dark, "img type is %r " % img.target_name
             assert img.data is not None
+            assert img.exposition_time == 360, "exposition time is %r" % img.exposition_time
 
             # Test extensions
             assert len(img.extension_info) == 5, "Extensions count is %r" % len(img.extension_info)
@@ -37,14 +37,14 @@ class TestCleanupMethods(unittest.TestCase):
 
     def test_lacosmic(self):
         filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
-        maskfilename = os.path.join(os.path.dirname(__file__), 'mask.fits')
+        mask_filename = os.path.join(os.path.dirname(__file__), 'mask.fits')
         # only try to open file if it exists
         if os.path.isfile(filename):
-            img = cleanup.load(filename)
-            mask = cleanup.load(maskfilename)
+            img = crutils.load(filename)
+            #mask = crutils.load(mask_filename)
 
             # print(mask.data)
-            clean, mask = cleanup.obtain_cr(img.data, None, 2)
+            clean, cr_pixels = crutils.clean_cr(img.data, None, 1)
 
             # Remove found CRs from original image...
             diff = numpy.array(numpy.subtract(img.data, clean))
@@ -53,8 +53,20 @@ class TestCleanupMethods(unittest.TestCase):
             cr = len(numpy.where(diff > 0)[0])
 
             # CR count must be the mask returned by script
-            assert cr == numpy.sum(mask), "I found %r cr" % cr
+            assert cr == numpy.sum(cr_pixels), "I found %r cr pixels" % cr
 
+    def test_cr_stats(self):
+        filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
+        if os.path.isfile(filename):
+            img = crutils.load(filename)
+            _, cr_pixels = crutils.clean_cr(img.data, None, 1)
+
+            crs = crutils.reduce_cr(cr_pixels, img.exposition_time)
+
+            assert len(crs) == 12060, "I found %r cosmic rays" % len(crs)
+
+            for cr in crs:
+                print("label:{}, area:{}".format(cr.label, cr.area))
 
 if __name__ == '__main__':
     unittest.main()

@@ -51,6 +51,10 @@ class Image(object):
         return self.__get_header('FILETYPE')
 
     @property
+    def exposition_time(self):
+        return self.__get_header('EXPTIME')
+
+    @property
     def data(self):
         return self.__data
 
