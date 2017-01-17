@@ -11,7 +11,7 @@ __location__ = os.path.realpath(
 
 class TestCleanupMethods(unittest.TestCase):
     def test_parse_raw(self):
-        filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
+        filename = os.path.join(os.path.dirname(__file__), 'images/test_raw.fits')
 
         # only try to open file if it exists
         if os.path.isfile(filename):
@@ -36,8 +36,8 @@ class TestCleanupMethods(unittest.TestCase):
                 Image(img.data, None)
 
     def test_lacosmic(self):
-        filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
-        mask_filename = os.path.join(os.path.dirname(__file__), 'mask.fits')
+        filename = os.path.join(os.path.dirname(__file__), 'images/test_raw.fits')
+        mask_filename = os.path.join(os.path.dirname(__file__), 'images/mask.fits')
         # only try to open file if it exists
         if os.path.isfile(filename):
             img = crutils.load(filename)
@@ -56,7 +56,7 @@ class TestCleanupMethods(unittest.TestCase):
             assert cr == numpy.sum(cr_pixels), "I found %r cr pixels" % cr
 
     def test_cr_stats(self):
-        filename = os.path.join(os.path.dirname(__file__), 'test_raw.fits')
+        filename = os.path.join(os.path.dirname(__file__), 'images/test_raw.fits')
         if os.path.isfile(filename):
             img = crutils.load(filename)
             _, cr_pixels = crutils.clean_cr(img.data, None, 1)
