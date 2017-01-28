@@ -55,6 +55,14 @@ class Image(object):
         return self.__get_header('EXPTIME')
 
     @property
+    def observation_start_time(self):
+        return self.__get_header('DATE-OBS')
+
+    @property
+    def observation_total_time(self):
+        return self.__get_header('TIME-OBS')
+
+    @property
     def data(self):
         return self.__data
 

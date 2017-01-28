@@ -25,6 +25,9 @@ class TestCleanupMethods(unittest.TestCase):
             assert img.is_dark, "img type is %r " % img.target_name
             assert img.data is not None
             assert img.exposition_time == 360, "exposition time is %r" % img.exposition_time
+            assert img.observation_start_time == "2009-06-30", "observation start time is %s" % img.observation_start_time
+            assert img.observation_total_time == "09:18:39", "observation total time is %s" % img.observation_total_time
+
 
             # Test extensions
             assert len(img.extension_info) == 5, "Extensions count is %r" % len(img.extension_info)
@@ -56,14 +59,14 @@ class TestCleanupMethods(unittest.TestCase):
             assert cr == numpy.sum(cr_pixels), "I found %r cr pixels" % cr
 
     def test_cr_stats(self):
-        filename = os.path.join(os.path.dirname(__file__), 'images/test_raw.fits')
+        filename = os.path.join(os.path.dirname(__file__), 'images/j6mf16lhq_raw.fits')
         if os.path.isfile(filename):
             img = crutils.load(filename)
             _, cr_pixels = crutils.clean_cr(img.data, None, 1)
 
             crs = crutils.reduce_cr(cr_pixels, img.exposition_time)
 
-            assert len(crs) == 12060, "I found %r cosmic rays" % len(crs)
+            assert len(crs) == 27599, "I found %r cosmic rays" % len(crs)
 
             for cr in crs:
                 print("label:{}, area:{}".format(cr.label, cr.area))
