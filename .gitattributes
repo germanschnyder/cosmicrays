@@ -1,0 +1,6 @@
+tests/images/ACS/j6mf16lhq_flt.fits filter=lfs diff=lfs merge=lfs -text
+tests/images/COS/la7803fiq_flt_b.fits filter=lfs diff=lfs merge=lfs -text
+tests/images/WFC3/iaa901jxq_flc.fits filter=lfs diff=lfs merge=lfs -text
+tests/images/WFC3/iaa901jxq_flt.fits filter=lfs diff=lfs merge=lfs -text
+tests/images/COS/la7803fiq_flt_a.fits filter=lfs diff=lfs merge=lfs -text
+tests/images/u1r1346ri_bia.fits filter=lfs diff=lfs merge=lfs -text
