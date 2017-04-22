@@ -20,6 +20,7 @@ config.read('configuration.cfg')
 
 _LOGS_ACCOUNT_NAME = config.get(option='logsaccountname', section='Logs')
 _LOGS_ACCOUNT_KEY = config.get(option='logsaccountkey', section='Logs')
+__SAVE_CR_SEPARATELY_ = False
 
 
 def upload_output_to_blob():
@@ -118,19 +119,20 @@ if __name__ == '__main__':
 
         table_service.insert_or_replace_entity('imagestable', task)
 
-        logging.info('Done inserting image at {} '.format(datetime.datetime.now().replace(microsecond=0)))
-
         # for chunk in chunks(crs, 100):
         #    batch = TableBatch()
-        for cr in crs:
-            cr_task = {'PartitionKey': img.observation_set, 'RowKey': cr.label}
+        if __SAVE_CR_SEPARATELY_:
+            logging.info('Done inserting image at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+            logging.info('Started cr individual inserts')
+            for cr in crs:
+                cr_task = {'PartitionKey': img.observation_set, 'RowKey': cr.label}
 
-            for prop in cr:
-                cr_task[prop] = str(cr[prop])
+                for prop in cr:
+                    cr_task[prop] = str(cr[prop])
 
-            table_service.insert_or_replace_entity(cr_task)
-            # batch.insert_or_replace_entity(cr_task)
-            # table_service.commit_batch('crtable', batch)
+                table_service.insert_or_replace_entity(cr_task)
+                # batch.insert_or_replace_entity(cr_task)
+                # table_service.commit_batch('crtable', batch)
 
         logging.info('Done with everything at {} '.format(datetime.datetime.now().replace(microsecond=0)))
         upload_output_to_blob()
