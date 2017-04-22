@@ -1,0 +1,83 @@
+# HDU 0 in w0340y01r_x0f.fits:
+SIMPLE  =                    T / Standard FITS format                           
+BITPIX  =                   16 / 16 bit 2's complement integers                 
+NAXIS   =                    3 / Number of axes                                 
+NAXIS1  =                   14 / length of 1st data axis                        
+NAXIS2  =                  800 / length of 2nd data axis                        
+NAXIS3  =                    4 /                                                
+EXTEND  =                    T / There may be standard extensions               
+OPSIZE  =                   96 / PSIZE of original image                        
+ORIGIN  = 'ST-DADS '           / Institution that originated the FITS file      
+FITSDATE= '28/05/94'           / Date FITS file was created                     
+FILENAME= 'w0340y01r_cvt.x0h'  / Original GEIS header file name with _cvt       
+ODATTYPE= 'SHORT   '           / Original datatype                              
+SDASMGNU=                    4 / GCOUNT of original image                       
+DADSFILE= 'W0340Y01R.X0F'      /                                                
+DADSCLAS= 'CAL     '           /                                                
+DADSDATE= '27-MAY-1994 20:16:52' /                                              
+FILLCNT =                    0 /                                                
+ERRCNT  =                    0 /                                                
+DETECTOR=                    1 /                                                
+                                                                                
+                 / GROUP PARAMETERS: OSS                                        
+                                                                                
+                 / GROUP PARAMETERS: PODPS                                      
+                                                                                
+                 / WFPC DATA DESCRIPTOR KEYWORDS                                
+INSTRUME= 'WFPC              ' / instrument in use                              
+ROOTNAME= 'W0340Y01R         ' / rootname of the observation set                
+FILETYPE= 'EXT               ' / shp, ext, edq, sdq, sci                        
+CTYPE1  = 'UNITLESS          ' / unitless, line, pixel, channel, sample, time   
+CTYPE2  = 'LINE              ' / unitless, line, pixel, channel, sample, time   
+                                                                                
+                 / CALIBRATION FLAGS AND INDICATORS                             
+MODE    = 'FULL              ' / instr. mode: FULL (full res.), AREA (area int.)
+CAMERA  = 'WF                ' / camera in use: WF (wide-field), PC (planetary) 
+FILTER1 =                    0 / first filter number (0-48)                     
+FILTER2 =                    0 / second filter number (0-48)                    
+                                                                                
+                 / CALIBRATION KEYWORDS                                         
+LINEBEG =                    1 / line number (1st line: wrt source format)      
+SAMPBEG =                    1 / sample number (1st sample: wrt source format)  
+                                                                                
+                 / STATISTICAL KEYWORDS                                         
+DATE    = '02/12/92          ' / date this file was written (dd/mm/yy)          
+PODPSFF =                    0 / 0=(no  podps fill); 1=(podps fill present)     
+STDCFFF =                    0 / 0=(no st dcf fill); 1=(st dcf fill present)    
+STDCFFP = '0000              ' / st dcf fill pattern (hex)                      
+                                                                                
+                 / TARGET & PROPOSAL ID                                         
+TARGNAME= 'DARK              ' / proposer's target name                         
+RA_TARG =  0.0000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=  0.0000000000000E+00 / declination of the target (deg) (J2000)        
+PEQUINOX= '                  ' / proposed equinox of celestial coordinate system
+                                                                                
+PROPOSID=                 1476 / PEP proposal identifier                        
+PEP_EXPO= '0.5000000         ' / PEP exposure identifier including sequence     
+LINENUM = '0.500             ' / PEP proposal line number                       
+SEQLINE = '                  ' / PEP line number of defined sequence            
+SEQNAME = '                  ' / PEP define/use sequence name                   
+                                                                                
+
+# HDU 1 in w0340y01r_x0f.fits:
+XTENSION= 'TABLE   '           / Table extension                                
+BITPIX  =                    8 / Printable ASCII characters                     
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                   36 / Number of characters per row                   
+NAXIS2  =                    4 / GCOUNT of original file                        
+PCOUNT  =                    0 / No random parameter                            
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    3 / PCOUNT of original file                        
+EXTNAME = 'w0340y01r.x0h.tab'  / GEIS header file name with .tab                
+TTYPE1  = 'FILLCNT '           /                                                
+FILLCNT = 'number of segments containing fill' /                                
+TFORM1  = 'I11     '           /                                                
+TBCOL1  =                    1 /                                                
+TTYPE2  = 'ERRCNT  '           /                                                
+ERRCNT  = 'number of segments containing errors' /                              
+TFORM2  = 'I11     '           /                                                
+TBCOL2  =                   13 /                                                
+TTYPE3  = 'DETECTOR'           /                                                
+DETECTOR= 'the ccd number of the data' /                                        
+TFORM3  = 'I11     '           /                                                
+TBCOL3  =                   25 /                                                

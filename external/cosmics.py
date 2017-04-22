@@ -1,4 +1,6 @@
 import os
+
+import logging
 import numpy as np
 import scipy.signal as signal
 import scipy.ndimage as ndimage
@@ -719,11 +721,20 @@ def rebin(a, newshape):
     factor = np.asarray(shape) / np.asarray(newshape)
     # print factor
     evList = ['a.reshape('] + \
-             ['newshape[%d],factor[%d],' % (i, i) for i in range(lenShape)] + \
+             ['int(newshape[%d]), int(factor[%d]),' % (i, i) for i in range(lenShape)] + \
              [')'] + ['.sum(%d)' % (i + 1) for i in range(lenShape)] + \
              ['/factor[%d]' % i for i in range(lenShape)]
 
-    return eval(''.join(evList))
+    expr = ''.join(evList)
+
+    logging.debug(shape)
+    logging.debug(newshape)
+    logging.debug(lenShape)
+    logging.debug(factor)
+
+    logging.info('Evaluating expression: %s' % expr)
+
+    return eval(expr)
 
 
 def rebin2x2(a):

@@ -1,0 +1,358 @@
+# HDU 0 in x04e0101t_shf.fits:
+SIMPLE  =                    T / file does conform to FITS standard             
+BITPIX  =                   16 / number of bits per data pixel                  
+NAXIS   =                    1 / number of data axes                            
+NAXIS1  =                  965 / length of data axis 1                          
+EXTEND  =                    T / FITS dataset may contain extensions            
+COMMENT   FITS (Flexible Image Transport System) format is defined in 'Astronomy
+COMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H 
+DATE    = '01/12/92           ' / Date FITS file was generated                  
+IRAF-TLM= '09:51:13 (18/09/2006)' / Time of last modification                   
+BSCALE  =                1.0E0 / REAL = TAPE*BSCALE + BZERO                     
+BZERO   =                0.0E0 /                                                
+OPSIZE  =                  128 / PSIZE of original image                        
+ORIGIN  = 'ST-ECF/STSDAS'      / Fitsio version 21-Feb-1996                     
+FITSDATE= '9-DEC-2013'         / Date file was generated                        
+FILENAME= 'x04e0101t_cvt.shh'  / Original filename                              
+ALLG-MAX=           6.528100E4 / Data max in all groups                         
+ALLG-MIN=           0.000000E0 / Data min in all groups                         
+ODATTYPE= 'USHORT  '           / Original datatype: Unsigned 16 bits int        
+SDASMGNU=                    1 / Number of groups in original image             
+FILLCNT =                    0                                                  
+ERRCNT  =                    0                                                  
+PKTTIME =     48102.2650915675                                                  
+DADSFILE= 'X04E0101T.SHF'      /                                                
+DADSCLAS= 'CAL     '           /                                                
+DADSDATE= '28-MAY-1994 20:31:01' /                                              
+                                                                                
+                 / GROUP PARAMETERS: OSS                                        
+                                                                                
+                 / FOC DATA DESCRIPTOR KEYWORDS                                 
+INSTRUME= 'FOC               ' / instrument in use                              
+ROOTNAME= 'X04E0101T         ' / rootname of the observation set                
+FILETYPE= 'SHP               ' / shp, sdq, udl, sci                             
+CTYPE1  = 'UNITLESS          ' / unitless, line, pixel, channel, sample, time   
+DEFAULTS=                    F / default values used in reformatting these data 
+                                                                                
+                               / STATISTICAL KEYWORDS                           
+DCFOBSN =                   11 / DCF observation number in SHP                  
+PROC_TYP= 'MINOR             ' / level of reprocessing (NORMAL, MINOR, MAJOR)   
+                                                                                
+                               / TIME CONVERSION KEYWORDS                       
+CLKDRFTR=  0.1413348447722E-16 / spacecraft clock drift rate                    
+CLKRATE =  0.1250000005429E+00 / spacecraft clock rate                          
+SPCLINCN=             23541596 / spacecraft clock at UTC0                       
+UTCO1   =            356619520 / bytes 5-8 of UTC0                              
+UTCO2   =              9664005 / bytes 1-4 of UTC0                              
+UTC0    =  0.4804002983796E+05 / Coordinated Universal Time (Mod Julian Date)   
+                                                                                
+                               / COSTAR KEYWORDS                                
+KXDEPLOY=                    F / COSTAR deployed for FOC (T or F)               
+KXBFOCUS=        0.9999900E+05 / COSTAR FOC M1 Focus Position (mm)              
+KXBXTILT=        0.9999900E+05 / COSTAR FOC M1 X-tilt Position (arcsec)         
+KXBYTILT=        0.9999900E+05 / COSTAR FOC M1 Y-tilt Position (arcsec)         
+                                                                                
+                 / SUPPORT SCHEDULE: PROGRAMMATIC DATA                          
+PROGRMID= '04E               ' / program id (base 36)                           
+PR_INV_L= 'DOXSEY   '          / last name of principal investigator            
+PR_INV_F= '                  ' / first name of principal investigator           
+PR_INV_M= '                  ' / middle initial of principal investigator       
+AFFILIAT= 'GO                ' / proposal class (eg: GO, IDT, OS)               
+ACCPDATE=              1988333 / proposal acceptance date (yyyyddd)             
+OBSET_ID= '01                ' / observation set id                             
+CALIBRAT= 'Y                 ' / calibrate data flag                            
+OBSERVTN= '01                ' / observation number (base 36)                   
+EXPACKET=                  514 / expected number of source packets              
+PRODTYPE= 'F                 ' / output product medium type                     
+OPFORMAT= 'A                 ' / output product format specification            
+CALIBTYP= 'I                 ' / calibration type : E, I or Blank               
+CDBSDATA= 'FALSE             ' / cdbs notification flag: 'CAL' or 'FALSE'       
+                                                                                
+                 / SUPPORT SCHEDULE: FLAGS AND INDICATORS                       
+SS_OPRLY= 'F48               ' / optical relay: F48, F96                        
+SS_SMMMO= 'NOTUSED           ' / spectro. mirror mechanism:  INBEAM, NOTUSED    
+SS_SHTMO= 'INBEAM            ' / shutter mode:  INBEAM, NOTUSED                 
+SS_LEDMO= 'NOTUSED           ' / led calibration status:  ACTIVE, NOTUSED       
+SS_PXFMT= 'ZOOM              ' / format of the image: NORMAL, ZOOM              
+SS_OPTE1=                    0 / filter element, wheel 1 f48: (0-7), f96: (0-11)
+SS_OPTE2=                    0 / filter element, wheel 2 f48: (0-7), f96: (0-11)
+SS_OPTE3=                    0 / filter element, wheel 3 f48: (0),   f96: (0-11)
+SS_OPTE4=                    0 / filter element, wheel 4 f48: (0),   f96: (0-11)
+SS_CAMMO= 'NOTUSED           ' / coronographic apodizer mask: INBEAM, NOTUSED   
+SS_SOFF =        0.0000000E+00 / sample offset (0.0-1023.75)                    
+SS_LOFF =        0.0000000E+00 / line offset (0.0-1023.75)                      
+SS_SAMPS=                  512 / samples per line (64, 128, 256, or 512)        
+SS_LINES=                 1024 / lines per frame (64, 128, 256, 512, or 1024)   
+RTAMATCH= 'NO RTA FI AVAILABLE' /                                               
+                                                                                
+                 / SUPPORT SCHEDULE: DATA GROUP II DATA                         
+WRD11_14=                   11 / word 11/14 (0-255)                             
+PSTRTIME= '1990.211:06:06:28'  / predicted obs. start time (yyyy.ddd:hh:mm:ss)  
+PSTPTIME= '1990.211:06:25:18'  / predicted obs. stop time (yyyy.ddd:hh:mm:ss)   
+APEROBJ = 'X28N512           ' / si object aperture id                          
+APERSKY = '                  ' / si sky aperture id                             
+TARG_ID = '                  ' / SPSS target ID from proposal+target no.        
+APERTYPE= 'SICS              ' / aperture type (SICS, SIAS, SIDS)               
+RA_V1   =  0.2705861666670E+03 / right ascension of v1 axis of st (deg)         
+DEC_V1  =  0.6655421388900E+02 / declination of v1 axis of st (deg)             
+PA_V3   =        0.3236072E+03 / position angle of v3 axis of st (deg)          
+APEROFFX=        0.0000000E+00 / x comp of object offset in aperture (arcsec)   
+APEROFFY=        0.0000000E+00 / y comp of object offset in aperture (arcsec)   
+ANGLESEP=        0.0000000E+00 / ang separation of target from ref obj (arcsec) 
+DGESTAR = 'NONE              ' / FGS ID(F1,F2,F3) concat. w/ dom. gd. star id   
+SGESTAR = 'NONE              ' / FGS ID(F1,F2,F3) concat. w/ subdom. gd. star id
+PA_APER =        0.6385373E+02 / position ang of aperture used with target (deg)
+PA_REF  =        0.0000000E+00 / position ang of target from ref. object (deg)  
+SAAAVOID= '03                ' / SAA model for SAA Avoidance (range 02-99)      
+TARAQMOD= '03                ' / target acquisition mode (values 00, 01, 02, 03)
+POSTNSTX=  0.3574674882978E+04 / position of space telescope x axis (km)        
+POSTNSTY= -0.5665289451837E+04 / position of space telescope y axis (km)        
+POSTNSTZ= -0.1999221209899E+04 / position of space telescope z axis (km)        
+VELOCSTX=  0.6316180983783E+01 / vel of space telescope along x axis (km/sec)   
+VELOCSTY=  0.2970677761687E+01 / vel of space telescope along y axis (km/sec)   
+VELOCSTZ=  0.2889665108440E+01 / vel of space telescope along z axis (km/sec)   
+RA_SUN  =  0.1293693488985E+03 / right ascension of the sun (deg)               
+DEC_SUN =  0.1853028518854E+02 / declination of the sun (deg)                   
+RA_MOON =  0.2202087905599E+03 / right ascension of the moon (deg)              
+DEC_MOON= -0.2114170305521E+02 / declination of the moon (deg)                  
+VELABBRA=        0.0000000E+00 / aberration in position of the target           
+ANNPARRA=        0.0000000E+00 / par. shift in position, non-solar sys target   
+V2APERCE=        0.0000000E+00 / V2 offset of target from aper. center (arcsec) 
+V3APERCE=        0.0000000E+00 / V3 offset of target from aper. center (arcsec) 
+EQRADTRG=        0.0000000E+00 / equatorial radius of target (km)               
+FLATNTRG=        0.0000000E+00 / flattening of target                           
+NPDECTRG=        0.0000000E+00 / north pole declination of target (deg)         
+NPRATRG =        0.0000000E+00 / north pole right ascension of target (deg)     
+ROTRTTRG=        0.0000000E+00 / rotation rate of target                        
+LONGPMER=        0.0000000E+00 / longitude of prime meridian (deg)              
+EPLONGPM=        0.0000000E+00 / epoch of longitude of prime meridian (sec)     
+SURFLATD=        0.0000000E+00 / surface feature latitude (deg)                 
+SURFLONG=        0.0000000E+00 / surface feature longitude (deg)                
+SURFALTD=        0.0000000E+00 / surface feature altitude (km)                  
+MTFLAG  =                    F / moving target flag; T if it is a moving target 
+S0INVMAG=  0.0000000000000E+00 / S0 inverse magnitude                           
+S0XDIR  =  0.0000000000000E+00 / S0 X direction                                 
+S0YDIR  =  0.0000000000000E+00 / S0 Y direction                                 
+S0ZDIR  =  0.0000000000000E+00 / S0 Z direction                                 
+TRK_TYPE= 'NO                ' / track 48 or track 51 commanding used (T48, T51,
+T51_RATE=        0.0000000E+00 / rate of motion commanded (arcsecs/sec)         
+T51_ANGL=        0.0000000E+00 / position angle of motion of aperture (deg)     
+TARGDIST=  0.0000000000000E+00 / distance to target from Earth's center (km)    
+PAR_CORR= 'F                 ' / parallax correction used (T or F)              
+RA_REF  =  0.1251325000000E+02 / right ascension of reference object (deg)      
+DEC_REF = -0.5213816666667E+02 / declination of reference object (deg)          
+                                                                                
+                 / ONBOARD EPHEMERIS MODEL PARAMETERS                           
+EPCHTIME=  0.1731456000000E+09 / epoch time of parameters (secs since 1/1/85)   
+SDMEANAN=  0.3454433940029E-14 / 2nd deriv coef for mean anomaly (revs/sec/sec) 
+SDMA3SQ =  0.0000000000000E+00 / 3 * (SDMEANAN**2) radians/second**2.           
+HSTHORB =  0.0000000000000E+00 / half the duration of the ST orbit (seconds)    
+CIRVELOC=  0.7547560173507E+04 / circular orbit linear velocity (meters/second) 
+COSINCLI=  0.8792688297045E+00 / cosine of inclination                          
+ECCENTRY=  0.1935444071014E-03 / eccentricity                                   
+ECCENTX2=  0.3870888142028E-03 / eccentricity times 2                           
+ECBDX4D3=  0.9666752833604E-11 / eccentricity cubed times 4/3                   
+ESQDX5D2=  0.9364859380056E-07 / eccentricity squared times 5/2                 
+ECBDX3  =  0.2175019387561E-10 / eccentricity cubed times 3                     
+FDMEANAN=  0.1718203474537E-03 / 1st derivative coef for mean anomly (revs/sec) 
+RCASCNRD= -0.1285368120889E-05 / rt chge right ascension ascend node (rads/sec) 
+RCASCNRV= -0.2045726901322E-06 / rt chge right ascension ascend node (revs/sec) 
+ARGPERIG=  0.4832480521104E-05 / argument of perigee (revolutions)              
+MEANANOM=  0.7762705028725E+00 / mean anomaly (radians)                         
+RCARGPER=  0.3310766647182E-06 / rate change of argument of perigee (revs/sec)  
+RASCASCN=  0.5028154133406E+00 / right ascension of ascending node (revolutions)
+SINEINCL=  0.4763258602156E+00 / sine of inclination                            
+SEMILREC=  0.6991545511438E+07 / semi-latus rectum (meters)                     
+TIMEFFEC=  0.1731736200000E+09 / time parameters took effect (secs since 1/1/85)
+OBSSTRTT=  0.1759323880000E+09 / predicted obs. start time (secs since 1/1/85)  
+                                                                                
+                 / PROPOSAL INFO: Instrument Configuration                      
+CONFIG  = 'FOC/48            ' / proposed instrument configuration              
+OPMODE  = 'IMAGE             ' / proposed operation mode                        
+SPEC_1  = 'CLEAR1            ' / spectral element                               
+SPEC_2  = 'CLEAR2            ' / spectral element                               
+SPEC_3  = '                  ' / spectral element                               
+SPEC_4  = '                  ' / spectral element                               
+APER_1  = '512X1024          ' / instrument aperture                            
+APER_2  = '                  ' / instrument aperture                            
+APER_3  = '                  ' / instrument aperture                            
+APER_4  = '                  ' / instrument aperture                            
+                                                                                
+                 / PROPOSAL INFO: Target Description                            
+TAR_TYPE= 'POINT TARGET      ' / target type                                    
+                 / PROPOSAL INFO: Flux Information                              
+                                                                                
+MAG_V   =                  0.0 / expected V Magnitude                           
+SURF_V  =        0.0000000E+00 / expected V surface brightness                  
+MAG_B   =        0.0000000E+00 / expected B Magnitude                           
+SURF_B  =        0.0000000E+00 / expected B surface brightness                  
+MAG_U   =        0.0000000E+00 / expected U Magnitude                           
+SURF_U  =        0.0000000E+00 / expected U surface brightness                  
+MAG_R   =                  0.0 / expected R Magnitude                           
+SURF_R  =        0.0000000E+00 / expected R surface brightness                  
+COL_B_V =        0.0000000E+00 / expected B-V color                             
+COL_U_B =        0.0000000E+00 / expected U-B color                             
+COL_V_R =        0.0000000E+00 / expected V-R color                             
+E_B_V   =        0.0000000E+00 / E(B-V)                                         
+EXTNCT_V=        0.0000000E+00 / extinction in V                                
+                                                                                
+                 / PROPOSAL INFO: Exposure Information                          
+CMD_EXP =        0.9000000E+03 / commanded time per exposure (from TRANS)       
+                                                                                
+                 / PROPOSAL INFO: Moving Target Information                     
+                                                                                
+                 / PROPOSAL INFO: Target Properties                             
+REDSHIFT=                  0.0 / expected redshift of target                    
+PARALLAX=                  0.0 / expected parallax of target                    
+MU_RA   =                  0.0 / expected RA proper motion                      
+MU_DEC  =  0.0000000000000E+00 / expected DEC proper motion                     
+MU_EPOCH= '                  ' / epoch of the proper motion                     
+SP_TYPE = '                  ' / spectral type                                  
+RAD_VEL =  0.0000000000000E+00 / radial velocity (km/sec)                       
+                                                                                
+                 / PROPOSAL INFO: Spatial Scan Info                             
+SCAN_TYP= 'N                 ' / C:bostrophidon; D:'C'with dwell; N:not applicab
+SCAN_WID=  0.0000000000000E+00 / scan width (arcsec)                            
+ANG_SIDE=  0.0000000000000E+00 / angle between sides of parallelogram (deg)     
+DWELL_LN=                    0 / dwell pts/line for scan pointing (1-99,0 if NA)
+DWELL_TM=  0.0000000000000E+00 / wait time (duration) at each dwell point (sec) 
+SCAN_ANG=  0.0000000000000E+00 / position angle of scan line (deg)              
+SCAN_RAT=  0.0000000000000E+00 / commanded rate of the line scan (arcsec/sec)   
+NO_LINES=                    0 / number of lines per scan (1-99,0 if NA)        
+SCAN_LEN=  0.0000000000000E+00 / scan length (arcsec)                           
+SCAN_COR= '                  ' / scan coordinate frame of ref: celestial,vehicle
+                                                                                
+                 / TARGET & PROPOSAL ID                                         
+TARGNAME= 'DARK    '           / proposer's target name                         
+RA_TARG =  0.1251325000000E+02 / right ascension of the target (deg) (J2000)    
+DEC_TARG= -0.5213816666667E+02 / declination of the target (deg) (J2000)        
+PEQUINOX= '                  ' / proposed equinox of celestial coordinate system
+                                                                                
+PROPOSID=                 4255 / PEP proposal identifier                        
+PEP_EXPO= '                  ' / PEP exposure identifier including sequence     
+LINENUM = '22                ' / PEP proposal line number                       
+SEQLINE = '1                 ' / PEP line number of defined sequence            
+SEQNAME = 'VICKI             ' / PEP define/use sequence name                   
+COMMENT *                                                                       
+COMMENT * ----------------------- CADC / STScI / ST-ECF ----------------------- 
+COMMENT *                                                                       
+COMMENT * At the annual HST archive coordination meeting in 2003, CADC, ST-ECF, 
+COMMENT * and STScI decided to generate an homogeneous set of calibrated        
+COMMENT * FOC and GHRS observations.                                            
+COMMENT *                                                                       
+COMMENT * The motivations were twofold. First, no more calibration activities   
+COMMENT * were occurring for these instruments, nor from the instrument science,
+COMMENT * nor from the calibration software point of view.                      
+COMMENT * Second, the necessary expertise to operate a complex on-the-fly based 
+COMMENT * archive and to support the scientific community was quickly declining 
+COMMENT * for the HST heritage instruments, with the jeopardy of losing the     
+COMMENT * capability of re-calibrating the data in the near future.             
+COMMENT *                                                                       
+COMMENT * This calibrated file was produced with the best software and          
+COMMENT * calibration files available in September 2006. A careful check        
+COMMENT * of the final products was performed, although it was not possible     
+COMMENT * to check all datasets individually.                                   
+COMMENT *                                                                       
+COMMENT * The CADC, STScI and ST-ECF are pleased to make version 1.0 of         
+COMMENT * these homogeneously re-calibrated files available to the community.   
+COMMENT *                                                                       
+COMMENT * Software used:                                                        
+COMMENT *     FOC stsdas.hst-calib.calfoc version 1.3.5.0 (1998)                
+COMMENT *     HRS stsdas.hst-calib.calhrs version 1.3.14  (2004)                
+COMMENT *                                                                       
+COMMENT * Generated: 1-OCT-2006 @ST-ECF                                         
+COMMENT *                                                                       
+COMMENT *                                                                       
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Header keywords TARGCAT, TARGCAT2, TARDESCR, TARDESC2 have been       
+COMMENT * removed from the shf headers;  their values and database values       
+COMMENT * have been preserved in this comment block (created July 2013).        
+COMMENT *                                                                       
+COMMENT * Header (old) keyword value TARGCAT:                                   
+COMMENT * NULL                                                                  
+COMMENT * Header (old) keyword value TARGCAT2:                                  
+COMMENT * NULL                                                                  
+COMMENT * Header (old) keyword value TARDESCR:                                  
+COMMENT * NULL                                                                  
+COMMENT * Header (old) keyword value TARDESC2:                                  
+COMMENT * NULL                                                                  
+COMMENT *                                                                       
+COMMENT * Database (new) keyword value TARGCAT:                                 
+COMMENT * CALIBRATION                                                           
+COMMENT * Database (new) keyword value TARGCAT2:                                
+COMMENT * NULL                                                                  
+COMMENT * Database (new) keyword value TARDESCR:                                
+COMMENT * CALIBRATION;DARK                                                      
+COMMENT * Database (new) keyword value TARDESC2:                                
+COMMENT * NULL                                                                  
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the FOC ISR 100.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     ACCPDATE, MAG_R, MAG_V, MTFLAG, MU_RA, PARALLAX, PARENTID,        
+COMMENT *     PR_INV_L, PSTPTIME, PSTRTIME, REDSHIFT, SCAN_ANG, SCAN_LEN,       
+COMMENT *     and TARGNAME                                                      
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) In HDU1, when applicable, TDISP11 (MIR_REVR column) was           
+COMMENT *     changed from 'L1' to 'A1', since 'L' is no longer allowed.        
+COMMENT * (5) GRAPHTAB and COMPTAB were updated from logical pointers to        
+COMMENT *     the reference file names: GRAPHTAB = M6E1130CM_TMG.FITS and       
+COMMENT *     COMPTAB='N2A13493M_TMC.FITS                                       
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 
+
+# HDU 1 in x04e0101t_shf.fits:
+XTENSION= 'TABLE   '           / Ascii table extension                          
+BITPIX  =                    8 / 8-bits per 'pixels'                            
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                   52 / Number of characters per row                   
+NAXIS2  =                    1 / The number of rows                             
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    3 / Number of fields per row                       
+EXTNAME = 'X04E0101T_CVT.SHH.TAB' / Name of table                               
+                                                                                
+TTYPE1  = 'FILLCNT '           /                                                
+TBCOL1  =                    1 /                                                
+TFORM1  = 'I12     '           /                                                
+TUNIT1  = '        '           /                                                
+TDISP1  = 'I11     '           / %11d                                           
+                                                                                
+TTYPE2  = 'ERRCNT  '           /                                                
+TBCOL2  =                   14 /                                                
+TFORM2  = 'I12     '           /                                                
+TUNIT2  = '        '           /                                                
+TDISP2  = 'I11     '           / %11d                                           
+                                                                                
+TTYPE3  = 'PKTTIME '           /                                                
+TBCOL3  =                   27 /                                                
+TFORM3  = 'D25.17  '           /                                                
+TUNIT3  = '        '           /                                                
+TDISP3  = 'G25.16  '           / %25.16g                                        
+                                                                                
+FILLCNT = 'number of segments containing fill' /                                
+ERRCNT  = 'number of segments containing errors' /                              
+PKTTIME = 'time from the packet ancillary data' /                               
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the FOC ISR 100.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     ACCPDATE, MAG_R, MAG_V, MTFLAG, MU_RA, PARALLAX, PARENTID,        
+COMMENT *     PR_INV_L, PSTPTIME, PSTRTIME, REDSHIFT, SCAN_ANG, SCAN_LEN,       
+COMMENT *     and TARGNAME                                                      
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) In HDU1, when applicable, TDISP11 (MIR_REVR column) was           
+COMMENT *     changed from 'L1' to 'A1', since 'L' is no longer allowed.        
+COMMENT * (5) GRAPHTAB and COMPTAB were updated from logical pointers to        
+COMMENT *     the reference file names: GRAPHTAB = M6E1130CM_TMG.FITS and       
+COMMENT *     COMPTAB='N2A13493M_TMC.FITS                                       
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 

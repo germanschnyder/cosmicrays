@@ -1,8 +1,13 @@
 import os, os.path, sys
 
+import datetime
 import numpy
 import argparse
 import configparser
+
+from astropy.utils.iers import iers
+
+from common import helpers
 from lib import calc_pos
 import azure.storage.blob as azureblob
 from azure.storage.table import TableService, Entity
@@ -39,14 +44,25 @@ if __name__ == '__main__':
                                  'Storage container.')
         args = parser.parse_args()
 
+        iers.conf.auto_download = False
+        iers.conf.auto_max_age = None
+
         input_file = os.path.realpath(args.filepath)
         output_file = '{}_OUTPUT{}'.format(
             os.path.splitext(args.filepath)[0],
             os.path.splitext(args.filepath)[1])
 
-        logging.basicConfig(filename=output_file, filemode='w+', level=logging.DEBUG)
+        logging.basicConfig(filename=output_file, filemode='w+', level=logging.INFO)
 
-        img = crutils.load(input_file)
+        logging.info('Started processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+
+        data_ext = helpers.extension_from_filename(input_file)
+        pos_ext = helpers.pos_ext_from_data_ext(data_ext)
+        pos_input_file = input_file.replace(data_ext, pos_ext)
+
+        img = crutils.load(input_file, pos_input_file)
+
+        logging.info('Loaded image {} for instrument {}'.format(img.file_name, img.instrument.NAME))
 
         _, cr_pixels = crutils.clean_cr(img.data, None, 2)
 
@@ -56,24 +72,38 @@ if __name__ == '__main__':
 
         logging.info('Got {} cosmic rays'.format(len(crs)))
 
-        LONGITUDE, LATITUDE, HEIGHT = calc_pos.calc_pos(input_file.replace('raw', 'spt'), input_file)
+        long, lat, height = calc_pos.calc_pos(img)
 
-        logging.info('Output: CR {}, Lat {}, Long {}, Height{}'.format(len(crs), LONGITUDE, LATITUDE, HEIGHT))
+        logging.info('Finished processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+
+        logging.info('Output: CR {}, Lat {}, Long {}, Height {}'.format(len(crs), long, lat, height))
 
         table_service = TableService(account_name=_LOGS_ACCOUNT_NAME,
                                      account_key=_LOGS_ACCOUNT_KEY)
 
         task = Entity()
-        task.PartitionKey = img.instrument
+        task.PartitionKey = img.instrument.NAME
         task.RowKey = img.observation_set
         task.cr_count = len(crs)
-        task.latitude = str(LATITUDE)
-        task.longitude = str(LONGITUDE)
-        task.height = str(HEIGHT)
+        task.latitude = str(lat)
+        task.longitude = str(long)
+        task.height = str(height)
         task.image_type = img.file_type
         task.observation_date = str(img.observation_date)
         task.observation_start_time = str(img.observation_start_time)
         task.exposition_duration = str(img.exposition_duration)
+        task.proposal_id = str(img.proposal_id)
+
+        task.position_angle = str(img.position_angle)
+        task.right_ascension = str(img.right_ascension)
+        task.declination = str(img.declination)
+
+        if img.aperture is not None:
+            task.aperture = str(img.aperture)
+            task.ecliptic_lon = str(img.ecliptic_lon)
+            task.ecliptic_lat = str(img.ecliptic_lat)
+            task.galactic_lon = str(img.galactic_lon)
+            task.galactic_lat = str(img.galactic_lat)
 
         table_service.insert_or_replace_entity('imagestable', task)
 
@@ -84,6 +114,8 @@ if __name__ == '__main__':
                 cr_task[prop] = str(cr[prop])
 
             table_service.insert_or_replace_entity('crtable', cr_task)
+
+        logging.info('Done with everything at {} '.format(datetime.datetime.now().replace(microsecond=0)))
 
     except Exception as e:
         logging.exception('Unexpected error')

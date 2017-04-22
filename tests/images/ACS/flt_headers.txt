@@ -1,0 +1,614 @@
+# HDU 0 in j6mf16lhq_flt.fits:
+SIMPLE  =                    T / file does conform to FITS standard             
+BITPIX  =                   16                                                  
+NAXIS   =                    0                                                  
+EXTEND  =                    T / FITS dataset may contain extensions            
+COMMENT   FITS (Flexible Image Transport System) format is defined in 'Astronomy
+COMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H 
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+NEXTEND =                    6 / Number of standard extensions                  
+FILENAME= 'j6mf16lhq_flt.fits' / name of file                                   
+FILETYPE= 'SCI      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'ACS   '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / DATA DESCRIPTION KEYWORDS                                       
+                                                                                
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+IMAGETYP= 'DARK              ' / type of exposure identifier                    
+PRIMESI = 'ACS   '             / instrument designated as prime                 
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                 9433 / PEP proposal identifier                        
+LINENUM = '16.055         '    / proposal logsheet line number                  
+PR_INV_L= 'Bernstein                     ' / last name of principal investigator
+PR_INV_F= 'Gary                ' / first name of principal investigator         
+PR_INV_M= '                    ' / middle name / initial of principal investigat
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+SUNANGLE=            93.563698 / angle between sun and V1 axis                  
+MOONANGL=            33.222004 / angle between moon and V1 axis                 
+SUN_ALT =            68.062172 / altitude of the sun above Earth's limb         
+FGSLOCK = 'FINE              ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= '3'                  / number of gyros scheduled, T=3+OBAD            
+REFFRAME= 'GSC1    '           / guide star catalog version                     
+MTFLAG  = ' '                  / moving target flag; T if it is a moving target 
+                                                                                
+DATE-OBS= '2003-01-27'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '15:20:01'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=   5.266663890058E+04 / exposure start time (Modified Julian Date)     
+EXPEND  =   5.266665048715E+04 / exposure end time (Modified Julian Date)       
+EXPTIME =          1000.000000 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+QUALCOM1= '                                                                    '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = '                                                                    '
+                                                                                
+DARKTIME=          1003.139202 / fiducial pixel dark time (secs)                
+                                                                                
+              / POINTING INFORMATION                                            
+                                                                                
+PA_V3   =           109.707703 / position angle of V3-axis of HST (deg)         
+                                                                                
+              / TARGET OFFSETS (POSTARGS)                                       
+                                                                                
+POSTARG1=             0.000000 / POSTARG in axis 1 direction                    
+POSTARG2=             0.000000 / POSTARG in axis 2 direction                    
+                                                                                
+              / DIAGNOSTIC KEYWORDS                                             
+                                                                                
+OPUS_VER= 'HSTDP 2015_3a     ' / data processing software system version        
+CSYS_VER= 'opus_2015_3a_dms'   / Calibration software system version id         
+CAL_VER = '8.3.3 (27-Jul-2015)' / CALACS code version                           
+PROCTIME=   5.760175085648E+04 / Pipeline processing time (MJD)                 
+                                                                                
+              / SCIENCE INSTRUMENT CONFIGURATION                                
+                                                                                
+OBSTYPE = 'INTERNAL      '     / observation type - imaging or spectroscopic    
+OBSMODE = 'ACCUM     '         / operating mode                                 
+CTEIMAGE= 'NONE'               / type of Charge Transfer Image, if applicable   
+SCLAMP  = 'NONE          '     / lamp status, NONE or name of lamp which is on  
+NRPTEXP =                    1 / number of repeat exposures in set: default 1   
+SUBARRAY=                    F / data from a subarray (T) or full frame (F)     
+DETECTOR= 'WFC'                / detector in use: WFC, HRC, or SBC              
+FILTER1 = 'F606W             ' / element selected from filter wheel 1           
+FILTER2 = 'CLEAR2L           ' / element selected from filter wheel 2           
+FW1OFFST=                    0 / computed filter wheel offset                   
+FW1ERROR=                    F / filter wheel position error flag               
+FW2OFFST=                    0 / computed filter wheel offset                   
+FW2ERROR=                    F / filter wheel position error flag               
+FWSOFFST=                    0 / computed filter wheel offset                   
+FWSERROR=                    F / filter wheel position error flag               
+LRFWAVE =             0.000000 / proposed linear ramp filter wavelength         
+APERTURE= 'WFC             '   / aperture name                                  
+PROPAPER= 'WFC             '   / proposed aperture name                         
+DIRIMAGE= 'NONE     '          / direct image for grism or prism exposure       
+CTEDIR  = 'NONE    '           / CTE measurement direction: serial or parallel  
+CRSPLIT =                    1 / number of cosmic ray split exposures           
+                                                                                
+              / CALIBRATION SWITCHES: PERFORM, OMIT, COMPLETE                   
+                                                                                
+STATFLAG=                    F / Calculate statistics?                          
+WRTERR  =                    T / write out error array extension                
+DQICORR = 'COMPLETE'           / data quality initialization                    
+ATODCORR= 'OMIT    '           / correct for A to D conversion errors           
+BLEVCORR= 'COMPLETE'           / subtract bias level computed from overscan img 
+BIASCORR= 'COMPLETE'           / Subtract bias image                            
+FLSHCORR= 'OMIT    '           / post flash correction                          
+CRCORR  = 'OMIT    '           / combine observations to reject cosmic rays     
+EXPSCORR= 'PERFORM '           / process individual observations after cr-reject
+SHADCORR= 'OMIT    '           / apply shutter shading correction               
+PCTECORR= 'OMIT    '           / cte correction                                 
+DARKCORR= 'OMIT    '           / Subtract dark image                            
+FLATCORR= 'OMIT    '           / flat field data                                
+PHOTCORR= 'OMIT    '           / populate photometric header keywords           
+RPTCORR = 'OMIT    '           / add individual repeat observations             
+DRIZCORR= 'OMIT    '           / drizzle processing                             
+                                                                                
+              / CALIBRATION REFERENCE FILES                                     
+                                                                                
+BPIXTAB = 'jref$n9p09145j_bpx.fits' / bad pixel table                           
+CCDTAB  = 'jref$o151506dj_ccd.fits' / CCD calibration parameters                
+ATODTAB = 'N/A     '           / analog to digital correction file              
+OSCNTAB = 'jref$lch1459bj_osc.fits' / CCD overscan table                        
+BIASFILE= 'jref$n2c1402sj_bia.fits' / bias image file name                      
+FLSHFILE= 'N/A     '           / post flash correction file name                
+CRREJTAB= 'N/A     '           / cosmic ray rejection parameters                
+SHADFILE= 'N/A     '           / shutter shading correction file                
+PCTETAB = 'N/A     '           / CTE Correction Table                           
+DRKCFILE= 'N/A     '           / De-trailed Dark Reference File                 
+DARKFILE= 'N/A     '           / dark image file name                           
+PFLTFILE= 'N/A     '           / pixel to pixel flat field file name            
+DFLTFILE= 'N/A                    ' / delta flat field file name                
+LFLTFILE= 'N/A                    ' / low order flat                            
+PHOTTAB = 'N/A                    ' / Photometric throughput table              
+GRAPHTAB= 'N/A                    ' / the HST graph table                       
+COMPTAB = 'N/A                    ' / the HST components table                  
+IDCTAB  = 'jref$0461802ej_idc.fits' / image distortion correction table         
+DGEOFILE= 'jref$qbu16424j_dxy.fits' / Distortion correction image               
+MDRIZTAB= 'N/A     '           / MultiDrizzle parameter table                   
+CFLTFILE= 'N/A     '           / Coronagraphic spot image                       
+SPOTTAB = 'N/A     '           / Coronagraphic spot offset table                
+IMPHTTAB= 'N/A     '           / Image Photometry Table                         
+D2IMFILE= 'N/A     '           / Column Correction Reference File               
+NPOLFILE= 'N/A     '           / Non-polynomial Offsets Reference File          
+                                                                                
+              / COSMIC RAY REJECTION ALGORITHM PARAMETERS                       
+                                                                                
+MEANEXP =             0.000000 / reference exposure time for parameters         
+SCALENSE=             0.000000 / multiplicative scale factor applied to noise   
+INITGUES= '   '                / initial guess method (MIN or MED)              
+SKYSUB  = '    '               / sky value subtracted (MODE or NONE)            
+SKYSUM  =                  0.0 / sky level from the sum of all constituent image
+CRSIGMAS= '               '    / statistical rejection criteria                 
+CRRADIUS=             0.000000 / rejection propagation radius (pixels)          
+CRTHRESH=             0.000000 / rejection propagation threshold                
+BADINPDQ=                    0 / data quality flag bits to reject               
+REJ_RATE=                  0.0 / rate at which pixels are affected by cosmic ray
+CRMASK  =                    F / flag CR-rejected pixels in input files (T/F)   
+                                                                                
+              / OTFR KEYWORDS                                                   
+                                                                                
+T_SGSTAR= 'F                 ' / OMS calculated guide star control              
+                                                                                
+              / PATTERN KEYWORDS                                                
+                                                                                
+PATTERN1= 'NONE                    ' / primary pattern type                     
+P1_SHAPE= '                  ' / primary pattern shape                          
+P1_PURPS= '          '         / primary pattern purpose                        
+P1_NPTS =                    0 / number of points in primary pattern            
+P1_PSPAC=             0.000000 / point spacing for primary pattern (arc-sec)    
+P1_LSPAC=             0.000000 / line spacing for primary pattern (arc-sec)     
+P1_ANGLE=             0.000000 / angle between sides of parallelogram patt (deg)
+P1_FRAME= '         '          / coordinate frame of primary pattern            
+P1_ORINT=             0.000000 / orientation of pattern to coordinate frame (deg
+P1_CENTR= '   '                / center pattern relative to pointing (yes/no)   
+PATTSTEP=                    0 / position number of this point in the pattern   
+                                                                                
+              / POST FLASH  PARAMETERS                                          
+                                                                                
+FLASHDUR=                  0.0 / Exposure time in seconds: 0.1 to 409.5         
+FLASHCUR= 'OFF '               / Post flash current: OFF, LOW, MED, HIGH        
+FLASHSTA= 'NOT PERFORMED   '   / Status: SUCCESSFUL, ABORTED, NOT PERFORMED     
+SHUTRPOS= 'A    '              / Shutter position: A or B                       
+                                                                                
+              / ENGINEERING PARAMETERS                                          
+                                                                                
+CCDAMP  = 'ABCD'               / CCD Amplifier Readout Configuration            
+CCDGAIN =                    2 / commanded gain of CCD                          
+CCDOFSTA=                    3 / commanded CCD bias offset for amplifier A      
+CCDOFSTB=                    3 / commanded CCD bias offset for amplifier B      
+CCDOFSTC=                    3 / commanded CCD bias offset for amplifier C      
+CCDOFSTD=                    3 / commanded CCD bias offset for amplifier D      
+JWROTYPE= '            '       / asic Wfc RdOut TYP                             
+                                                                                
+              / CALIBRATED ENGINEERING PARAMETERS                               
+                                                                                
+ATODGNA =        2.0020001E+00 / calibrated gain for amplifier A                
+ATODGNB =        1.9450001E+00 / calibrated gain for amplifier B                
+ATODGNC =        2.0280001E+00 / calibrated gain for amplifier C                
+ATODGND =        1.9940000E+00 / calibrated gain for amplifier D                
+READNSEA=        5.3299999E+00 / calibrated read noise for amplifier A          
+READNSEB=        4.9899998E+00 / calibrated read noise for amplifier B          
+READNSEC=        5.5100002E+00 / calibrated read noise for amplifier C          
+READNSED=        5.1599998E+00 / calibrated read noise for amplifier D          
+BIASLEVA=        4.5451582E+03 / bias level for amplifier A                     
+BIASLEVB=        4.5378960E+03 / bias level for amplifier B                     
+BIASLEVC=        4.5936763E+03 / bias level for amplifier C                     
+BIASLEVD=        4.5057520E+03 / bias level for amplifier D                     
+                                                                                
+              / ASSOCIATION KEYWORDS                                            
+                                                                                
+ASN_ID  = 'NONE      '         / unique identifier assigned to association      
+ASN_TAB = 'NONE                   ' / name of the association table             
+ASN_MTYP= '            '       / Role of the Member in the Association          
+CRDS_CTX= 'hst_0469.pmap'                                                       
+CRDS_VER= '1.9.0, opus_2015_3dms, 2767'                                         
+MLINTAB = 'N/A     '                                                            
+HISTORY CCD parameters table:                                                   
+HISTORY   reference table jref$o151506dj_ccd.fits                               
+HISTORY     inflight                                                            
+HISTORY     June 2002                                                           
+HISTORY DQICORR complete ...                                                    
+HISTORY   values checked for saturation                                         
+HISTORY   DQ array initialized ...                                              
+HISTORY   reference table jref$n9p09145j_bpx.fits                               
+HISTORY BIASCORR complete ...                                                   
+HISTORY   reference image jref$n2c1402sj_bia.fits                               
+HISTORY     INFLIGHT 27/01/2003 07/02/2003                                      
+HISTORY     Superbias created by Doug Van Orsow from proposal 9647              
+HISTORY BLEVCORR complete; bias level from overscan was subtracted.             
+HISTORY BLEVCORR does not include correction for drift along lines.             
+HISTORY   Overscan region table:                                                
+HISTORY   reference table jref$lch1459bj_osc.fits                               
+HISTORY Uncertainty array initialized.                                          
+
+# HDU 1 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                  -32                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'ELECTRONS'          / brightness units                               
+                                                                                
+              / WFC CCD CHIP IDENTIFICATION                                     
+                                                                                
+CCDCHIP =                    2 / CCD chip (1 or 2)                              
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.120161838429E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.137397107779E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =         -5.05434E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.33318E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.28921E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          4.19382E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                  0.0 / original offset in X to subsection start       
+RAW_LTV2=                  0.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.5378 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / READOUT DEFINITION PARAMETERS                                   
+                                                                                
+CENTERA1=                 2073 / subarray axis1 center pt in unbinned dect. pix 
+CENTERA2=                 1035 / subarray axis2 center pt in unbinned dect. pix 
+SIZAXIS1=                 4096 / subarray axis1 size in unbinned detector pixels
+SIZAXIS2=                 2048 / subarray axis2 size in unbinned detector pixels
+BINAXIS1=                    1 / axis1 data bin size in unbinned detector pixels
+BINAXIS2=                    1 / axis2 data bin size in unbinned detector pixels
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                  ' / observation con
+PHOTFLAM=   0.000000000000E+00 / inverse sensitivity, ergs/cm2/Ang/electron     
+PHOTZPT =             0.000000 / ST magnitude zero point                        
+PHOTPLAM=             0.000000 / Pivot wavelength (Angstroms)                   
+PHOTBW  =             0.000000 / RMS bandwidth of filter plus detector          
+                                                                                
+              / REPEATED EXPOSURES INFO                                         
+                                                                                
+NCOMBINE=                    1 / number of image sets combined during CR rejecti
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+                                                                                
+              / ON-BOARD COMPRESSION INFORMATION                                
+                                                                                
+WFCMPRSD=                    T / was WFC data compressed? (T/F)                 
+CBLKSIZ =                 1024 / size of compression block in 2-byte words      
+LOSTPIX =                    0 / #pixels lost due to buffer overflow            
+COMPTYP = 'Full    '           / compression type performed (Partial/Full/None) 
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOODPIX=              8569792 / number of good pixels                          
+SDQFLAGS=                31743 / serious data quality flags                     
+GOODMIN =                2240. / minimum value of good pixels                   
+GOODMAX =               45510. / maximum value of good pixels                   
+GOODMEAN=     2271.53464121416 / mean value of good pixels                      
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+SNRMIN  =             0.000000 / minimum signal to noise of good pixels         
+SNRMAX  =             0.000000 / maximum signal to noise of good pixels         
+SNRMEAN =             0.000000 / mean value of signal to noise of good pixels   
+MEANDARK=             0.000000 / average of the dark values subtracted          
+MEANBLEV=        4.5497139E+03 / average of all bias levels subtracted          
+MEANFLSH=             0.000000 / Mean number of counts in post flash exposure   
+
+# HDU 2 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                  -32                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'ERR     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'ELECTRONS'          / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.120161838429E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.137397107779E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =         -5.05434E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.33318E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.28921E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          4.19382E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                  0.0 / original offset in X to subsection start       
+RAW_LTV2=                  0.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.5378 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOODPIX=                    0 / number of good pixels                          
+SDQFLAGS=                31743 / serious data quality flags                     
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+GOODMEAN=             0.000000 / mean value of good pixels                      
+
+# HDU 3 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                   16                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'DQ      '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'UNITLESS          ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.120161838429E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.137397107779E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =         -5.05434E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.33318E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.28921E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          4.19382E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                  0.0 / original offset in X to subsection start       
+RAW_LTV2=                  0.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.5378 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+
+# HDU 4 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                  -32                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    2 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'ELECTRONS'          / brightness units                               
+                                                                                
+              / WFC CCD CHIP IDENTIFICATION                                     
+                                                                                
+CCDCHIP =                    1 / CCD chip (1 or 2)                              
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.119880611661E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.136535941404E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          -5.1664E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.29175E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.26735E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          3.95714E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                 24.0 / original offset in X to subsection start       
+RAW_LTV2=                 20.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.9681 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / READOUT DEFINITION PARAMETERS                                   
+                                                                                
+CENTERA1=                 2073 / subarray axis1 center pt in unbinned dect. pix 
+CENTERA2=                 1035 / subarray axis2 center pt in unbinned dect. pix 
+SIZAXIS1=                 4096 / subarray axis1 size in unbinned detector pixels
+SIZAXIS2=                 2048 / subarray axis2 size in unbinned detector pixels
+BINAXIS1=                    1 / axis1 data bin size in unbinned detector pixels
+BINAXIS2=                    1 / axis2 data bin size in unbinned detector pixels
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                  ' / observation con
+PHOTFLAM=   0.000000000000E+00 / inverse sensitivity, ergs/cm2/Ang/electron     
+PHOTZPT =             0.000000 / ST magnitude zero point                        
+PHOTPLAM=             0.000000 / Pivot wavelength (Angstroms)                   
+PHOTBW  =             0.000000 / RMS bandwidth of filter plus detector          
+                                                                                
+              / REPEATED EXPOSURES INFO                                         
+                                                                                
+NCOMBINE=                    1 / number of image sets combined during CR rejecti
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+                                                                                
+              / ON-BOARD COMPRESSION INFORMATION                                
+                                                                                
+WFCMPRSD=                    T / was WFC data compressed? (T/F)                 
+CBLKSIZ =                 1024 / size of compression block in 2-byte words      
+LOSTPIX =                    0 / #pixels lost due to buffer overflow            
+COMPTYP = 'Full    '           / compression type performed (Partial/Full/None) 
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOODPIX=              8569792 / number of good pixels                          
+SDQFLAGS=                31743 / serious data quality flags                     
+GOODMIN =                2258. / minimum value of good pixels                   
+GOODMAX =               46849. / maximum value of good pixels                   
+GOODMEAN=     2311.06101980071 / mean value of good pixels                      
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+SNRMIN  =             0.000000 / minimum signal to noise of good pixels         
+SNRMAX  =             0.000000 / maximum signal to noise of good pixels         
+SNRMEAN =             0.000000 / mean value of signal to noise of good pixels   
+MEANDARK=             0.000000 / average of the dark values subtracted          
+MEANBLEV=        4.5415269E+03 / average of all bias levels subtracted          
+MEANFLSH=             0.000000 / Mean number of counts in post flash exposure   
+
+# HDU 5 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                  -32                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'ERR     '           / extension name                                 
+EXTVER  =                    2 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'ELECTRONS'          / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.119880611661E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.136535941404E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          -5.1664E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.29175E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.26735E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          3.95714E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                 24.0 / original offset in X to subsection start       
+RAW_LTV2=                 20.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.9681 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOODPIX=                    0 / number of good pixels                          
+SDQFLAGS=                31743 / serious data quality flags                     
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+GOODMEAN=             0.000000 / mean value of good pixels                      
+
+# HDU 6 in j6mf16lhq_flt.fits:
+XTENSION= 'IMAGE   '           / IMAGE extension                                
+BITPIX  =                   16                                                  
+NAXIS   =                    2                                                  
+NAXIS1  =                 4096                                                  
+NAXIS2  =                 2048                                                  
+PCOUNT  =                    0 / required keyword; must = 0                     
+GCOUNT  =                    1 / required keyword; must = 1                     
+ORIGIN  = 'HSTIO/CFITSIO March 2010'                                            
+DATE    = '2016-08-01' / date this file was written (yyyy-mm-dd)                
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'DQ      '           / extension name                                 
+EXTVER  =                    2 / extension version number                       
+ROOTNAME= 'j6mf16lhq                         ' / rootname of the observation set
+EXPNAME = 'j6mf16lhq                ' / exposure identifier                     
+BUNIT   = 'UNITLESS          ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =   2.048000000000E+03 / x-coordinate of reference pixel                
+CRPIX2  =   1.024000000000E+03 / y-coordinate of reference pixel                
+CRVAL1  =   2.119880611661E+02 / first axis value at reference pixel            
+CRVAL2  =  -1.136535941404E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          -5.1664E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =         -1.29175E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =         -1.26735E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =          3.95714E-06 / partial of second axis coordinate w.r.t. y     
+LTV1    =        0.0000000E+00 / offset in X to subsection start                
+LTV2    =        0.0000000E+00 / offset in Y to subsection start                
+RAW_LTV1=                 24.0 / original offset in X to subsection start       
+RAW_LTV2=                 20.0 / original offset in Y to subsection start       
+LTM1_1  =                  1.0 / reciprocal of sampling rate in X               
+LTM2_2  =                  1.0 / reciprocal of sampling rate in Y               
+ORIENTAT=             -72.9681 / position angle of image y axis (deg. e of n)   
+RA_APER =   2.119600775845E+02 / RA of aperture reference position              
+DEC_APER=  -1.127856036917E+01 / Declination of aperture reference position     
+PA_APER =              109.708 / Position Angle of reference aperture center (de
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         

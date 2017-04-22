@@ -1,0 +1,141 @@
+# HDU 0 in y0650101r_ulf.fits:
+SIMPLE  =                    T / FITS STANDARD                                  
+BITPIX  =                   16 / FITS BITS/PIXEL                                
+NAXIS   =                    2 / NUMBER OF AXES                                 
+NAXIS1  =                  965 /                                                
+NAXIS2  =                    2 /                                                
+EXTEND  =                    T / There maybe standard extensions                
+BSCALE  =                1.0E0 / REAL = TAPE*BSCALE + BZERO                     
+BZERO   =                0.0E0 /                                                
+OPSIZE  =                  128 / PSIZE of original image                        
+ORIGIN  = 'STScI-STSDAS'       / Fitsio version 21-Feb-1996                     
+FITSDATE= '2004-02-11'         / Date FITS file was created                     
+FILENAME= 'y0650101r_cvt.ulh'  / Original filename                              
+ALLG-MAX=           6.553500E4 / Data max in all groups                         
+ALLG-MIN=           0.000000E0 / Data min in all groups                         
+ODATTYPE= 'USHORT  '           / Original datatype: Unsigned 16 bits int        
+SDASMGNU=                    2 / Number of groups in original image             
+FILLCNT =                    0                                                  
+ERRCNT  =                    0                                                  
+PKTTIME =     48053.3657552732                                                  
+DATE    = '30/11/92           ' / Date FITS file was generated                  
+IRAF-TLM= '03:34:47 (31/01/2003)' / Time of last modification                   
+DADSFILE= 'Y0650101R.ULF'      /                                                
+DADSCLAS= 'CAL     '           /                                                
+DADSDATE= '31-MAY-1994 13:32:57' /                                              
+                                                                                
+                 / GROUP PARAMETERS: OSS                                        
+                                                                                
+                 / FOS DATA DESCRIPTOR KEYWORDS                                 
+INSTRUME= 'FOS               ' / instrument in use                              
+ROOTNAME= 'Y0650101R         ' / rootname of the observation set                
+FILETYPE= 'UDL               ' / file type                                      
+CTYPE1  = 'UNITLESS          ' / units of first data axis                       
+                                                                                
+                 / STATISTICAL KEYWORDS                                         
+                                                                                
+                 / CDBS KEYWORDS                                                
+Y1STCHNL=                    0 / first channel to be processed                  
+YAPERPO1=                30517 / same as first YAPERHOE|LOE                     
+YAQMD   =                   40 / acquisition mode                               
+YDATALIM=                  255 / high byte of acquisition limit                 
+YDEAD   =                64256 / accum close time                               
+YFFCPWR =                    0 / flat field cal lamp power                      
+YFGWAPO1=                   10 / same as first YFGWAPOS                         
+YINTEG  =                    2 / number of integrations/X-step                  
+YLINSFRM=                    1 / lines per frame                                
+YLIVE   =                33536 / accum open time                                
+YMCLEARS=                    1 / memory clears/data acquisition                 
+YMSLICES=                    1 / number of memory slices                        
+YNOISELM=                65535 / burst noise rejection limit                    
+YNUMCHNL=                    0 / number of channels to be processed             
+YOVRSCAN=                    1 / X-deflection overscan                          
+YPLRZPO1=                 4954 / same as first YPLZRHOE|LOE                     
+YPTRNS  =                   60 / patterns per readout                           
+YRANGE  =                   18 / Y range                                        
+YREADCYC=                    1 / readouts/memory clear                          
+YWRDSLIN=                  965 / words per line                                 
+YXBASE  =                -2048 / X-deflection base                              
+YXPITCH =                 1496 / X-deflection pitch between diode               
+YXSTEPS =                    4 / X-deflection sub-steps                         
+YYBASE  =                    0 / Y-deflection base                              
+YYINDFHY=                    1 / do deflection hyst. at begin. of data acqn.    
+YYPATH  =                    0 / path identification                            
+YYPITCH =                 1882 / Y-deflection pitch                             
+YYSTEPS =                    1 / Y-deflection sub-steps                         
+                                                                                
+                 / TARGET & PROPOSAL ID                                         
+TARGNAME= 'DARK              ' / proposer's target name                         
+RA_TARG =  0.0000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=  0.0000000000000E+00 / declination of the target (deg) (J2000)        
+PEQUINOX= '                  ' / proposed equinox of celestial coordinate system
+                                                                                
+PROPOSID=                 2163 / PEP proposal identifier                        
+PEP_EXPO= '8.0000003         ' / PEP exposure identifier including sequence     
+LINENUM = '4.000             ' / PEP proposal line number                       
+SEQLINE = '8.000             ' / PEP line number of defined sequence            
+SEQNAME = 'HVSEQ             ' / PEP define/use sequence name                   
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+CTYPE2  = 'GROUP_NUMBER'       / Extra dimension axis name                      
+CD2_2   =                    1 /                                                
+CD2_1   =                    0 /                                                
+CD1_2   =                    0 /                                                
+
+# HDU 1 in y0650101r_ulf.fits:
+XTENSION= 'TABLE   '           / Ascii table extension                          
+BITPIX  =                    8 / 8-bits per 'pixels'                            
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                   52 / Number of characters per row                   
+NAXIS2  =                    2 / The number of rows                             
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    3 / Number of fields per row                       
+EXTNAME = 'y0650101r_cvt.ulh.tab' / Name of table                               
+                                                                                
+TTYPE1  = 'FILLCNT '           /                                                
+TBCOL1  =                    1 /                                                
+TFORM1  = 'I12     '           /                                                
+TUNIT1  = '        '           /                                                
+TDISP1  = 'I11     '           / %11d                                           
+                                                                                
+TTYPE2  = 'ERRCNT  '           /                                                
+TBCOL2  =                   14 /                                                
+TFORM2  = 'I12     '           /                                                
+TUNIT2  = '        '           /                                                
+TDISP2  = 'I11     '           / %11d                                           
+                                                                                
+TTYPE3  = 'PKTTIME '           /                                                
+TBCOL3  =                   27 /                                                
+TFORM3  = 'D25.17  '           /                                                
+TUNIT3  = '        '           /                                                
+TDISP3  = 'G25.16  '           / %25.16g                                        
+                                                                                
+FILLCNT = 'number of segments containing fill' /                                
+ERRCNT  = 'number of segments containing errors' /                              
+PKTTIME = 'time from the packet ancillary data' /                               

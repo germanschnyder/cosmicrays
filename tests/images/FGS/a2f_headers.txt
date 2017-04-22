@@ -1,0 +1,282 @@
+# HDU 0 in fb8u7001m_a2f.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                   32 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =               100878 / length of first data axis                      
+NAXIS2  =                    7 / length of second data axis                     
+EXTEND  =                    T / File may contain standard extensions           
+NEXTEND =                    1 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2008-12-23'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'fb8u7001m_cvt.a2h                      ' / name of file              
+FILETYPE= 'AST      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'FGS   '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+                                                                                
+              / DATA DESCRIPTION KEYWORDS                                       
+                                                                                
+ROOTNAME= 'FB8U7001M                         ' / rootname of the observation set
+PRIMESI = 'FGS2  '             / instrument designated as prime                 
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK-TARGET                   ' / proposer's target name             
+RA_TARG =   4.256408333333E+01 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   7.176813888889E+01 / declination of the target (deg) (J2000)        
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                11945 / PEP proposal identifier                        
+LINENUM = '70.001         '    / proposal logsheet line number                  
+PR_INV_L= 'Gilliland                     ' / last name of principal investigator
+PR_INV_F= 'Ronald              ' / first name of principal investigator         
+PR_INV_M= 'L.                  ' / middle name / initial of principal investigat
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+ORIENTAT=         484.86734290 / position angle of image y axis (deg. e of n)   
+SUNANGLE=           124.768456 / angle between sun and V1 axis                  
+MOONANGL=           119.471863 / angle between moon and V1 axis                 
+SUN_ALT =            48.677177 / altitude of the sun above Earth's limb         
+FGSLOCK = 'FINE              ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= '2'                  / number of gyros scheduled for observation      
+REFFRAME= 'ICRS    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '2008-12-21'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '07:58:19'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=       54821.33216514 / exposure start time (Modified Julian Date)     
+EXPEND  =       54821.36135380 / exposure end time (Modified Julian Date)       
+EXPTIME =        2521.90005386 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+QUALCOM1= '                                                                    '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = '                                                                    '
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+CRPIX1  =                  1.0 / x-coordinate of reference pixel                
+CRPIX2  =   0.000000000000E+00 / y-coordinate of reference pixel                
+CRVAL1  =    756460699.0678750 / first axis value at reference pixel            
+CRVAL2  =   0.000000000000E+00 / second axis value at reference pixel           
+CTYPE1  = 'SECONDS '           / the coordinate type for the first axis         
+CTYPE2  = 'GROUP_NUMBER'       / Extra dimension axis name                      
+CD1_1   =                0.025 / partial of first axis coordinate w.r.t. x      
+CD1_2   =                  0.0 / partial of first axis coordinate w.r.t. y      
+CD2_1   =                  0.0 / partial of second axis coordinate w.r.t. x     
+CD2_2   =                  1.0 / partial of second axis coordinate w.r.t. y     
+DATAMIN =                  0.0 / the minimum value of the data                  
+DATAMAX =          956825600.0 / the maximum value of the data                  
+                                                                                
+              / GROUP PARAMETER INFORMATION                                     
+                                                                                
+OPSIZE  =                    0 / PSIZE of original image                        
+ODATTYPE= 'INTEGER '           / original datatype: 32 bit integer              
+SDASMGNU=                    7 / number of groups in original image             
+ALLG-MAX=          956825600.0 / maximum data value in all groups               
+ALLG-MIN=                  0.0 / minimum data value in all groups               
+                                                                                
+              / GROUP CONTENTS                                                  
+                                                                                
+GTYPE1  = 'PMTXA   '           / PMT A Fine Counts in X direction               
+GTYPE2  = 'PMTXB   '           / PMT B Fine Counts in X direction               
+GTYPE3  = 'PMTYA   '           / PMT A Fine Counts in Y direction               
+GTYPE4  = 'PMTYB   '           / PMT B Fine Counts in Y direction               
+GTYPE5  = 'SSENCA  '           / A Star Selector Position                       
+GTYPE6  = 'SSENCB  '           / B Star Selector Position                       
+GTYPE7  = 'FLAGS   '           / FGS STATUS FLAGS                               
+                                                                                
+                                                                                
+                                                                                
+PROGRMID= 'B8U'                / program id (base 36)                           
+OBSET_ID= '70'                 / observation set id                             
+OBSERVTN= '01 '                / observation number (base 36)                   
+NTGTS   =                    1 / NUMBER OF TARGETS                              
+FGSNO   =                    2 / FGS NUMBER FOR THIS FILE                       
+FGSID   = '2'                  / ID OF ASTROMETRY FGS                           
+FILL1   =             99999998 / DATA VALUE FOR END-OF-ARRAY FILL               
+FILL2   =             99999999 / DATA VALUE FOR BAD DATA FILL                   
+TMFMT   = 'FN'                 / TELEMETRY FORMAT (AF, AN, FF, FN, HF, HN)      
+FTYPE   = 'RAW '               / DATA TYPE (RAW = RAW DATA, SDAS = PROCESSED DAT
+PASTMODE= 'TRANSFER'           / PREDICTED ASTROMETRY MODE                      
+AASTMODE= 'TEST    '           / ACTUAL ASTROMETRY PROCESSING MODE              
+DATAFILS=                    T / DOES FILE SET CONTAIN DATA FILES? (T/F)        
+ACQRESLT= 'Y'                  / RESULT OF ACQUISITION PROCEDURE                
+SRCHTIME=       54821.33216514 / start time of target search (MJD)              
+BADMINFR=                 0.00 / PERCENT BAD MINOR FRAMES                       
+ENDFOUND=                    T / PROPER END OF OBS FOUND IN DATA (T/F)          
+                                                                                
+              / CALIBRATION INFORMATION                                         
+                                                                                
+CALECDR =                    F / ENCODER ERROR CORRECTION APPLIED               
+CALSIDTR=                    F / DISTORTION CORRECTION APPLIED                  
+CALPHOTO=                    F / PHOTOMETRIC CALIBRATION APPLIED                
+CALCOLOR=                    F / COLOR EFFECT CORRECTION APPLIED                
+CALWEDGE=                    F / FILTER WEDGE CORRECTION APPLIED                
+CALTEMPR=                    F / TEMPERATURE EFFECT CORRECTION APPLIED          
+CALDIFAB=                    F / DIFFERENTIAL ABERRATION CORRECTION APPLIED     
+CALCYCLE=                    F / CYCLING EFFECTS CORRECTION APPLIED             
+TIMED   =                    F / DATA WITH FINE ERROR INTERVAL TIMES COMPUTED   
+CENTROID=                    F / CENTROIDED FLAG                                
+                                                                                
+                                                                                
+                                                                                
+PUTS    = '2008356075709 '     / PRED UT START OF OBS SET (YYYYDDDHHMMSS)       
+PCCS    =            415809937 / PRED S/C CLOCK CNT, START OBS SET              
+PUTE    = '2008356084602 '     / PRED UT END OF OBS SET (YYYYDDDHHMMSS)         
+PCCE    =            415833401 / PRED S/C CLOCK CNT, END OBS SET                
+PUTOS   = '2008356075819 '     / PRED UT OBS START (YYYYDDDHHMMSS)              
+PDUR_OB =               2522.0 / PRED DURATION OF OBS (SEC)                     
+AUTOS   = ' 2008356075819.068' / ACTUAL UT OBS START (YYYYDDDHHMMSS)            
+ASC_CLK =            415810498 / ACTUAL S/C CLK CNT AT OBS START                
+ADUR_OB =        2521.90005386 / ACTUAL DURATION OF OBS (SEC)                   
+PRAV1   =             42.01573 / PRED RA, V1 AXIS, OBSET START (DEG)            
+PDECV1  =             71.87794 / PRED DEC, V1 AXIS, OBSET START (DEG)           
+PROLV3  =             55.63632 / PRED ROLL, V3 AXIS, OBSET START (DEG)          
+PRATGT  =             42.56408 / PRED RA OF TARGET (DEG)                        
+PDECTGT =             71.76814 / PRED DEC OF TARGET (DEG)                       
+FGSREFV2=               -5.370 / FGS aperture reference V2 position (arcsec)    
+FGSREFV3=             -731.340 / FGS aperture reference V3 position (arcsec)    
+FGS_PAV3=          304.8673429 / FGS aperture position angle of V3-axis (deg)   
+FGSOFFV2=                30.00 / V2 offset from the FGS aper ref position (arcse
+FGSOFFV3=                 0.00 / V3 offset from the FGS aper ref position (arcse
+PX_POS  =            -5156.194 / PRED HST X-COMP POS, OBS START (KM)            
+PY_POS  =            -4134.121 / PRED HST Y-COMP POS, OBS START (KM)            
+PZ_POS  =             2123.999 / PRED HST Z-COMP POS, OBS START (KM)            
+PX_VEL  =              5.07687 / PRED HST X-COMP VEL WRT EARTH (KM/SEC)         
+PY_VEL  =             -4.90146 / PRED HST Y-COMP VEL WRT EARTH (KM/SEC)         
+PZ_VEL  =              2.77036 / PRED HST Z-COMP VEL WRT EARTH (KM/SEC)         
+PVEL_AB =              3.82247 / PRED VEL ABERRATION (ARCSEC)                   
+PH_PRLX =              0.00000 / PRED HORIZ PARALLAX (ARCSEC)                   
+PA_PRLX =              0.00000 / PRED ANNUAL PARALLAX (ARCSEC)                  
+DIST    =                  0.0 / DISTANCE TO TARGET (KM)                        
+PERSSA  =               343553 / PRED SSA ENCODER READING OF THIS FGS           
+PERSSB  =               728388 / PRED SSB ENCODER READING OF THIS FGS           
+CAVG_TIM=              0.02500 / COMMANDED AVG TIME IN AST FGS (SEC)            
+AAVG_TIM=              0.02500 / ACTUAL AVG TIME IN AST FGS (SEC)               
+TGT_MAG =                17.00 / TARGET MAGNITUDE                               
+CAST_FLT= 'F583W   '           / COMMANDED AST FGS FILTER POS                   
+AAST_FLT= 'Clr/583W'           / ACTUAL AST FGS FILTER POS                      
+TARGETID= '11945_10       '    / TARGET IDENTIFICATION                          
+PSTARID =                   -1 / PREDICTED STAR IDENTIFIER (-1 - 255)           
+ASTARID =                   -1 / ACTUAL STAR IDENTIFIER (-1 - 255)              
+ASTARNO =                   -1 / POSITION OF ACTUAL GUIDE STAR ON LIST (-1 - 20)
+                                                                                
+              / K FACTORS                                                       
+                                                                                
+K1X     =                0.022 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K3X     =                0.022 / K-FACTOR FOR THIS FGS                          
+K1Y     =                0.022 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K3Y     =                0.022 / K-FACTOR FOR THIS FGS                          
+K6      =       2.15312500E+01 / K-FACTOR FOR THIS FGS                          
+K7      =       3.71093750E-01 / K-FACTOR FOR THIS FGS                          
+K8      =       8.69200000E+04 / K-FACTOR FOR THIS FGS                          
+KA      =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KG      =                -2.56 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KJ      =       2.50000000E-02 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KY      =       1.20000000E+01 / K-FACTOR FOR THIS FGS (ARCMIN**2/SEC)          
+K10     =                 24.0 / K-FACTOR FOR THIS FGS                          
+K13     =                 27.0 / K-FACTOR FOR THIS FGS                          
+K14     =                 1.35 / K-FACTOR FOR THIS FGS                          
+K15     =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+K16     =       4.98262500E+03 / K-FACTOR FOR THIS FGS (ARCSEC/SEC)             
+KB      =           0.97199494 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KD      =             2.825E-4 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KZ      =                  0.0 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K5      =                200.0 / K-FACTOR FOR THIS FGS                          
+KM      =                0.165 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KN      =                0.414 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KE      =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+KF      =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCSEC)                 
+K30     =       1.40000000E+01 / K-FACTOR FOR THIS FGS                          
+K31     =       2.05600000E+03 / K-FACTOR FOR THIS FGS (ARCSEC/SEC)             
+K0X     =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K11     =                  3.0 / K-FACTOR FOR THIS FGS                          
+K0Y     =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K18     =       4.00000000E+00 / K-FACTOR FOR THIS FGS (ARCMIN)                 
+K9      =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+K20     =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCSEC)                 
+K21     =       0.00000000E+00 / K-FACTOR FOR THIS FGS (ARCSEC)                 
+K22     =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+K23     =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+K24     =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+K25     =       0.00000000E+00 / K-FACTOR FOR THIS FGS                          
+KH      =       1.35000000E+01 / K-FACTOR FOR THIS FGS (DEG)                    
+                                                                                
+              / TEMPERATURE SENSOR COUNTS                                       
+                                                                                
+TEMP22  =   1.270000000000E+02 / TEMPERATURE SENSOR 2 COUNTS FOR FGS 2          
+TEMP32  =   1.150000000000E+02 / TEMPERATURE SENSOR 3 COUNTS FOR FGS 2          
+TEMP42  =   1.250000000000E+02 / TEMPERATURE SENSOR 4 COUNTS FOR FGS 2          
+TEMP62  =   1.330000000000E+02 / TEMPERATURE SENSOR 6 COUNTS FOR FGS 2          
+TEMP72  =   1.260000000000E+02 / TEMPERATURE SENSOR 7 COUNTS FOR FGS 2          
+TEMP92  =   6.300000000000E+01 / TEMPERATURE SENSOR 9 COUNTS FOR FGS 2          
+                                                                                
+              / AVERAGES                                                        
+                                                                                
+AVGXAPMT=       0.00000000E+00 / AVG X,A PMT COUNTS (PER FE TIME)               
+AVGXBPMT=       0.00000000E+00 / AVG X,B PMT COUNTS (PER FE TIME)               
+AVGYAPMT=       0.00000000E+00 / AVG Y,A PMT COUNTS (PER FE TIME)               
+AVGYBPMT=       0.00000000E+00 / AVG Y,B PMT COUNTS (PER FE TIME)               
+AVGFESX =       0.00000000E+00 / AVG FES IN X (ARCSEC)                          
+AVGFESY =       0.00000000E+00 / AVG FES IN Y (ARCSEC)                          
+AVGA_BX =       0.00000000E+00 / AVG <A+B> IN X (COUNTS)                        
+AVGA_BY =       0.00000000E+00 / AVG <A+B> IN Y (COUNTS)                        
+AVGINT  =       0.00000000E+00 / ACT AVG TIME COVERED BY FINE ERR AVG TIME INT (
+
+# HDU 1 in fb8u7001m_a2f.fits:
+XTENSION= 'TABLE   '           / extension type                                 
+BITPIX  =                    8 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   99 / length of first data axis                      
+NAXIS2  =                    7 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                    6 / number of fields in each table row             
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'fb8u7001m_cvt.a2h.tab' / extension name                              
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'FB8U7001M                         ' / rootname of the observation set
+EXPNAME = 'FB8U7001M'          / 9 character exposure identifier                
+                                                                                
+              / ASCII TABLE COLUMN DESCRIPTORS                                  
+                                                                                
+TTYPE1  = 'DATAMIN '           / minimum value of the data for FGS group        
+TBCOL1  =                    1 / column in which field 1 starts                 
+TFORM1  = 'E15.7   '           / FORTRAN-77 format in which field 1 is coded    
+TUNIT1  = '        '           / physical units of quantity in field 1          
+TDISP1  = 'G15.7   '           / FORTRAN-90 format for display of field 1 conten
+                                                                                
+TTYPE2  = 'DATAMAX '           / maximum value of the data for FGS group        
+TBCOL2  =                   17 / column in which field 2 starts                 
+TFORM2  = 'E15.7   '           / FORTRAN-77 format in which field 2 is coded    
+TUNIT2  = '        '           / physical units of quantity in field 2          
+TDISP2  = 'G15.7   '           / FORTRAN-90 format for display of field 2 conten
+                                                                                
+TTYPE3  = 'CRPIX1  '           / reference pixel number                         
+TBCOL3  =                   33 / column in which field 3 starts                 
+TFORM3  = 'E15.7   '           / FORTRAN-77 format in which field 3 is coded    
+TUNIT3  = '        '           / physical units of quantity in field 3          
+TDISP3  = 'G15.7   '           / FORTRAN-90 format for display of field 3 conten
+                                                                                
+TTYPE4  = 'CD1_1   '           / delta time between data points                 
+TBCOL4  =                   49 / column in which field 4 starts                 
+TFORM4  = 'E15.7   '           / FORTRAN-77 format in which field 4 is coded    
+TUNIT4  = '        '           / physical units of quantity in field 4          
+TDISP4  = 'G15.7   '           / FORTRAN-90 format for display of field 4 conten
+                                                                                
+TTYPE5  = 'CRVAL1  '           / time of S/C clock for reference pixel          
+TBCOL5  =                   65 / column in which field 5 starts                 
+TFORM5  = 'D25.17  '           / FORTRAN-77 format in which field 5 is coded    
+TUNIT5  = '        '           / physical units of quantity in field 5          
+TDISP5  = 'G25.16  '           / FORTRAN-90 format for display of field 5 conten
+                                                                                
+TTYPE6  = 'CTYPE1  '           / coordinate type for the first axis             
+TBCOL6  =                   91 / column in which field 6 starts                 
+TFORM6  = 'A8      '           / FORTRAN-77 format in which field 6 is coded    
+TUNIT6  = '        '           / physical units of quantity in field 6          
+TDISP6  = 'A8      '           / FORTRAN-90 format for display of field 6 conten

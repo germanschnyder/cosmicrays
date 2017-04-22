@@ -1,0 +1,52 @@
+# HDU 0 in z06a0101r_trl.fits:
+SIMPLE  =                    T / Fits standard                                  
+BITPIX  =                   16 / Bits per pixel                                 
+NAXIS   =                    0 / Number of axes                                 
+EXTEND  =                    T / File may contain extensions                    
+IRAF-TLM= '20:26:10 (18/09/2006)' / Time of last modification                   
+DATE    = '2006-09-18'         / Date tape was written                          
+ORIGIN  = 'STSDAS+ST-ECF'      / Fitsio version 21-Feb-1996                     
+FILENAME= 'null_image'         / ZERO LENGTH DUMMY IMAGE                        
+FITSDATE= '16-DEC-2013'        / Date file was generated                        
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the GHRS ISR 93.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     GRATING, OPFORMAT, SPEC_1, TARGNAME, ZLCOEF1 and ZLCOEF2          
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) Non FITS compliant characters (bell, tabs, NULLs) were            
+COMMENT *     removed from HDU1 in ocx, pdq, trl files.                         
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 
+
+# HDU 1 in z06a0101r_trl.fits:
+XTENSION= 'TABLE   '           / FITS STANDARD                                  
+BITPIX  =                    8 / 8-bits per 'pixels'                            
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / No of characters per row                       
+NAXIS2  =                  221 / The number of rows                             
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'z06a0101r.trl'      / Name of table                                  
+TTYPE1  = 'TRAILERFILE'        / One column per line                            
+TBCOL1  =                    1 / Starting column number                         
+TFORM1  = 'A132    '           / Format                                         
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the GHRS ISR 93.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     GRATING, OPFORMAT, SPEC_1, TARGNAME, ZLCOEF1 and ZLCOEF2          
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) Non FITS compliant characters (bell, tabs, NULLs) were            
+COMMENT *     removed from HDU1 in ocx, pdq, trl files.                         
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 

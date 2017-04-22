@@ -1,0 +1,1436 @@
+# HDU 0 in la7803fiq_spt.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+EXTEND  =                    T / File may contain standard extensions           
+NEXTEND =                    3 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2015-12-02'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'la7803fiq_spt.fits                     ' / name of file              
+FILETYPE= 'SPT      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'COS   '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / DATA DESCRIPTOR KEYWORDS                                        
+                                                                                
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+DEFAULTS=                    F / default values used in reformatting these data 
+PROC_TYP= 'NORMAL      '       / type of pipeline processing                    
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+ECL_LONG=   0.000000000000E+00 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =   0.000000000000E+00 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=   0.000000000000E+00 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =   0.000000000000E+00 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+              / OTHER COORDINATE SYSTEM INFORMATION                             
+                                                                                
+APER_REF= 'LFPSA     '         / aperture used for reference position           
+ELON_REF=           267.576030 / ecliptic longitude at reference position (deg) 
+ELAT_REF=           -38.094362 / ecliptic latitude at reference position (deg)  
+GLON_REF=           331.312543 / galactic longitude at reference position (deg) 
+GLAT_REF=           -16.114783 / galactic latitude at reference position (deg)  
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                11356 / PEP proposal identifier                        
+LINENUM = '03.004         '    / proposal logsheet line number                  
+                                                                                
+              / SOFTWARE VERSION KEYWORDS                                       
+                                                                                
+FLTSWVER= '4.9     '           / flight software version number                 
+OPUS_VER= 'HSTDP 2015_2b     ' / OPUS software system version number            
+                                                                                
+              / TIME CONVERSION KEYWORDS                                        
+                                                                                
+CLKDRFTR=   4.686047965870E-19 / spacecraft clock drift rate                    
+CLKRATE =   1.250000026450E-01 / spacecraft clock rate                          
+SPCLINCN=   3.699098260000E+08 / spacecraft clock at UTC0                       
+UTC0    =   5.475492493080E+04 / Coordinated Universal Time (Mod Julian Date)   
+                                                                                
+              / SUPPORT SCHEDULE: PROGRAMMATIC DATA                             
+PROGRMID= 'A78'                / program id (base 36)                           
+PR_INV_L= 'Welty                         ' / last name of principal investigator
+PR_INV_F= 'Alan                ' / first name of principal investigator         
+PR_INV_M= 'D.                  ' / middle name / initial of principal investigat
+ACCPDATE= '       '            / proposal acceptance date (yyyyddd)             
+OBSET_ID= '03'                 / observation set id                             
+CALIBRAT= 'T'                  / calibrate data flag                            
+OBSERVTN= 'FI '                / observation number (base 36)                   
+EXPACKET=                    4 / expected number of source packets              
+PRODTYPE= '                  ' / output product medium type                     
+OPFORMAT= '                  ' / output product format specification            
+CALIBTYP= 'I'                  / calibration type : E, I or Blank               
+CDBSDATA= 'FALSE'              / cdbs notification flag: 'CAL' or 'FALSE'       
+                                                                                
+                                                                                
+              / SUPPORT SCHEDULE: FLAGS AND INDICATORS                          
+                                                                                
+SS_OBSMD= 'TIME-TAG       '    / Support schedule specified operating mode      
+SS_APER = '                '   / proposed aperture name                         
+SS_DTCTR= '          '         / proposed detector to use                       
+SS_GRTNG= 'G130M  '            / proposed spectroscopic element in grating wheel
+SS_CWAVE=                  0.0 / proposed central wavelength                    
+SS_NSTEP=                    0 / proposed number of peakup search steps         
+SS_STPSZ=             0.000000 / proposed peakup scan stepsize in milli-arcsecon
+SS_PKCNT= '               '    / proposed centering method used in peakup acq.  
+SS_RPT  =                    1 / proposed number of repeat exposures in set     
+SS_SEGMT= 'BOTH'               / proposed segment name for exposure             
+SS_STMRT=                    0 / proposed STIM pulse injection rate             
+PLANTIME=                300.0 / Planned exposure time (seconds)                
+              / SUPPORT SCHEDULE: DATA GROUP II DATA                            
+WRD11_14=                   54 / word 11/14 (0-255)                             
+PSTRTIME= '2009.157:21:06:40 ' / predicted obs. start time (yyyy.ddd:hh:mm:ss)  
+PSTPTIME= '2009.157:21:12:06 ' / predicted obs. stop time (yyyy.ddd:hh:mm:ss)   
+APEROBJ = 'LFPSA     '         / si object aperture id                          
+APERSKY = '          '         / si sky aperture id                             
+TARG_ID = '               '    / SPSS target ID from proposal+target no.        
+APERTYPE= 'SICS              ' / aperture type (SICS, SIAS, SIDS)               
+RA_V1   =   2.660000000000E+02 / right ascension of v1 axis of st (deg)         
+DEC_V1  =  -6.150000000000E+01 / declination of v1 axis of st (deg)             
+PA_V3   =           163.699997 / position angle of V3-axis of HST (deg)         
+APEROFFX=             0.000000 / x comp of object offset in aperture (arcsec)   
+APEROFFY=             0.000000 / y comp of object offset in aperture (arcsec)   
+ANGLESEP=             0.000000 / ang separation of target from ref obj (arcsec) 
+DGESTAR = 'NONE        '       / FGS ID(F1,F2,F3) concat. w/ dom. gd. star id   
+SGESTAR = 'NONE        '       / FGS ID(F1,F2,F3) concat. w/ subdom. gd. star id
+PA_APER =   1.638474273682E+02 / position ang of aperture used with target (deg)
+PA_REF  =             0.000000 / position ang of target from ref. object (deg)  
+SAAAVOID= '31'                 / SAA model for SAA Avoidance (range 02-99)      
+TARAQMOD= '00'                 / target acquisition mode (values 00, 01, 02, 03)
+POSTNSTX=  -5.888579384821E+03 / position of space telescope x axis (km)        
+POSTNSTY=  -2.965967849548E+03 / position of space telescope y axis (km)        
+POSTNSTZ=   2.167374599044E+03 / position of space telescope z axis (km)        
+VELOCSTX=   3.958079437573E+00 / vel of space telescope along x axis (km/sec)   
+VELOCSTY=  -5.859874573711E+00 / vel of space telescope along y axis (km/sec)   
+VELOCSTZ=   2.734767366134E+00 / vel of space telescope along z axis (km/sec)   
+RA_SUN  =   7.495239468097E+01 / right ascension of the sun (deg)               
+DEC_SUN =   2.271701818378E+01 / declination of the sun (deg)                   
+RA_MOON =   2.436610821685E+02 / right ascension of the moon (deg)              
+DEC_MOON=  -2.548666733373E+01 / declination of the moon (deg)                  
+VELABBRA=             0.000000 / aberration in position of the target           
+ANNPARRA=             0.000000 / par. shift in position, non-solar sys target   
+V2APERCE=             0.000000 / V2 offset of target from aper fiducial (arcsec)
+V3APERCE=             0.000000 / V3 offset of target from aper fiducial (arcsec)
+EQRADTRG=             0.000000 / equatorial radius of target (km)               
+FLATNTRG=             0.000000 / flattening of target                           
+NPDECTRG=             0.000000 / north pole declination of target (deg)         
+NPRATRG =             0.000000 / north pole right ascension of target (deg)     
+ROTRTTRG=             0.000000 / rotation rate of target                        
+LONGPMER=             0.000000 / longitude of prime meridian (deg)              
+EPLONGPM=             0.000000 / epoch of longitude of prime meridian (sec)     
+SURFLATD=             0.000000 / surface feature latitude (deg)                 
+SURFLONG=             0.000000 / surface feature longitude (deg)                
+SURFALTD=             0.000000 / surface feature altitude (km)                  
+MTFLAG  = ' '                  / moving target flag; T if it is a moving target 
+S0INVMAG=   0.000000000000E+00 / S0 inverse magnitude                           
+S0XDIR  =   0.000000000000E+00 / S0 X direction                                 
+S0YDIR  =   0.000000000000E+00 / S0 Y direction                                 
+S0ZDIR  =   0.000000000000E+00 / S0 Z direction                                 
+TRK_TYPE= 'F  '                / track 48 or track 51 commanding used           
+T51_RATE=                  0.0 / rate of motion commanded (arcsecs/sec)         
+T51_ANGL=                  0.0 / position angle of motion of aperture (deg)     
+TARGDIST=   0.000000000000E+00 / distance to target from Earth's center (km)    
+PAR_CORR= 'N'                  / parallax correction used (Y, N, or A)          
+RA_REF  =   0.000000000000E+00 / right ascension of reference object (deg)      
+DEC_REF =   0.000000000000E+00 / declination of reference object (deg)          
+                                                                                
+              / ONBOARD EPHEMERIS MODEL PARAMETERS                              
+EPCHTIME=   7.705152000000E+08 / epoch time of parameters (secs since 1/1/85)   
+SDMEANAN=   3.753969090331E-16 / 2nd deriv coef for mean anomaly (revs/sec/sec) 
+SDMA3SQ =   3.582922486783E-06 / 3 * (SDMEANAN**2) radians/second**2.           
+HSTHORB =   2.874695133035E+03 / half the duration of the ST orbit (seconds)    
+CIRVELOC=   7.584834596760E+03 / circular orbit linear velocity (meters/second) 
+COSINCLI=   8.791951454594E-01 / cosine of inclination                          
+ECCENTRY=   7.368489284199E-04 / eccentricity                                   
+ECCENTX2=   1.473697856840E-03 / eccentricity times 2                           
+ECBDX4D3=   5.334259083467E-10 / eccentricity cubed times 4/3                   
+ESQDX5D2=   1.357365858284E-06 / eccentricity squared times 5/2                 
+ECBDX3  =   1.200208293780E-09 / eccentricity cubed times 3                     
+FDMEANAN=   1.739314872921E-04 / 1st derivative coef for mean anomly (revs/sec) 
+RCASCNRD=  -1.318353187700E-06 / rt chge right ascension ascend node (rads/sec) 
+RCASCNRV=  -2.098224265635E-07 / rt chge right ascension ascend node (revs/sec) 
+ARGPERIG=   2.849139302000E-01 / argument of perigee (revolutions)              
+MEANANOM=   2.834801695931E+00 / mean anomaly (radians)                         
+RCARGPER=   1.145464431511E-07 / rate change of argument of perigee (revs/sec)  
+RASCASCN=   5.588731228225E-01 / right ascension of ascending node (revolutions)
+SINEINCL=   4.764618517788E-01 / sine of inclination                            
+SEMILREC=   6.940288977987E+06 / semi-latus rectum (meters)                     
+TIMEFFEC=   7.705152750000E+08 / time parameters took effect (secs since 1/1/85)
+OBSSTRTT=   7.709368000000E+08 / predicted obs. start time (secs since 1/1/85)  
+                                                                                
+              / PROPOSAL INFO: Instrument Configuration                         
+CONFIG  = 'COS/FUV        '    / proposed instrument configuration              
+OPMODE  = 'TIME-TAG          ' / proposed operation mode                        
+SPEC_1  = 'G130M               ' / spectral element                             
+SPEC_2  = 'G185M               ' / spectral element                             
+SPEC_3  = '                    ' / spectral element                             
+SPEC_4  = '                    ' / spectral element                             
+APER_1  = 'PSA            '    / instrument aperture                            
+APER_2  = '               '    / instrument aperture                            
+APER_3  = '               '    / instrument aperture                            
+APER_4  = '               '    / instrument aperture                            
+                                                                                
+              / PROPOSAL INFO: Target Description                               
+TAR_TYPE= 'POINT TARGET   '    / target type                                    
+                                                                                
+              / PROPOSAL INFO: Flux Information                                 
+MAG_V   =             0.000000 / expected V Magnitude                           
+SURF_V  =             0.000000 / expected V surface brightness                  
+MAG_B   =             0.000000 / expected B Magnitude                           
+SURF_B  =             0.000000 / expected B surface brightness                  
+MAG_U   =             0.000000 / expected U Magnitude                           
+SURF_U  =             0.000000 / expected U surface brightness                  
+MAG_R   =             0.000000 / expected R Magnitude                           
+SURF_R  =             0.000000 / expected R surface brightness                  
+COL_B_V =             0.000000 / expected B-V color                             
+COL_U_B =             0.000000 / expected U-B color                             
+COL_V_R =             0.000000 / expected V-R color                             
+E_B_V   =             0.000000 / E(B-V)                                         
+EXTNCT_V=             0.000000 / extinction in V                                
+                                                                                
+              / PROPOSAL INFO: Exposure Information                             
+CMD_EXP =           300.000000 / commanded time per exposure (from TRANS)       
+                                                                                
+              / PROPOSAL INFO: Moving Target Information                        
+                                                                                
+              / PROPOSAL INFO: Target Properties                                
+REDSHIFT=   0.000000000000E+00 / target redshift from proposal                  
+PARALLAX=   0.000000000000E+00 / target parallax from proposal                  
+RA_PROP =   0.000000000000E+00 / target right ascension from proposal (degrees) 
+DEC_PROP=   0.000000000000E+00 / target declination from proposal (degrees)     
+PEQUINOX= '       '            / equinox of coordinate system from proposal     
+MU_RA   =   0.000000000000E+00 / target proper motion from proposal (degrees RA)
+MU_DEC  =   0.000000000000E+00 / target proper motion from proposal (deg. DEC)  
+MU_EPOCH= '       '            / epoch of proper motion from proposal           
+SP_TYPE = '               '    / target spectral type from proposal             
+RAD_VEL =   0.000000000000E+00 / target radial velocity from proposal (km/sec)  
+                                                                                
+              / PROPOSAL INFO: Spatial Scan Info                                
+SCAN_TYP= 'N                 ' / C:bostrophidon; D:C with dwell; N:N/A          
+SCAN_WID=   0.000000000000E+00 / scan width (arcsec)                            
+ANG_SIDE=   0.000000000000E+00 / angle between sides of parallelogram (deg)     
+DWELL_LN=                    0 / dwell pts/line for scan pointing (1-99,0 if NA)
+DWELL_TM=   0.000000000000E+00 / wait time (duration) at each dwell point (sec) 
+SCAN_ANG=   0.000000000000E+00 / position angle of scan line (deg)              
+SCAN_RAT=   0.000000000000E+00 / commanded rate of the line scan (arcsec/sec)   
+NO_LINES=                    0 / number of lines per scan (1-99,0 if NA)        
+SCAN_LEN=   0.000000000000E+00 / scan length (arcsec)                           
+SCAN_COR= 'C                 ' / scan coordinate frame of ref: celestial,vehicle
+                                                                                
+              / PROPOSAL INFO: Auxiliary                                        
+PARENTID=                    0 / PEP proposal identifier of the parent proposal 
+PROPTTL1= 'COS FUV Initial On-Orbit Turn-On                                    '
+PROP_TYP= 'SM4/COS             ' / proposal type                                
+                                                                                
+                                                                                
+              / APERTURE PARAMETERS                                             
+                                                                                
+HOSV2CNT=   2.316600000000E+02 / V2 coordinate of aperture fiducial (arcsec)    
+HOSV3CNT=  -2.362114000000E+02 / V3 coordinate of aperture fiducial (arcsec)    
+HOSISHA = 'C'                  / Aperture shape ;Pickle, Circle, Quad, Rectangle
+HOSIVDM =   2.500000000000E+00 / Half-length of aperture major axis (arcsec)    
+HOSAPOR =   4.500000000000E+01 / Rotation angle to orient SICS and V2/V3 (deg)  
+HOSIMPAR=                    1 / Parity of SICS to V2/V3 (-1=left, +1=right)    
+HOSIASX =   8.192000000000E+03 / x coord. of aperture fiducial in SIAS (pixels) 
+HOSIASY =   5.120000000000E+02 / y coord. of aperture fiducial in SIAS (pixels) 
+HOSD1   =   2.260000000000E-02 / 1st coordinate axis increment (arcsec)         
+HOSD2   =   9.430000000000E-02 / 2nd coordinate axis increment (arcsec)         
+HOSTH1  =   1.350000000000E+02 / Angle from V3 to line of incr 1st axis (degrees
+HOSTH2  =   4.500000000000E+01 / Angle from V3 to line of incr 2nd axis (degrees
+                                                                                
+              / SIAS to SICS CONVERSION                                         
+                                                                                
+HOSPOLY =                    1 / Polynomial degree for SIAS to SICS conversion  
+AS2CSX00=   0.000000000000E+00 / 0 order, 0 coefficient for x-coord SIAS to SICS
+AS2CSX10=   0.000000000000E+00 / 1 order, 0 coefficient for x-coord SIAS to SICS
+AS2CSX11=   2.260000000000E-02 / 1 order, 1 coefficient for x-coord SIAS to SICS
+AS2CSY00=   0.000000000000E+00 / 0 order, 0 coefficient for y-coord SIAS to SICS
+AS2CSY10=   9.430000000000E-02 / 1 order, 0 coefficient for y-coord SIAS to SICS
+AS2CSY11=   0.000000000000E+00 / 1 order, 1 coefficient for y-coord SIAS to SICS
+                                                                                
+              / SICS to SIAS CONVERSION                                         
+                                                                                
+CS2ASX00=   0.000000000000E+00 / 0 order, 0 coefficient for x-coord SICS to SIAS
+CS2ASX10=   0.000000000000E+00 / 1 order, 0 coefficient for x-coord SICS to SIAS
+CS2ASX11=   4.424779000000E+01 / 1 order, 1 coefficient for x-coord SICS to SIAS
+CS2ASY00=   0.000000000000E+00 / 0 order, 0 coefficient for y-coord SICS to SIAS
+CS2ASY10=   1.060445000000E+01 / 1 order, 0 coefficient for y-coord SICS to SIAS
+CS2ASY11=   0.000000000000E+00 / 1 order, 1 coefficient for y-coord SICS to SIAS
+                                                                                
+              / V2/V3 APERTURE VERTICES                                         
+                                                                                
+APVER1V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 1 (arcsecs)   
+APVER1V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 1 (arcsecs)   
+APVER2V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 2 (arcsecs)   
+APVER2V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 2 (arcsecs)   
+APVER3V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 3 (arcsecs)   
+APVER3V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 3 (arcsecs)   
+APVER4V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 4 (arcsecs)   
+APVER4V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 4 (arcsecs)   
+                                                                                
+              / ASSOCIATION KEYWORDS                                            
+                                                                                
+ASN_ID  = 'NONE      '         / unique identifier assigned to association      
+ASN_TAB = 'NONE                   ' / name of the association table             
+
+# HDU 1 in la7803fiq_spt.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    1 / number of data axes                            
+NAXIS1  =                  965 / length of first data axis                      
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SUPPORT '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq'          / 9 character exposure identifier                
+ASN_MTYP= '            '       / Role of the Member in the Association          
+                                                                                
+              / INTERNAL HEADER IDENTIFIERS                                     
+                                                                                
+LQHDRVER=                   18 / Science Header Version Number                  
+LQINSTR =                  154 / Instrument Identifier                          
+LQPROGID=           1094137856 / PROG ID                                        
+LQOBSET =                12339 / OBSET ID                                       
+LQOBSID =                17993 / OBS ID                                         
+LQIMGTYP= 'DetectSD'           / Image Type: memory, diagnostic, detector       
+LQDETNO = 'FUV     '           / Detector Number (FUV or NUV)                   
+LQITIME =                300.0 / Integration Time                               
+LQSTIME1=            531421200 / Exposure Start Time:  HST Time                 
+LQSTIME2=               774191 / Exposure Start Time:  DIB Coarse Time          
+LQSTIME3=                    0 / Exposure Start Time:  Fine Time                
+LQCTIME1=            531421200 / Exposure End Time:  HST Time                   
+LQCTIME2=               783586 / Exposure End Time:  DIB Coarse Time            
+LQCTIME3=                    0 / Exposure End Time:  Fine Time                  
+                                                                                
+              / FLIGHTS SOFTWARE ENGINEERING PARAMETERS                         
+                                                                                
+LQFSWMAJ=                    4 / Flight Software Major Revision Number          
+LQFSWMIN=                    9 / Flight Software Minor Revision Number          
+LQOBSNUM=                   37 / Flight Observation Number                      
+LQNUMWDS=                48497 / Number of 16-bit words in this image           
+LQSDFLNS=                   51 / Number of SDF lines in this image              
+LQBENCH =                    0 / Test Bench in use                              
+LQITDNUM=                    1 / Intermediate Time Tag Dump Number              
+LQITDTOT=                47532 / Cumulative number of Time Tag words dumped     
+LQEXPTTB=                   18 / Requested buffer size for time tag images      
+LQFULIND= 'Full    '           / Full Image indicator                           
+LQNULIMG= '--      '           / Null image flag                                
+LQSWMODE= 'Operate '           / FSW Mode:  0=Boot or 1=Operate                 
+LQMEBID = 'MEB 1   '           / Current MEB side (0=MEB1, 1=MEB2)              
+                                                                                
+              / EXPOSURE PARAMETERS                                             
+                                                                                
+LQDIBERR= '--      '           / DIB command error flag                         
+LQEXPSER= '--      '           / Exposure start error flag                      
+LQDIBEXC= '--      '           / DIB exception occurred flag                    
+LQLEVTEX= 'NoCheck '           / Local Event Threshold Exceed flag              
+LQBADMD = '--      '           / Invalid DIB software Mode flag                 
+LQDMATO = '--      '           / DMA Timeout flag                               
+LQEXPTO = '--      '           / Exposure Timeout flag                          
+LQEXPABO= '--      '           / Exposure Aborted flag                          
+LQDFFOV =                    0 / Number of SD FIFO overflows during exposure    
+LQNUMSUB=                    0 / Number of subarrays (1-8)                      
+LQSUB0ST= 'Off     '           / Subarray 0 Stim Pulse indicator flag           
+LQSUB1ST= 'Off     '           / Subarray 1 Stim Pulse indicator flag           
+LQSUB2ST= 'Off     '           / Subarray 2 Stim Pulse indicator flag           
+LQSUB3ST= 'Off     '           / Subarray 3 Stim Pulse indicator flag           
+LQSUB4ST= 'Off     '           / Subarray 4 Stim Pulse indicator flag           
+LQSUB5ST= 'Off     '           / Subarray 5 Stim Pulse indicator flag           
+LQSUB6ST= 'Off     '           / Subarray 6 Stim Pulse indicator flag           
+LQSUB7ST= 'Off     '           / Subarray 7 Stim Pulse indicator flag           
+LQSUB0XS=                16384 / Subarray 0 X Size                              
+LQSUB0YS=                 1024 / Subarray 0 Y Size                              
+LQSUB0XC=                    0 / Subarray 0 X Corner Coordinate                 
+LQSUB0YC=                    0 / Subarray 0 Y Corner Coordinate                 
+LQSUB1XS=                    0 / Subarray 1 X Size                              
+LQSUB1YS=                    0 / Subarray 1 Y Size                              
+LQSUB1XC=                    0 / Subarray 1 X Corner Coordinate                 
+LQSUB1YC=                    0 / Subarray 1 Y Corner Coordinate                 
+LQSUB2YS=                    0 / Subarray 2 Y Size                              
+LQSUB2XC=                    0 / Subarray 2 X Corner Coordinate                 
+LQSUB2XS=                    0 / Subarray 2 X Size                              
+LQSUB2YC=                    0 / Subarray 2 Y Corner Coordinate                 
+LQSUB3XS=                    0 / Subarray 3 X Size                              
+LQSUB3YS=                    0 / Subarray 3 Y Size                              
+LQSUB3XC=                    0 / Subarray 3 X Corner Coordinate                 
+LQSUB3YC=                    0 / Subarray 3 Y Corner Coordinate                 
+LQSUB4XS=                16384 / Subarray 4 X Size                              
+LQSUB4YS=                 1024 / Subarray 4 Y Size                              
+LQSUB4XC=                    0 / Subarray 4 X Corner Coordinate                 
+LQSUB4YC=                    0 / Subarray 4 Y Corner Coordinate                 
+LQSUB5XS=                    0 / Subarray 5 X Size                              
+LQSUB5YS=                    0 / Subarray 5 Y Size                              
+LQSUB5XC=                    0 / Subarray 5 X Corner Coordinate                 
+LQSUB5YC=                    0 / Subarray 5 Y Corner Coordinate                 
+LQSUB6XS=                    0 / Subarray 6 X Size                              
+LQSUB6YS=                    0 / Subarray 6 Y Size                              
+LQSUB6XC=                    0 / Subarray 6 X Corner Coordinate                 
+LQSUB6YC=                    0 / Subarray 6 Y Corner Coordinate                 
+LQSUB7XS=                    0 / Subarray 7 X Size                              
+LQSUB7YS=                    0 / Subarray 7 Y Size                              
+LQSUB7XC=                    0 / Subarray 7 X Corner Coordinate                 
+LQSUB7YC=                    0 / Subarray 7 Y Corner Coordinate                 
+                                                                                
+              / DOPPLER CORRECTION INFORMATION                                  
+                                                                                
+LQDOPMAG=                   64 / Number Pixels of Doppler Correction            
+LQDOPCOR= 'None    '           / Doppler Correction flag                        
+LQDOPZER=              8667558 / Commanded time of zero doppler shift           
+LQDOPPER=                 1076 / HST orbital doppler correction Period          
+                                                                                
+              / MEMORY DUMP DEFINITION                                          
+                                                                                
+LQMDSRC = 'Invalid '           / Memory Dump source 1=DCE, 2=DIB, 3=CS          
+LQMDWDS =                    0 / Number of memory words dumped                  
+LQMDADDR=                    0 / Memory Dump Start Address                      
+                                                                                
+              / ENGINEERING DIAGNOSTIC DEFINITION                               
+                                                                                
+LQDDERR = '--      '           / ED Data Error; 0=No error  1=Error             
+LQDDMODE= 'Analog  '           / ED Diagnostic Data Mode (ANALOG,DIGITAL,DERIVED
+LQDDSAMP=                    0 / ED number of samples                           
+LQDDPER =                  0.0 / ED Sample Period (in 10 msec increments)       
+LQDDREP =                    0 / ED Repeat Count                                
+LQDDIT01=                    0 / Address of ED Diagnostic Item 1                
+LQDDIT02=                    0 / Address of ED Diagnostic Item 2                
+LQDDIT03=                    0 / Address of ED Diagnostic Item 3                
+LQDDIT04=                    0 / Address of ED Diagnostic Item 4                
+LQDDIT05=                    0 / Address of ED Diagnostic Item 5                
+LQDDIT06=                    0 / Address of ED Diagnostic Item 6                
+LQDDIT07=                    0 / Address of ED Diagnostic tem 7                 
+LQDDIT08=                    0 / Address of ED Diagnostic Item 8                
+LQDDIT09=                    0 / Address of ED Diagnostic Item 9                
+LQDDIT10=                    0 / Address of ED Diagnostic Item 10               
+LQDDIT11=                    0 / Address of ED Diagnostic Item 11               
+LQDDIT12=                    0 / Address of ED Diagnostic Item 12               
+LQDDIT13=                    0 / Address of ED Diagnostic Item 13               
+LQDDIT14=                    0 / Address of ED Diagnostic Item 14               
+LQDDIT15=                    0 / Address of ED Diagnostic Item 15               
+LQDDIT16=                    0 / Address of ED Diagnostic Item 16               
+                                                                                
+              / CALIBRATION LAMP INFORMATION                                    
+                                                                                
+LQLAMPID= 'P2      '           / Current Lamp ID (0=D1, 1=D2, 2=P1, 3=P2)       
+LQPILVL = 'Medium  '           / PtNe lamp current level: lo,med,hi,NotValid(N/V
+LQDILVL = 'High    '           / Deuterium Lamp Current Level (lo,med,hi,notVld)
+LQPLAMP1= 'Off     '           / Platinum-Neon Lamp 1 Status 0=off, 1=on        
+LQPLAMP2= 'Off     '           / Platinum-Neon Lamp 2 Status 0=off, 1=on        
+LQDLAMP1= 'Off     '           / Deuterium Lamp 1 Status 0=off, 1=on            
+LQDLAMP2= 'Off     '           / Deuterium Lamp 2 Status 0=off, 1=on            
+                                                                                
+              / TDF LOG INFORMATION                                             
+                                                                                
+LQTDFINI= 'TDF Up  '           / Initial TDF State: 0=TDF down, 1=TDF up        
+LQTDFSTA= 'Ignore  '           / TDF Monitoring Status (Ignore/Look)            
+LQTDFINT=                    0 / Number of TDF Interrupts                       
+LQTDFDH =                    0 / Time of TDF Down: HST Time                     
+LQTDFDC =                    0 / Time of TDF Down: DIB Coarse Time              
+LQTDFDF =                    0 / Time of TDF Down: Fine Time                    
+                                                                                
+              / TARGET ACQUISITION INFORMATION                                  
+                                                                                
+LQTATYPE= 'Invalid           ' / Target Acquisition Type                        
+LQTASTAT= 'Success '           / Target Acquisition Status Code                 
+LQTAFLOR=                    0 / Floored Threshold                              
+LQTAERR = 'NoTAInit'           / Last Target Acq Err                            
+LQTASCAN=                    0 / Spiral Scan Size                               
+LQTAFLAG= 'Success '           / TA Global Stat Flag                            
+LQTALOCL=                    0 / TA Local Threshold                             
+LQTAUSEL= 'No '                / Use Local Thresholding(0=No, 1=Yes)            
+LQTAEMSG= 'NotInit '           / Target Acq Err Msg                             
+LQTAEPHS= 'NotInit '           / Target Acq Err Phase                           
+LQTACENT= 'Invalid '           / Centroid Indicator: 1=FLUXWT,2=FLUXFLR,3=BRIGHT
+LQTAPCNT=                    0 / Percent of max dwell level (for local threshold
+LQTADWLS=                    0 / Number of dwell points                         
+LQTADSLW=                  0.0 / Dispersion Slew                                
+LQTAXSLW=                    0 / Cross Dispersion Slew                          
+LQTADXCR=                  0.0 / Dsrd X Disp Coordin                            
+LQTADYCR=                  0.0 / Dsrd Y Coordinate                              
+LQTASTEP=                    0 / Scan step size                                 
+LQTAXCOR=                  0.0 / Average cross dispersion coordinate            
+LQTAYCOR=                  0.0 / Average Y Coordinate                           
+LQTATOTL=                    0 / Event total                                    
+LQTAMXCR=                  0.0 / Msrd X Disp Coordin                            
+LQTAMYCR=                  0.0 / Msrd Y Coordinate                              
+LQTADPOS=                    0 / Target Dispersion Position                     
+LQTAXPOS=                  0.0 / Target Cross Dispersion Position               
+LQTAXDCS=   0.000000000000E+00 / X dispersion coefficient scale                 
+LQTAXDSC=   0.000000000000E+00 / X dispersion slope coefficient                 
+LQTAXDIC=   0.000000000000E+00 / X dispersion intercept coefficient             
+LQTAFGRA= '        '           / OSM1 Grating ID                                
+LQTAFX01=                    0 / Flux at Dwell Point 1                          
+LQTAFX02=                    0 / Flux at Dwell Point 2                          
+LQTAFX03=                    0 / Flux at Dwell Point 3                          
+LQTAFX04=                    0 / Flux at Dwell Point 4                          
+LQTAFX05=                    0 / Flux at Dwell Point 5                          
+LQTAFX06=                    0 / Flux at Dwell Point 6                          
+LQTAFX07=                    0 / Flux at Dwell Point 7                          
+LQTAFX08=                    0 / Flux at Dwell Point 8                          
+LQTAFX09=                    0 / Flux at Dwell Point 9                          
+LQTAFX10=                    0 / Flux at Dwell Point 10                         
+LQTAFX11=                    0 / Flux at Dwell Point 11                         
+LQTAFX12=                    0 / Flux at Dwell Point 12                         
+LQTAFX13=                    0 / Flux at Dwell Point 13                         
+LQTAFX14=                    0 / Flux at Dwell Point 14                         
+LQTAFX15=                    0 / Flux at Dwell Point 15                         
+LQTAFX16=                    0 / Flux at Dwell Point 16                         
+LQTAFX17=                    0 / Flux at Dwell Point 17                         
+LQTAFX18=                    0 / Flux at Dwell Point 18                         
+LQTAFX19=                    0 / Flux at Dwell Point 19                         
+LQTAFX20=                    0 / Flux at Dwell Point 20                         
+LQTAFX21=                    0 / Flux at Dwell Point 21                         
+LQTAFX22=                    0 / Flux at Dwell Point 22                         
+LQTAFX23=                    0 / Flux at Dwell Point 23                         
+LQTAFX24=                    0 / Flux at Dwell Point 24                         
+LQTAFX25=                    0 / Flux at Dwell Point 25                         
+LQTAFX26=                    0 / Flux at Dwell Point 26                         
+LQTAFX27=                    0 / Flux at Dwell Point 27                         
+LQTAFX28=                    0 / Flux at Dwell Point 28                         
+LQTAFX29=                    0 / Flux at Dwell Point 29                         
+LQTAFX30=                    0 / Flux at Dwell Point 30                         
+LQTAFX31=                    0 / Flux at Dwell Point 31                         
+LQTAFX32=                    0 / Flux at Dwell Point 32                         
+LQTAFX33=                    0 / Flux at Dwell Point 33                         
+LQTAFX34=                    0 / Flux at Dwell Point 34                         
+LQTAFX35=                    0 / Flux at Dwell Point 35                         
+LQTAFX36=                    0 / Flux at Dwell Point 36                         
+LQTAFX37=                    0 / Flux at Dwell Point 37                         
+LQTAFX38=                    0 / Flux at Dwell Point 38                         
+LQTAFX39=                    0 / Flux at Dwell Point 39                         
+LQTAFX40=                    0 / Flux at Dwell Point 40                         
+LQTAFX41=                    0 / Flux at Dwell Point 41                         
+LQTAFX42=                    0 / Flux at Dwell Point 42                         
+LQTAFX43=                    0 / Flux at Dwell Point 43                         
+LQTAFX44=                    0 / Flux at Dwell Point 44                         
+LQTAFX45=                    0 / Flux at Dwell Point 45                         
+LQTAFX46=                    0 / Flux at Dwell Point 46                         
+LQTAFX47=                    0 / Flux at Dwell Point 47                         
+LQTAFX48=                    0 / Flux at Dwell Point 48                         
+LQTAFX49=                    0 / Flux at Dwell Point 49                         
+
+# HDU 2 in la7803fiq_spt.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SNAP1   '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq'          / 9 character exposure identifier                
+ASN_MTYP= '            '       / Role of the Member in the Association          
+                                                                                
+              / ENGINEERING DIAGNOSTIC SNAPSHOT 1                               
+                                                                                
+LOBSNUM =                   38 / Observation Number                             
+LCSMEM01=                    0 / CS Memory Monitor #1                           
+LCSMEM07=                  154 / CS Memory Monitor #7                           
+LNEDCOLL= 'Collect '           / Normal Engineering Data (NED) collection flag  
+LLIMCKEN= 'Limit On'           / Limits Checking Enabled flag 0=disabled,1=enabl
+LELOGWRP= 'OK      '           / Error Log wraparound flag  0=no, 1=yes         
+LBKGDMON= 'Enabled '           / background processing software enabled flag    
+LDMPSTAT= 'NoDmping'           / image or memory dump in progress flag          
+LCHKSUM = 'Done    '           / checksum being calculated by FSW flag          
+LELOGNUM=                    0 / Last error code processed by FSW               
+LIMCMDAC=                  171 / Number of immediate MAR accepted by the FSW    
+LELOGMSG=                    0 / Last error parameter processed by FSW          
+LNRCMDAC=                  127 / Number of normal MAR accepted by FSW from RIU  
+LCMDATAC=                  193 / Number of parameters accepted by FSW since init
+LIPLTHTR=              17.0315 / Interface plate heater monitor                 
+LHDRCNT =                    1 / Number of headers currently stored in EDAC RAM 
+LCMDFIFO= 'Empty   '           / RIU Command FIFO status flag (full, half, empty
+LSDFFIFO= 'Empty   '           / SDF FIFO status flag (full, half-full, empty)  
+LTIMETAG=                    1 / Time Tag image allocated flag                  
+LTCUERR = 'No Error'           / Time code Update error flag                    
+LDUMPTO = 'NoTimOut'           / DUMP timeout flag                              
+LSDRESTR= 'Invalid '           / Science Data buffer RESTORE flag               
+LMACINHB= 'OK      '           / Normal MAR processing suspended flag           
+L5VMEC  =              4.92197 / 5 volt mech dc/dc converter monitor            
+LOBAFTBT=                 25.0 / Optical Bench AFT Bulkhead Temperature         
+LIMGINSP=             16777216 / Pointer in Img Buff of next image to be inserte
+LIN3PANT=              18.3333 / Inboard v3 PANel Temp                          
+LFITBT  =              15.8333 / FITting B Temp                                 
+LCSMEM02=                 1033 / CS memory monitor #2                           
+LCSMEM03=                  262 / CS memory monitor #3                           
+LCSMEM04=                    0 / CS memory monitor #4                           
+LCSMEM05=                 3760 / CS memory monitor #5                           
+LCSMEM06=                  420 / CS memory monitor #6                           
+LCSMEM08=                    0 / CS memory monitor #8                           
+LCSMEM09=                  151 / CS memory monitor #9                           
+LCSMEM10=                    0 / CS memory monitor #10                          
+LCSMEM11=                   30 / CS memory monitor #11                          
+LCSMEM12=                    0 / CS memory monitor #12                          
+LDMPWAIT=                 1031 / Time allowed to complete a dump before timeout 
+LIMCMDPC=                  171 / Number of immediate MAR processed by FSW       
+LNUMLINE=                 9781 / Number of SDF lines of img data stored in memor
+LNRMQUE =                    0 / Number of entries in Normal MAR queue          
+LIMGCNT =                    1 / Number of images currently stored in CS memory 
+LDETHTR =              15.1565 / DETector HeaTer monitor                        
+LERRCNT =                    0 / Number of errors sent to the NSSC-I by the FSW 
+LELOGIND=                    0 / Index into the internal FSW error log          
+LBUSWAIT= 'No Wait '           / BUS Wait status flag 0=disbled, 1=enabled      
+LDOGTIME= 'Dog On  '           / Watchdog timer reset hardware enable flag      
+LINPCLK = 'Clock On'           / Clock input to 82380 chip enabled flag         
+LTIMGAT0= '1       '           / Gate to external timer 0 enable flag           
+LTIMGAT1= '0       '           / Gate to external timer 1 enable flag           
+LTIMGAT2= '1       '           / Gate to external timer 2 enable flag           
+LDERDIAG= 'NoColect'           / Derived Diagnostic in progress flag            
+LALGDIAG= 'NoColect'           / Analog Diagnostic in progress flag             
+LDIGDIAG= 'NoColect'           / Digital Diagnostic in progress flag            
+LFITAT  =              19.1667 / FITting A Temp                                 
+LMAJFCNT=                22234 / Major Frame count                              
+LHC15VB =              15.3127 / +15 volts from Thermal Control power converter 
+LLASTNRM=                  532 / Number of last normal MAR command processed    
+LNRCMDPC=                  126 / Number of normal MAR processed by the FSW      
+LLSTCKSM=                21068 / Last checksum or CRC computed by the FSW       
+LDATQUE =                    0 / Number of entries in the parameter data queue  
+LMINFCNT=                  109 / Minor frame count                              
+LLOOPCNT=                    0 / Loop counter (to show that a function is runnin
+LLASTIMM=                   22 / Number of last immediate MAR command processed 
+LSESDATA= 'Empty   '           / SES A/D data FIFO empty flag                   
+LSESEMPT= 'Empty   '           / SES A/D address FIFO empty flag                
+LSESFULL= 'NotFull '           / SES A/D address FIFO full flag                 
+LSESINT = 'Empty   '           / SES hardware data interrupt flag               
+L15VOP  =               14.844 / 15 volt operate converter monitor              
+L15VMEC =              15.0002 / 15 volt monitor for the mech power converter   
+LFITCT  =              11.4286 / FITting C Temp                                 
+LCST    =              30.7143 / CS Board Temp                                  
+L5VOP   =              5.43553 / 5 volt operate converter monitor               
+LO3FPANT=                  7.5 / Out v3 For PANel Temperature                   
+LIMGEXTP=             16777216 / Pointer to image buffer of next image to extrac
+LIN2PANT=              19.1667 / INboard v2 PANel Tmp                           
+LO2APANT=                8.125 / Out v2 Aft PANel Temperature                   
+LNUVFBT =              19.2857 / NUV Front Blkhd Temperature                    
+LHC15VA =              15.3127 / +15 volts from Thermal Control power converter 
+LCALCVRT=              11.6667 / CALib CoVeR Temp                               
+LM15VOP =                -15.0 / -15V OPer mode reg                             
+LOBFWDBT=              24.1667 / Optical Bench FWD Bulkhead Temperature         
+LLVPGND1=                  127 / LVPs GrouND                                    
+LSES1GND=                  127 / SES1 GrND power                                
+LDCDRILM=              235.538 / Auxiliary current limit setting                
+LMCOMTSK= 'Active  '           / Mce COMm TaSK active                           
+LRSTFAIL= '---     '           / mce forced RSeT FAIL                           
+LMINITTO= 'OK      '           / Mce INIT TimeOut                               
+LSESADCS= 'Success '           / SES A/D Collctn Stat                           
+LEXPOTIM=                300.0 / commanded EXPOsure TIMe                        
+LBANKNUM=                    0 / memory mon BANK NUM                            
+LMCMDAC =                   33 / Mce CoMmanDs ACcpted                           
+LWAIT   = 'NoWait  '           / Wait in progress                               
+LTIMECOD= 'NtInProg'           / TIME CODe update flag                          
+LTDF    = 'TDFUp   '           / Take Data Flag                                 
+LTDFRESP= 'Disabled'           / Take Data Flag RESPonse                        
+LSLEWCON=                    0 / SLEW CONfirmation                              
+LTESTRES= 'Passed  '           / selfTEST RESult                                
+LSLFTEST= 'NoTest  '           / Self Test in progress                          
+LLASTDIB= 'StartExp'           / LAST DIB command processed                     
+LIMGDMPD=                    1 / IMaGes DuMPeD                                  
+LEXPOSTA= 'ExposTTg'           / EXPOsure STAtus                                
+LUPSETCT=                    0 / mce ser i/f UPSET CT                           
+LNULLIMG=                    0 / NULL IMaGe counter                             
+LMCMDREJ=                   45 / Mce CoMmanDs REJcted                           
+LCSPAGE = 'Enabled '           / CS PAGE                                        
+LSHPOS  = 'Closed  '           / External Shutter position                      
+                                                                                
+LCSOPVER=                 1033 / Control Section Operate flight s/w version numb
+LSHUTRAW= 'Closed  '           / External shutter raw position read switch state
+LSHUTRLY= 'ThisMEB '           / External shutter sensor relays (MEB switches)  
+LSHPENAB= 'Enabled '           / External shutter primary motor enable readback 
+LSHPSTAT= 'PosValid'           / External shutter primary mechanism status      
+LSHBSTAT= 'Initlzd '           / External shutter backup mechanism status       
+LFULLSET= 'Yes     '           / Active FULL setup indicator                    
+LSHBSPD =                19.53 / External shutter backup motor speed            
+LSHBHOLD=                  4.0 / External shutter backup motor commanded holdoff
+LNUMSUBS= '0_OrFull'           / Number of subarrays currently defined          
+LSHBMVNG= 'NotMovng'           / External shutter backup motor moving status bit
+LDETSET = 'FUV     '           / Active Detector setup indicator                
+LBKMSTCK= 'Enabled '           / Background monitoring stack check flag         
+LBKMNCRC= 'Enabled '           / Background monitoring CRC check flag           
+LANCLDIR= 'Forward '           / Ancillary Stepper Motor Direction readback bit 
+LANCLSEL= 'Nothing '           / Ancillary Motor Select readback bit            
+LANCLHLD=                   32 / Ancillary Motor Holdoff Duration setting       
+LANCLSPD= '52.08   '           / Ancillary Motor Speed selection readback bit   
+LTAPHASE= '--      '           / Last phase(current phase) of target acquisition
+LTAGDUMP=         -5.72205E-06 / Time Tag Dump pointer                          
+LTADWNUM=                    0 / Current Target ACQ Dwell point number          
+LTADWCNT=                    0 / Target ACQ dwell count                         
+LTAGFILL=          0.000127792 / Time Tag Fill pointer                          
+                                                                                
+                                                                                
+              / FUV DETECTOR ITEMS                                              
+                                                                                
+LDCEDECA=                 15.0 / DCE Digitized Event counter A                  
+LDCEDECB=                 29.0 / DCE Digitized Event counter B                  
+LDCEFECA=                 16.0 / DCE Fast Event Counter A                       
+LDCEFECB=                 29.0 / DCE Fast Event Counter B                       
+LDCETIME=   1.332218000000E+06 / DCE Timer                                      
+LDCEOPER= 'Oper    '           / DCE boot=0 OPER=1                              
+LDCEFSWV=               1044.0 / DCE Flight Software Version                    
+LDCEWDOG= 'Enabled '           / DCE WatchDOG enabled                           
+LDCEDIGA=              4.45307 / DCE DIGitizer volts reference A                
+LDCEDIGB=              4.45307 / DCE DIGitizer volts reference B                
+LDCESTMA= 'Low     '           / DCE record of STIM setting to digitizer A      
+LDCESTMB= 'Low     '           / DCE record of STIM setting to digitizer B      
+LDCFHVAN=                  8.0 / DCe FHV stat ANalog                            
+LDCIMONA=              32.8132 / DCE HV current A                               
+LDCIMONB=              28.1256 / DCE HV current B                               
+LDCHVMNA=             -4956.24 / DCE HV output voltage monitor A                
+LDCHVMNB=             -4930.56 / DCE HV output voltage monitor B                
+LDCEQANA=                 42.0 / DCE QHVA status analog                         
+LDCEQANB=                 42.0 / DCE QHVB status analog                         
+LDCSTATE= 'NomAB   '           / DCE HV State (Off,NomA,NomB,Nom,Low,Und,Set,On)
+LDCEILIM=              150.003 / DCE HV current limit setting                   
+LDCHVPWR= 'On      '           / DCE HVPS power status bit                      
+LDCEQPWR= 'On      '           / DCE HV grid power status bit                   
+LDCCRPCA=   6.000000000000E+04 / DCe Count Rate Protection Counts threshold A   
+LDCCRPCB=   6.000000000000E+04 / DCe Count Rate Protection Counts threshold B   
+LDCCRPIA=                 10.0 / DCe Count Rate Protection Initialize time A    
+LDCCRPIB=                 10.0 / DCe Count Rate Protection Initialize time B    
+LDCEAUXI=              44.3577 / DCE Auxiliary power supply current             
+LDCEACTT=              25.2871 / DCE ACTuator Temp                              
+LDCAMPAT=              26.3964 / DCe AMP A Temperature                          
+LDCAMPBT=              25.6596 / DCe AMP B Temperature                          
+LDCETEMP=              26.7611 / DCE TEMPerature                                
+LDCDVAAT=              24.9119 / DCE Det Vacuum Assy A temperature              
+LDCDVABT=              25.6596 / DCE Det Vacuum Assy B temperature              
+LDCHVFMT=              26.3964 / DCe HVFM Temperature                           
+LDCHVPST=              27.1234 / DCe HVPS Temperature                           
+LDCIPT  =              24.9119 / DCe Ion Pump Temperature                       
+LDCLVPCT=               32.697 / DCe LVPC Temperature                           
+LDCTDCAT=              29.6037 / DCe TDC A Temperature                          
+LDCTDCBT=              31.3308 / DCe TDC B Temperature                          
+LDCP15TA=              14.8584 / DCE +15v TDC A                                 
+LDCM15TA=             -15.2242 / DCE -15v TDC A                                 
+LDCP5TA =              4.97147 / DCE +5v  TDC A                                 
+LDCM5TA =             -5.29375 / DCE -5v  TDC A                                 
+LDCP15TB=              14.9568 / DCE +15v TDC B                                 
+LDCM15TB=             -15.2242 / DCE -15v TDC B                                 
+LDCP5TB =              4.99596 / DCE +5v  TDC B                                 
+LDCM5TB =             -5.29375 / DCE -5v  TDC B                                 
+LDCP15D =              15.2205 / DCE +15v DCE                                   
+LDCM15D =             -15.2205 / DCE -15v DCE                                   
+LDCP5DA =              5.02045 / DCE +5v DCE A                                  
+LDCP5DB =              4.99596 / DCE +5v DCE B                                  
+LDCP5DC =              4.97147 / DCE +5v DCE C                                  
+LDCLVPCP=               51.359 / DCe LVPC Power                                 
+LDCESDC1=                 44.0 / DCE Science Data Port Counter 1                
+LDCESDC2=                 44.0 / DCE Science Data Port Counter 2                
+                                                                                
+LDCEPKTC=   1.332838000000E+06 / DCE PacKeT Counter                             
+LDCECMDX=                188.0 / DCE Commands executed counter                  
+LDCELSTC=                158.0 / DCE LaST Command Opcode executed               
+LDCERMPB= 'NotInPrg'           / DCE high voltage ramp in progress, segment B   
+LDCERMPA= 'NotInPrg'           / DCE high voltage ramp in progress, segment A   
+LDCECMDR=                188.0 / DCE Commands received counter                  
+LDCECRC =                  0.0 / DCE CRC transfer memory (UL/DL or calc result) 
+LDCERMPT=                 10.0 / DCE hv RaMP Time                               
+LDCECOMM= 'On      '           / DCE cs COMM tsk stat                           
+LDCEHVEN= 'Enable  '           / DCE HVPS SW enable status                      
+                                                                                
+LDPWRSTA= 'On      '           / Dce cs PoWeR STAtus                            
+LDCDUPQA=              86.0028 / DCE TDC Upper Charge Threshold A               
+LDCDUPQB=              86.0028 / DCE TDC Upper Charge Threshold B               
+LDCDLOQA=             0.377915 / DCE TDC Lower Charge Threshold A               
+LDCDLOQB=             0.338076 / DCE TDC Lower Charge Threshold B               
+LDCDTTAX=              197.776 / DCE TDC Timing Threshold AX                    
+LDCDTTBX=              206.665 / DCE TDC Timing Threshold BX                    
+LDCDTTAY=              205.553 / DCE TDC Timing Threshold AY                    
+LDCDTTBY=              205.553 / DCE TDC Timing Threshold BY                    
+LDCHVSTA=             -4916.26 / DCE High Voltage Command Level A               
+LDCHVSTB=              -4853.5 / DCE High Voltage Command Level B               
+LDCHVNMA=             -4916.26 / DCE HV Nominal Setting A                       
+LDCHVNMB=             -4869.19 / DCE HV Nominal Setting B                       
+LDCHVTGA=             -4916.26 / DCE HV Target Level A                          
+LDCHVTGB=             -4869.19 / DCE HV Target Level B                          
+LDCHVLOA=              -4069.0 / DCE HV Level for HVLOW Segment A               
+LDCHVLOB=              -4069.0 / DCE HV Level for HVLOW Segment B               
+LDCHVMXA=             -5277.13 / DCE HV Command Level Maximum A                 
+LDCHVMXB=             -5230.06 / DCE HV Command Level Maximum B                 
+LDCDBWAX=               99.999 / DCE TDC Begin Walk Adjust AX                   
+LDCDBWBX=              98.8879 / DCE TDC Begin Walk Adjust BX                   
+LDCDEWAX=              96.6657 / DCE TDC End Walk Adjust AX                     
+LDCDEWBX=              98.8879 / DCE TDC End Walk Adjust BX                     
+LDCDBWAY=              94.4435 / DCE TDC Begin Walk Adjust AY                   
+LDCDBWBY=              94.4435 / DCE TDC Begin Walk Adjust BY                   
+LDCDEWAY=              94.4435 / DCE TDC End Walk Adjust AY                     
+LDCDEWBY=              94.4435 / DCE TDC End Walk Adjust BY                     
+LDCDSHAX=              235.553 / DCE TDC Image Shift AX                         
+LDCDSHBX=              129.999 / DCE TDC Image Shift BX                         
+LDCDSHAY=              177.776 / DCE TDC Image Shift AY                         
+LDCDSHBY=              139.999 / DCE TDC Image Shift BY                         
+LDCDSTAX=              34.4441 / DCE TDC Image Stretch AX                       
+LDCDSTBX=              64.4438 / DCE TDC Image Stretch BX                       
+LDCDSTAY=              126.665 / DCE TDC Image Stretch AY                       
+LDCDSTBY=              56.6661 / DCE TDC Image Stretch BY                       
+LDCINHIB= 'OK      '           / DCE-FUV Inhibit mode flag                      
+LDCSHKFL= 'OK      '           / DCE Saved Housekeeping Buffer Flag             
+LDCSHKID=                    0 / DCE Saved Housekeeping Buffer Index            
+LDCRMDIR= 'OFF     '           / DCE-FUV Detector Door Motor Direction          
+LDCRMPWR= 'OFF     '           / DCE-FUV Detector Door Motor Power Status       
+LDCRDPOS=                    0 / DCE-FUV Detector Door Position Analog          
+LDCRMENA= 'DISABLED'           / DCE-FUV Detector Door Motor Enable Status      
+LDCRDCLS= 'NOTCLOSD'           / DCE-FUV Detector Door CLOSE Status             
+LDCRDOPN= 'NOT OPEN'           / DCE-FUV Detector Door Motor Power Status       
+LDCRDLAT= 'UNLATCHD'           / DCE-FUV Detector Door Latch Status             
+LDCRAXPR= 'OFF     '           / DCE-FUV Detector Auxillary Power Status        
+LDCRAENA= 'DISABLED'           / DCE-FUV Detector Door Actuator Enable Status   
+LDCRACT1= 'OFF     '           / DCE-FUV Detector Door Actuator Winding #1 Power
+LDCRACT2= 'OFF     '           / DCE-FUV Detector Door Actuator Winding #2 Power
+LDCRDTMR=                    0 / DCE-FUV Detector Door Task Countdown Timer     
+                                                                                
+                                                                                
+              / MAMA SUBSYSTEM TELEMETRY ITEMS                                  
+                                                                                
+LMEVENTS=                  0.0 / MAMA event counter                             
+LMMCPV  =             -1753.65 / Mama MCP Voltage                               
+LMPCVOLT=              19.7537 / MAMA PC voltage                                
+LMROWCFG=                   31 / Mama ROW decode CnFG                           
+LMCOLCFG=                   31 / Mama COL decode CnFG                           
+LMCHAMPT=              27.4605 / Mama CHarge AMPlif T                           
+LMDECODT=              28.6815 / Mama DECODe pwb Tmp                            
+LMP5V   =              5.23077 / Mama +5V voltage                               
+LMP5VI  =              0.46569 / Mama +5V I                                     
+LMGLBEXC= 'OK      '           / Mama GLoB thrs EXCdd                           
+LMGLBERR= 'No Error'           / Mama GLoBal event ERR                          
+LMCHKSUM= 'OK      '           / Mama mce CHecKSuM                              
+LMRAMTST= 'OK      '           / Mama mce RAM TeST                              
+LMINEVER= 'NoError '           / Mama INteg EVent ERr                           
+LMDOGRST= 'OK      '           / Mama DOG timer ReSeT                           
+LMHVSOFF= 'On      '           / Mama HV Supply OFF                             
+LMSTBY  = 'Operate '           / Mama STandBY mode                              
+LMBSDOVR= 'NoOverrd'           / Mama BSD OVeRride dis                          
+LMDCDDIS= 'Enable  '           / Mama DeCoDe asic DISab                         
+LMHVENAB= 'Disable '           / Mama High Voltag ENAB                          
+LMHIVON = 'HVOn    '           / Mama HIgh Voltage ON                           
+LMBSDET = 'OK      '           / Mama Bright Scene DET                          
+LMMCPI  =              40.1954 / Mama MCP I                                     
+LMTHRSV =             0.483516 / Mama THReShold Volt                            
+LMHIBIAS=              140.317 / Mama HIgh BIAS volt                            
+LMLOBIAS=              138.706 / Mama LOw BIAS voltag                           
+LMGLBMON= 'GloblAct'           / Mama GLoBal MON stat                           
+LMEVTYPE= 'ORCounts'           / Mama EVent TYPE                                
+LMGLEVIP=              99.9357 / Mama GLob EVnt InPer                           
+LMGLBTHR=              77000.0 / Mama GLoBal THResh                             
+LMP15V  =              15.8877 / Mama +15V voltage                              
+LMP15VI =            0.0291575 / Mama +15V I                                    
+LMM15V  =             -15.8291 / Mama -15V Voltage                              
+LMM15VI =            0.0718926 / Mama -15V Current                              
+LMMCETMP=              24.7743 / Mama MCE TeMP                                  
+LMLVPST =              30.8793 / Mama LVPS pwb Temp                             
+LPCCMDD =                 20.0 / mama PC volt CMDD                              
+LTHRCMDD=              0.48022 / mama THRshold v CMDD                           
+LMP8AMPV=              8.00733 / Mama +8V AMPlif Volt                           
+LMP8AMPI=             0.741148 / Mama +8v AMPlifier I                           
+LMCPLIM =             -1745.46 / Mama MCP LIMit cmded                           
+LMCPCMDD=             -1749.91 / Mama MCP volt CMDeD                            
+LMHVPST =              32.1003 / Mama HVPS pwb Temp                             
+LMP8VREF=              8.01221 / Mama +8V REF voltage                           
+LMP5DISC=              5.00611 / Mama+5v DISCrim volt                           
+LMP5VDI =             0.273993 / Mama +5V Discrim I                             
+LMM2DISC=             -2.00244 / Mama-2V DISCrim volt                           
+LMM2VDI =             0.420513 / Mama -2V Discrim I                             
+LMCIMCER= 'OK      '           / Mama Cmd Inhb MCE Rset                         
+LMCIHVOF= 'OK      '           / Mama Cmd Inhb Hi V OFf                         
+LMSLOSUS= '---     '           / Mama SLOw SUSpd init                           
+LMPWRSTA= 'On      '           / Mama cs PoWeR STAtus                           
+                                                                                
+              / APERTURE RELATED ITEMS                                          
+                                                                                
+LAPXMTRT=              24.2857 / Aperture cross-dispersion dir. motor temperatur
+LAPDMTRT=              23.5714 / Aperture dispersion direction motor temperature
+LAPXSTAT= 'PosValid'           / Aperture cross-dispersion mechanism status     
+LAPDSTAT= 'PosValid'           / Aperture dispersion direction mechanism SW stat
+LAPXSTP =                147.1 / Aperture cross-dispersion dir. SW step position
+LAPDSTP =                 -9.1 / Aperture dispersion direction SW step position 
+LAPDINHB= '0       '           / Dispersion Aperture power inhibit bits         
+LAPDPHSB=                    0 / Disp Aperture motor winding B last phase value 
+LAPDPHSA=                    0 / Disp Aperture motor winding A last phase value 
+LAPXPHSB=                    1 / X-Disp Aperture motor winding B last phase valu
+LAPXPHSA=                    0 / X-Disp Aperture motor winding A last phase valu
+LAPXSPD =                52.08 / Aperture cross-dispersion dir. commanded speed 
+LAPXHOLD=                 32.0 / Aperture cross-dispersion dir. commanded holdof
+LAPDMTRI= '100%    '           / Aperture dispersion direction motor current    
+LAPDOVRD= 'NoOvrrid'           / Aperture dispersion direction mechanism overrid
+LAPXOVRD= 'NoOvrrid'           / Aperture cross-dispersion dir. mechanism overri
+LAPDMVNG= 'NotMovng'           / Aperture dispersion dir. motor moving status bi
+LAPXMVNG= 'NotMovng'           / Aperture cross-dispersion motor moving status b
+LAPXRLAY= 'Closed  '           / X-Disp Aperture motor relay closed readback bit
+LAPDRLAY= 'Closed  '           / Disp Aperture motor relay closed readback bit  
+LAPXINHB= '0       '           / Cross-Dispersion Aperture power inhibit bits   
+LAPMPOS = 'PSA-FUVB'           / Aperture mechanism position                    
+LAPXMTRI= '100%    '           / Aperture cross-dispersion direction motor curre
+LAPDSPD =                52.08 / Aperture dispersion direction commanded speed  
+LAPDHOLD=                 32.0 / Aperture dispersion direction commanded holdoff
+LAPDOVHT= 'NoOvrht '           / Aperture dispersion direction mechanism overhea
+LAPXOVHT= 'NoOvrht '           / Aperture cross-dispersion dir. mechanism overhe
+LAPXLVDT=                 2882 / Aperture cross-disp. LVDT, raw resolver positio
+LAPDLVDT=                 1883 / Aperture dispersion LVDT, raw resolver position
+                                                                                
+              / OPTICS SELECT MECHANISM ITEMS                                   
+                                                                                
+LOM1MTRT=              24.2857 / OSM1 motor temperature                         
+LOM2MTRT=                 25.0 / OSM2 motor temperature                         
+LOMFMTRT=              24.2857 / OSM1 Focus motor temperature                   
+LOM1STAT= 'PosValid'           / OSM1 mechanism status                          
+LOM2STAT= 'PosValid'           / OSM2 mechanism status                          
+LOMFLVDT=                 2185 / OSM1 Focus motor LVDT                          
+LOMFSTAT= 'PosValid'           / OSM1 Focus mechanism status                    
+LOM1POSC=                 2213 / OSM1 resolver coarse position                  
+LOM2POSC=                12835 / OSM2 resolver coarse position                  
+LOM1POSF=                  176 / OSM1 resolver fine position                    
+LOM2POSF=                  183 / OSM2 resolver fine position                    
+LOM1STP =               7991.1 / OSM1 motor SW step position                    
+LOM2STP =               1284.1 / OSM2 motor step position                       
+LOMFSTP =                320.1 / OSM1 Focus motor step position                 
+LOMFPHSB=                    1 / OSM1 Focus motor winding B last phase value    
+LOMFPHSA=                    0 / OSM1 Focus motor winding A last phase value    
+LOSMLAMB=                 1309 / OSM Grating central wavelength                 
+LOSMOFST= '                   0' / OSM Absolute move offset parameter           
+LOSMDIR = 'Forward '           / OSM Stepper motor direction bit                
+LOSMSPED= '78.12   '           / OSM motor speed selection readback bits        
+LOSMHOLD= '32      '           / OSM motor holdoff duration setting readback    
+LOSMSEL = 'None    '           / OSM motor select readback bits                 
+LOSM1POS= 'G130M   '           / OSM mechanism position                         
+LOSM2POS= 'G185M   '           / OSM mechanism position                         
+LOM1MVNG= 'NotMovng'           / OSM1 mechanism moving status bit               
+LOM2MVNG= 'NotMovng'           / OSM2 mechanism moving status bit               
+LOM2PHSB=                    1 / OSM2 motor winding B last phase value          
+LOM2PHSA=                    1 / OSM2 motor winding A last phase value          
+LOM1PHSB=                    1 / OSM1 motor winding B last phase value          
+LOM1PHSA=                    0 / OSM1 motor winding A last phase value          
+LOM2INHC= 'Allowed '           / OSM2 course resolver inhibit readback bit      
+LOM2INHF= 'Allowed '           / OSM2 fine resolver inhibit readback bit        
+LOM1INHC= 'Allowed '           / OSM1 course resolver inhibit readback bit      
+LOM1INHF= 'Allowed '           / OSM1 fine resolver inhibit readback bit        
+LOM1RLY = 'Closed  '           / OSM1 motor relay closed readback bit           
+LOM2RLY = 'Closed  '           / OSM2 motor relay closed readback bit           
+LOMFRLAY= 'Closed  '           / OSM1 focus motor relay closed readback bit     
+LOMFMVNG= 'NotMovng'           / OSM1 Focus mechanism moving status bit         
+LOM1OVRD= 'NoOvrrid'           / OSM1 mechanism override                        
+LOM2OVRD= 'NoOvrrid'           / OSM2 mechanism override                        
+LOMFOVRD= 'NoOvrrid'           / OSM1 Focus mechanism override                  
+LOM1SPD =                78.12 / OSM1 commanded speed                           
+LOM2SPD =                78.12 / OSM2 commanded speed                           
+LOMFSPD =                52.08 / OSM1 Focus commanded speed                     
+LOM1HOLD=                 32.0 / OSM1 commanded holdoff                         
+LOM2HOLD=                 32.0 / OSM2 commanded holdoff                         
+LOMFHOLD=                 32.0 / OSM1 Focus commanded holdoff                   
+LOM1INHB= 'Inhibitd'           / OSM1 motor inhibit                             
+LOM2INHB= 'Inhibitd'           / OSM2 motor inhibit                             
+LOMFINHB= 'Inhibitd'           / OSM1 Focus motor inhibit                       
+LOM1OVHT= 'NoOvrht '           / OSM1 mechanism overheat                        
+LOM2OVHT= 'NoOvrht '           / OSM2 mechanism overheat                        
+LOMFOVHT= 'NoOvrht '           / OSM1 Focus mechanism overheat                  
+                                                                                
+              / CALIBRATION LAMP ITEMS                                          
+                                                                                
+LPNLMP1I=            -0.156126 / Pt/Ne Lamp 1 current monitor                   
+LPNLMP2I=            -0.156126 / Pt/Ne Lamp 2 current monitor                   
+LD2LMP1T=              11.6667 / D2 LaMP 1 Temp                                 
+LD2LMP2T=                 12.5 / Deuterium lamp secondary Temp                  
+LD2LMP1I=            -0.156126 / Deuterium 2 Lamp 1 current monitor             
+LD2LMP2I=            -0.156126 / Deuterium 2 Lamp 2 current monitor             
+LPNLMP1T=              11.6667 / PtNe LaMP 1 Temperature                        
+LPNLMP2T=              11.6667 / PtNe LaMP 2 Temperature                        
+LCLGND1 =                  128 / Cal Lamp  GND 1                                
+LCL30V  =              29.5303 / Cal Lamp +30 V                                 
+LCL30VI =             0.103684 / +30 volt Cal Lamp current monitor              
+LD2ILVL = 'High    '           / Deuterium lamps current setting                
+LPNILVL = 'Medium  '           / Platinum-neon lamps current setting            
+LD2ENA1 = 'Disabled'           / Deuterium lamp 1 enable bit                    
+LD2ENA2 = 'Disabled'           / Deuterium lamp 2 enable bit                    
+LPNENA1 = 'Disabled'           / Platinum-neon lamp 1 enable bit                
+LPNENA2 = 'Disabled'           / Platinum-neon lamp 2 enable bit                
+LCLCRLAY= 'MEB1    '           / Cal lamp relay position                        
+                                                                                
+              / DIB ITEMS                                                       
+                                                                                
+LDIBT   =                 30.0 / DIB Board Temperature                          
+LDIBCTIM=               774191 / Coarse TIMe                                    
+LDLSTERR= 'OK      '           / Dib LaST ERRor                                 
+LDIBERRC=                    0 / DIB ERRor Counter                              
+LDIBCNTR=                    0 / DIB reset CouNTeR                              
+LDIBRSET=                   63 / DIB reason for ReSET                           
+LDICMDAC=                  186 / DIb CoMmanDs Accepted                          
+LDICMDPC=                   91 / DIb CoMmanDs ProCessed                         
+LDIBEXPO= 'ExpActiv'           / DIB EXPOsure in progress                       
+LDMATO  = 'OK      '           / dib DMA TimeOut                                
+LDIBWAIT= 'NoWait  '           / DIB WAIT state                                 
+LDIBINIT= 'InitComp'           / DIB INITialize stat                            
+LDBUSERR=                    0 / Dib BUS ERRor count                            
+LDLOCEXC= 'OK      '           / Dib LOCal thr EXCdd                            
+LDEVTERR= 'OK      '           / Dib EVnT check ERRor                           
+LDOVRFLW= 'OK      '           / Dib scidata OVeRFLoW                           
+LDIBTLM = 'Enabled '           / DIB TeLeMtry enabled                           
+LDIBPAGE= 'Enabled '           / DIB PAGing status                              
+LDEVTCHK= 'NotInPrg'           / Dib EVnT CHK in prog                           
+LDIBMODE= 'OperExpo'           / DIB fsw MODE                                   
+
+# HDU 3 in la7803fiq_spt.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SNAP2   '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq'          / 9 character exposure identifier                
+ASN_MTYP= '            '       / Role of the Member in the Association          
+                                                                                
+              / ENGINEERING DIAGNOSTIC SNAPSHOT 2                               
+                                                                                
+LOBSNUM =                   38 / Observation Number                             
+LCSMEM01=                    0 / CS Memory Monitor #1                           
+LCSMEM07=                  154 / CS Memory Monitor #7                           
+LNEDCOLL= 'Collect '           / Normal Engineering Data (NED) collection flag  
+LLIMCKEN= 'Limit On'           / Limits Checking Enabled flag 0=disabled,1=enabl
+LELOGWRP= 'OK      '           / Error Log wraparound flag  0=no, 1=yes         
+LBKGDMON= 'Enabled '           / background processing software enabled flag    
+LDMPSTAT= 'NoDmping'           / image or memory dump in progress flag          
+LCHKSUM = 'Done    '           / checksum being calculated by FSW flag          
+LELOGNUM=                    0 / Last error code processed by FSW               
+LIMCMDAC=                  171 / Number of immediate MAR accepted by the FSW    
+LELOGMSG=                    0 / Last error parameter processed by FSW          
+LNRCMDAC=                  127 / Number of normal MAR accepted by FSW from RIU  
+LCMDATAC=                  193 / Number of parameters accepted by FSW since init
+LIPLTHTR=              17.0315 / Interface plate heater monitor                 
+LHDRCNT =                    1 / Number of headers currently stored in EDAC RAM 
+LCMDFIFO= 'Empty   '           / RIU Command FIFO status flag (full, half, empty
+LSDFFIFO= 'Empty   '           / SDF FIFO status flag (full, half-full, empty)  
+LTIMETAG=                    1 / Time Tag image allocated flag                  
+LTCUERR = 'No Error'           / Time code Update error flag                    
+LDUMPTO = 'NoTimOut'           / DUMP timeout flag                              
+LSDRESTR= 'Invalid '           / Science Data buffer RESTORE flag               
+LMACINHB= 'OK      '           / Normal MAR processing suspended flag           
+L5VMEC  =              4.92197 / 5 volt mech dc/dc converter monitor            
+LOBAFTBT=                 25.0 / Optical Bench AFT Bulkhead Temperature         
+LIMGINSP=             16777216 / Pointer in Img Buff of next image to be inserte
+LIN3PANT=              18.3333 / Inboard v3 PANel Temp                          
+LFITBT  =              15.8333 / FITting B Temp                                 
+LCSMEM02=                 1033 / CS memory monitor #2                           
+LCSMEM03=                  262 / CS memory monitor #3                           
+LCSMEM04=                    0 / CS memory monitor #4                           
+LCSMEM05=                 3760 / CS memory monitor #5                           
+LCSMEM06=                  420 / CS memory monitor #6                           
+LCSMEM08=                    0 / CS memory monitor #8                           
+LCSMEM09=                  151 / CS memory monitor #9                           
+LCSMEM10=                    0 / CS memory monitor #10                          
+LCSMEM11=                   30 / CS memory monitor #11                          
+LCSMEM12=                    0 / CS memory monitor #12                          
+LDMPWAIT=                 1031 / Time allowed to complete a dump before timeout 
+LIMCMDPC=                  171 / Number of immediate MAR processed by FSW       
+LNUMLINE=                 9781 / Number of SDF lines of img data stored in memor
+LNRMQUE =                    0 / Number of entries in Normal MAR queue          
+LIMGCNT =                    1 / Number of images currently stored in CS memory 
+LDETHTR =              15.1565 / DETector HeaTer monitor                        
+LERRCNT =                    0 / Number of errors sent to the NSSC-I by the FSW 
+LELOGIND=                    0 / Index into the internal FSW error log          
+LBUSWAIT= 'No Wait '           / BUS Wait status flag 0=disbled, 1=enabled      
+LDOGTIME= 'Dog On  '           / Watchdog timer reset hardware enable flag      
+LINPCLK = 'Clock On'           / Clock input to 82380 chip enabled flag         
+LTIMGAT0= '1       '           / Gate to external timer 0 enable flag           
+LTIMGAT1= '0       '           / Gate to external timer 1 enable flag           
+LTIMGAT2= '1       '           / Gate to external timer 2 enable flag           
+LDERDIAG= 'NoColect'           / Derived Diagnostic in progress flag            
+LALGDIAG= 'NoColect'           / Analog Diagnostic in progress flag             
+LDIGDIAG= 'NoColect'           / Digital Diagnostic in progress flag            
+LFITAT  =              19.1667 / FITting A Temp                                 
+LMAJFCNT=                22239 / Major Frame count                              
+LHC15VB =              15.3127 / +15 volts from Thermal Control power converter 
+LLASTNRM=                  250 / Number of last normal MAR command processed    
+LNRCMDPC=                  127 / Number of normal MAR processed by the FSW      
+LLSTCKSM=                21068 / Last checksum or CRC computed by the FSW       
+LDATQUE =                    0 / Number of entries in the parameter data queue  
+LMINFCNT=                  109 / Minor frame count                              
+LLOOPCNT=                    0 / Loop counter (to show that a function is runnin
+LLASTIMM=                   22 / Number of last immediate MAR command processed 
+LSESDATA= 'Empty   '           / SES A/D data FIFO empty flag                   
+LSESEMPT= 'Empty   '           / SES A/D address FIFO empty flag                
+LSESFULL= 'NotFull '           / SES A/D address FIFO full flag                 
+LSESINT = 'Empty   '           / SES hardware data interrupt flag               
+L15VOP  =               14.844 / 15 volt operate converter monitor              
+L15VMEC =              15.0002 / 15 volt monitor for the mech power converter   
+LFITCT  =              11.4286 / FITting C Temp                                 
+LCST    =              30.7143 / CS Board Temp                                  
+L5VOP   =              5.43553 / 5 volt operate converter monitor               
+LO3FPANT=                  7.5 / Out v3 For PANel Temperature                   
+LIMGEXTP=             16777216 / Pointer to image buffer of next image to extrac
+LIN2PANT=              19.1667 / INboard v2 PANel Tmp                           
+LO2APANT=                8.125 / Out v2 Aft PANel Temperature                   
+LNUVFBT =              19.2857 / NUV Front Blkhd Temperature                    
+LHC15VA =              15.3127 / +15 volts from Thermal Control power converter 
+LCALCVRT=              11.6667 / CALib CoVeR Temp                               
+LM15VOP =                -15.0 / -15V OPer mode reg                             
+LOBFWDBT=              24.1667 / Optical Bench FWD Bulkhead Temperature         
+LLVPGND1=                  128 / LVPs GrouND                                    
+LSES1GND=                  128 / SES1 GrND power                                
+LDCDRILM=              235.538 / Auxiliary current limit setting                
+LMCOMTSK= 'Active  '           / Mce COMm TaSK active                           
+LRSTFAIL= '---     '           / mce forced RSeT FAIL                           
+LMINITTO= 'OK      '           / Mce INIT TimeOut                               
+LSESADCS= 'Success '           / SES A/D Collctn Stat                           
+LEXPOTIM=                300.0 / commanded EXPOsure TIMe                        
+LBANKNUM=                    0 / memory mon BANK NUM                            
+LMCMDAC =                   33 / Mce CoMmanDs ACcpted                           
+LWAIT   = 'NoWait  '           / Wait in progress                               
+LTIMECOD= 'NtInProg'           / TIME CODe update flag                          
+LTDF    = 'TDFUp   '           / Take Data Flag                                 
+LTDFRESP= 'Disabled'           / Take Data Flag RESPonse                        
+LSLEWCON=                    0 / SLEW CONfirmation                              
+LTESTRES= 'Passed  '           / selfTEST RESult                                
+LSLFTEST= 'NoTest  '           / Self Test in progress                          
+LLASTDIB= 'StartExp'           / LAST DIB command processed                     
+LIMGDMPD=                    1 / IMaGes DuMPeD                                  
+LEXPOSTA= 'ExposTTg'           / EXPOsure STAtus                                
+LUPSETCT=                    0 / mce ser i/f UPSET CT                           
+LNULLIMG=                    0 / NULL IMaGe counter                             
+LMCMDREJ=                  103 / Mce CoMmanDs REJcted                           
+LCSPAGE = 'Enabled '           / CS PAGE                                        
+LSHPOS  = 'Closed  '           / External Shutter position                      
+                                                                                
+LCSOPVER=                 1033 / Control Section Operate flight s/w version numb
+LSHUTRAW= 'Closed  '           / External shutter raw position read switch state
+LSHUTRLY= 'ThisMEB '           / External shutter sensor relays (MEB switches)  
+LSHPENAB= 'Enabled '           / External shutter primary motor enable readback 
+LSHPSTAT= 'PosValid'           / External shutter primary mechanism status      
+LSHBSTAT= 'Initlzd '           / External shutter backup mechanism status       
+LFULLSET= 'Yes     '           / Active FULL setup indicator                    
+LSHBSPD =                19.53 / External shutter backup motor speed            
+LSHBHOLD=                  4.0 / External shutter backup motor commanded holdoff
+LNUMSUBS= '0_OrFull'           / Number of subarrays currently defined          
+LSHBMVNG= 'NotMovng'           / External shutter backup motor moving status bit
+LDETSET = 'FUV     '           / Active Detector setup indicator                
+LBKMSTCK= 'Enabled '           / Background monitoring stack check flag         
+LBKMNCRC= 'Enabled '           / Background monitoring CRC check flag           
+LANCLDIR= 'Forward '           / Ancillary Stepper Motor Direction readback bit 
+LANCLSEL= 'Nothing '           / Ancillary Motor Select readback bit            
+LANCLHLD=                   32 / Ancillary Motor Holdoff Duration setting       
+LANCLSPD= '52.08   '           / Ancillary Motor Speed selection readback bit   
+LTAPHASE= '--      '           / Last phase(current phase) of target acquisition
+LTAGDUMP=         -5.72205E-06 / Time Tag Dump pointer                          
+LTADWNUM=                    0 / Current Target ACQ Dwell point number          
+LTADWCNT=                    0 / Target ACQ dwell count                         
+LTAGFILL=            0.0906543 / Time Tag Fill pointer                          
+                                                                                
+                                                                                
+              / FUV DETECTOR ITEMS                                              
+                                                                                
+LDCEDECA=                 19.0 / DCE Digitized Event counter A                  
+LDCEDECB=                 36.0 / DCE Digitized Event counter B                  
+LDCEFECA=                 20.0 / DCE Fast Event Counter A                       
+LDCEFECB=                 37.0 / DCE Fast Event Counter B                       
+LDCETIME=   1.332518000000E+06 / DCE Timer                                      
+LDCEOPER= 'Oper    '           / DCE boot=0 OPER=1                              
+LDCEFSWV=               1044.0 / DCE Flight Software Version                    
+LDCEWDOG= 'Enabled '           / DCE WatchDOG enabled                           
+LDCEDIGA=               4.4726 / DCE DIGitizer volts reference A                
+LDCEDIGB=              4.45307 / DCE DIGitizer volts reference B                
+LDCESTMA= 'Low     '           / DCE record of STIM setting to digitizer A      
+LDCESTMB= 'Low     '           / DCE record of STIM setting to digitizer B      
+LDCFHVAN=                  8.0 / DCe FHV stat ANalog                            
+LDCIMONA=              32.8132 / DCE HV current A                               
+LDCIMONB=              28.1256 / DCE HV current B                               
+LDCHVMNA=             -4956.24 / DCE HV output voltage monitor A                
+LDCHVMNB=             -4930.56 / DCE HV output voltage monitor B                
+LDCEQANA=                 42.0 / DCE QHVA status analog                         
+LDCEQANB=                 42.0 / DCE QHVB status analog                         
+LDCSTATE= 'NomAB   '           / DCE HV State (Off,NomA,NomB,Nom,Low,Und,Set,On)
+LDCEILIM=              150.003 / DCE HV current limit setting                   
+LDCHVPWR= 'On      '           / DCE HVPS power status bit                      
+LDCEQPWR= 'On      '           / DCE HV grid power status bit                   
+LDCCRPCA=   6.000000000000E+04 / DCe Count Rate Protection Counts threshold A   
+LDCCRPCB=   6.000000000000E+04 / DCe Count Rate Protection Counts threshold B   
+LDCCRPIA=                 10.0 / DCe Count Rate Protection Initialize time A    
+LDCCRPIB=                 10.0 / DCe Count Rate Protection Initialize time B    
+LDCEAUXI=              44.3577 / DCE Auxiliary power supply current             
+LDCEACTT=              25.2871 / DCE ACTuator Temp                              
+LDCAMPAT=              26.3964 / DCe AMP A Temperature                          
+LDCAMPBT=              25.6596 / DCe AMP B Temperature                          
+LDCETEMP=              26.7611 / DCE TEMPerature                                
+LDCDVAAT=              24.9119 / DCE Det Vacuum Assy A temperature              
+LDCDVABT=              25.6596 / DCE Det Vacuum Assy B temperature              
+LDCHVFMT=              26.3964 / DCe HVFM Temperature                           
+LDCHVPST=              27.1234 / DCe HVPS Temperature                           
+LDCIPT  =              24.9119 / DCe Ion Pump Temperature                       
+LDCLVPCT=               32.697 / DCe LVPC Temperature                           
+LDCTDCAT=              29.6037 / DCe TDC A Temperature                          
+LDCTDCBT=              31.3308 / DCe TDC B Temperature                          
+LDCP15TA=              14.8584 / DCE +15v TDC A                                 
+LDCM15TA=             -15.2242 / DCE -15v TDC A                                 
+LDCP5TA =              4.97147 / DCE +5v  TDC A                                 
+LDCM5TA =             -5.29375 / DCE -5v  TDC A                                 
+LDCP15TB=              14.9568 / DCE +15v TDC B                                 
+LDCM15TB=             -15.2242 / DCE -15v TDC B                                 
+LDCP5TB =              4.99596 / DCE +5v  TDC B                                 
+LDCM5TB =             -5.29375 / DCE -5v  TDC B                                 
+LDCP15D =              15.2205 / DCE +15v DCE                                   
+LDCM15D =             -15.2205 / DCE -15v DCE                                   
+LDCP5DA =              5.02045 / DCE +5v DCE A                                  
+LDCP5DB =              4.99596 / DCE +5v DCE B                                  
+LDCP5DC =              4.97147 / DCE +5v DCE C                                  
+LDCLVPCP=               51.359 / DCe LVPC Power                                 
+LDCESDC1=                 55.0 / DCE Science Data Port Counter 1                
+LDCESDC2=                 55.0 / DCE Science Data Port Counter 2                
+                                                                                
+LDCEPKTC=   1.333139000000E+06 / DCE PacKeT Counter                             
+LDCECMDX=                188.0 / DCE Commands executed counter                  
+LDCELSTC=                158.0 / DCE LaST Command Opcode executed               
+LDCERMPB= 'NotInPrg'           / DCE high voltage ramp in progress, segment B   
+LDCERMPA= 'NotInPrg'           / DCE high voltage ramp in progress, segment A   
+LDCECMDR=                188.0 / DCE Commands received counter                  
+LDCECRC =                  0.0 / DCE CRC transfer memory (UL/DL or calc result) 
+LDCERMPT=                 10.0 / DCE hv RaMP Time                               
+LDCECOMM= 'On      '           / DCE cs COMM tsk stat                           
+LDCEHVEN= 'Enable  '           / DCE HVPS SW enable status                      
+                                                                                
+LDPWRSTA= 'On      '           / Dce cs PoWeR STAtus                            
+LDCDUPQA=              86.0028 / DCE TDC Upper Charge Threshold A               
+LDCDUPQB=              86.0028 / DCE TDC Upper Charge Threshold B               
+LDCDLOQA=             0.377915 / DCE TDC Lower Charge Threshold A               
+LDCDLOQB=             0.338076 / DCE TDC Lower Charge Threshold B               
+LDCDTTAX=              197.776 / DCE TDC Timing Threshold AX                    
+LDCDTTBX=              206.665 / DCE TDC Timing Threshold BX                    
+LDCDTTAY=              205.553 / DCE TDC Timing Threshold AY                    
+LDCDTTBY=              205.553 / DCE TDC Timing Threshold BY                    
+LDCHVSTA=             -4916.26 / DCE High Voltage Command Level A               
+LDCHVSTB=              -4853.5 / DCE High Voltage Command Level B               
+LDCHVNMA=             -4916.26 / DCE HV Nominal Setting A                       
+LDCHVNMB=             -4869.19 / DCE HV Nominal Setting B                       
+LDCHVTGA=             -4916.26 / DCE HV Target Level A                          
+LDCHVTGB=             -4869.19 / DCE HV Target Level B                          
+LDCHVLOA=              -4069.0 / DCE HV Level for HVLOW Segment A               
+LDCHVLOB=              -4069.0 / DCE HV Level for HVLOW Segment B               
+LDCHVMXA=             -5277.13 / DCE HV Command Level Maximum A                 
+LDCHVMXB=             -5230.06 / DCE HV Command Level Maximum B                 
+LDCDBWAX=               99.999 / DCE TDC Begin Walk Adjust AX                   
+LDCDBWBX=              98.8879 / DCE TDC Begin Walk Adjust BX                   
+LDCDEWAX=              96.6657 / DCE TDC End Walk Adjust AX                     
+LDCDEWBX=              98.8879 / DCE TDC End Walk Adjust BX                     
+LDCDBWAY=              94.4435 / DCE TDC Begin Walk Adjust AY                   
+LDCDBWBY=              94.4435 / DCE TDC Begin Walk Adjust BY                   
+LDCDEWAY=              94.4435 / DCE TDC End Walk Adjust AY                     
+LDCDEWBY=              94.4435 / DCE TDC End Walk Adjust BY                     
+LDCDSHAX=              235.553 / DCE TDC Image Shift AX                         
+LDCDSHBX=              129.999 / DCE TDC Image Shift BX                         
+LDCDSHAY=              177.776 / DCE TDC Image Shift AY                         
+LDCDSHBY=              138.887 / DCE TDC Image Shift BY                         
+LDCDSTAX=              34.4441 / DCE TDC Image Stretch AX                       
+LDCDSTBX=              64.4438 / DCE TDC Image Stretch BX                       
+LDCDSTAY=              126.665 / DCE TDC Image Stretch AY                       
+LDCDSTBY=              56.6661 / DCE TDC Image Stretch BY                       
+LDCINHIB= 'OK      '           / DCE-FUV Inhibit mode flag                      
+LDCSHKFL= 'OK      '           / DCE Saved Housekeeping Buffer Flag             
+LDCSHKID=                    0 / DCE Saved Housekeeping Buffer Index            
+LDCRMDIR= 'OFF     '           / DCE-FUV Detector Door Motor Direction          
+LDCRMPWR= 'OFF     '           / DCE-FUV Detector Door Motor Power Status       
+LDCRDPOS=                    0 / DCE-FUV Detector Door Position Analog          
+LDCRMENA= 'DISABLED'           / DCE-FUV Detector Door Motor Enable Status      
+LDCRDCLS= 'NOTCLOSD'           / DCE-FUV Detector Door CLOSE Status             
+LDCRDOPN= 'NOT OPEN'           / DCE-FUV Detector Door Motor Power Status       
+LDCRDLAT= 'UNLATCHD'           / DCE-FUV Detector Door Latch Status             
+LDCRAXPR= 'OFF     '           / DCE-FUV Detector Auxillary Power Status        
+LDCRAENA= 'DISABLED'           / DCE-FUV Detector Door Actuator Enable Status   
+LDCRACT1= 'OFF     '           / DCE-FUV Detector Door Actuator Winding #1 Power
+LDCRACT2= 'OFF     '           / DCE-FUV Detector Door Actuator Winding #2 Power
+LDCRDTMR=                    0 / DCE-FUV Detector Door Task Countdown Timer     
+                                                                                
+                                                                                
+              / MAMA SUBSYSTEM TELEMETRY ITEMS                                  
+                                                                                
+LMEVENTS=                  0.0 / MAMA event counter                             
+LMMCPV  =             -1753.65 / Mama MCP Voltage                               
+LMPCVOLT=              19.7537 / MAMA PC voltage                                
+LMROWCFG=                   31 / Mama ROW decode CnFG                           
+LMCOLCFG=                   31 / Mama COL decode CnFG                           
+LMCHAMPT=              27.4605 / Mama CHarge AMPlif T                           
+LMDECODT=              28.6815 / Mama DECODe pwb Tmp                            
+LMP5V   =              5.23077 / Mama +5V voltage                               
+LMP5VI  =             0.466667 / Mama +5V I                                     
+LMGLBEXC= 'OK      '           / Mama GLoB thrs EXCdd                           
+LMGLBERR= 'No Error'           / Mama GLoBal event ERR                          
+LMCHKSUM= 'OK      '           / Mama mce CHecKSuM                              
+LMRAMTST= 'OK      '           / Mama mce RAM TeST                              
+LMINEVER= 'NoError '           / Mama INteg EVent ERr                           
+LMDOGRST= 'OK      '           / Mama DOG timer ReSeT                           
+LMHVSOFF= 'On      '           / Mama HV Supply OFF                             
+LMSTBY  = 'Operate '           / Mama STandBY mode                              
+LMBSDOVR= 'NoOverrd'           / Mama BSD OVeRride dis                          
+LMDCDDIS= 'Enable  '           / Mama DeCoDe asic DISab                         
+LMHVENAB= 'Disable '           / Mama High Voltag ENAB                          
+LMHIVON = 'HVOn    '           / Mama HIgh Voltage ON                           
+LMBSDET = 'OK      '           / Mama Bright Scene DET                          
+LMMCPI  =              40.1954 / Mama MCP I                                     
+LMTHRSV =             0.483516 / Mama THReShold Volt                            
+LMHIBIAS=              140.317 / Mama HIgh BIAS volt                            
+LMLOBIAS=              138.706 / Mama LOw BIAS voltag                           
+LMGLBMON= 'GloblAct'           / Mama GLoBal MON stat                           
+LMEVTYPE= 'ORCounts'           / Mama EVent TYPE                                
+LMGLEVIP=              99.9357 / Mama GLob EVnt InPer                           
+LMGLBTHR=              77000.0 / Mama GLoBal THResh                             
+LMP15V  =              15.8828 / Mama +15V voltage                              
+LMP15VI =            0.0291575 / Mama +15V I                                    
+LMM15V  =             -15.8291 / Mama -15V Voltage                              
+LMM15VI =            0.0718926 / Mama -15V Current                              
+LMMCETMP=              25.0185 / Mama MCE TeMP                                  
+LMLVPST =              30.8793 / Mama LVPS pwb Temp                             
+LPCCMDD =                 20.0 / mama PC volt CMDD                              
+LTHRCMDD=              0.48022 / mama THRshold v CMDD                           
+LMP8AMPV=              8.00733 / Mama +8V AMPlif Volt                           
+LMP8AMPI=             0.741148 / Mama +8v AMPlifier I                           
+LMCPLIM =             -1745.46 / Mama MCP LIMit cmded                           
+LMCPCMDD=             -1749.91 / Mama MCP volt CMDeD                            
+LMHVPST =              31.8561 / Mama HVPS pwb Temp                             
+LMP8VREF=              8.01221 / Mama +8V REF voltage                           
+LMP5DISC=              5.00611 / Mama+5v DISCrim volt                           
+LMP5VDI =             0.273993 / Mama +5V Discrim I                             
+LMM2DISC=             -2.00244 / Mama-2V DISCrim volt                           
+LMM2VDI =             0.420513 / Mama -2V Discrim I                             
+LMCIMCER= 'OK      '           / Mama Cmd Inhb MCE Rset                         
+LMCIHVOF= 'OK      '           / Mama Cmd Inhb Hi V OFf                         
+LMSLOSUS= '---     '           / Mama SLOw SUSpd init                           
+LMPWRSTA= 'On      '           / Mama cs PoWeR STAtus                           
+                                                                                
+              / APERTURE RELATED ITEMS                                          
+                                                                                
+LAPXMTRT=              24.2857 / Aperture cross-dispersion dir. motor temperatur
+LAPDMTRT=              23.5714 / Aperture dispersion direction motor temperature
+LAPXSTAT= 'PosValid'           / Aperture cross-dispersion mechanism status     
+LAPDSTAT= 'PosValid'           / Aperture dispersion direction mechanism SW stat
+LAPXSTP =                147.1 / Aperture cross-dispersion dir. SW step position
+LAPDSTP =                 -9.1 / Aperture dispersion direction SW step position 
+LAPDINHB= '0       '           / Dispersion Aperture power inhibit bits         
+LAPDPHSB=                    0 / Disp Aperture motor winding B last phase value 
+LAPDPHSA=                    0 / Disp Aperture motor winding A last phase value 
+LAPXPHSB=                    1 / X-Disp Aperture motor winding B last phase valu
+LAPXPHSA=                    0 / X-Disp Aperture motor winding A last phase valu
+LAPXSPD =                52.08 / Aperture cross-dispersion dir. commanded speed 
+LAPXHOLD=                 32.0 / Aperture cross-dispersion dir. commanded holdof
+LAPDMTRI= '100%    '           / Aperture dispersion direction motor current    
+LAPDOVRD= 'NoOvrrid'           / Aperture dispersion direction mechanism overrid
+LAPXOVRD= 'NoOvrrid'           / Aperture cross-dispersion dir. mechanism overri
+LAPDMVNG= 'NotMovng'           / Aperture dispersion dir. motor moving status bi
+LAPXMVNG= 'NotMovng'           / Aperture cross-dispersion motor moving status b
+LAPXRLAY= 'Closed  '           / X-Disp Aperture motor relay closed readback bit
+LAPDRLAY= 'Closed  '           / Disp Aperture motor relay closed readback bit  
+LAPXINHB= '0       '           / Cross-Dispersion Aperture power inhibit bits   
+LAPMPOS = 'PSA-FUVB'           / Aperture mechanism position                    
+LAPXMTRI= '100%    '           / Aperture cross-dispersion direction motor curre
+LAPDSPD =                52.08 / Aperture dispersion direction commanded speed  
+LAPDHOLD=                 32.0 / Aperture dispersion direction commanded holdoff
+LAPDOVHT= 'NoOvrht '           / Aperture dispersion direction mechanism overhea
+LAPXOVHT= 'NoOvrht '           / Aperture cross-dispersion dir. mechanism overhe
+LAPXLVDT=                 2882 / Aperture cross-disp. LVDT, raw resolver positio
+LAPDLVDT=                 1883 / Aperture dispersion LVDT, raw resolver position
+                                                                                
+              / OPTICS SELECT MECHANISM ITEMS                                   
+                                                                                
+LOM1MTRT=              24.2857 / OSM1 motor temperature                         
+LOM2MTRT=                 25.0 / OSM2 motor temperature                         
+LOMFMTRT=              24.2857 / OSM1 Focus motor temperature                   
+LOM1STAT= 'PosValid'           / OSM1 mechanism status                          
+LOM2STAT= 'PosValid'           / OSM2 mechanism status                          
+LOMFLVDT=                 2185 / OSM1 Focus motor LVDT                          
+LOMFSTAT= 'PosValid'           / OSM1 Focus mechanism status                    
+LOM1POSC=                 2213 / OSM1 resolver coarse position                  
+LOM2POSC=                12835 / OSM2 resolver coarse position                  
+LOM1POSF=                  176 / OSM1 resolver fine position                    
+LOM2POSF=                  183 / OSM2 resolver fine position                    
+LOM1STP =               7991.1 / OSM1 motor SW step position                    
+LOM2STP =               1284.1 / OSM2 motor step position                       
+LOMFSTP =                320.1 / OSM1 Focus motor step position                 
+LOMFPHSB=                    1 / OSM1 Focus motor winding B last phase value    
+LOMFPHSA=                    0 / OSM1 Focus motor winding A last phase value    
+LOSMLAMB=                 1309 / OSM Grating central wavelength                 
+LOSMOFST= '0       '           / OSM Absolute move offset parameter             
+LOSMDIR = 'Forward '           / OSM Stepper motor direction bit                
+LOSMSPED= '78.12   '           / OSM motor speed selection readback bits        
+LOSMHOLD= '32      '           / OSM motor holdoff duration setting readback    
+LOSMSEL = 'None    '           / OSM motor select readback bits                 
+LOSM1POS= 'G130M   '           / OSM mechanism position                         
+LOSM2POS= 'G185M   '           / OSM mechanism position                         
+LOM1MVNG= 'NotMovng'           / OSM1 mechanism moving status bit               
+LOM2MVNG= 'NotMovng'           / OSM2 mechanism moving status bit               
+LOM2PHSB=                    1 / OSM2 motor winding B last phase value          
+LOM2PHSA=                    1 / OSM2 motor winding A last phase value          
+LOM1PHSB=                    1 / OSM1 motor winding B last phase value          
+LOM1PHSA=                    0 / OSM1 motor winding A last phase value          
+LOM2INHC= 'Allowed '           / OSM2 course resolver inhibit readback bit      
+LOM2INHF= 'Allowed '           / OSM2 fine resolver inhibit readback bit        
+LOM1INHC= 'Allowed '           / OSM1 course resolver inhibit readback bit      
+LOM1INHF= 'Allowed '           / OSM1 fine resolver inhibit readback bit        
+LOM1RLY = 'Closed  '           / OSM1 motor relay closed readback bit           
+LOM2RLY = 'Closed  '           / OSM2 motor relay closed readback bit           
+LOMFRLAY= 'Closed  '           / OSM1 focus motor relay closed readback bit     
+LOMFMVNG= 'NotMovng'           / OSM1 Focus mechanism moving status bit         
+LOM1OVRD= 'NoOvrrid'           / OSM1 mechanism override                        
+LOM2OVRD= 'NoOvrrid'           / OSM2 mechanism override                        
+LOMFOVRD= 'NoOvrrid'           / OSM1 Focus mechanism override                  
+LOM1SPD =                78.12 / OSM1 commanded speed                           
+LOM2SPD =                78.12 / OSM2 commanded speed                           
+LOMFSPD =                52.08 / OSM1 Focus commanded speed                     
+LOM1HOLD=                 32.0 / OSM1 commanded holdoff                         
+LOM2HOLD=                 32.0 / OSM2 commanded holdoff                         
+LOMFHOLD=                 32.0 / OSM1 Focus commanded holdoff                   
+LOM1INHB= 'Inhibitd'           / OSM1 motor inhibit                             
+LOM2INHB= 'Inhibitd'           / OSM2 motor inhibit                             
+LOMFINHB= 'Inhibitd'           / OSM1 Focus motor inhibit                       
+LOM1OVHT= 'NoOvrht '           / OSM1 mechanism overheat                        
+LOM2OVHT= 'NoOvrht '           / OSM2 mechanism overheat                        
+LOMFOVHT= 'NoOvrht '           / OSM1 Focus mechanism overheat                  
+                                                                                
+              / CALIBRATION LAMP ITEMS                                          
+                                                                                
+LPNLMP1I=          0.000125421 / Pt/Ne Lamp 1 current monitor                   
+LPNLMP2I=          0.000125421 / Pt/Ne Lamp 2 current monitor                   
+LD2LMP1T=              11.6667 / D2 LaMP 1 Temp                                 
+LD2LMP2T=                 12.5 / Deuterium lamp secondary Temp                  
+LD2LMP1I=          0.000125421 / Deuterium 2 Lamp 1 current monitor             
+LD2LMP2I=          0.000125421 / Deuterium 2 Lamp 2 current monitor             
+LPNLMP1T=              11.6667 / PtNe LaMP 1 Temperature                        
+LPNLMP2T=              11.6667 / PtNe LaMP 2 Temperature                        
+LCLGND1 =                  128 / Cal Lamp  GND 1                                
+LCL30V  =              29.9991 / Cal Lamp +30 V                                 
+LCL30VI =            0.0981099 / +30 volt Cal Lamp current monitor              
+LD2ILVL = 'High    '           / Deuterium lamps current setting                
+LPNILVL = 'Medium  '           / Platinum-neon lamps current setting            
+LD2ENA1 = 'Disabled'           / Deuterium lamp 1 enable bit                    
+LD2ENA2 = 'Disabled'           / Deuterium lamp 2 enable bit                    
+LPNENA1 = 'Disabled'           / Platinum-neon lamp 1 enable bit                
+LPNENA2 = 'Disabled'           / Platinum-neon lamp 2 enable bit                
+LCLCRLAY= 'MEB1    '           / Cal lamp relay position                        
+                                                                                
+              / DIB ITEMS                                                       
+                                                                                
+LDIBT   =                 30.0 / DIB Board Temperature                          
+LDIBCTIM=               774191 / Coarse TIMe                                    
+LDLSTERR= 'OK      '           / Dib LaST ERRor                                 
+LDIBERRC=                    0 / DIB ERRor Counter                              
+LDIBCNTR=                    0 / DIB reset CouNTeR                              
+LDIBRSET=                   63 / DIB reason for ReSET                           
+LDICMDAC=                  186 / DIb CoMmanDs Accepted                          
+LDICMDPC=                   91 / DIb CoMmanDs ProCessed                         
+LDIBEXPO= 'NoExpo  '           / DIB EXPOsure in progress                       
+LDMATO  = 'OK      '           / dib DMA TimeOut                                
+LDIBWAIT= 'NoWait  '           / DIB WAIT state                                 
+LDIBINIT= 'InitComp'           / DIB INITialize stat                            
+LDBUSERR=                    0 / Dib BUS ERRor count                            
+LDLOCEXC= 'OK      '           / Dib LOCal thr EXCdd                            
+LDEVTERR= 'OK      '           / Dib EVnT check ERRor                           
+LDOVRFLW= 'OK      '           / Dib scidata OVeRFLoW                           
+LDIBTLM = 'Enabled '           / DIB TeLeMtry enabled                           
+LDIBPAGE= 'Enabled '           / DIB PAGing status                              
+LDEVTCHK= 'NotInPrg'           / Dib EVnT CHK in prog                           
+LDIBMODE= 'OperStby'           / DIB fsw MODE                                   
+                                                                                
+                                                                                

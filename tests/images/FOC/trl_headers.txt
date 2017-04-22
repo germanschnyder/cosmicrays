@@ -1,0 +1,61 @@
+# HDU 0 in x04e0101t_trl.fits:
+SIMPLE  =                    T / Fits standard                                  
+BITPIX  =                   16 / Bits per pixel                                 
+NAXIS   =                    0 / Number of axes                                 
+EXTEND  =                    T / File may contain extensions                    
+IRAF-TLM= '09:51:16 (18/09/2006)' / Time of last modification                   
+DATE    = '2006-09-18'         / Date tape was written                          
+ORIGIN  = 'STSDAS+ST-ECF'      / Fitsio version 21-Feb-1996                     
+FILENAME= 'null_image'         / ZERO LENGTH DUMMY IMAGE                        
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the FOC ISR 100.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     ACCPDATE, MAG_R, MAG_V, MTFLAG, MU_RA, PARALLAX, PARENTID,        
+COMMENT *     PR_INV_L, PSTPTIME, PSTRTIME, REDSHIFT, SCAN_ANG, SCAN_LEN,       
+COMMENT *     and TARGNAME                                                      
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) In HDU1, when applicable, TDISP11 (MIR_REVR column) was           
+COMMENT *     changed from 'L1' to 'A1', since 'L' is no longer allowed.        
+COMMENT * (5) GRAPHTAB and COMPTAB were updated from logical pointers to        
+COMMENT *     the reference file names: GRAPHTAB = M6E1130CM_TMG.FITS and       
+COMMENT *     COMPTAB='N2A13493M_TMC.FITS                                       
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 
+
+# HDU 1 in x04e0101t_trl.fits:
+XTENSION= 'TABLE   '           / FITS STANDARD                                  
+BITPIX  =                    8 / 8-bits per 'pixels'                            
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / No of characters per row                       
+NAXIS2  =                  303 / The number of rows                             
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'x04e0101t.trl'      / Name of table                                  
+TTYPE1  = 'TEXT_FILE'          / One column per line                            
+TBCOL1  =                    1 / Starting column number                         
+TFORM1  = 'A132    '           / Format                                         
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the FOC ISR 100.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     ACCPDATE, MAG_R, MAG_V, MTFLAG, MU_RA, PARALLAX, PARENTID,        
+COMMENT *     PR_INV_L, PSTPTIME, PSTRTIME, REDSHIFT, SCAN_ANG, SCAN_LEN,       
+COMMENT *     and TARGNAME                                                      
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) In HDU1, when applicable, TDISP11 (MIR_REVR column) was           
+COMMENT *     changed from 'L1' to 'A1', since 'L' is no longer allowed.        
+COMMENT * (5) GRAPHTAB and COMPTAB were updated from logical pointers to        
+COMMENT *     the reference file names: GRAPHTAB = M6E1130CM_TMG.FITS and       
+COMMENT *     COMPTAB='N2A13493M_TMC.FITS                                       
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 

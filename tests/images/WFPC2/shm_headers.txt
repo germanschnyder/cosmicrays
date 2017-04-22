@@ -1,0 +1,363 @@
+# HDU 0 in u21u0201t_shm.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+EXTEND  =                    T / File may contain standard extensions           
+NEXTEND =                    1 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2009-03-20'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'u21u0201t.shf                          ' / name of file              
+FILETYPE= 'SHP      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'WFPC2 '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / SOFTWARE VERSION KEYWORDS                                       
+                                                                                
+OPUS_VER= 'OPUS 2009_1       ' / OPUS software system version number            
+                                                                                
+              / WFPC-II DATA DESCRIPTOR KEYWORDS                                
+                                                                                
+ROOTNAME= 'u21u0201t            ' / rootname of the observation set             
+DEFAULTS=                    F / default values used in reformatting these data 
+DCFOBSN =                    1 / DCF observation number in SHP                  
+PROC_TYP= 'NORMAL      '       / type of pipeline processing                    
+                                                                                
+              / TIME CONVERSION KEYWORDS                                        
+                                                                                
+CLKDRFTR=   4.897663720228E-19 / spacecraft clock drift rate                    
+CLKRATE =   1.250000012212E-01 / spacecraft clock rate                          
+SPCLINCN=   8.702990520000E+08 / spacecraft clock at UTC0                       
+UTC0    =   4.926508402778E+04 / Coordinated Universal Time (Mod Julian Date)   
+                                                                                
+              / CDBS KEYWORDS                                                   
+                                                                                
+UBAY1TMP=              12.5633 / bay 1 A1 temperature (deg C)                   
+UBAY2TMP=              11.9066 / bay 2 A1 temperature (deg C)                   
+UBAY3TMP=              14.5969 / bay 3 A1 temperature (deg C)                   
+UBAY4TMP=              14.5969 / bay 4 A1 temperature (deg C)                   
+UBAY5TMP=             -11.2358 / bay 5 A1 temperature (deg C)                   
+UCANLTIM=                    0 / time of cancel operation command               
+UCH1HJTM=             -24.8655 / camera head hot junction 1 temperature (deg C) 
+UCHVLTS =               34.496 / camera head voltage (volts)                    
+UEXPTMHI=                14055 / maj frame pulse time preceding exp start (cnts)
+UEXPOTIM=                20656 / Major frame pulse time preceding exposure start
+UEXPOCMD=                  256 / expose command image                           
+UEXPODUR=                   40 / commanded duration of exposure (sec)           
+UFCSTAT =                    0 / control/status word for exposure               
+UFOCTM01=                    0 / time of first close B shutter                  
+UFOCTM02=                    0 / slot for second open B shutter time            
+UFOCTM03=                    0 / slot for second close B shutter time           
+UFOCTM04=                    0 / slot for third open B shutter time             
+UFOCTM05=                    0 / slot for third close B shutter time            
+UFOCTM06=                    0 / slot for fourth open B shutter time            
+UFOCTM07=                    0 / slot for fourth close B shutter time           
+UFOCTM08=                    0 / slot for fifth open B shutter time             
+UFOCTM09=                    0 / slot for fifth close B shutter time            
+UFOCTM10=                    0 / slot for sixth open B shutter time             
+UFOCTM11=                    0 / slot for sixth close B shutter time            
+URPLHTR = 'Off'                / replacement heater on (ON, OFF)                
+UHTPIHTR= 'Off'                / heat pipe heater on (ON, OFF)                  
+UMECHPWR= 'On '                / mechanism power off (ON, OFF)                  
+UATPATMP=              11.9066 / opt bench attach pt A temperature (deg C)      
+UATPBTMP=              11.2593 / opt bench attach pt B temperature (deg C)      
+UATPCTMP=              11.2593 / opt bench attach pt C temperature (deg C)      
+UMECVOLT=               35.728 / mechanism supply voltage (volts)               
+UN15VADC=                125.0 / - 15 v adc supply (volts)                      
+UN15VANA=                124.0 / - 15 v analog supply (volts)                   
+UP5VADC =                4.949 / + 5 volts ADC supply (volts)                   
+UP5VLGC =                  4.9 / + 5 volts logic supply (volts)                 
+UP10VLGC=               10.005 / +10 volts logic supply (volts)                 
+UP15VADC=               14.896 / +15 volts ADC supply (volts)                   
+UP15VANA=               14.798 / +15 volts analog supply (volts)                
+UTECCUR =                  0.0 / TEC current (mA)                               
+UTECVOLT=                  0.0 / TEC supply voltage (volts)                     
+UTECPWRS= 'Off'                / TEC power off (ON, OFF)                        
+ULVPSONF= 'On '                / LVPS power off (ON, OFF)                       
+UPYRMDTM=              11.9066 / optical bench pyramid bulkhead temperature (C) 
+URADPTMP=             -34.0715 / Radiator +V2 temperature (deg C)               
+URIUATMP=              15.7509 / RIU A temperature (deg C)                      
+URIUBTMP=              15.4064 / RIU B temperature (deg C)                      
+UAFMRIUT=              13.6161 / AFM RIU temperature (deg C)                    
+UMNTPTMP=              11.2593 / SOFA/shutter mounting plate temperature (deg C)
+UTIMEXPO=                    0 / time of 110 msec expose command                
+URADNTMP=             -34.0715 / Radiator -V2 temperature (deg C)               
+UWCANCM =                    0 / cancel operation command bit                   
+UWLOGOF =                    0 / log overflow bit                               
+UWSCAP  =                    0 / shutter control application processor bit      
+UBLDASNR=                    0 / Blade A sensor: 0:closed, 1:open               
+UBLDBSNR=                    1 / Blade B sensor: 0:closed, 1:open               
+UWAPUSE = 'A'                  / Shutter blade used (A or B)                    
+UCALMIRS= 'Obs Mode'           / Cal mirror status (Cal Mode/Obs Mode/Error)    
+UUVCAL  = 'OFF'                / UV cal lamp status (ON/OFF)                    
+UVISCAL = 'OFF'                / Vis cal lamp status (ON/OFF)                   
+UCALMPWR= 'OFF'                / Cal module power (ON/OFF)                      
+UUVINSEL= 'VIS  '              / Cal lamp select (UV/VIS/INCAN)                 
+UUVLOUTM=                  0.0 / UV lamp output (volts)                         
+UCMODTMP=              9.67709 / Cal module temp (deg C)                        
+UPOMTEMP=              13.9455 / Pickoff mirror temp (deg C)                    
+UPOMXPOS=   0.000000000000E+00 / Pickoff mirror x-position (arcsec)             
+UPOMYPOS=   0.000000000000E+00 / Pickoff mirror y-position (arcsec)             
+UCHBHTMP=              12.4332 / Opt bench CH BH temp (deg C)                   
+UFMBHTMP=              12.2775 / Opt bench FM BH temp (deg C)                   
+UW3AFMX =  -9.152451941833E-02 / WFC 3 AFM X-position (arcsec)                  
+UW3AFMY =  -1.516237769372E-01 / WFC 3 AFM Y-position (arcsec)                  
+UW4AFMX =   3.577742755317E-01 / WFC 4 AFM X-position (arcsec)                  
+UW4AFMY =   6.735308053816E-02 / WFC 4 AFM Y-position (arcsec)                  
+UP1AFMX =   6.030990032122E-01 / PC 1 AFM X-position  (arcsec)                  
+UP1AFMY =  -2.806672436916E-01 / PC 1 AFM Y-position  (arcsec)                  
+UAFMPWR = 'Off               ' / AFM Electronics Power (ON,OFF)                 
+UAFMPTSL= 'PORT A            ' / AFM Port Select (A,B,or C)                     
+URFILTPS=                    0 / SOFA partial step (counts)                     
+                                                                                
+              / SUPPORT SCHEDULE: PROGRAMMATIC DATA                             
+PROGRMID= '21U'                / program id (base 36)                           
+PR_INV_L= 'Sen                           ' / last name of principal investigator
+PR_INV_F= 'Amit                ' / first name of principal investigator         
+PR_INV_M= '                    ' / middle name / initial of principal investigat
+ACCPDATE= '1993284'            / proposal acceptance date (yyyyddd)             
+OBSET_ID= '02'                 / observation set id                             
+CALIBRAT= 'T'                  / calibrate data flag                            
+OBSERVTN= '01 '                / observation number (base 36)                   
+EXPACKET=                 3201 / expected number of source packets              
+PRODTYPE= '                  ' / output product medium type                     
+OPFORMAT= '                  ' / output product format specification            
+CALIBTYP= 'I'                  / calibration type : E, I or Blank               
+CDBSDATA= 'FALSE'              / cdbs notification flag: 'CAL' or 'FALSE'       
+                                                                                
+              / SUPPORT SCHEDULE: FLAGS AND INDICATORS                          
+SS_MODE = 'FULL'               / instr. mode: FULL (full res.), AREA (area int.)
+SS_FILT1=                   41 / first filter number (0-48)                     
+SS_FILT2=                   17 / second filter number (0-48)                    
+SS_ATOD =                15.00 / Analog to Digital Gain (Electrons/DN)          
+RTAMATCH= 'NO RTA FI AVAILABLE' / above f&i match RTA (TRUE,FALSE,NO RTA F&I AVL
+                                                                                
+TARGTYPE= 'DARK              ' / qesiparm target type                           
+                                                                                
+              / SUPPORT SCHEDULE: DATA GROUP II DATA                            
+WRD11_14=                    1 / word 11/14 (0-255)                             
+PSTRTIME= '1993.351:14:57:39 ' / predicted obs. start time (yyyy.ddd:hh:mm:ss)  
+PSTPTIME= '1993.351:14:59:39 ' / predicted obs. stop time (yyyy.ddd:hh:mm:ss)   
+APEROBJ = '          '         / si object aperture id                          
+APERSKY = '          '         / si sky aperture id                             
+TARG_ID = '               '    / SPSS target ID from proposal+target no.        
+APERTYPE= 'SICS              ' / aperture type (SICS, SIAS, SIDS)               
+RA_V1   =   2.698289408943E+02 / right ascension of v1 axis of st (deg)         
+DEC_V1  =   6.650041701339E+01 / declination of v1 axis of st (deg)             
+PA_V3   =           184.792603 / position angle of V3-axis of HST (deg)         
+APEROFFX=             0.000000 / x comp of object offset in aperture (arcsec)   
+APEROFFY=             0.000000 / y comp of object offset in aperture (arcsec)   
+ANGLESEP=             0.000000 / ang separation of target from ref obj (arcsec) 
+DGESTAR = 'NONE        '       / FGS ID(F1,F2,F3) concat. w/ dom. gd. star id   
+SGESTAR = 'NONE        '       / FGS ID(F1,F2,F3) concat. w/ subdom. gd. star id
+PA_APER =                -99.0 / position ang of aperture used with target (deg)
+PA_REF  =             0.000000 / position ang of target from ref. object (deg)  
+SAAAVOID= '05'                 / SAA model for SAA Avoidance (range 02-99)      
+TARAQMOD= '00'                 / target acquisition mode (values 00, 01, 02, 03)
+POSTNSTX=   5.623484508532E+03 / position of space telescope x axis (km)        
+POSTNSTY=  -4.121219333608E+03 / position of space telescope y axis (km)        
+POSTNSTZ=   1.086068662904E+02 / position of space telescope z axis (km)        
+VELOCSTX=   3.883593445412E+00 / vel of space telescope along x axis (km/sec)   
+VELOCSTY=   5.394383868745E+00 / vel of space telescope along y axis (km/sec)   
+VELOCSTZ=   3.610372010524E+00 / vel of space telescope along z axis (km/sec)   
+RA_SUN  =   2.654030880061E+02 / right ascension of the sun (deg)               
+DEC_SUN =  -2.337254407778E+01 / declination of the sun (deg)                   
+RA_MOON =   3.193780008451E+02 / right ascension of the moon (deg)              
+DEC_MOON=  -1.043288757277E+01 / declination of the moon (deg)                  
+VELABBRA=             0.000000 / aberration in position of the target           
+ANNPARRA=             0.000000 / par. shift in position, non-solar sys target   
+V2APERCE=             0.000000 / V2 offset of target from aper fiducial (arcsec)
+V3APERCE=             0.000000 / V3 offset of target from aper fiducial (arcsec)
+EQRADTRG=             0.000000 / equatorial radius of target (km)               
+FLATNTRG=             0.000000 / flattening of target                           
+NPDECTRG=             0.000000 / north pole declination of target (deg)         
+NPRATRG =             0.000000 / north pole right ascension of target (deg)     
+ROTRTTRG=             0.000000 / rotation rate of target                        
+LONGPMER=             0.000000 / longitude of prime meridian (deg)              
+EPLONGPM=             0.000000 / epoch of longitude of prime meridian (sec)     
+SURFLATD=             0.000000 / surface feature latitude (deg)                 
+SURFLONG=             0.000000 / surface feature longitude (deg)                
+SURFALTD=             0.000000 / surface feature altitude (km)                  
+MTFLAG  = ' '                  / moving target flag; T if it is a moving target 
+S0INVMAG=   0.000000000000E+00 / S0 inverse magnitude                           
+S0XDIR  =   0.000000000000E+00 / S0 X direction                                 
+S0YDIR  =   0.000000000000E+00 / S0 Y direction                                 
+S0ZDIR  =   0.000000000000E+00 / S0 Z direction                                 
+TRK_TYPE= 'F  '                / track 48 or track 51 commanding used           
+T51_RATE=                  0.0 / rate of motion commanded (arcsecs/sec)         
+T51_ANGL=                  0.0 / position angle of motion of aperture (deg)     
+TARGDIST=   0.000000000000E+00 / distance to target from Earth's center (km)    
+PAR_CORR= 'N'                  / parallax correction used (Y, N, or A)          
+RA_REF  =   0.000000000000E+00 / right ascension of reference object (deg)      
+DEC_REF =   0.000000000000E+00 / declination of reference object (deg)          
+                                                                                
+              / ONBOARD EPHEMERIS MODEL PARAMETERS                              
+EPCHTIME=   2.826144000000E+08 / epoch time of parameters (secs since 1/1/85)   
+SDMEANAN=   2.838438333026E-15 / 2nd deriv coef for mean anomaly (revs/sec/sec) 
+SDMA3SQ =   3.530229249532E-06 / 3 * (SDMEANAN**2) radians/second**2.           
+HSTHORB =   2.896069938192E+03 / half the duration of the ST orbit (seconds)    
+CIRVELOC=   7.563945182071E+03 / circular orbit linear velocity (meters/second) 
+COSINCLI=   8.790262944052E-01 / cosine of inclination                          
+ECCENTRY=   7.254607070409E-04 / eccentricity                                   
+ECCENTX2=   1.450921414082E-03 / eccentricity times 2                           
+ECBDX4D3=   5.090734188784E-10 / eccentricity cubed times 4/3                   
+ESQDX5D2=   1.315733093651E-06 / eccentricity squared times 5/2                 
+ECBDX3  =   1.145415192476E-09 / eccentricity cubed times 3                     
+FDMEANAN=   1.726477642705E-04 / 1st derivative coef for mean anomly (revs/sec) 
+RCASCNRD=  -1.296135743635E-06 / rt chge right ascension ascend node (rads/sec) 
+RCASCNRV=  -2.062864105176E-07 / rt chge right ascension ascend node (revs/sec) 
+ARGPERIG=   7.291138649249E-02 / argument of perigee (revolutions)              
+MEANANOM=   4.340456465948E+00 / mean anomaly (radians)                         
+RCARGPER=   1.860402990366E-07 / rate change of argument of perigee (revs/sec)  
+RASCASCN=   9.236548021016E-01 / right ascension of ascending node (revolutions)
+SINEINCL=   4.767732938664E-01 / sine of inclination                            
+SEMILREC=   6.972894625977E+06 / semi-latus rectum (meters)                     
+TIMEFFEC=   2.826302790000E+08 / time parameters took effect (secs since 1/1/85)
+OBSSTRTT=   2.827546590000E+08 / predicted obs. start time (secs since 1/1/85)  
+                                                                                
+              / PROPOSAL INFO: Instrument Configuration                         
+CONFIG  = 'WFPC2          '    / proposed instrument configuration              
+OPMODE  = 'IMAGE             ' / proposed operation mode                        
+SPEC_1  = 'F1042M              ' / spectral element                             
+SPEC_2  = 'F437N               ' / spectral element                             
+SPEC_3  = '                    ' / spectral element                             
+SPEC_4  = '                    ' / spectral element                             
+APER_1  = 'WFALL          '    / instrument aperture                            
+APER_2  = '               '    / instrument aperture                            
+APER_3  = '               '    / instrument aperture                            
+APER_4  = '               '    / instrument aperture                            
+                                                                                
+              / PROPOSAL INFO: Target Description                               
+TAR_TYPE= 'POINT TARGET   '    / target type                                    
+                                                                                
+              / PROPOSAL INFO: Flux Information                                 
+MAG_V   =             0.000000 / expected V Magnitude                           
+SURF_V  =             0.000000 / expected V surface brightness                  
+MAG_B   =             0.000000 / expected B Magnitude                           
+SURF_B  =             0.000000 / expected B surface brightness                  
+MAG_U   =             0.000000 / expected U Magnitude                           
+SURF_U  =             0.000000 / expected U surface brightness                  
+MAG_R   =             0.000000 / expected R Magnitude                           
+SURF_R  =             0.000000 / expected R surface brightness                  
+COL_B_V =             0.000000 / expected B-V color                             
+COL_U_B =             0.000000 / expected U-B color                             
+COL_V_R =             0.000000 / expected V-R color                             
+E_B_V   =             0.000000 / E(B-V)                                         
+EXTNCT_V=             0.000000 / extinction in V                                
+                                                                                
+              / PROPOSAL INFO: Exposure Information                             
+CMD_EXP =            40.000000 / commanded time per exposure (from TRANS)       
+                                                                                
+              / PROPOSAL INFO: Moving Target Information                        
+                                                                                
+              / PROPOSAL INFO: Target Properties                                
+REDSHIFT=   0.000000000000E+00 / target redshift from proposal                  
+PARALLAX=   0.000000000000E+00 / target parallax from proposal                  
+RA_PROP =   0.000000000000E+00 / target right ascension from proposal (degrees) 
+DEC_PROP=   0.000000000000E+00 / target declination from proposal (degrees)     
+PEQUINOX= '       '            / equinox of coordinate system from proposal     
+MU_RA   =   0.000000000000E+00 / target proper motion from proposal (degrees RA)
+MU_DEC  =   0.000000000000E+00 / target proper motion from proposal (deg. DEC)  
+MU_EPOCH= '       '            / epoch of proper motion from proposal           
+SP_TYPE = '               '    / target spectral type from proposal             
+RAD_VEL =   0.000000000000E+00 / target radial velocity from proposal (km/sec)  
+                                                                                
+              / PROPOSAL INFO: Spatial Scan Info                                
+SCAN_TYP= 'N                 ' / C:bostrophidon; D:C with dwell; N:N/A          
+SCAN_WID=   0.000000000000E+00 / scan width (arcsec)                            
+ANG_SIDE=   0.000000000000E+00 / angle between sides of parallelogram (deg)     
+DWELL_LN=                    0 / dwell pts/line for scan pointing (1-99,0 if NA)
+DWELL_TM=   0.000000000000E+00 / wait time (duration) at each dwell point (sec) 
+SCAN_ANG=   0.000000000000E+00 / position angle of scan line (deg)              
+SCAN_RAT=   0.000000000000E+00 / commanded rate of the line scan (arcsec/sec)   
+NO_LINES=                    0 / number of lines per scan (1-99,0 if NA)        
+SCAN_LEN=   0.000000000000E+00 / scan length (arcsec)                           
+SCAN_COR= 'C                 ' / scan coordinate frame of ref: celestial,vehicle
+                                                                                
+              / PROPOSAL INFO: Auxiliary                                        
+PARENTID=                    0 / PEP proposal identifier of the parent proposal 
+PROPTTL1= 'WFPC2 DECONTAMINATION & KSPOT CHECK                                 '
+PROP_TYP= 'SME/WF2             ' / proposal type                                
+                                                                                
+              / TARGET & PROPOSAL ID                                            
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+ECL_LONG=           221.430537 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =            89.909026 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=            96.314576 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =            29.879663 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+PROPOSID=                 4711 / PEP proposal identifier                        
+PEP_EXPO= '4.0000001      '    / PEP exposure identifier including sequence     
+LINENUM = '1.000          '    / PEP proposal line number                       
+SEQLINE = '4.000          '    / PEP line number of defined sequence            
+SEQNAME = 'IMAGES         '    / PEP define/use sequence name                   
+                                                                                
+                                                                                
+              / APERTURE PARAMETERS                                             
+                                                                                
+HOSV2CNT=   0.000000000000E+00 / V2 coordinate of aperture fiducial (arcsec)    
+HOSV3CNT=   0.000000000000E+00 / V3 coordinate of aperture fiducial (arcsec)    
+HOSISHA = ' '                  / Aperture shape ;Pickle, Circle, Quad, Rectangle
+HOSIVDM =   0.000000000000E+00 / Half-length of aperture major axis (arcsec)    
+HOSAPOR =   0.000000000000E+00 / Rotation angle to orient SICS and V2/V3 (deg)  
+HOSIMPAR=                    0 / Parity of SICS to V2/V3 (-1=left, +1=right)    
+HOSIASX =   0.000000000000E+00 / x coord. of aperture fiducial in SIAS (pixels) 
+HOSIASY =   0.000000000000E+00 / y coord. of aperture fiducial in SIAS (pixels) 
+HOSD1   =   0.000000000000E+00 / 1st coordinate axis increment (arcsec)         
+HOSD2   =   0.000000000000E+00 / 2nd coordinate axis increment (arcsec)         
+HOSTH1  =   0.000000000000E+00 / Angle from V3 to line of incr 1st axis (degrees
+HOSTH2  =   0.000000000000E+00 / Angle from V3 to line of incr 2nd axis (degrees
+                                                                                
+              / SIAS to SICS CONVERSION                                         
+                                                                                
+HOSPOLY =                    0 / Polynomial degree for SIAS to SICS conversion  
+AS2CSX00=                  0.0 / 0 order, 0 coefficient for x-coord SIAS to SICS
+AS2CSX10=                  0.0 / 1 order, 0 coefficient for x-coord SIAS to SICS
+AS2CSX11=                  0.0 / 1 order, 1 coefficient for x-coord SIAS to SICS
+AS2CSY00=                  0.0 / 0 order, 0 coefficient for y-coord SIAS to SICS
+AS2CSY10=                  0.0 / 1 order, 0 coefficient for y-coord SIAS to SICS
+AS2CSY11=                  0.0 / 1 order, 1 coefficient for y-coord SIAS to SICS
+                                                                                
+              / SICS to SIAS CONVERSION                                         
+                                                                                
+CS2ASX00=                  0.0 / 0 order, 0 coefficient for x-coord SICS to SIAS
+CS2ASX10=                  0.0 / 1 order, 0 coefficient for x-coord SICS to SIAS
+CS2ASX11=                  0.0 / 1 order, 1 coefficient for x-coord SICS to SIAS
+CS2ASY00=                  0.0 / 0 order, 0 coefficient for y-coord SICS to SIAS
+CS2ASY10=                  0.0 / 1 order, 0 coefficient for y-coord SICS to SIAS
+CS2ASY11=                  0.0 / 1 order, 1 coefficient for y-coord SICS to SIAS
+                                                                                
+              / V2/V3 APERTURE VERTICES                                         
+                                                                                
+APVER1V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 1 (arcsecs)   
+APVER1V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 1 (arcsecs)   
+APVER2V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 2 (arcsecs)   
+APVER2V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 2 (arcsecs)   
+APVER3V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 3 (arcsecs)   
+APVER3V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 3 (arcsecs)   
+APVER4V2=   0.000000000000E+00 / V2 coordinate of aperture vertex 4 (arcsecs)   
+APVER4V3=   0.000000000000E+00 / V3 coordinate of aperture vertex 4 (arcsecs)   
+
+# HDU 1 in u21u0201t_shm.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    1 / number of data axes                            
+NAXIS1  =                  965 / length of first data axis                      
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SHP     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t'          / 9 character exposure identifier                
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =              32768.0 / physical value for an array value of zero      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PKTTIME =   4.933862357501E+04 / time from the packet ancillary data            

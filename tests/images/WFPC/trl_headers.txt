@@ -1,0 +1,25 @@
+# HDU 0 in w0340y01r_trl.fits:
+SIMPLE  =                    T / Standard FITS format                           
+BITPIX  =                    8 / Character Information                          
+NAXIS   =                    0 / No image data array present                    
+EXTEND  =                    T / There may be standard extension                
+ORIGIN  = 'ST-DADS '           / Institution that originated the FITS file      
+FITSDATE= '28/05/94'           / Date FITS file was created                     
+FILENAME= 'null_image'         / Zero length dummy image                        
+DADSFILE= 'W0340Y01R.TRL'      / FITS file name                                 
+DADSCLAS= 'CAL     '           / Archive class of file                          
+DADSDATE= '27-MAY-1994 20:16:52' / Dataset generation date                      
+
+# HDU 1 in w0340y01r_trl.fits:
+XTENSION= 'TABLE   '           / Table extension                                
+BITPIX  =                    8 / Printable ASCII characters                     
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / Number of character per row                    
+NAXIS2  =                  313 / The number of rows                             
+PCOUNT  =                    0 / No random parameters                           
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'w0340y01r.trl'      / File name of the ASCII file                    
+TTYPE1  = 'TRAILER-FILE'       / ASCII file type                                
+TBCOL1  =                    1 / Starting column number                         
+TFORM1  = 'A132    '           / Format                                         

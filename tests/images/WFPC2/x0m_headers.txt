@@ -1,0 +1,163 @@
+# HDU 0 in u21u0201t_x0m.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+EXTEND  =                    T / File may contain standard extensions           
+NEXTEND =                    4 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2009-03-20'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'u21u0201t.x0f                          ' / name of file              
+FILETYPE= 'EXT      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'WFPC2 '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / WFPC-II DATA DESCRIPTOR KEYWORDS                                
+ROOTNAME= 'u21u0201t            ' / rootname of the observation set             
+                                                                                
+              / CALIBRATION FLAGS AND INDICATORS                                
+MODE    = 'FULL'               / instr. mode: FULL (full res.), AREA (area int.)
+FILTER1 =                   17 / first filter number (0-48)                     
+FILTER2 =                   41 / second filter number (0-48)                    
+FILTROT =             0.000000 / partial filter rotation angle (degrees)        
+                                                                                
+              / CALIBRATION KEYWORDS                                            
+LINEBEG =                    1 / first line number wrt source format            
+SAMPBEG =                    1 / first sample number wrt source format          
+                                                                                
+              / STATISTICAL KEYWORDS                                            
+PODPSFF =                    0 / 0=(no  podps fill); 1=(podps fill present)     
+STDCFFF =                    0 / 0=(no st dcf fill); 1=(st dcf fill present)    
+STDCFFP = '0x5569'             / st dcf fill pattern (hex)                      
+                                                                                
+              / TARGET & PROPOSAL ID                                            
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+ECL_LONG=           221.430537 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =            89.909026 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=            96.314576 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =            29.879663 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+PROPOSID=                 4711 / PEP proposal identifier                        
+PEP_EXPO= '4.0000001      '    / PEP exposure identifier including sequence     
+LINENUM = '1.000          '    / PEP proposal line number                       
+SEQLINE = '4.000          '    / PEP line number of defined sequence            
+SEQNAME = 'IMAGES         '    / PEP define/use sequence name                   
+
+# HDU 1 in u21u0201t_x0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   14 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'EXT     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    1 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+
+# HDU 2 in u21u0201t_x0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   14 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'EXT     '           / extension name                                 
+EXTVER  =                    2 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    2 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+
+# HDU 3 in u21u0201t_x0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   14 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'EXT     '           / extension name                                 
+EXTVER  =                    3 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    3 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+
+# HDU 4 in u21u0201t_x0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   14 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'EXT     '           / extension name                                 
+EXTVER  =                    4 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    4 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           

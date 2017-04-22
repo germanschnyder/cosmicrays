@@ -1,0 +1,17 @@
+# HDU 0 in j6mf16lhq_trl.fits:
+SIMPLE  =                    T / conforms to FITS standard                      
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    0 / number of array dimensions                     
+EXTEND  =                    T                                                  
+
+# HDU 1 in j6mf16lhq_trl.fits:
+XTENSION= 'BINTABLE'           / binary table extension                         
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                  132 / length of dimension 1                          
+NAXIS2  =                  162 / length of dimension 2                          
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                    1 / number of table fields                         
+TTYPE1  = 'TEXT_FILE'                                                           
+TFORM1  = '132A    '                                                            

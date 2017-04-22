@@ -8,12 +8,14 @@ from skimage.measure import regionprops
 from scipy.ndimage.measurements import label
 
 
-def load(filepath):
+def load(filepath, pos_filepath):
     """
 
     :param filepath: fits image path
     :return: an Image
     """
+
+    # load image data information
     data = pyfits.getdata(filepath, hdu=0)
     primary = Header(pyfits.getheader(filepath, 0))
     headers = [primary]
@@ -22,13 +24,23 @@ def load(filepath):
     for idx in range(1, extcount):
         ext = Header(pyfits.getheader(filepath, idx))
         headers.append(ext)
-    return Image(array(data), headers)
+
+    # load position information
+    pos_primary = Header(pyfits.getheader(pos_filepath, 0))
+    pos_headers = [pos_primary]
+    pos_extcount = int(pos_primary.get("NEXTEND", 0))
+
+    for idx in range(1, pos_extcount):
+        ext = Header(pyfits.getheader(pos_filepath, idx))
+        pos_headers.append(ext)
+
+    return Image(array(data), headers, pos_headers)
 
 
 def clean_cr(raw, mask=None, iterations=4)->array:
     img = CosmicsImage(raw)
-    img.clean(mask, True)
-    img.run(maxiter=iterations)
+    img.clean(mask=mask, verbose=True)
+    img.run(maxiter=iterations, verbose=True)
 
     return array(img.cleanarray), img.getmask()
 

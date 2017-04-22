@@ -27,14 +27,48 @@ import datetime
 import io
 import os
 import time
+import logging
 
 import azure.storage.blob as azureblob
 import azure.batch.models as batchmodels
 
+from common.instruments import WFC3, WFPC2, STIS, NICMOS, FGS, COS, ACS
 
 _STANDARD_OUT_FILE_NAME = 'stdout.txt'
 _STANDARD_ERROR_FILE_NAME = 'stderr.txt'
 _SAMPLES_CONFIG_FILE_NAME = 'configuration.cfg'
+
+
+def extension_from_filename(filename):
+    ext = str(filename)[-8:-5]
+
+    return ext
+
+
+def pos_ext_from_data_ext(ext):
+
+    if ACS.DATA_FILE_EXT.__contains__(ext):
+        return ACS.POS_FILE_EXT
+
+    if COS.DATA_FILE_EXT.__contains__(ext):
+        return COS.POS_FILE_EXT
+
+    if FGS.DATA_FILE_EXT.__contains__(ext):
+        return FGS.POS_FILE_EXT
+
+    if NICMOS.DATA_FILE_EXT.__contains__(ext):
+        return NICMOS.POS_FILE_EXT
+
+    if STIS.DATA_FILE_EXT.__contains__(ext):
+        return STIS.POS_FILE_EXT
+
+    if WFC3.DATA_FILE_EXT.__contains__(ext):
+        return WFC3.POS_FILE_EXT
+
+    if WFPC2.DATA_FILE_EXT.__contains__(ext):
+        return WFPC2.POS_FILE_EXT
+
+    logging.error("Couldn't find a match for %s" % ext)
 
 
 class TimeoutError(Exception):

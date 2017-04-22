@@ -32,6 +32,9 @@ import time
 import configparser
 import logging
 
+from common import helpers
+from common.instruments import ACS, WFC3, STIS, WFPC2, NICMOS
+
 try:
     input = raw_input
 except NameError:
@@ -60,7 +63,7 @@ _BATCH_ACCOUNT_URL = config.get(option='batchserviceurl', section='Batch')
 _STORAGE_ACCOUNT_NAME = config.get(option='storageaccountname', section='Storage')
 _STORAGE_ACCOUNT_KEY = config.get(option='storageaccountkey', section='Storage')
 
-_POOL_ID = config.get(option='prefix', section='Pool') + str(int(round(time.time() * 1000)))
+_POOL_ID = config.get(option='prefix', section='Pool')  # + str(int(round(time.time() * 1000)))
 _POOL_NODE_COUNT = config.get(option='nodecount', section='Pool')
 _POOL_VM_SIZE = config.get(option='vmsize', section='Pool')
 
@@ -68,9 +71,14 @@ _NODE_OS_PUBLISHER = config.get(option='publisher', section='Node')
 _NODE_OS_OFFER = config.get(option='offer', section='Node')
 _NODE_OS_SKU = config.get(option='sku', section='Node')
 
-_JOB_ID = config.get(option='prefix', section='Job') + str(int(round(time.time() * 1000)))
 
-logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+_CONTAINER = config.get(option='container', section='Job')
+_FOLDER = config.get(option='folder', section='Job')
+
+_JOB_ID = config.get(option='prefix', section='Job') + '_' + str(_FOLDER).replace('/', '_').replace('.', '_')
+
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 
 def query_yes_no(question, default="yes"):
@@ -146,7 +154,7 @@ def upload_file_to_container(block_blob_client, container_name, folder, file_pat
         container_name,
         blob_name,
         permission=azureblob.BlobPermissions.READ,
-        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=2))
+        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=48))
 
     sas_url = block_blob_client.make_blob_url(container_name,
                                               blob_name,
@@ -157,34 +165,41 @@ def upload_file_to_container(block_blob_client, container_name, folder, file_pat
 
 
 def get_file_details(block_blob_client, container_name, file_name):
+    logging.debug("Finding details for %s" % file_name)
+
     # raw
     sas_token = block_blob_client.generate_blob_shared_access_signature(
         container_name,
         file_name,
         permission=azureblob.BlobPermissions.READ,
-        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=2))
+        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=48))
 
     sas_url = block_blob_client.make_blob_url(container_name,
                                               file_name,
                                               sas_token=sas_token)
 
-    # spt
-    spt_file_name = file_name.replace('raw', 'spt')
-    spt_sas_token = block_blob_client.generate_blob_shared_access_signature(
+    # pos
+    data_ext = helpers.extension_from_filename(file_name)
+    pos_ext = helpers.pos_ext_from_data_ext(data_ext)
+
+    logging.debug("Details for files %s and %s" % (data_ext, pos_ext))
+
+    pos_file_name = file_name.replace(data_ext, pos_ext)
+    pos_sas_token = block_blob_client.generate_blob_shared_access_signature(
         container_name,
-        spt_file_name,
+        pos_file_name,
         permission=azureblob.BlobPermissions.READ,
-        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=2))
+        expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=48))
 
-    spt_sas_url = block_blob_client.make_blob_url(container_name,
-                                                  spt_file_name,
-                                                  sas_token=spt_sas_token)
+    pos_sas_url = block_blob_client.make_blob_url(container_name,
+                                                  pos_file_name,
+                                                  sas_token=pos_sas_token)
 
-    logging.debug('File details for {} and {}'.format(file_name, spt_file_name))
+    logging.debug('File details for {} and {}'.format(file_name, pos_file_name))
 
     return (
         batchmodels.ResourceFile(file_path=file_name, blob_source=sas_url),
-        batchmodels.ResourceFile(file_path=spt_file_name, blob_source=spt_sas_url)
+        batchmodels.ResourceFile(file_path=pos_file_name, blob_source=pos_sas_url)
     )
 
 
@@ -208,7 +223,7 @@ def get_container_sas_token(block_blob_client,
         block_blob_client.generate_container_shared_access_signature(
             container_name,
             permission=blob_permissions,
-            expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=2))
+            expiry=datetime.datetime.utcnow() + datetime.timedelta(hours=48))
 
     return container_sas_token
 
@@ -249,7 +264,7 @@ def create_pool(batch_service_client, pool_id,
         'apt-get -y install build-essential libssl-dev libffi-dev python-dev',
         # Install the azure-storage module so that the task script can access
         # Azure Blob storage
-        'pip3 install azure-storage',
+        'pip3 install azure-storage azure-batch',
         'pip3 install --upgrade numpy scipy astropy argparse scikit-image matplotlib'
     ]
 
@@ -267,6 +282,7 @@ def create_pool(batch_service_client, pool_id,
             image_reference=image_ref_to_use,
             node_agent_sku_id=sku_to_use),
         vm_size=_POOL_VM_SIZE,
+        max_tasks_per_node=2,
         target_dedicated=_POOL_NODE_COUNT,
         start_task=batch.models.StartTask(
             command_line=common.helpers.wrap_commands_in_shell('linux',
@@ -296,7 +312,8 @@ def create_job(batch_service_client, job_id, pool_id):
 
     job = batch.models.JobAddParameter(
         job_id,
-        batch.models.PoolInformation(pool_id=pool_id))
+        batch.models.PoolInformation(pool_id=pool_id),
+        priority=-1)
 
     try:
         batch_service_client.job.add(job)
@@ -331,16 +348,16 @@ def add_tasks(batch_service_client, job_id, input_files,
                    'python3 $AZ_BATCH_NODE_SHARED_DIR/azure_task.py '
                    '--filepath {} --storageaccount {} '
                    '--storagecontainer {} --sastoken "{}"'.format(
-            raw.file_path,
-            _STORAGE_ACCOUNT_NAME,
-            output_container_name,
-            output_container_sas_token)]
+                       raw.file_path,
+                       _STORAGE_ACCOUNT_NAME,
+                       output_container_name,
+                       output_container_sas_token)]
 
         tasks.append(batch.models.TaskAddParameter(
             'topNtask{}'.format(idx),
             common.helpers.wrap_commands_in_shell('linux', command),
             resource_files=[raw, spt]
-            )
+        )
         )
 
         if tasked == 99:
@@ -372,7 +389,7 @@ def wait_for_tasks_to_complete(batch_service_client, job_id, timeout):
           .format(timeout), end='')
 
     while datetime.datetime.now() < timeout_expiration:
-        print('.', end='')
+        print(' o ', end='')
         sys.stdout.flush()
         tasks = batch_service_client.task.list(job_id)
 
@@ -382,7 +399,7 @@ def wait_for_tasks_to_complete(batch_service_client, job_id, timeout):
             print()
             return True
         else:
-            time.sleep(1)
+            time.sleep(3600)
 
     print()
     raise RuntimeError("ERROR: Tasks did not reach 'Completed' state within "
@@ -418,6 +435,17 @@ def download_blobs_from_container(block_blob_client, container_name, directory_p
     logging.debug('Download complete!')
 
 
+def is_valid_extension(blob):
+    valid_extensions_arr = [ACS.DATA_FILE_EXT, WFC3.DATA_FILE_EXT, STIS.DATA_FILE_EXT, WFPC2.DATA_FILE_EXT,
+                            NICMOS.DATA_FILE_EXT]
+    valid_extensions = ",".join([item for sublist in valid_extensions_arr for item in sublist])
+    ext = helpers.extension_from_filename(blob.name)
+
+    logging.debug("Testing file %s with extension %s to be in %s" % (blob.name, ext, valid_extensions))
+
+    return ext in valid_extensions
+
+
 if __name__ == '__main__':
 
     start_time = datetime.datetime.now().replace(microsecond=0)
@@ -440,10 +468,13 @@ if __name__ == '__main__':
     # run on the compute nodes.
     application_file_paths = {
         os.path.realpath('common/image.py'): 'common',
+        os.path.realpath('common/helpers.py'): 'common',
+        os.path.realpath('common/instruments.py'): 'common',
         os.path.realpath('lib/crutils.py'): 'lib',
         os.path.realpath('lib/calc_pos.py'): 'lib',
         os.path.realpath('external/cosmics.py'): 'external',
         os.path.realpath('requirements.txt'): '',
+        os.path.realpath('configuration.cfg'): '',
         os.path.realpath('azure_task.py'): ''
     }
 
@@ -458,10 +489,11 @@ if __name__ == '__main__':
     # Lets just get some images for testing
     blobs = []
     marker = None
-    container = 'all'
-    prefix = 'wf3_ic'
+    container = _CONTAINER
+    prefix = _FOLDER
+
     while True:
-        bbatch = blob_client.list_blobs(container_name=container, prefix=prefix, marker=marker)
+        bbatch = blob_client.list_blobs(container_name=container, prefix=prefix, marker=marker, delimiter='/')
         blobs.extend(bbatch)
         if not bbatch.next_marker:
             break
@@ -471,7 +503,7 @@ if __name__ == '__main__':
 
     input_files = [
         get_file_details(blob_client, 'all', blob.name)
-        for blob in blobs if str(blob.name).__contains__('raw')
+        for blob in blobs if is_valid_extension(blob)
     ]
 
     # Obtain a shared access signature that provides write access to the output
@@ -496,12 +528,12 @@ if __name__ == '__main__':
         # tasks. The resource files we pass in are used for configuring the pool's
         # start task, which is executed each time a node first joins the pool (or
         # is rebooted or re-imaged).
-        create_pool(batch_client,
-                    _POOL_ID,
-                    application_files,
-                    _NODE_OS_PUBLISHER,
-                    _NODE_OS_OFFER,
-                    _NODE_OS_SKU)
+        #create_pool(batch_client,
+        #            _POOL_ID,
+        #            application_files,
+        #            _NODE_OS_PUBLISHER,
+        #            _NODE_OS_OFFER,
+        #            _NODE_OS_SKU)
 
         # Create the job that will run the tasks.
         create_job(batch_client, _JOB_ID, _POOL_ID)
@@ -516,35 +548,35 @@ if __name__ == '__main__':
                   output_container_sas_token)
 
         # Pause execution until tasks reach Completed state.
-        wait_for_tasks_to_complete(batch_client,
-                                   _JOB_ID,
-                                   datetime.timedelta(minutes=300))
+        # wait_for_tasks_to_complete(batch_client, _JOB_ID, datetime.timedelta(hours=48))
 
-        logging.info(" Success! All tasks reached the 'Completed' state within the specified timeout period.")
+        # logging.info(" Success! All tasks reached the 'Completed' state within the specified timeout period.")
 
         # Download the task output files from the output Storage container to a
-        # local directory
-        # download_blobs_from_container(blob_client, output_container_name, os.path.expanduser('~/Downloads'))
+        # local directory (only if i'm working with a small set)
+        # if len(blobs) < 150:
+        #    download_blobs_from_container(blob_client, output_container_name, os.path.expanduser('~/Downloads'))
 
         # Clean up storage resources
-        logging.info('Deleting containers...')
-        blob_client.delete_container(app_container_name)
-        blob_client.delete_container(output_container_name)
+        # logging.info('Deleting containers...')
+        # blob_client.delete_container(app_container_name)
+        # blob_client.delete_container(output_container_name)
 
         # Print out some timing info
-        end_time = datetime.datetime.now().replace(microsecond=0)
+        # end_time = datetime.datetime.now().replace(microsecond=0)
 
-        logging.info('Sample end: {}'.format(end_time))
-        logging.info('Elapsed time: {}'.format(end_time - start_time))
+        # logging.info('Sample end: {}'.format(end_time))
+        # logging.info('Elapsed time: {}'.format(end_time - start_time))
 
     except Exception as e:
         logging.exception('Unexpected error')
 
     # Clean up Batch resources (if the user so chooses).
-    #if query_yes_no('Delete job?') == 'yes':
-    batch_client.job.delete(_JOB_ID)
+    # if query_yes_no('Delete job?') == 'yes':
 
-    #if query_yes_no('Delete pool?') == 'yes':
-    batch_client.pool.delete(_POOL_ID)
+    # batch_client.job.delete(_JOB_ID)
 
-    #input('Press ENTER to exit...')
+    # if query_yes_no('Delete pool?') == 'yes':
+    # batch_client.pool.delete(_POOL_ID)
+
+    # input('Press ENTER to exit... don\'t forget to delete pool and jobs')
