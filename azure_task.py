@@ -10,11 +10,10 @@ from astropy.utils.iers import iers
 from common import helpers
 from lib import calc_pos
 import azure.storage.blob as azureblob
-from azure.storage.table import TableService, Entity
+from azure.storage.table import TableService, Entity, TableBatch
 from lib import crutils
 
 import logging
-
 
 config = configparser.ConfigParser()
 config.read('configuration.cfg')
@@ -23,7 +22,19 @@ _LOGS_ACCOUNT_NAME = config.get(option='logsaccountname', section='Logs')
 _LOGS_ACCOUNT_KEY = config.get(option='logsaccountkey', section='Logs')
 
 
+def upload_output_to_blob():
+    blob_client = azureblob.BlockBlobService(account_name=args.storageaccount, sas_token=args.sastoken)
+    output_file_path = os.path.realpath(output_file)
+    print('Uploading file {} to container [{}]...'.format(output_file_path, args.storagecontainer))
+    blob_client.create_blob_from_path(args.storagecontainer, output_file, output_file_path)
+
+
 if __name__ == '__main__':
+
+    def chunks(l, n):
+        """Yield successive n-sized chunks from l."""
+        for i in range(0, len(l), n):
+            yield l[i:i + n]
 
     try:
         parser = argparse.ArgumentParser()
@@ -74,9 +85,9 @@ if __name__ == '__main__':
 
         long, lat, height = calc_pos.calc_pos(img)
 
-        logging.info('Finished processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
-
         logging.info('Output: CR {}, Lat {}, Long {}, Height {}'.format(len(crs), long, lat, height))
+
+        logging.info('Finished processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
 
         table_service = TableService(account_name=_LOGS_ACCOUNT_NAME,
                                      account_key=_LOGS_ACCOUNT_KEY)
@@ -107,26 +118,25 @@ if __name__ == '__main__':
 
         table_service.insert_or_replace_entity('imagestable', task)
 
+        logging.info('Done inserting image at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+
+        # for chunk in chunks(crs, 100):
+        #    batch = TableBatch()
         for cr in crs:
             cr_task = {'PartitionKey': img.observation_set, 'RowKey': cr.label}
 
             for prop in cr:
                 cr_task[prop] = str(cr[prop])
 
-            table_service.insert_or_replace_entity('crtable', cr_task)
+            table_service.insert_or_replace_entity(cr_task)
+            # batch.insert_or_replace_entity(cr_task)
+            # table_service.commit_batch('crtable', batch)
 
         logging.info('Done with everything at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+        upload_output_to_blob()
 
     except Exception as e:
         logging.exception('Unexpected error')
+        upload_output_to_blob()
+        raise
 
-    # Create the blob client using the container's SAS token.
-    # This allows us to create a client that provides write
-    # access only to the container.
-    blob_client = azureblob.BlockBlobService(account_name=args.storageaccount, sas_token=args.sastoken)
-
-    output_file_path = os.path.realpath(output_file)
-
-    print('Uploading file {} to container [{}]...'.format(output_file_path, args.storagecontainer))
-
-    blob_client.create_blob_from_path(args.storagecontainer, output_file, output_file_path)
