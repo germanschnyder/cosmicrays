@@ -9,13 +9,17 @@ class ACS:
 class COS:
     NAME = 'COS'
     DATA_FILE_EXT = ['flt_a', 'flt_b']
-    POS_FILE_EXT = 'dmf'
+    POS_FILE_EXT = 'spt'
+    WIDTH = 16384
+    HEIGHT = 1024
 
 
 class FGS:
     NAME = 'FGS'
     DATA_FILE_EXT = ['a1f', 'a2f', 'a3f']
     POS_FILE_EXT = 'dmf'
+    WIDTH = 100878
+    HEIGHT = 7
 
 
 class NICMOS:
