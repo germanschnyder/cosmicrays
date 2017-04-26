@@ -29,9 +29,6 @@ import os
 import time
 import logging
 
-import azure.storage.blob as azureblob
-import azure.batch.models as batchmodels
-
 from common.instruments import WFC3, WFPC2, STIS, NICMOS, FGS, COS, ACS
 
 _STANDARD_OUT_FILE_NAME = 'stdout.txt'
@@ -133,6 +130,9 @@ def wait_for_tasks_to_complete(batch_client, job_id, timeout):
     :param timeout: The maximum amount of time to wait.
     :type timeout: `datetime.timedelta`
     """
+
+    import azure.batch.models as batchmodels
+
     time_to_timeout_at = datetime.datetime.now() + timeout
 
     while datetime.datetime.now() < time_to_timeout_at:
@@ -398,6 +398,8 @@ def upload_blob_and_create_sas(
     :return: A SAS URL to the blob with the specified expiry time.
     :rtype: str
     """
+    import azure.storage.blob as azureblob
+
     block_blob_client.create_container(
         container_name,
         fail_on_exist=False)
