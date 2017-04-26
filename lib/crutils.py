@@ -38,6 +38,12 @@ def load(filepath, pos_filepath):
 
 
 def clean_cr(raw, mask=None, iterations=4)->array:
+    """
+    :param raw: 2-D array with image pixels
+    :param mask: pre-loaded bad pixels/cr mask
+    :param iterations: iterations to run
+    :return: a clean array and the calculated mask
+    """
     img = CosmicsImage(raw)
     img.clean(mask=mask, verbose=True)
     img.run(maxiter=iterations, verbose=True)
@@ -46,6 +52,11 @@ def clean_cr(raw, mask=None, iterations=4)->array:
 
 
 def reduce_cr(cr_pixels, exptime):
+    """
+    :param cr_pixels: 2-D array with cosmic rays pixels
+    :param exptime: image exposition time
+    :return: an array with the objects detected
+    """
     img = cr_pixels.astype(int) / exptime
     label_image, nf = label(img)
     props = regionprops(label_image)

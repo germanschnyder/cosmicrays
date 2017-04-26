@@ -1,6 +1,8 @@
 import unittest
 import os, os.path, sys
 
+import time
+
 from common.instruments import InstrumentUtils
 from lib import calc_pos, crutils
 from tests import utils
@@ -13,26 +15,21 @@ class TestCalcPosMethods(unittest.TestCase):
 
     test_images = utils.test_images
 
-    def test_calc_pos(self):
-
+    def test_pipeline(self):
         for instr, filename in self.test_images.items():
 
             if os.path.isfile(filename):
                 ins = InstrumentUtils.instrument_from_name(instr)
                 pos_filename = filename.replace(ins.DATA_FILE_EXT[0], ins.POS_FILE_EXT)
+                start = time.time()
                 img = crutils.load(filename, pos_filename)
+                _, cr_pixels = crutils.clean_cr(img.data, None, 1)
 
-                print("Loaded %s, sending %s" % (filename, pos_filename))
+                crs = crutils.reduce_cr(cr_pixels, img.exposition_duration)
                 lon, lat, height = calc_pos.calc_pos(img)
+                end = time.time()
 
-                assert lon is not None, "Longitude is %r" % lon
-                assert lat is not None, "Latitude is %r" % lat
-                assert height is not None, "Height is %r" % height
-
-
-                # assert math.isclose(lon, -57.96487609991613), "Longitude is %r" % lon
-                # assert math.isclose(lat, 25.709904336670753), "Latitude is %r" % lat
-                # assert math.isclose(height, 575.80171745717143), "Height is %r" % height
+                print('Complete pipeline for %s image took %r seconds' % (instr, end - start))
 
             else:
                 assert False, "Couldn't open %s" % filename

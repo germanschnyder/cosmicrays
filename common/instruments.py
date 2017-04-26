@@ -1,4 +1,12 @@
-class ACS:
+class Instrument:
+    NAME = ''
+    DATA_FILE_EXT = []
+    POS_FILE_EXT = ''
+    WIDTH = 0
+    HEIGHT = 0
+
+
+class ACS(Instrument):
     NAME = 'ACS'
     DATA_FILE_EXT = ['flt']
     POS_FILE_EXT = 'spt'
@@ -6,7 +14,7 @@ class ACS:
     HEIGHT = 4096
 
 
-class COS:
+class COS(Instrument):
     NAME = 'COS'
     DATA_FILE_EXT = ['flt_a', 'flt_b']
     POS_FILE_EXT = 'spt'
@@ -14,7 +22,7 @@ class COS:
     HEIGHT = 1024
 
 
-class FGS:
+class FGS(Instrument):
     NAME = 'FGS'
     DATA_FILE_EXT = ['a1f', 'a2f', 'a3f']
     POS_FILE_EXT = 'dmf'
@@ -22,7 +30,7 @@ class FGS:
     HEIGHT = 7
 
 
-class NICMOS:
+class NICMOS(Instrument):
     NAME = 'NICMOS'
     DATA_FILE_EXT = ['raw', 'mos']
     POS_FILE_EXT = 'spt'
@@ -30,7 +38,7 @@ class NICMOS:
     HEIGHT = 256
 
 
-class STIS:
+class STIS(Instrument):
     NAME = 'STIS'
     DATA_FILE_EXT = ['flt']
     POS_FILE_EXT = 'spt'
@@ -38,7 +46,7 @@ class STIS:
     HEIGHT = 1024
 
 
-class WFC3:
+class WFC3(Instrument):
     NAME = 'WFC3'
     DATA_FILE_EXT = ['flt']
     POS_FILE_EXT = 'spt'
@@ -46,7 +54,7 @@ class WFC3:
     HEIGHT = 4096
 
 
-class WFPC2:
+class WFPC2(Instrument):
     NAME = 'WFPC2'
     DATA_FILE_EXT = ['c0m']
     POS_FILE_EXT = 'shm'

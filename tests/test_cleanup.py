@@ -5,6 +5,7 @@ import numpy
 from common.instruments import WFC3, ACS, STIS, WFPC2, InstrumentUtils, NICMOS
 from lib import crutils
 from common.image import ImageExtension, Image
+from tests import utils
 
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), sys.argv[0]))
@@ -40,13 +41,7 @@ def _lacosmic_for_type(filename, instrument):
 
 class TestCleanupMethods(unittest.TestCase):
 
-    test_images = {
-        'ACS': os.path.join(os.path.dirname(__file__), 'images/ACS/j6mf16lhq_%s.fits' % ACS.DATA_FILE_EXT[0]),
-        'WFC3': os.path.join(os.path.dirname(__file__), 'images/WFC3/iaa901jxq_%s.fits' % WFC3.DATA_FILE_EXT[0]),
-        'STIS': os.path.join(os.path.dirname(__file__), 'images/STIS/o3sj01ozq_%s.fits' % STIS.DATA_FILE_EXT[0]),
-        'WFPC2': os.path.join(os.path.dirname(__file__), 'images/WFPC2/u21u0201t_%s.fits' % WFPC2.DATA_FILE_EXT[0]),
-        'NICMOS': os.path.join(os.path.dirname(__file__), 'images/NICMOS/n3t102d3q_%s.fits' % NICMOS.DATA_FILE_EXT[0])
-    }
+    test_images = utils.test_images
 
     def test_instrument_detection(self):
         for (instr, filename) in self.test_images.items():

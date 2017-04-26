@@ -1,7 +1,7 @@
 from astropy.io.fits.header import Header
 from numpy.core import ndarray
 
-from common.instruments import InstrumentUtils
+from common.instruments import InstrumentUtils, Instrument
 
 
 class ImageExtension(object):
@@ -40,115 +40,115 @@ class Image(object):
         return h
 
     @property
-    def aperture(self):
+    def aperture(self)->str:
         return self.__get_pos('APER_REF')
 
     @property
-    def ecliptic_lon(self):
+    def ecliptic_lon(self)->str:
         return self.__get_pos('ELON_REF')
 
     @property
-    def ecliptic_lat(self):
+    def ecliptic_lat(self)->str:
         return self.__get_pos('ELAT_REF')
 
     @property
-    def galactic_lon(self):
+    def galactic_lon(self)->str:
         return self.__get_pos('GLON_REF')
 
     @property
-    def galactic_lat(self):
+    def galactic_lat(self)->str:
         return self.__get_pos('GLAT_REF')
 
     @property
-    def postnstx(self):
+    def postnstx(self)->str:
         return self.__get_pos('POSTNSTX')
 
     @property
-    def postnsty(self):
+    def postnsty(self)->str:
         return self.__get_pos('POSTNSTY')
 
     @property
-    def postnstz(self):
+    def postnstz(self)->str:
         return self.__get_pos('POSTNSTZ')
 
     @property
-    def bitpix(self):
+    def bitpix(self)->str:
         return self.__get_header('BITPIX')
 
     @property
-    def proposal_id(self):
+    def proposal_id(self)->str:
         return self.__get_header('PROPOSID')
 
     @property
-    def target_name(self):
+    def target_name(self)->str:
         return self.__get_header('TARGNAME')
 
     @property
-    def position_angle(self):
+    def position_angle(self)->str:
         return self.__get_pos('PA_V3')
 
     @property
-    def right_ascension(self):
+    def right_ascension(self)->str:
         return self.__get_pos('RA_V1')
 
     @property
-    def declination(self):
+    def declination(self)->str:
         return self.__get_pos('DEC_V1')
 
     @property
-    def is_dark(self):
+    def is_dark(self)->bool:
         return self.target_name == 'DARK'
 
     @property
-    def cr_rejected_perform(self):
+    def cr_rejected_perform(self)->str:
         return self.__get_header('CRCORR')
 
     @property
-    def has_cr(self):
+    def has_cr(self)->bool:
         return self.cr_rejected_perform == 'OMIT'
 
     @property
-    def has_extensions(self):
+    def has_extensions(self)->bool:
         return len(self.__extensions) > 0
 
     @property
-    def charge_inject(self):
+    def charge_inject(self)->str:
         return self.__get_header('CHINJECT')
 
     @property
-    def flash_current(self):
+    def flash_current(self)->str:
         return self.__get_header('FLASHCUR')
 
     @property
-    def file_name(self):
+    def file_name(self)->str:
         return self.__get_header('FILENAME')
 
     @property
-    def observation_set(self):
+    def observation_set(self)->str:
         return self.__get_header('ROOTNAME')
 
     @property
-    def file_type(self):
+    def file_type(self)->str:
         return self.__get_header('FILETYPE')
 
     @property
-    def instrument(self) -> object:
+    def instrument(self) -> Instrument:
         return InstrumentUtils.instrument_from_name(self.__get_header('INSTRUME'))
 
     @property
-    def exposition_duration(self):
+    def exposition_duration(self)->str:
         return self.__get_header('EXPTIME')
 
     @property
-    def observation_date(self):
+    def observation_date(self)->str:
         return self.__get_header('DATE-OBS')
 
     @property
-    def observation_start_time(self):
+    def observation_start_time(self)->str:
         return self.__get_header('TIME-OBS')
 
     @property
-    def data(self):
+    def data(self)->ndarray:
         return self.__data
 
     @property
@@ -161,7 +161,7 @@ class Image(object):
                      ext.get("EXTNAME") == info.name and
                      int(ext.get("EXTVER")) == info.version), None)
 
-    def __init__(self, data: ndarray, headers, pos):
+    def __init__(self, data: ndarray, headers: [Header], pos: [Header]):
         assert headers is not None, "You must specify at least primary headers"
         assert len(headers) > 0, "You must specify at least primary headers"
         self.__data = data
