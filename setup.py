@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='cosmicrays',
-    version='0.1.0',
+    version='0.2.0',
     description='Project for obtaining statistical information on cosmic rays incidence in FITS images',
     long_description=readme,
     author='Germán Schnyder',
