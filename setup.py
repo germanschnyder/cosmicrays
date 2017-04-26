@@ -23,5 +23,12 @@ setup(
         'console_scripts': [
             'cr_count=scripts:main',
         ]
-    }
+    },
+    install_requires=[
+        "numpy",
+        "scipy",
+        "scikit-image",
+        "astropy",
+        "argparse"
+    ]
 )
