@@ -29,4 +29,4 @@ if __name__ == "__main__":
     _, cr_pixels = crutils.clean_cr(img.data, None, 2)
     crs = crutils.reduce_cr(cr_pixels, img.exposition_duration)
     long, lat, height = calc_pos.calc_pos(img)
-    sys.stdout.write("lon: {}, lat: {}, height: {}".format(long, lat, height))
+    sys.stdout.write("file: {0}\tcrs: {1:6d}\tlon: {2:.4f}\tlat: {3:.4f}\theight: {4:.4f}\n".format(img.file_name, len(crs), long, lat, height))

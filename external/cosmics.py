@@ -250,7 +250,7 @@ class CosmicsImage:
                 replacementvalue = np.median(goodcutout)
             else:
                 # i.e. no good pixels : Shit, a huge cosmic, we will have to improvise ...
-                print("OH NO, I HAVE A HUUUUUUUGE COSMIC !!!!!")
+                logging.warning("OH NO, I HAVE A HUUUUUUUGE COSMIC !!!!!")
                 replacementvalue = self.guessbackgroundlevel()
 
             # We update the cleanarray,
