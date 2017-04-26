@@ -1,6 +1,7 @@
 from astropy.time import Time
 import math
 import numpy
+import logging
 from astropy.utils.iers import iers
 
 
@@ -32,7 +33,7 @@ def lst(JD, EastLong):
     GMST0UT = GMST0UT - math.floor(GMST0UT);
     LST = GMST0UT + 1.0027379093 * DayFrac + EastLong / (2 * math.pi);
     LST = LST - math.floor(LST)
-    # print("LST: " + str(LST))
+    # logging.debug("LST: " + str(LST))
 
     # switch STType
     # case {'m'}
@@ -142,16 +143,16 @@ def ecef2geodetic(x, y, z, semia, ecc) -> object:
     # Fixed-point iteration with Bowring's formula
     # (typically converges within two or three iterations)
     betaNew = math.atan2((1 - f) * math.sin(phi), math.cos(phi));
-    # print("BETA: " + str(beta))
-    # print("BETA_NEW: " + str(betaNew))
-    # print(math.isclose(beta, betaNew))
+    # logging.debug("BETA: " + str(beta))
+    # logging.debug("BETA_NEW: " + str(betaNew))
+    # logging.debug(math.isclose(beta, betaNew))
     count = 0;
     while not math.isclose(beta, betaNew) and count < 5:
         beta = betaNew;
         phi = math.atan2(z + b * ep2 * math.sin(beta) ** 3, rho - a * e2 * math.cos(beta) ** 3);
         betaNew = math.atan2((1 - f) * math.sin(phi), math.cos(phi));
         count = count + 1;
-        # print(count)
+        # logging.debug(count)
 
     # Calculate ellipsoidal height from the final value for latitude
     sinphi = math.sin(phi);
@@ -181,76 +182,75 @@ def calc_pos(img) -> object:
     TIMEOBS = img.observation_start_time
     # EXPTIME = hdulist_raw[0].header["EXPTIME"]
 
-    # print("POSTNSTX: " + str(POSTNSTX))
-    # print("POSTNSTY: " + str(POSTNSTY))
-    # print("POSTNSTZ: " + str(POSTNSTZ))
-    # print("DATEOBS: " + str(DATEOBS))
-    # print("TIMEOBS: " + str(TIMEOBS))
-    # print("EXPTIME: " + str(EXPTIME))
+    # logging.debug("POSTNSTX: " + str(POSTNSTX))
+    # logging.debug("POSTNSTY: " + str(POSTNSTY))
+    # logging.debug("POSTNSTZ: " + str(POSTNSTZ))
+    # logging.debug("DATEOBS: " + str(DATEOBS))
+    # logging.debug("TIMEOBS: " + str(TIMEOBS))
+    # logging.debug("EXPTIME: " + str(EXPTIME))
 
     DISTANCE = math.sqrt(POSTNSTX ** 2 + POSTNSTY ** 2 + POSTNSTZ ** 2)
-    # print("DISTANCE: " + str(DISTANCE))
+    # logging.debug("DISTANCE: " + str(DISTANCE))
     LATITUDE = math.degrees(math.atan(POSTNSTZ / DISTANCE))
-    # print("LATITUDE: " + str(LATITUDE))
+    # logging.debug("LATITUDE: " + str(LATITUDE))
     RA = math.fmod(math.degrees(math.atan2(POSTNSTY, POSTNSTX)), 360)
-    # print("RA: " + str(RA))
+    # logging.debug("RA: " + str(RA))
 
-    print('About to parse dates...')
+    logging.debug('About to parse dates...')
 
     jd = Time(DATEOBS + ' ' + TIMEOBS, scale='utc')
-    # print("JulianDate: " + str(jd.jd))
+    # logging.debug("JulianDate: " + str(jd.jd))
 
-    print('... parsing is done')
-    print('Auto download is %s' % str(iers.conf.auto_download))
+    logging.debug('... parsing is done')
+    logging.debug('Auto download is %s' % str(iers.conf.auto_download))
 
     # sidereal = jd.sidereal_time('mean', 0)
 
-    print('sideral done')
+    logging.debug('sideral done')
 
     # Estoy seguro que puedo usar el sidereal para no tener que implementar lst,
     # pero no se que transformación me esta faltando para pasar de arco sidereal al numero que usan para las operaciones
-    # print("sidereal: " + str(sidereal))
+    # logging.debug("sidereal: " + str(sidereal))
     localST = lst(jd.jd, 0)
-    # print("localST: " + str(localST))
+    # logging.debug("localST: " + str(localST))
     GSMT = localST * 2 * math.pi
 
-    print('gsmt done')
+    logging.debug('gsmt done')
 
-    # print("GSMT: " + str(GSMT))
-    # print("GSMT.hour: " + str(GSMT.hour))
+    # logging.debug("GSMT: " + str(GSMT))
+    # logging.debug("GSMT.hour: " + str(GSMT.hour))
 
     ROT = numpy.matrix([[math.cos(GSMT), math.sin(GSMT), 0],
                         [-math.sin(GSMT), math.cos(GSMT), 0], [0, 0, 1]])
 
-    # print("ROT: " + str(ROT))
+    # logging.debug("ROT: " + str(ROT))
 
     POS = numpy.matrix([[POSTNSTX], [POSTNSTY], [POSTNSTZ]])
 
-    # print(POS)
+    # logging.debug(POS)
 
     POSR = ROT.dot(POS)
 
-    # print(POSR)
+    # logging.debug(POSR)
 
 
-    print('posr done')
+    logging.debug('posr done')
 
     semia = 6378.137;  # Earth semimajor axis - ellipsoid WGS84
     finv = 298.257223563;  # Inverse of flattening - ellipsoid WGS84
     f = 1 / finv;
     ecc = math.sqrt(2 * f - f ** 2);  # eccentricity
 
-    # print("ECC: " + str(ecc))
+    # logging.debug("ECC: " + str(ecc))
 
     PHI, LAMBDA, HEIGHT = ecef2geodetic(POSR[0, 0], POSR[1, 0], POSR[2, 0], semia, ecc)
 
-
-    print('geodetic done')
+    logging.debug('geodetic done')
 
     LONGITUDE = math.degrees(LAMBDA);
     LATITUDE = math.degrees(PHI);
 
-    # print(LONGITUDE)
-    # print(LATITUDE)
+    # logging.debug(LONGITUDE)
+    # logging.debug(LATITUDE)
 
     return LONGITUDE, LATITUDE, HEIGHT

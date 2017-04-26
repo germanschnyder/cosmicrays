@@ -3,5 +3,3 @@ scipy
 scikit-image
 astropy
 argparse
-azure-storage
-azure-batch
