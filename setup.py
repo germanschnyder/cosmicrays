@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import sys
 from setuptools import setup, find_packages
 
 
@@ -8,6 +9,9 @@ with open('README.rst') as f:
 
 with open('LICENSE') as f:
     license = f.read()
+
+if not sys.version_info[0] == 3:
+    sys.exit("Sorry, Python 2 is not supported (yet)")
 
 setup(
     name='cosmicrays',
