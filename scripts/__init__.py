@@ -7,7 +7,9 @@ import logging
 '''
 Use like:
 
-ls *_raw.fits | xargs -I {} cr_count --filepath={}
+ls *_raw.fits | parallel -I {} cr_count --filepath={}
+
+requires GNU parallel
 '''
 
 from common import helpers
