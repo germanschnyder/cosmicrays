@@ -39,8 +39,8 @@ def load(filepath, pos_filepath):
 
 def clean_cr(raw, mask=None, iterations=4)->array:
     img = CosmicsImage(raw)
-    img.clean(mask=mask, verbose=True)
-    img.run(maxiter=iterations, verbose=True)
+    img.clean(mask=mask)
+    img.run(maxiter=iterations)
 
     return array(img.cleanarray), img.getmask()
 
