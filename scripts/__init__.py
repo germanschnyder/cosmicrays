@@ -7,13 +7,13 @@ import logging
 '''
 Use like:
 
-ls *_raw.fits | xargs -I {} /c/Anaconda3/python.exe linux-tool.py --filepath={}
+ls *_raw.fits | xargs -I {} /c/Anaconda3/python.exe crcount.py --filepath={}
 '''
 
 from common import helpers
 from lib import crutils, calc_pos
 
-if __name__ == "__main__":
+def main():
     logging.basicConfig(level=logging.ERROR)
 
     parser = argparse.ArgumentParser()
