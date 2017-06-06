@@ -36,14 +36,18 @@ def load(filepath, pos_filepath):
     return Image(array(data), headers, pos_headers)
 
 
-def clean_cr(raw, mask=None, iterations=4)->array:
+def clean_cr(raw, gain=0, mask=None, iterations=4)->array:
     """
     :param raw: 2-D array with image pixels
     :param mask: pre-loaded bad pixels/cr mask
     :param iterations: iterations to run
+    :param gain: image gain value
     :return: a clean array and the calculated mask
     """
-    img = CosmicsImage(raw)
+    if gain is None:
+        gain = 0
+
+    img = CosmicsImage(raw, gain=gain)
     img.clean(mask=mask)
     img.run(maxiter=iterations)
 

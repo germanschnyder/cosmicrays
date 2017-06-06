@@ -23,7 +23,7 @@ class TestCalcPosMethods(unittest.TestCase):
                 pos_filename = filename.replace(ins.DATA_FILE_EXT[0], ins.POS_FILE_EXT)
                 start = time.time()
                 img = crutils.load(filename, pos_filename)
-                _, cr_pixels = crutils.clean_cr(img.data, None, 1)
+                _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=1, gain=img.gain)
 
                 crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
                 lon, lat, height = calc_pos.calc_pos(img)

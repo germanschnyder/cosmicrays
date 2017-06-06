@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
         logging.info('Loaded image {} for instrument {}'.format(img.file_name, img.instrument.NAME))
 
-        _, cr_pixels = crutils.clean_cr(img.data, None, 2)
+        _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=2, gain=img.gain)
 
         logging.info('Got {} cr pixels'.format(numpy.sum(cr_pixels)))
 

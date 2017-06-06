@@ -87,8 +87,8 @@ dilstruct[4, 4] = 0
 
 
 class CosmicsImage:
-    def __init__(self, rawarray, pssl=0.0, gain=2.2, readnoise=10.0, sigclip=5.0, sigfrac=0.3, objlim=5.0,
-                 satlevel=50000.0):
+    def __init__(self, rawarray, pssl=0.0, gain=0, readnoise=0, sigclip=5.0, sigfrac=0.3, objlim=5.0,
+                 satlevel=-1.0):
         """
 
         sigclip : increase this if you detect cosmics where there are none. Default is 5.0, a good value for earth-bound images.

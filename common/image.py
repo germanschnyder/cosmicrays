@@ -63,7 +63,12 @@ class Image(object):
     def equinox(self)->str:
         return self.__get_header('EQUINOX')
 
-
+    @property
+    def gain(self) -> str:
+        gain = self.__get_header('CCDGAIN')
+        if gain is None:
+            gain = self.__get_header('ADCGAIN')
+        return gain
 
     # Already applied maybe ?
     # CCDGAIN

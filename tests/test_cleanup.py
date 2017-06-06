@@ -23,7 +23,7 @@ def _lacosmic_for_type(filename, instrument):
         assert img.data.shape[1] == instrument.HEIGHT, "height is %s instead of %s" % (img.data.shape[1], instrument.HEIGHT)
 
         # print(mask.data)
-        clean, cr_pixels = crutils.clean_cr(img.data, None, 1)
+        clean, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=1, gain=img.gain)
 
         # Remove found CRs from original image...
         diff = numpy.array(numpy.subtract(img.data, clean))
@@ -206,7 +206,7 @@ class TestCleanupMethods(unittest.TestCase):
                 pos_filename = filename.replace(ins.DATA_FILE_EXT[0], ins.POS_FILE_EXT)
 
                 img = crutils.load(filename, pos_filename)
-                _, cr_pixels = crutils.clean_cr(img.data, None, 1)
+                _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=1, gain=img.gain)
 
                 crs, _ = crutils.reduce_cr(cr_pixels, img.exposition_duration)
 

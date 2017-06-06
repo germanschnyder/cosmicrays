@@ -31,7 +31,7 @@ def main():
     pos_ext = helpers.pos_ext_from_data_ext(data_ext)
     pos_input_file = input_file.replace(data_ext, pos_ext)
     img = crutils.load(input_file, pos_input_file)
-    _, cr_pixels = crutils.clean_cr(img.data, None, 2)
+    _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=2, gain=img.gain)
     crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
     long, lat, height = calc_pos.calc_pos(img)
     stats = calculate(crs, normalized_img)

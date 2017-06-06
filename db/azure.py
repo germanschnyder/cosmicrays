@@ -44,6 +44,7 @@ def save_image(img: Image, crs, lat, long, height, stats, ptime):
     task.observation_start_time = str(img.observation_start_time)
     task.equinox = str(img.equinox)
     task.exposition_duration = str(img.exposition_duration)
+    task.gain = str(img.gain)
     task.proposal_id = str(img.proposal_id)
     task.position_angle = str(img.position_angle)
     task.right_ascension = str(img.right_ascension)

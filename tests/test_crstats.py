@@ -22,7 +22,7 @@ class TestCrStatsMethods(unittest.TestCase):
                 pos_filename = filename.replace(ins.DATA_FILE_EXT[0], ins.POS_FILE_EXT)
                 img = crutils.load(filename, pos_filename)
 
-                clean, cr_pixels = crutils.clean_cr(img.data, None, 1)
+                clean, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=1, gain=img.gain)
 
                 exp_time = img.exposition_duration  # seconds
                 crs, normalized_img = crutils.reduce_cr(cr_pixels, exp_time)
