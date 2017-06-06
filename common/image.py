@@ -67,6 +67,9 @@ class Image(object):
     def gain(self) -> str:
         gain = self.__get_header('CCDGAIN')
         if gain is None:
+            gain = self.__get_header('ATODGAIN')
+
+        if gain is None:
             gain = self.__get_header('ADCGAIN')
         return gain
 

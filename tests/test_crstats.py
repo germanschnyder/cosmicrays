@@ -1,6 +1,8 @@
 import unittest
 import os, os.path, sys
 
+from scipy.misc import imsave
+
 from common.instruments import InstrumentUtils
 from lib import calc_pos, crutils, crstats
 from tests import utils
@@ -24,9 +26,10 @@ class TestCrStatsMethods(unittest.TestCase):
 
                 clean, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=1, gain=img.gain)
 
+                #imsave("clean.png", clean)
+                #imsave("crs.png", cr_pixels)
                 exp_time = img.exposition_duration  # seconds
                 crs, normalized_img = crutils.reduce_cr(cr_pixels, exp_time)
-
                 stats = crstats.calculate(crs, normalized_img)
 
                 for key, value in stats.items():
