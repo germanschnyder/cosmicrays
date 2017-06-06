@@ -11,5 +11,5 @@ test_images = {
 }
 
 stats_images = {
-    WFC3.NAME: os.path.join(os.path.dirname(__file__), 'images/stats/iaa901kdq_%s.fits' % WFC3.DATA_FILE_EXT[0]),
+    WFC3.NAME: os.path.join(os.path.dirname(__file__), 'images/WFC3/iaa901jxq_%s.fits' % WFC3.DATA_FILE_EXT[0]),
 }

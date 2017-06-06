@@ -1,8 +1,6 @@
 import unittest
 import os, os.path, sys
 
-from scipy.misc import imsave
-
 from common.instruments import InstrumentUtils
 from lib import calc_pos, crutils, crstats
 from tests import utils
