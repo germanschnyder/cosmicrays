@@ -40,6 +40,86 @@ class Image(object):
         return h
 
     @property
+    def moon_angle(self)->str:
+        return self.__get_header('MOONANGL')
+
+    @property
+    def sun_angle(self)->str:
+        return self.__get_header('SUNANGLE')
+
+    @property
+    def sun_altitude(self)->str:
+        return self.__get_header('SUN_ALT')
+
+    @property
+    def right_ascension_target(self)->str:
+        return self.__get_header('RA_TARG')
+
+    @property
+    def declination_target(self)->str:
+        return self.__get_header('DEC_TARG')
+
+    @property
+    def equinox(self)->str:
+        return self.__get_header('EQUINOX')
+
+
+
+    # Already applied maybe ?
+    # CCDGAIN
+    # CCDAMP (list of amps), then CCDOFST<amp>
+    #
+    # Only in RAW
+    # BSCALE
+    # BZERO
+
+    # start wcs attributes
+
+    @property
+    def wcs_axes(self)->int:
+        return int(self.__get_header('WCSAXES'))
+
+    def wcs_crpix(self, idx: int)->str:
+        return self.__get_header('CRPIX{}'.format(idx))
+
+    def wcs_crval(self, idx: int)->str:
+        return self.__get_header('CRVAL{}'.format(idx))
+
+    def wcs_ctype(self, idx: int)->str:
+        return self.__get_header('CTYPE{}'.format(idx))
+
+    def wcs_cd(self, idx: int, pos: int)->str:
+        return self.__get_header('CD{}_{}'.format(idx, pos))
+
+    def wcs_ltv(self, idx: int)->str:
+        return self.__get_header('LTV{}'.format(idx))
+
+    def wcs_ltm(self, idx: int)->str:
+        return self.__get_header('LTM{}_{}'.format(idx, idx))
+
+    @property
+    def wcs_pa_aper(self)->str:
+        return self.__get_header('PA_APER')
+
+    @property
+    def wcs_va_factor(self)->str:
+        return self.__get_header('VAFACTOR')
+
+    @property
+    def wcs_orientation(self)->str:
+        return self.__get_header('ORIENTAT')
+
+    @property
+    def wcs_ra_aperture(self)->str:
+        return self.__get_header('RA_APER')
+
+    @property
+    def wcs_dec_aperture(self)->str:
+        return self.__get_header('DEC_APER')
+
+    # end wcs
+
+    @property
     def aperture(self)->str:
         return self.__get_pos('APER_REF')
 
@@ -110,6 +190,30 @@ class Image(object):
     @property
     def has_extensions(self)->bool:
         return len(self.__extensions) > 0
+
+    @property
+    def bias_correction(self)->str:
+        return self.__get_header('BIASCORR')
+
+    @property
+    def has_bias_correction(self)->bool:
+        return self.bias_correction == 'COMPLETE'
+
+    @property
+    def blev_correction(self)->str:
+        return self.__get_header('BLEVCORR')
+
+    @property
+    def has_blev_correction(self)->bool:
+        return self.blev_correction == 'COMPLETE'
+
+    @property
+    def cr_mask(self)->str:
+        return self.__get_header('CRMASK')
+
+    @property
+    def has_cr_mask_applied(self)->bool:
+        return self.cr_mask == 'COMPLETE'
 
     @property
     def charge_inject(self)->str:

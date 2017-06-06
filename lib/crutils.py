@@ -10,7 +10,6 @@ from scipy.ndimage.measurements import label
 
 def load(filepath, pos_filepath):
     """
-
     :param filepath: fits image path
     :return: an Image
     """
@@ -55,10 +54,10 @@ def reduce_cr(cr_pixels, exptime):
     """
     :param cr_pixels: 2-D array with cosmic rays pixels
     :param exptime: image exposition time
-    :return: an array with the objects detected
+    :return: an array with the objects detected and the normalized image
     """
     img = cr_pixels.astype(int) / exptime
     label_image, nf = label(img)
     props = regionprops(label_image)
 
-    return props
+    return props, img

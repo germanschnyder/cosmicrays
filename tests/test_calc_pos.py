@@ -29,7 +29,6 @@ class TestCalcPosMethods(unittest.TestCase):
                 assert lat is not None, "Latitude is %r" % lat
                 assert height is not None, "Height is %r" % height
 
-
                 # assert math.isclose(lon, -57.96487609991613), "Longitude is %r" % lon
                 # assert math.isclose(lat, 25.709904336670753), "Latitude is %r" % lat
                 # assert math.isclose(height, 575.80171745717143), "Height is %r" % height

@@ -106,6 +106,8 @@ class TestCleanupMethods(unittest.TestCase):
 
             img = crutils.load(filename, pos_filename)
 
+            # Test regular attributes
+
             assert img.bitpix == 16
             assert img.observation_set == 'iaa901jxq', "observation set is %s" % img.observation_set
             assert img.file_name == 'iaa901jxq_flt.fits', "file name is %s" % img.file_name
@@ -119,6 +121,13 @@ class TestCleanupMethods(unittest.TestCase):
             assert img.observation_date == "2009-06-30", "observation date is %s" % img.observation_date
             assert img.observation_start_time == "09:18:39", "observation start time is %s" % img.observation_start_time
             assert img.exposition_duration == 360, "exposition duration is %r" % img.exposition_duration
+            assert img.right_ascension_target == 0.0, "right ascension target is %s"% img.right_ascension_target
+
+            # Test WCS attributes
+            assert img.wcs_axes == 2
+            assert img.wcs_dec_aperture == 70.29782637001, "wcs declination aperture is %r" % img.wcs_dec_aperture
+            assert img.wcs_cd(1, 1) == -1.04411e-05, "wcs cd 1-1 is %r" % img.wcs_cd(1, 1)
+            assert img.wcs_cd(666, 666) is None
 
             # Test extensions
             assert len(img.extension_info) == 5, "Extensions count is %r" % len(img.extension_info)

@@ -3,11 +3,11 @@ import datetime
 import numpy
 import argparse
 import logging
-
+import timeit
 from astropy.utils.iers import iers
 from common import helpers
 from db import azure
-from lib import calc_pos, crutils
+from lib import calc_pos, crutils, crstats
 
 
 if __name__ == '__main__':
@@ -36,7 +36,7 @@ if __name__ == '__main__':
                              'Storage container.')
     args = parser.parse_args()
     input_file = os.path.realpath(args.filepath)
-    output_file = '{}_OUTPUT{}'.format(
+    output_file = '{}_OUTPUT{}.txt'.format(
         os.path.splitext(args.filepath)[0],
         os.path.splitext(args.filepath)[1])
 
@@ -44,6 +44,8 @@ if __name__ == '__main__':
         logging.basicConfig(filename=output_file, filemode='w+', level=logging.INFO)
 
         logging.info('Started processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
+
+        tic = timeit.default_timer()
 
         data_ext = helpers.extension_from_filename(input_file)
         pos_ext = helpers.pos_ext_from_data_ext(data_ext)
@@ -57,7 +59,7 @@ if __name__ == '__main__':
 
         logging.info('Got {} cr pixels'.format(numpy.sum(cr_pixels)))
 
-        crs = crutils.reduce_cr(cr_pixels, img.exposition_duration)
+        crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
 
         logging.info('Got {} cosmic rays'.format(len(crs)))
 
@@ -65,9 +67,15 @@ if __name__ == '__main__':
 
         logging.info('Output: CR {}, Lat {}, Long {}, Height {}'.format(len(crs), long, lat, height))
 
+        stats = crstats.calculate(crs, normalized_img)
+
+        logging.info('Stats: {}'.format(stats))
+
+        toc = timeit.default_timer()
+
         logging.info('Finished processing at {} '.format(datetime.datetime.now().replace(microsecond=0)))
 
-        azure.save_image(img, crs, lat, long, height)
+        azure.save_image(img, crs, lat, long, height, stats, toc - tic)
 
         logging.info('Done with everything at {} '.format(datetime.datetime.now().replace(microsecond=0)))
 

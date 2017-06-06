@@ -4,7 +4,7 @@ import os, os.path, sys
 import time
 
 from common.instruments import InstrumentUtils
-from lib import calc_pos, crutils
+from lib import calc_pos, crutils, crstats
 from tests import utils
 
 __location__ = os.path.realpath(
@@ -25,8 +25,12 @@ class TestCalcPosMethods(unittest.TestCase):
                 img = crutils.load(filename, pos_filename)
                 _, cr_pixels = crutils.clean_cr(img.data, None, 1)
 
-                crs = crutils.reduce_cr(cr_pixels, img.exposition_duration)
+                crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
                 lon, lat, height = calc_pos.calc_pos(img)
+
+                stats = crstats.calculate(crs, normalized_img)
+                print(stats)
+
                 end = time.time()
 
                 print('Complete pipeline for %s image took %r seconds' % (instr, end - start))

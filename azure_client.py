@@ -479,6 +479,7 @@ if __name__ == '__main__':
         os.path.realpath('common/instruments.py'): 'common',
         os.path.realpath('db/azure.py'): 'db',
         os.path.realpath('lib/crutils.py'): 'lib',
+        os.path.realpath('lib/crstats.py'): 'lib',
         os.path.realpath('lib/calc_pos.py'): 'lib',
         os.path.realpath('external/cosmics.py'): 'external',
         os.path.realpath('requirements.txt'): '',
