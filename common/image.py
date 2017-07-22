@@ -26,9 +26,9 @@ class ImageExtension(object):
 
 class Image(object):
 
-    def __get_header(self, name):
+    def __get_header(self, name, sci=False):
         h = self.__primary_headers.get(name)
-        if h is None and self.has_extensions:
+        if sci or (h is None and self.has_extensions):
             sci_1_ext = self.extension(ImageExtension("SCI", "IMAGE", 1))
             h = sci_1_ext.get(name)
         return h
@@ -170,6 +170,21 @@ class Image(object):
     @property
     def target_name(self)->str:
         return self.__get_header('TARGNAME')
+
+    @property
+    def naxis(self)->int:
+        return int(self.__get_header('NAXIS', True))
+
+    def naxis_i(self, idx: int)->str:
+        return self.__get_header('NAXIS{}'.format(idx))
+
+    @property
+    def binaxis1(self)->int:
+        return int(self.__get_header('BINAXIS1'))
+
+    @property
+    def binaxis2(self)->int:
+        return int(self.__get_header('BINAXIS2'))
 
     @property
     def position_angle(self)->str:

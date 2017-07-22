@@ -103,4 +103,11 @@ def output(img: Image, crs, lat, long, height, stats, ptime):
     for key, value in stats.items():
         task['stat_%s' % key] = str(value)
 
+    task['naxis'] = img.naxis
+    for i in range(1, img.naxis + 1):
+        task['naxis%d' % i] = img.naxis_i(i)
+
+    task['binaxis1'] = img.binaxis1
+    task['binaxis2'] = img.binaxis2
+
     return task
