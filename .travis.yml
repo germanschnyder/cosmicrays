@@ -6,7 +6,11 @@ before_install:
   - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then wget http://repo.continuum.io/miniconda/Miniconda-3.5.5-Linux-x86_64.sh -O miniconda.sh; else wget http://repo.continuum.io/miniconda/Miniconda3-3.5.5-Linux-x86_64.sh -O miniconda.sh; fi
   - chmod +x miniconda.sh
   - ./miniconda.sh -b -p /home/travis/mc
-  - export PATH=/home/travis/mc/bin:$PATH
+  - mkdir -p $HOME/bin
+  - wget https://github.com/github/git-lfs/releases/download/v1.1.2/git-lfs-linux-amd64-1.1.2.tar.gz
+  - tar xvfz git-lfs-linux-amd64-1.1.2.tar.gz
+  - mv git-lfs-1.1.2/git-lfs $HOME/bin/git-lfs
+  - export PATH=/home/travis/mc/bin:$PATH:$HOME/bin/
 
 install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
@@ -25,6 +29,8 @@ install:
   - conda install -n testenv numpy scipy nose
   - pip install coverage coveralls
   - pip install -r requirements.txt
+
+before_script: git lfs pull
 
 script:
     - nosetests --verbosity=2 --with-coverage --cover-package=lib

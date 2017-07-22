@@ -1,0 +1,21 @@
+# HDU 0 in la7803fiq_trl.fits:
+SIMPLE  =                    T / Standard FITS Format                           
+BITPIX  =                    8 / Character Information                          
+NAXIS   =                    0 / No image data present                          
+EXTEND  =                    T / Extensions are allowed                         
+DATE    = '2015-12-02'         / Creation date                                  
+FILENAME= 'la7803fiq_trl.fits' / Name of file                                   
+
+# HDU 1 in la7803fiq_trl.fits:
+XTENSION= 'TABLE   '           / Standard FITS Format                           
+BITPIX  =                    8 / Character Information                          
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / Number of characters per row                   
+NAXIS2  =                  176 / Number of rows                                 
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'trl'                                                                 
+TTYPE1  = 'TEXT_FILE'          / One column per line                            
+TBCOL1  =                    1 / Starting column                                
+TFORM1  = 'A132     '          / Line format                                    

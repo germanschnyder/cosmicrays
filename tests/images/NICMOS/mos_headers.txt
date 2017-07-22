@@ -1,0 +1,761 @@
+# HDU 0 in n3t102010_mos.fits:
+SIMPLE  =                    T / Fits standard                                  
+BITPIX  =                   16 / Bits per pixel                                 
+NAXIS   =                    0 / Number of axes                                 
+EXTEND  =                    T / File may contain extensions                    
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+IRAF-TLM= '12:59:13 (08/05/2009)' / Time of last modification                   
+NEXTEND =                    5 / Number of standard extensions                  
+DATE    = '2009-05-08T12:59:13' / date this file was written (yyyy-mm-dd)       
+FILENAME= 'n3t102010_mos.fits' / name of file                                   
+FILETYPE= 'SCI      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'NICMOS'             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / DATA DESCRIPTION KEYWORDS                                       
+                                                                                
+ROOTNAME= 'N3T102010'          / rootname of the observation set                
+IMAGETYP= 'DARK              ' / type of exposure identifier                    
+PRIMESI = 'NICMOS'             / instrument designated as prime                 
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+ECL_LONG=   0.000000000000E+00 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =   0.000000000000E+00 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=   0.000000000000E+00 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =   0.000000000000E+00 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+              / OTHER COORDINATE SYSTEM INFORMATION                             
+                                                                                
+APER_REF= 'NIC1FIX   '         / aperture used for reference position           
+ELON_REF=    4.079386352906488 / ecliptic longitude at reference position (deg) 
+ELAT_REF=    71.39326098639893 / ecliptic latitude at reference position (deg)  
+GLON_REF=    97.70252239486391 / galactic longitude at reference position (deg) 
+GLAT_REF=    11.24521534037642 / galactic latitude at reference position (deg)  
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                 7035 / PEP proposal identifier                        
+LINENUM = '2.010          '    / proposal logsheet line number                  
+PR_INV_L= 'MacKenty                      ' / last name of principal investigator
+PR_INV_F= 'John                ' / first name of principal investigator         
+PR_INV_M= 'W.                  ' / middle name / initial of principal investigat
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+ORIENTAT=              109.289 / position angle of image y axis (deg. e of n)   
+SUNANGLE=            73.863335 / angle between sun and V1 axis                  
+MOONANGL=           108.735199 / angle between moon and V1 axis                 
+SUN_ALT =           -38.035545 / altitude of the sun above Earth's limb         
+FGSLOCK = 'GYROS             ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= '3'                  / number of gyros scheduled for observation      
+REFFRAME= 'GSC1    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '1997-02-23'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '16:51:17'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=   5.050270228358E+04 / exposure start time (Modified Julian Date)     
+EXPEND  =   5.050270363285E+04 / exposure end time (Modified Julian Date)       
+EXPTIME =        2.2876080E+01 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+QUALCOM1= 'NO APPARENT PROBLEMS                                                '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = 'OK                                                                  '
+                                                                                
+              / INSTRUMENT CONFIGURATION INFORMATION                            
+                                                                                
+CAMERA  =                    1 / Camera in use (1, 2, or 3)                     
+PRIMECAM=                    1 / Primary camera for internal parallels          
+FOCUS   = 'CAMERA1   '         / In-focus camera for this observation           
+APERTURE= 'NIC1-FIX  '         / aperture in use (NICi,NICi-FIX,NIC2-CORON/ACQ) 
+OBSMODE = 'ACCUM     '         / array readout mode (ACCUM, MULTIACCUM, etc.)   
+FILTER  = 'BLANK  '            / filter wheel element in beam during observation
+NUMITER =                    1 / number of exposure iterations                  
+NREAD   =                    1 / ACCUM - number of initial and final readouts   
+NSAMP   =                    1 / RAMP, MULTI-ACCUM - number of samples          
+SAMP_SEQ= 'NONE    '           / MultiAccum exposure time sequence name         
+CR_ELIM = 'NoCR    '           / RAMP - onboard cosmic ray detection used       
+SAT_ELIM= 'YES     '           / RAMP - on-board saturation detection used      
+CRTHRESH=                  0.0 / RAMP - on-board cosmic ray detect threshold    
+SATHRESH=                  0.0 / RAMP - on-board saturation threshold           
+VARSCALE=                  0.0 / RAMP - on-board scale factor for variance      
+FOMXPOS =                  0.0 / X offset of FOV using NICMOS FOM (arcsec)      
+FOMYPOS =                  0.0 / Y offset of FOV using NICMOS FOM (arcsec)      
+NFXTILTP=          -0.00663203 / Fom X TILT Position (arcsec)                   
+NFYTILTP=         -0.000662553 / Fom Y TILT Position (arcsec)                   
+NPXTILTP=               2707.0 / PAM X TILT Position (steps)                    
+NPYTILTP=               2814.0 / PAM Y TILT Position (steps)                    
+NPFOCUSP=              4.19381 / Pam FOCUS Position (mm)                        
+TIMEPATT=                    0 / timing pattern id                              
+READOUT = 'FAST'               / detector array readout rate (FAST, SLOW)       
+SAMPZERO=             0.203000 / sample time of the zeroth read (sec)           
+HCLKRATE=                10.49 / horizontal clock rate (microseconds)           
+VIDEO_BW=                400.0 / readout video bandwidth (kHz)                  
+ADCGAIN =                  5.4 / analog-digital conversion gain (electrons/DN)  
+                                                                                
+              / POINTING INFORMATION                                            
+                                                                                
+PA_V3   =           153.847107 / position angle of V3-axis of HST (deg)         
+                                                                                
+              / BACKGROUND KEYWORDS                                             
+                                                                                
+BACKEST1=                  0.0 / background estimate number 1                   
+BACKEST2=             0.000000 / background estimate number 2                   
+BACKEST3=             0.000000 / background estimate number 3                   
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                                    '
+PHOTFLAM=                  0.0 / inverse sensitivity (ergs/cm**2/Angstrom/DN)   
+PHOTFNU =                  0.0 / inverse sensitivity (JY*sec/DN)                
+PHOTZPT =                  0.0 / ST magnitude system zero point (mag)           
+ZPSCALE =                  0.0 / temp dependent photometric 0-pt scale factor   
+PHOTFERR=               -999.9 / relat err: temp dependent photometric zero-pt  
+PHOTPLAM=                  0.0 / pivot wavelength of the photmode (Angstroms)   
+PHOTBW  =                  0.0 / RMS bandwidth of the photmode (Angstroms)      
+                                                                                
+              / BIAS-DERIVED TEMPERATURE INFORMATION                            
+                                                                                
+TFBDATE = 'Fri May  8 12:54:34 2009' / Date that CalTempFromBias was run        
+TFBERR  =                  0.0 / Error (degK) for temperature derived from bias 
+TFBMETH = 'N/A                 ' / CalTempFromBias algorithm type used          
+TFBTEMP =                  0.0 / Temperature (degK) derived from bias           
+TFBVER  = '2.03    '           / Version of CalTempFromBias run                 
+                                                                                
+              / BIAS-DERIVED TEMPERATURE CALIBRATION SWITCHES                   
+                                                                                
+TFBCALC = 'PERFORM '           / CalTempFromBias calc: PERFORM, OMIT, COMPLETE  
+                                                                                
+              / BIAS-DERIVED TEMPERATURE CALIBRATION INDICATORS                 
+                                                                                
+TFBDONE = 'SKIPPED '           / CalTempFromBias calc: PERFORM, OMIT, SKIPPED   
+                                                                                
+              / CALNICA CALIBRATION REFERENCE FILES                             
+                                                                                
+MASKFILE= 'nref$t511816an_msk.fits' / static data quality file                  
+NOISFILE= 'nref$h1t16104n_noi.fits' / detector read noise file                  
+NLINFILE= 'nref$l1i1216an_lin.fits' / detector nonlinearities file              
+DARKFILE= 'nref$h1s1026en_drk.fits' / dark current file                         
+TEMPFILE= 'nref$t160440tn_tdd.fits' / temperature-dependent dark file           
+LINSCALE=        1.0000000E+00 / scaling factor for linear dark image           
+AMPSCALE=        1.0000000E+00 / scaling factor for ampglow image               
+FLATFILE= 'N/A                    ' / flat field file                           
+TDFFILE = 'N/A                    ' / temperature-dependent flat field          
+TDFGROUP=                   -1 / imset from TDFFILE applied by CALNICA          
+PHOTTAB = 'nref$i7l12297n_pht.fits' / photometric calibration table             
+BACKTAB = 'N/A                    ' / background model parameters table         
+                                                                                
+IDCTAB  = 'N/A                    ' / Image Distortion Correction table         
+              / CALNICA CALIBRATION REFERENCE FILE PEDIGREE                     
+                                                                                
+MASKPDGR= 'INFLIGHT 01/03/1997 31/05/1997' / static data quality file           
+NOISPDGR= 'GROUND 27/01/1997'  / detector read noise file                       
+NLINPDGR= '                                        ' / detector nonlinearities f
+DARKPDGR= '                                        ' / dark current file pedigre
+FLATPDGR= '                                        ' / flat field file pedigree 
+PHOTPDGR= '                                        ' / photometric calibration t
+BACKPDGR= '                                        ' / background model paramete
+                                                                                
+              / CALNICA CALIBRATION SWITCHES: perform,omit                      
+                                                                                
+BIASCORR= 'PERFORM '           / subtract ADC bias level                        
+ZSIGCORR= 'OMIT    '           / Zero read signal correction                    
+ZOFFCORR= 'OMIT    '           / subtract MULTIACCUM zero read                  
+MASKCORR= 'PERFORM '           / data quality initialization                    
+NOISCALC= 'PERFORM '           / calculate statistic errors                     
+NLINCORR= 'OMIT    '           / correct for detector nonlinearities            
+DARKCORR= 'OMIT    '           / dark correction                                
+BARSCORR= 'OMIT    '           / bars correction                                
+FLATCORR= 'OMIT    '           / flat field correction                          
+UNITCORR= 'OMIT    '           / convert to count rates                         
+PHOTCALC= 'OMIT    '           / calculate photometric keywords                 
+CRIDCALC= 'PERFORM '           / identify cosmic ray hits                       
+BACKCALC= 'OMIT    '           / calculate background estimates                 
+WARNCALC= 'PERFORM '           / generate user warnings                         
+                                                                                
+              / CALNICA CALIBRATION INDICATORS: performed, skipped, omitted     
+                                                                                
+BIASDONE= 'PERFORMED'          / subtract ADC bias level                        
+ZSIGDONE= 'OMITTED '           / Zero read signal correction                    
+ZOFFDONE= 'OMITTED '           / subtract MULTI-ACCUM zero read                 
+MASKDONE= 'PERFORMED'          / data quality initialization                    
+NOISDONE= 'PERFORMED'          / calculate statistic errors                     
+NLINDONE= 'OMITTED '           / correct for detector nonlinearities            
+DARKDONE= 'OMITTED '           / dark correction                                
+BARSDONE= 'OMITTED '           / bars correction                                
+FLATDONE= 'OMITTED '           / flat field correction                          
+UNITDONE= 'OMITTED '           / convert to count rates                         
+PHOTDONE= 'OMITTED '           / calculate photometric keywords                 
+CRIDDONE= 'OMITTED '           / identify cosmic ray hits                       
+BACKDONE= 'OMITTED '           / calculate background estimates                 
+WARNDONE= 'OMITTED '           / generate user warnings                         
+                                                                                
+CALSTAGE= 'CALNICB '           / state of calibration                           
+CAL_VER = 'Version 2.6.2'      / CALNIC code version                            
+PROCTIME=   5.495953711806E+04 / Pipeline processing time (MJD)                 
+OPUS_VER= 'OPUS 2009_2a      ' / OPUS software system version number            
+                                                                                
+              / POST-SAA DARK KEYWORDS                                          
+                                                                                
+SAA_EXIT= '                 '  / time of last exit from SAA contour level 23    
+SAA_TIME=                    0 / seconds since last exit from SAA contour 23    
+SAA_DARK= 'N/A      '          / association name for post-SAA dark exposures   
+SAACRMAP= 'n3t102c7q_spr.fits' / SAA cosmic ray map file                        
+                                                                                
+              / BRIGHT EARTH PERSISTENCE KEYWORDS                               
+                                                                                
+BEPSCALE=                  0.0 / level of persistence calculated                
+BEPVALLO=                  0.5 / minimum allowed value of the persistence to app
+BEPUSELO=                  0.5 / minimum allowed fraction of pixels used        
+BEPFRAC =                  0.0 / fraction of pixels used to calculate persistenc
+                                                                                
+                                                                                
+              / RUNCALSAA CALIBRATION REFERENCE FILES                           
+                                                                                
+SAADFILE= 'N/A                    ' / SAA dark reference image file             
+SAADPDGR= 'N/A                                     ' / SAA dark ref file pedigre
+SAACNTAB= 'N/A     '           / saaclean reference table                       
+SAACPDGR= '                                        ' / pedigree of saaclean refe
+PEDSBTAB= 'N/A     '           / pedsub reference table                         
+PDSBPDGR= '                                        ' / pedigree of pedsub refere
+PMODFILE= 'N/A                    ' / persistence model file                    
+PMSKFILE= 'N/A                    ' / persistence mask file                     
+                                                                                
+              / RUNCALSAA CALIBRATION SWITCHES                                  
+                                                                                
+SAACORR = 'OMIT    '           / correct for SAA signature                      
+BEPCORR = 'OMIT    '           / Calculate and apply bright earth persistence   
+                                                                                
+              / RUNCALSAA CALIBRATION INDICATORS                                
+                                                                                
+SAADONE = 'SKIPPED '           / correct for SAA signature                      
+BEPDONE = 'SKIPPED '           / Calculate and apply bright earth persistence   
+                                                                                
+              / SAA_CLEAN output keywords                                       
+                                                                                
+SAAPERS = '                                        ' / SAA persistence image    
+SCNPSCL =   0.000000000000E+00 / scale factor used to construct persistence img 
+SCNPMDN =   0.000000000000E+00 / median used in flatfielding persistence image  
+SCNTHRSH=   0.000000000000E+00 / Threshold dividing high & low signal domains   
+SCNHNPIX=                    0 / Number of pixels in high signal domain (HSD)   
+SCNLNPIX=                    0 / Number of pixels in low signal domain (LSD)    
+SCNHCHI2=   0.000000000000E+00 / HSD chi squared for parabola fit               
+SCNHSCL =   0.000000000000E+00 / HSD scale factor for min noise                 
+SCNHEFFN=   0.000000000000E+00 / HSD effective noise at SCNGAIN                 
+SCNHNRED=   0.000000000000E+00 / HSD noise reduction (percent)                  
+SCNLCHI2=   0.000000000000E+00 / LSD chi squared for parabola fit               
+SCNLSCL =   0.000000000000E+00 / LSD scale factor for min noise                 
+SCNLEFFN=   0.000000000000E+00 / LSD effective noise at SCNGAIN                 
+SCNLNRED=   0.000000000000E+00 / LSD noise reduction (percent)                  
+SCNAPPLD= '                                        ' / to which domains was SAA 
+                                                                                
+              / RLINCOR CALIBRATION REFERENCE FILES                             
+                                                                                
+ZPRATTAB= 'nref$r5o0317en_zpr.fits' / nonlincor zeropoint scaling table         
+RNLCORTB= 'nref$r5o0317bn_nlc.fits' / nonlincor nonlinearity power law table    
+                                                                                
+              / CALNICB CALIBRATION INFORMATION                                 
+                                                                                
+ILLMCORR= 'OMIT    '           / background illumination pattern subtraction    
+ILLMDONE= '         '          / background illumination pattern subtraction    
+ILLMFILE= 'N/A     '           / background illumination pattern file name      
+ILLMPDGR= '                                        ' / background illumination p
+MEAN_BKG=             0.000000 / mean background level (DN/sec)                 
+                                                                                
+              / OTFR KEYWORDS                                                   
+                                                                                
+T_SGSTAR= '                  ' / OMS calculated guide star control              
+                                                                                
+              / PATTERN KEYWORDS                                                
+                                                                                
+PATTERN1= 'NONE                    ' / primary pattern type                     
+P1_SHAPE= 'LINE              ' / primary pattern shape                          
+P1_PURPS= 'MOSAIC    '         / primary pattern purpose                        
+P1_NPTS =                    0 / number of points in primary pattern            
+P1_PSPAC=             0.000000 / point spacing for primary pattern (arc-sec)    
+P1_LSPAC=             0.000000 / line spacing for primary pattern (arc-sec)     
+P1_ANGLE=             0.000000 / angle between sides of parallelogram patt (deg)
+P1_FRAME= 'CELESTIAL'          / coordinate frame of primary pattern            
+P1_ORINT=             0.000000 / orientation of pattern to coordinate frame (deg
+P1_CENTR= 'NO '                / center pattern relative to pointing (yes/no)   
+BKG_OFF = 'SAM'                / pattern offset method (SAM or FOM)             
+PATTSTEP=                    0 / position number of this point in the pattern   
+PATTERN = 'NONE              ' / pattern type                                   
+                                                                                
+              / Target Acquisition Keywords                                     
+                                                                                
+NCHKBOXX=                    0 / CHecKBOX location X                            
+NCHKBOXY=                    0 / CHecKBOX location Y                            
+NTABOXSZ=                    3 / TA checkBOX SiZe                               
+NXCENT  =                    0 / X pos CENTroid (steps)                         
+NYCENT  =                    0 / Y pos CENTroid (steps)                         
+NXCENTP =                    0 / X pos CENTroid (pixels)                        
+NYCENTP =                    0 / Y pos CENTroid (pixels)                        
+NBOXSUM =                    0 / checkBoX  SUM                                  
+NOFFSETX=                    0 / OFFSET maneuver X (steps)                      
+NOFFSETY=                    0 / OFFSET maneuver Y (steps)                      
+NOFFSTXP=                    0 / OFFSeT maneuver X (pixels)                     
+NOFFSTYP=                    0 / OFFSeT maneuver Y (pixels)                     
+NSLEWCON= 'Clear'              / SLEW CONfirmation (Clear,Set)                  
+                                                                                
+              / ASSOCIATION KEYWORDS                                            
+                                                                                
+ASN_ID  = 'N3T102010 '         / unique identifier assigned to association      
+ASN_TAB = 'n3t102010_asn.fits     ' / name of the association table             
+ASN_MTYP= 'PROD-TARG'          / Role of the Member in the Association          
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+# HDU 1 in n3t102010_mos.fits:
+XTENSION= 'IMAGE   '           / Image extension                                
+BITPIX  =                  -32 / Bits per pixel                                 
+NAXIS   =                    2 / Number of axes                                 
+NAXIS1  =                  256 / Axis length                                    
+NAXIS2  =                  256 / Axis length                                    
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+EXTNAME = 'SCI     '           / Extension name                                 
+EXTVER  =                    1 / Extension version                              
+IRAF-TLM= '12:59:17 (08/05/2009)' / Time of last modification                   
+DATAMIN =          -9.217652E1 / Minimum data value                             
+DATAMAX =           4.232097E1 / Maximum data value                             
+DATE    = '2009-05-08T12:59:13' / Date FITS file was generated                  
+INHERIT =                    T / inherit the primary header                     
+EXPNAME = 'N3T102010'          / exposure identifier                            
+BUNIT   = 'COUNTS            ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =        1.2850000E+02 / x-coordinate of reference pixel                
+CRPIX2  =        1.2850000E+02 / y-coordinate of reference pixel                
+CRVAL1  =   3.117837416465E+02 / first axis value at reference pixel            
+CRVAL2  =   6.146853409352E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          3.98574E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =          1.13463E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =          1.13888E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =         -3.97088E-06 / partial of second axis coordinate w.r.t. y     
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+                                                                                
+              / READOUT PARAMETERS                                              
+                                                                                
+SAMPNUM =                    0 / MULTIACCUM sample number                       
+SAMPTIME=             4.575216 / total integration time (sec)                   
+DELTATIM=             4.575216 / integration time of this sample (sec)          
+ROUTTIME=   5.050270228358E+04 / UT time of array readout (MJD)                 
+TDFTRANS=                    0 / number of TDF transitions during current sample
+                                                                                
+              / DATA QUALITY                                                    
+                                                                                
+ENGQUAL = 'NORMAL  '           / engineering quality (NORMAL, FLAGS)            
+NQUAL00 =                65153 / number of pixels with all DQ flags equal zero  
+NQUAL01 =                    0 / number of pixels with Reed-Solomon flag        
+NQUAL02 =                    0 / number of pixels with NonLinearity flag        
+NQUAL03 =                    0 / number of pixels with Dark flag set            
+NQUAL04 =                    0 / number of pixels with Flat Field flag set      
+NQUAL05 =                   21 / number of pixels with Grot flag set            
+NQUAL06 =                    6 / number of pixels with Defective flag set       
+NQUAL07 =                    0 / number of pixels with Saturated flag set       
+NQUAL08 =                    0 / number of pixels with Missing flag set         
+NQUAL09 =                  383 / number of pixels with Bad Pixel flag set       
+NQUAL10 =                    0 / number of pixels with Cosmic Ray flag set      
+NQUAL11 =                    0 / number of pixels with Source flag set          
+NQUAL12 =                    0 / number of pixels with ZeroRead Signal flag set 
+NQUAL13 =                    0 / number of pixels with USER1 bit set            
+NQUAL14 =                    0 / number of pixels with USER2 bit set            
+NQUAL15 =                    0 / number of pixels with High Curvature           
+NQUAL16 =                    0 / number of pixels with RESERVED2 bit set        
+GOODMEAN=        9.4175262E+00 / mean of good pixels (no dq flags set)          
+GOODMEDN=        9.0791740E+00 / median of good pixels                          
+GOODSTDV=        5.3809156E+00 / standard deviation of good pixels              
+GOODMIN =       -9.2176521E+01 / minimum value of good pixels                   
+GOODMAX =        4.2320972E+01 / maximum value of good pixels                   
+QAMEAN  =        8.1981821E+00 / mean of good pixels in quadrant A              
+QAMEDN  =        7.7338853E+00 / median of good pixels in quadrant A            
+QASTDV  =        5.0193810E+00 / standard deviation of good pixels in quad A    
+QAMIN   =       -2.0821178E+01 / min value of good pixels in quadrant A         
+QAMAX   =        4.0959648E+01 / max value of good pixels in quadrant A         
+QBMEAN  =        9.5132208E+00 / mean of good pixels in quadrant B              
+QBMEDN  =        9.2741785E+00 / median of good pixels in quadrant B            
+QBSTDV  =        5.7274036E+00 / standard deviation of good pixels in quad B    
+QBMIN   =       -9.2176521E+01 / min value of good pixels in quadrant B         
+QBMAX   =        3.4911831E+01 / max value of good pixels in quadrant B         
+QCMEAN  =        1.0167436E+01 / mean of good pixels in quadrant C              
+QCMEDN  =        9.9293299E+00 / median of good pixels in quadrant C            
+QCSTDV  =        5.2239757E+00 / standard deviation of good pixels in quad C    
+QCMIN   =       -7.6351410E+01 / min value of good pixels in quadrant C         
+QCMAX   =        3.6143742E+01 / max value of good pixels in quadrant C         
+QDMEAN  =        9.7907152E+00 / mean of good pixels in quadrant D              
+QDMEDN  =        9.2216921E+00 / median of good pixels in quadrant D            
+QDSTDV  =        5.3245306E+00 / standard deviation of good pixels in quad D    
+QDMIN   =       -3.1522076E+01 / min value of good pixels in quadrant D         
+QDMAX   =        4.2320972E+01 / max value of good pixels in quadrant D         
+HISTORY MASKCORR performed using nref$t511816an_msk.fits                        
+HISTORY   INFLIGHT 01/03/1997 31/05/1997                                        
+HISTORY   Bad pixel mask modified using inflight data, grot pixels added to DQ  
+HISTORY BIASCORR performed                                                      
+HISTORY NOISCALC performed using nref$h1t16104n_noi.fits                        
+HISTORY   GROUND 27/01/1997                                                     
+HISTORY   TV-based NIC1 FAST nreads=1 nois                                      
+HISTORY Combined images:                                                        
+HISTORY   n3t102c7q_cal.fits                                                    
+HISTORY   n3t102c8q_cal.fits                                                    
+HISTORY   n3t102c9q_cal.fits                                                    
+HISTORY   n3t102caq_cal.fits                                                    
+HISTORY   n3t102cbq_cal.fits                                                    
+HISTORY Mosaiced images:                                                        
+HISTORY   n3t102c7q_cal.fits                                                    
+ROOTNAME= 'N3T102010'          /                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+# HDU 2 in n3t102010_mos.fits:
+XTENSION= 'IMAGE   '           / Image extension                                
+BITPIX  =                  -32 / Bits per pixel                                 
+NAXIS   =                    2 / Number of axes                                 
+NAXIS1  =                  256 / Axis length                                    
+NAXIS2  =                  256 / Axis length                                    
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+EXTNAME = 'ERR     '           / Extension name                                 
+EXTVER  =                    1 / Extension version                              
+IRAF-TLM= '12:59:17 (08/05/2009)' / Time of last modification                   
+DATAMIN =           0.000000E0 / Minimum data value                             
+DATAMAX =           2.661268E1 / Maximum data value                             
+DATE    = '2009-05-08T12:59:13' / Date FITS file was generated                  
+INHERIT =                    T / inherit the primary header                     
+EXPNAME = 'N3T102010'          / exposure identifier                            
+BUNIT   = 'COUNTS            ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =        1.2850000E+02 / x-coordinate of reference pixel                
+CRPIX2  =        1.2850000E+02 / y-coordinate of reference pixel                
+CRVAL1  =   3.117837416465E+02 / first axis value at reference pixel            
+CRVAL2  =   6.146853409352E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          3.98574E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =          1.13463E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =          1.13888E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =         -3.97088E-06 / partial of second axis coordinate w.r.t. y     
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+ROOTNAME= 'N3T102010'          /                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+# HDU 3 in n3t102010_mos.fits:
+XTENSION= 'IMAGE   '           / Image extension                                
+BITPIX  =                   16 / Bits per pixel                                 
+NAXIS   =                    2 / Number of axes                                 
+NAXIS1  =                  256 / Axis length                                    
+NAXIS2  =                  256 / Axis length                                    
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+EXTNAME = 'DQ      '           / Extension name                                 
+EXTVER  =                    1 / Extension version                              
+IRAF-TLM= '12:59:17 (08/05/2009)' / Time of last modification                   
+DATAMIN =           0.000000E0 / Minimum data value                             
+DATAMAX =           2.880000E2 / Maximum data value                             
+DATE    = '2009-05-08T12:59:13' / Date FITS file was generated                  
+INHERIT =                    T / inherit the primary header                     
+EXPNAME = 'N3T102010'          / exposure identifier                            
+BUNIT   = 'UNITLESS          ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =        1.2850000E+02 / x-coordinate of reference pixel                
+CRPIX2  =        1.2850000E+02 / y-coordinate of reference pixel                
+CRVAL1  =   3.117837416465E+02 / first axis value at reference pixel            
+CRVAL2  =   6.146853409352E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          3.98574E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =          1.13463E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =          1.13888E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =         -3.97088E-06 / partial of second axis coordinate w.r.t. y     
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+ROOTNAME= 'N3T102010'          /                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+# HDU 4 in n3t102010_mos.fits:
+XTENSION= 'IMAGE   '           / Image extension                                
+BITPIX  =                   16 / Bits per pixel                                 
+NAXIS   =                    2 / Number of axes                                 
+NAXIS1  =                  256 / Axis length                                    
+NAXIS2  =                  256 / Axis length                                    
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+EXTNAME = 'SAMP    '           / Extension name                                 
+EXTVER  =                    1 / Extension version                              
+IRAF-TLM= '12:59:17 (08/05/2009)' / Time of last modification                   
+DATAMIN =           0.000000E0 / Minimum data value                             
+DATAMAX =           1.000000E0 / Maximum data value                             
+DATE    = '2009-05-08T12:59:13' / Date FITS file was generated                  
+INHERIT =                    T / inherit the primary header                     
+EXPNAME = 'N3T102010'          / exposure identifier                            
+BUNIT   = 'SAMPLES           ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =        1.2850000E+02 / x-coordinate of reference pixel                
+CRPIX2  =        1.2850000E+02 / y-coordinate of reference pixel                
+CRVAL1  =   3.117837416465E+02 / first axis value at reference pixel            
+CRVAL2  =   6.146853409352E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          3.98574E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =          1.13463E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =          1.13888E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =         -3.97088E-06 / partial of second axis coordinate w.r.t. y     
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+ROOTNAME= 'N3T102010'          /                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+# HDU 5 in n3t102010_mos.fits:
+XTENSION= 'IMAGE   '           / Image extension                                
+BITPIX  =                  -32 / Bits per pixel                                 
+NAXIS   =                    2 / Number of axes                                 
+NAXIS1  =                  256 / Axis length                                    
+NAXIS2  =                  256 / Axis length                                    
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+EXTNAME = 'TIME    '           / Extension name                                 
+EXTVER  =                    1 / Extension version                              
+IRAF-TLM= '12:59:17 (08/05/2009)' / Time of last modification                   
+DATAMIN =           0.000000E0 / Minimum data value                             
+DATAMAX =           2.745129E1 / Maximum data value                             
+DATE    = '2009-05-08T12:59:13' / Date FITS file was generated                  
+INHERIT =                    T / inherit the primary header                     
+EXPNAME = 'N3T102010'          / exposure identifier                            
+BUNIT   = 'SECONDS           ' / brightness units                               
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =        1.2850000E+02 / x-coordinate of reference pixel                
+CRPIX2  =        1.2850000E+02 / y-coordinate of reference pixel                
+CRVAL1  =   3.117837416465E+02 / first axis value at reference pixel            
+CRVAL2  =   6.146853409352E+01 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =          3.98574E-06 / partial of first axis coordinate w.r.t. x      
+CD1_2   =          1.13463E-05 / partial of first axis coordinate w.r.t. y      
+CD2_1   =          1.13888E-05 / partial of second axis coordinate w.r.t. x     
+CD2_2   =         -3.97088E-06 / partial of second axis coordinate w.r.t. y     
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+ROOTNAME= 'N3T102010'          /                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                

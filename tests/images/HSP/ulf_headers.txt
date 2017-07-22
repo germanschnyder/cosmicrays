@@ -1,0 +1,130 @@
+# HDU 0 in v05m0101t_ulf.fits:
+SIMPLE  =                    T / Standard FITS format                           
+BITPIX  =                   16 / 16 bit 2's complement integers                 
+NAXIS   =                    1 / Number of axes                                 
+NAXIS1  =                  965 / length of 1st data axis                        
+EXTEND  =                    T / There may be standard extensions               
+OPSIZE  =                  128 / PSIZE of original image                        
+ORIGIN  = 'ST-DADS '           / Institution that originated the FITS file      
+FITSDATE= '26/05/94'           / Date FITS file was created                     
+FILENAME= 'v05m0101t_cvt.ulh'  / Original GEIS header file name with _cvt       
+ODATTYPE= 'USHORT  '           / Original datatype                              
+SDASMGNU=                    1 / GCOUNT of original image                       
+DADSFILE= 'V05M0101T.ULF'      /                                                
+DADSCLAS= 'CAL     '           /                                                
+DADSDATE= '26-MAY-1994 04:13:10' /                                              
+FILLCNT =                    0 /                                                
+ERRCNT  =                    0 /                                                
+PKTTIME =      48019.193503576 /                                                
+                                                                                
+                 / GROUP PARAMETERS: OSS                                        
+                                                                                
+                 / HSP DATA DESCRIPTOR KEYWORDS                                 
+INSTRUME= 'HSP               ' / instrument in use                              
+ROOTNAME= 'V05M0101T         ' / rootname of the observation set                
+FILETYPE= 'UDL               ' / shp, udl, dst, dsk, ast, ask, asd, asa         
+CTYPE1  = 'UNITLESS          ' / unitless, line, pixel, channel, sample, time   
+                                                                                
+                 / SCIENCE FILE SETS: T=present,F=absent                        
+DST_FILE=                    T / digital star science is present                
+DSK_FILE=                    F / digital sky science is present                 
+AST_FILE=                    F / analog star science is present                 
+ASK_FILE=                    F / analog sky science is present                  
+ASD_FILE=                    F / area scan digital is present                   
+ASA_FILE=                    F / area scan analog is present                    
+                                                                                
+                 / STATISTICAL KEYWORDS                                         
+DATE    = '25/11/92          ' / date this file was written (dd/mm/yy)          
+                                                                                
+                 / CDBS KEYWORDS                                                
+VDATAFMT= 'WORD              ' / Format of current observation                  
+VFAPVECX=                    0 / x cmp apt vct f/ tav                           
+VFAPVECY=                    0 / y cmp apt vct f/ tav                           
+VFCENVEX=                    0 / x cmp trg ct vct tav                           
+VFCENVEY=                    0 / y cmp trg ct vct tav                           
+VFCTVECX=                    0 / x cmp crs trg vt tav                           
+VFCTVECY=                    0 / y cmp crs trg vt tav                           
+VFFTVECX=                    0 / x cmp fn trg vct tav                           
+VFFTVECY=                    0 / y cmp fn trg vct tav                           
+VFOBJCNT=                    0 / count of trg obj                               
+VFPFACTX=                  316 / tav vct cnv fctr - x                           
+VFPFACTY=                  316 / tav vct vnv fctr - y                           
+VFSLWVEX=                    0 / x cmp slew vct tav                             
+VFSLWVEY=                    0 / y cmp slew vct tav                             
+VGAIND1 =                    7 / gain setting of detector 1                     
+VGAIND2 =                    7 / gain setting of detector 2                     
+VGAIND3 =                    7 / gain setting of detector 3                     
+VGAIND4 =                    7 / gain setting of detector 4                     
+VGAIND5 =                    7 / gain setting of detector 5                     
+VGAINDS =                    7 / gain setting of detector "sky"                 
+VHIVOLT1=                    0 / high voltage setting for detector 1            
+VHIVOLT2=                  255 / high voltage setting for detector 2            
+VHIVOLT3=                  255 / high voltage setting for detector 3            
+VHIVOLT4=                  255 / high voltage setting for detector 4            
+VHIVOLT5=                  255 / high voltage setting for detector 5            
+VHIVOLTS=                    0 / high voltage setting for detector "sky"        
+VHORSTPT=                    1 / no. of horiz steps/spatial point in area scans 
+VHPOINTS=                   20 / no. of horiz points (columns) in area scans    
+VNOINTPT=                    1 / no. of integrations/pt in area scans           
+VPADTHR1=                    6 / PAD threshold setting for detector 1           
+VPADTHR2=                  255 / PAD threshold setting for detector 2           
+VPADTHR3=                  255 / PAD threshold setting for detector 3           
+VPADTHR4=                  255 / PAD threshold setting for detector 4           
+VPADTHR5=                  255 / PAD threshold setting for detector 5           
+VPADTHRS=                  255 / PAD threshold setting for detector "sky"       
+VHORIZ1 =                 1152 / Horizontal deflection for detector 1           
+VHORIZ2 =                 4095 / Horizontal deflection for detector 2           
+VHORIZ3 =                 4095 / Horizontal deflection for detector 3           
+VHORIZ4 =                 4095 / Horizontal deflection for detector 4           
+VVERT1  =                  889 / Vertical deflection for detector 1             
+VVERT2  =                 4095 / Vertical deflection for detector 2             
+VVERT3  =                 4095 / Vertical deflection for detector 3             
+VVERT4  =                 4095 / Vertical deflection for detector 4             
+VREQDET = 'IDT1              ' / requested detector for the object observation  
+VSKYDET = 'IDT1              ' / currently selected sky detector                
+VVERSTPT=                    1 / no. of vert. steps/spatial pt. in area scans   
+VVPOINTS=                   20 / no. of vertical points (rows) in area scans    
+VOLTAGE =                    0 / commanded high voltage setting of obj detector 
+THRESH  =                    6 / PAD threshold setting for the object detector  
+VHORIZ  =                 1152 / commanded horizontal deflection of obj detector
+VVERT   =                  889 / commanded vertical deflection of obj detector  
+VFOCUSD1=                 1500 / focus command value for detector 1             
+VFOCUSD2=                 4095 / focus command value for detector 2             
+VFOCUSD3=                 4095 / focus command value for detector 3             
+VFOCUSD4=                 4095 / focus command value for detector 4             
+VFOCUSD =                 1500 / focus command value for object detector        
+                 / TARGET & PROPOSAL ID                                         
+TARGNAME= 'DARK              ' / proposer's target name                         
+RA_TARG =  0.0000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=  0.0000000000000E+00 / declination of the target (deg) (J2000)        
+PEQUINOX= '                  ' / proposed equinox of celestial coordinate system
+                                                                                
+PROPOSID=                 1500 / PEP proposal identifier                        
+PEP_EXPO= '1.0000000         ' / PEP exposure identifier including sequence     
+LINENUM = '1.000             ' / PEP proposal line number                       
+SEQLINE = '                  ' / PEP line number of defined sequence            
+SEQNAME = '                  ' / PEP define/use sequence name                   
+                                                                                
+
+# HDU 1 in v05m0101t_ulf.fits:
+XTENSION= 'TABLE   '           / Table extension                                
+BITPIX  =                    8 / Printable ASCII characters                     
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                   52 / Number of characters per row                   
+NAXIS2  =                    1 / GCOUNT of original file                        
+PCOUNT  =                    0 / No random parameter                            
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    3 / PCOUNT of original file                        
+EXTNAME = 'v05m0101t.ulh.tab'  / GEIS header file name with .tab                
+TTYPE1  = 'FILLCNT '           /                                                
+FILLCNT = 'number of segments containing fill' /                                
+TFORM1  = 'I11     '           /                                                
+TBCOL1  =                    1 /                                                
+TTYPE2  = 'ERRCNT  '           /                                                
+ERRCNT  = 'number of segments containing errors' /                              
+TFORM2  = 'I11     '           /                                                
+TBCOL2  =                   13 /                                                
+TTYPE3  = 'PKTTIME '           /                                                
+PKTTIME = 'time from the packet ancillary data' /                               
+TFORM3  = 'D25.16  '           /                                                
+TBCOL3  =                   25 /                                                

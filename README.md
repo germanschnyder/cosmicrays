@@ -6,3 +6,17 @@ master:
 dev:
 
 [![Build Status](https://travis-ci.org/germanschnyder/cosmicrays.svg?branch=dev)](https://travis-ci.org/germanschnyder/cosmicrays) [![Coverage Status](https://coveralls.io/repos/github/germanschnyder/cosmicrays/badge.svg?branch=dev)](https://coveralls.io/github/germanschnyder/cosmicrays?branch=dev)
+
+
+Installing the bash util (cr_count)
+------------------------------------
+```bash
+pip install -r requirements.txt
+python setup.py install
+```
+
+Then, obtain a list of the files to be processed and trigger parallel jobs:
+
+```bash
+ls *flt* | parallel -j 2 cr_count --filepath {} > flt.out
+```

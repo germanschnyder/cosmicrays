@@ -1,0 +1,25 @@
+# HDU 0 in v05m0101t_trl.fits:
+SIMPLE  =                    T / Standard FITS format                           
+BITPIX  =                    8 / Character Information                          
+NAXIS   =                    0 / No image data array present                    
+EXTEND  =                    T / There may be standard extension                
+ORIGIN  = 'ST-DADS '           / Institution that originated the FITS file      
+FITSDATE= '26/05/94'           / Date FITS file was created                     
+FILENAME= 'null_image'         / Zero length dummy image                        
+DADSFILE= 'V05M0101T.TRL'      / FITS file name                                 
+DADSCLAS= 'CAL     '           / Archive class of file                          
+DADSDATE= '26-MAY-1994 04:13:10' / Dataset generation date                      
+
+# HDU 1 in v05m0101t_trl.fits:
+XTENSION= 'TABLE   '           / Table extension                                
+BITPIX  =                    8 / Printable ASCII characters                     
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / Number of character per row                    
+NAXIS2  =                  104 / The number of rows                             
+PCOUNT  =                    0 / No random parameters                           
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'v05m0101t.trl'      / File name of the ASCII file                    
+TTYPE1  = 'TRAILER-FILE'       / ASCII file type                                
+TBCOL1  =                    1 / Starting column number                         
+TFORM1  = 'A132    '           / Format                                         

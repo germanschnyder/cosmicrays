@@ -1,0 +1,853 @@
+# HDU 0 in la7803fiq_corrtag_a.fits:
+SIMPLE  =                    T / conforms to FITS standard                      
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    0 / number of array dimensions                     
+EXTEND  =                    T                                                  
+NEXTEND =                    2 / Number of standard extensions                  
+DATE    = '2015-12-02'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'la7803fiq_corrtag_a.fits' / name of file                             
+FILETYPE= 'SCI      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'COS   '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / DATA DESCRIPTION KEYWORDS                                       
+                                                                                
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+IMAGETYP= 'TIME-TAG          ' / type of exposure identifier                    
+PRIMESI = 'HST   '             / instrument designated as prime                 
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                11356 / PEP proposal identifier                        
+LINENUM = '03.004         '    / proposal logsheet line number                  
+PR_INV_L= 'Welty                         ' / last name of principal investigator
+PR_INV_F= 'Alan                ' / first name of principal investigator         
+PR_INV_M= 'D.                  ' / middle name / initial of principal investigat
+                                                                                
+              / SUMMARY EXPOSURE INFORMATION                                    
+                                                                                
+QUALCOM1= '                                                                    '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = '                                                                    '
+                                                                                
+              / TARGET OFFSETS (POSTARGS)                                       
+                                                                                
+POSTARG1=             0.000000 / POSTARG in axis 1 direction                    
+POSTARG2=             0.000000 / POSTARG in axis 2 direction                    
+                                                                                
+              / DIAGNOSTIC KEYWORDS                                             
+                                                                                
+OPUS_VER= 'HSTDP 2015_2b     ' / OPUS software system version number            
+UREKA_V = '1.4.4.3 '           / Ureka software version number                  
+CAL_VER = '3.1.1 (2015-11-02)' / CALCOS code version                            
+PROCTIME=   5.735858876157E+04 / Pipeline processing time (MJD)                 
+                                                                                
+              / SCIENCE INSTRUMENT CONFIGURATION                                
+                                                                                
+OBSTYPE = 'IMAGING '           / observation type - imaging or spectroscopic    
+OBSMODE = 'TIME-TAG  '         / operating mode                                 
+EXPTYPE = 'DARK    '           / type of exposure                               
+DETECTOR= 'FUV'                / FUV or NUV                                     
+SEGMENT = 'FUVA'               / FUV detector segment name (FUVA, FUVB, or BOTH)
+DETECTHV= 'NomAB   '           / FUV High voltage state, from LDCSTATE          
+COSCOORD= 'USER    '           / COS output coordinate frame                    
+SUBARRAY=                    F / data from a subarray (T) or full frame (F)     
+LAMPPLAN= 'NONE          '     / Name of lamp that was planned to be used       
+LAMPUSED= 'NONE          '     / lamp status, NONE or name of lamp which is on  
+LAMPSET = 'Off   '             / spectral cal lamp current value (milliamps)    
+LIFE_ADJ=                 -999 / Life Time Adjustment Position                  
+EXP_NUM =                    1 / exposure number for repeated observations      
+NRPTEXP =                    1 / number of repeat exposures in set: default 1   
+FPPOS   =                  999 / grating offset index (1-4) for FP split        
+CENWAVE =                    0 / central wavelength of spectrum                 
+APERTURE= 'N/A     '           / aperture name                                  
+PROPAPER= 'PSA             '   / proposed aperture name                         
+APER_FOV= '2.5 arcsec (0.700 mm) diameter circular' / aperture field of view    
+APMPOS  = 'PSA-FUVB'           / Aperture Mechanism Position from telemetry     
+APERXPOS=                 -9.1 / Aperture Block Position dispersion (telemetry) 
+APERYPOS=                147.1 / Aperture Block Pos. cross dispersion(telemetry)
+OPT_ELEM= 'N/A     '           / optical element in use                         
+SHUTTER = 'Closed'             / External Shutter Position (OPEN, CLOSED)       
+EXTENDED= 'NO '                / Is target specified as extended object?        
+TAGFLASH= 'NONE            '   / Type of flashed exposures in time-tag          
+                                                                                
+              / CALIBRATION SWITCHES: PERFORM, OMIT, COMPLETE                   
+                                                                                
+FLATCORR= 'OMIT    '           / apply flat-field correction                    
+DEADCORR= 'COMPLETE'           / correct for deadtime                           
+DQICORR = 'COMPLETE'           / data quality initialization                    
+STATFLAG=                    T / Calculate statistics?                          
+TEMPCORR= 'COMPLETE'           / correct for thermal distortion                 
+GEOCORR = 'COMPLETE'           / correct FUV for geometic distortion            
+IGEOCORR= 'COMPLETE'           / interpolate geometric distortion in INL file   
+RANDCORR= 'COMPLETE'           / add pseudo-random numbers to raw x and y       
+RANDSEED=           1449065554 / seed for pseudo-random number generator        
+WALKCORR= 'COMPLETE'           / correct FUV for walk distortion                
+PHACORR = 'COMPLETE'           / filter by pulse-height                         
+TRCECORR= 'OMIT    '           / trace correction                               
+ALGNCORR= 'OMIT    '           / align data to profile                          
+XTRCTALG= 'BOXCAR  '           / BOXCAR or TWOZONE                              
+BADTCORR= 'OMIT    '           / filter by time (excluding bad time intervals)  
+DOPPCORR= 'OMIT    '           / orbital Doppler correction                     
+HELCORR = 'OMIT    '           / heliocentric Doppler correction                
+X1DCORR = 'OMIT    '           / 1-D spectral extraction                        
+BACKCORR= 'OMIT    '           / subtract background (when doing 1-D extraction)
+WAVECORR= 'OMIT    '           / use wavecal to adjust wavelength zeropoint     
+FLUXCORR= 'OMIT    '           / convert count-rate to absolute flux units      
+BRSTCORR= 'OMIT    '           / switch controlling search for FUV bursts       
+TDSCORR = 'OMIT    '           / switch for time-dependent sensitivity correctio
+                                                                                
+              / CALIBRATION REFERENCE FILES                                     
+                                                                                
+FLATFILE= 'N/A     '           / Pixel to Pixel Flat Field Reference File       
+DEADTAB = 'lref$s7g1700gl_dead.fits' / Deadtime Reference Table                 
+BPIXTAB = 'lref$yae1249sl_bpix.fits' / bad pixel table                          
+SPOTTAB = 'lref$zas1615jl_spot.fits' / Transient Bad Pixel Table                
+GSAGTAB = 'lref$zbn1927gl_gsag.fits' / ext. 15 for FUVA; ext. 51 for FUVB       
+HVTAB   = 'N/A     '           / High voltage command level Reference Table     
+BRFTAB  = 'lref$x1u1459il_brf.fits' / Baseline Reference Frame Reference Table  
+GEOFILE = 'lref$x1u1459gl_geo.fits' / Geometric Correction Reference File       
+TRACETAB= 'N/A     '           / 1D spectral trace table                        
+PROFTAB = 'N/A     '           / 2D spectrum profile table                      
+TWOZXTAB= 'N/A     '           / Two-zone spectral extraction parameters        
+WALKTAB = 'lref$w161831hl_walk.fits' / Walk Correction Reference Table          
+PHATAB  = 'lref$wc318317l_pha.fits' / Pulse Height Discrimination Reference Tabl
+PHAFILE = 'N/A     '           / Pulse Height Threshold Reference File          
+BADTTAB = 'N/A     '           / Bad Time Interval Reference Table              
+XTRACTAB= 'N/A     '           / 1-D Spectral Extraction Information Table      
+LAMPTAB = 'N/A     '           / template calibration lamp spectra table        
+DISPTAB = 'N/A     '           / Dispersion Coefficient Reference Table         
+IMPHTTAB= 'N/A     '           / Imaging photometric table                      
+FLUXTAB = 'N/A     '           / Spectroscopic flux calibration table           
+WCPTAB  = 'N/A     '           / wavecal parameters table                       
+BRSTTAB = 'N/A     '           / burst parameters table                         
+TDSTAB  = 'N/A     '           / time-dependent sensitivity correction tabl     
+SPWCSTAB= 'N/A     '           / Spectroscopic WCS Parameters Table             
+                                                                                
+              / ENGINEERING PARAMETERS FOR CALIBRATION                          
+                                                                                
+FPOFFSET=                  999 / FP offset from nominal, in motor steps         
+                                                                                
+              / TARGET ACQUISITION DATASET IDENTIFIERS                          
+                                                                                
+ACQSNAME= '          '         / rootname of first acquisition search exposure  
+ACQINAME= '          '         / rootname of first acquisition image exposure   
+PEAKXNAM= '          '         / Rootname of 1st cross-dispersion (XD) peakup   
+PEAKDNAM= '          '         / Rootname of 1st along-dispersion (AD) peakup   
+ACQ_NUM =                    0 / total number of exposures in acq sequence      
+                                                                                
+              / ARCHIVE SEARCH KEYWORDS                                         
+                                                                                
+BANDWID =                  0.0 / bandwidth of the data                          
+SPECRES =                  0.0 / approx. resolving power at central wavelength  
+CENTRWV =                  0.0 / central wavelength of the data                 
+MINWAVE =                  0.0 / minimum wavelength in spectrum                 
+MAXWAVE =                  0.0 / maximum wavelength in spectrum                 
+PLATESC =                  0.0 / plate scale (arcsec/pixel)                     
+                                                                                
+              / PAPER PRODUCT SUPPORT KEYWORDS                                  
+                                                                                
+PROPTTL1= 'COS FUV Initial On-Orbit Turn-On                                    '
+PROPTTL2= '                                                                    '
+OBSET_ID= '03'                 / observation set id                             
+TARDESCR= '                                                                    '
+TARDESC2= '                                                                    '
+MTFLAG  = ' '                  / moving target flag; T if it is a moving target 
+PARALLAX=   0.000000000000E+00 / target parallax from proposal                  
+MU_RA   =   0.000000000000E+00 / target proper motion from proposal (degrees RA)
+MU_DEC  =   0.000000000000E+00 / target proper motion from proposal (deg. DEC)  
+MU_EPOCH= '       '            / epoch of proper motion from proposal           
+                                                                                
+              / ASSOCIATION KEYWORDS                                            
+                                                                                
+ASN_ID  = 'NONE      '         / unique identifier assigned to association      
+ASN_TAB = 'NONE                   ' / name of the association table             
+CRDS_CTX= 'hst_0378.pmap'                                                       
+CRDS_VER= '1.7.0, opus_2015.2-client-2, 2514'                                   
+CHECKSUM= '3T3mAT3k4T3kAT3k'   / HDU checksum updated 2015-12-02T14:15:36       
+DATASUM = '0       '           / data unit checksum updated 2015-12-02T14:15:36 
+WAVECALS= ''                                                                    
+
+# HDU 1 in la7803fiq_corrtag_a.fits:
+XTENSION= 'BINTABLE'           / binary table extension                         
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                   39 / length of dimension 1                          
+NAXIS2  =                 6531 / length of dimension 2                          
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                   12 / number of table fields                         
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'EVENTS  '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq                ' / exposure identifier                     
+ASN_MTYP= '            '       / Role of the Member in the Association          
+                                                                                
+              / APERTURE INFORMATION                                            
+                                                                                
+RA_APER =   2.660000000000E+02 / RA of reference aperture center                
+DEC_APER=  -6.150000000000E+01 / Declination of reference aperture center       
+PA_APER =   1.638474273682E+02 / Position Angle of reference aperture center (de
+DISPAXIS=                    0 / dispersion axis; 1 = axis 1, 2 = axis 2, none  
+SHIFT1A =                  0.0 / wavecal shift determined for segment A (pixels)
+SHIFT1B =                  0.0 / wavecal shift determined for segment B (pixels)
+SHIFT2A =                  0.0 / Offset in cross-dispersion direction, A (pixels
+SHIFT2B =                  0.0 / Offset in cross-dispersion direction, B (pixels
+DPIXEL1A=                  0.0 / Average fraction part of pixel coordinate(pixel
+DPIXEL1B=                  0.0 / Average fraction part of pixel coordinate(pixel
+SP_LOC_A=               -999.0 / location of spectral extraction region A       
+SP_LOC_B=               -999.0 / location of spectral extraction region B       
+SP_OFF_A=               -999.0 / XD spectrum offset from expected loc (segment A
+SP_OFF_B=               -999.0 / XD spectrum offset from expected loc (segment B
+SP_SET_A=               -999.0 / Value set by user to override SP_OFF_A         
+SP_SET_B=               -999.0 / Value set by user to override SP_OFF_B         
+SP_ERR_A=               -999.0 / Error calculated by ALGNCORR for SP_OFF_A      
+SP_ERR_B=               -999.0 / Error calculated by ALGNCORR for SP_OFF_B      
+SP_NOM_A=               -999.0 / Expected location of spectrum in XD (segment A)
+SP_NOM_B=               -999.0 / Expected location of spectrum in XD (segment B)
+SP_SLP_A=               -999.0 / slope of segment A spectrum                    
+SP_SLP_B=               -999.0 / slope of segment B spectrum                    
+SP_HGT_A=               -999.0 / height (pixels) of segment A extraction region 
+SP_HGT_B=               -999.0 / height (pixels) of segment B extraction region 
+X_OFFSET=                    0 / offset of detector in a calibrated image       
+B_HGT1_A=               -999.0 / height of spectral background 1 segment A      
+B_HGT1_B=               -999.0 / height of spectral background 1 segment B      
+B_HGT2_A=               -999.0 / height of spectral background 2 segment A      
+B_HGT2_B=               -999.0 / height of spectral background 2 segment B      
+B_BKG1_A=               -999.0 / location of spectral background 1 segment A    
+B_BKG1_B=               -999.0 / location of spectral background 1 segment B    
+B_BKG2_A=               -999.0 / location of spectral background 2 segment A    
+B_BKG2_B=               -999.0 / location of spectral background 2 segment B    
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+ORIENTAT=             -151.153 / position angle of image y axis (deg. e of n)   
+SUNANGLE=           140.476837 / angle between sun and V1 axis                  
+MOONANGL=            39.053761 / angle between moon and V1 axis                 
+SUN_ALT =            -4.377921 / altitude of the sun above Earth's limb         
+FGSLOCK = 'GYROS             ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= 'T'                  / number of gyros scheduled, T=3+OBAD            
+REFFRAME= 'GSC1    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '2009-06-06'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '21:06:50'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=   5.498887974896E+04 / exposure start time (Modified Julian Date)     
+EXPEND  =   5.498888322118E+04 / exposure end time (Modified Julian Date)       
+EXPTIME =              299.968 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+EXPTIMEA=              299.968 / Exposure time for segment A (seconds)          
+EXPTIMEB=              299.968 / Exposure time for segment B (seconds)          
+                                                                                
+              / ADDITIONAL EXPOSURE INFORMATION                                 
+                                                                                
+EXPSTRTJ=   2.454989379749E+06 / start time (JD) of exposure                    
+EXPENDJ =   2.454989383221E+06 / end time (JD) of exposure                      
+PLANTIME=                300.0 / Planned exposure time (seconds)                
+NINTERPT=                    0 / Number of Exposure Interrupts                  
+                                                                                
+              / TIME-TAG PARAMETERS (TIME_TAG only)                             
+                                                                                
+BUFFTIME=                300.0 / Onboard memory half-buffer-fill time           
+OVERFLOW=                    0 / Number of science data overflows               
+NUMFLASH=                    0 / Integer number of flashes                      
+                                                                                
+              / VELOCITY REFERENCE FRAME CONVERSIONS                            
+                                                                                
+V_HELIO =               -999.0 / Geocentric to heliocentric velocity            
+V_LSRSTD=                  0.0 / Heliocentric to standard solar LSR             
+                                                                                
+              / DOPPLER CORRECTION PARAMETERS                                   
+                                                                                
+ORBITPER=          5749.390266 / Orbital Period used on board for Doppler corr. 
+DOPPER  =               1076.0 / Doppler shift period (seconds)                 
+DOPPMAG =            -1.000000 / Doppler shift magnitude (low-res pixels)       
+DOPPMAGV=             7.552720 / Doppler shift magnitude (Km/sec)               
+DOPPON  =                    F / Doppler correction flag                        
+DOPPZERO=         54988.840514 / Commanded time of zero Doppler shift (MJD)     
+                                                                                
+              / INSTRUMENT DOPPLER CORRECTION PARAMETERS                        
+                                                                                
+ORBTPERT=                 -1.0 / Orbital Period used on board for Doppler corr. 
+DOPMAGT =                 -1.0 / Doppler shift magnitude (low-res pixels)       
+DOPPONT =                    F / Doppler correction flag                        
+DOPZEROT=         54232.294393 / Commanded time of zero Doppler shift (MJD)     
+                                                                                
+              / GLOBAL COUNT PARAMETERS                                         
+                                                                                
+GLOBRT_A=              19.4208 / global count rate                              
+GLOBRT_B=               29.603 / global count rate                              
+GLOBLIMA= 'UNDETERMINED    '   / was global linearity level exceeded?           
+GLOBLIMB= 'UNDETERMINED    '   / was global linearity level exceeded?           
+                                                                                
+              / SUBARRAY READOUT PARAMETERS                                     
+                                                                                
+NSUBARRY=                    0 / Number of subarrays (1-8)                      
+CORNER0X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER1X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER2X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER3X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER4X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER5X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER6X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER7X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER0Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER1Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER2Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER3Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER4Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER5Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER6Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER7Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+SIZE0X  =                16384 / subarray 0 axis1 size in unbinned detector pixe
+SIZE1X  =                    0 / subarray 1 axis1 size in unbinned detector pixe
+SIZE2X  =                    0 / subarray 2 axis1 size in unbinned detector pixe
+SIZE3X  =                    0 / subarray 3 axis1 size in unbinned detector pixe
+SIZE4X  =                16384 / subarray 4 axis1 size in unbinned detector pixe
+SIZE5X  =                    0 / subarray 5 axis1 size in unbinned detector pixe
+SIZE6X  =                    0 / subarray 6 axis1 size in unbinned detector pixe
+SIZE7X  =                    0 / subarray 7 axis1 size in unbinned detector pixe
+SIZE0Y  =                 1024 / subarray 0 axis2 size in unbinned detector pixe
+SIZE1Y  =                    0 / subarray 1 axis2 size in unbinned detector pixe
+SIZE2Y  =                    0 / subarray 2 axis2 size in unbinned detector pixe
+SIZE3Y  =                    0 / subarray 3 axis2 size in unbinned detector pixe
+SIZE4Y  =                 1024 / subarray 4 axis2 size in unbinned detector pixe
+SIZE5Y  =                    0 / subarray 5 axis2 size in unbinned detector pixe
+SIZE6Y  =                    0 / subarray 6 axis2 size in unbinned detector pixe
+SIZE7Y  =                    0 / subarray 7 axis2 size in unbinned detector pixe
+                                                                                
+              / STIM PULSE PARAMETERS (FUV only)                                
+                                                                                
+STIMRATE=                    2 / Approximate STIM pulse injection rate          
+STIMA_LX=              414.409 / Segment A Left STIM pulse X centroid in raw dat
+STIMA_LY=    978.0359999999999 / Segment A Left STIM pulse Y centroid in raw dat
+STIMA_RX=             16036.54 / Segment A Right STIM pulse X centroid in raw da
+STIMA_RY=               26.263 / Segment A Right STIM pulse Y centroid in raw da
+STIMB_LX=              409.419 / Segment B Left STIM pulse X centroid in raw dat
+STIMB_LY=               970.54 / Segment B Left STIM pulse Y centroid in raw dat
+STIMB_RX=            16027.595 / Segment B Right STIM pulse X centroid in raw da
+STIMB_RY=               19.235 / Segment B Right STIM pulse Y centroid in raw da
+STIMA0LX=                389.0 / Reference location, seg A, left stim, X coord  
+STIMA0LY=                984.0 / Reference location, seg A, left stim, Y coord  
+STIMA0RX=              16000.0 / Reference location, seg A, right stim, X coord 
+STIMA0RY=                 33.0 / Reference location, seg A, right stim, Y coord 
+STIMB0LX=                389.0 / Reference location, seg B, left stim, X coord  
+STIMB0LY=                987.0 / Reference location, seg B, left stim, Y coord  
+STIMB0RX=              15996.0 / Reference location, seg B, right stim, X coord 
+STIMB0RY=                 38.0 / Reference location, seg B, right stim, Y coord 
+STIMASLX=                1.718 / RMS width in X, segment A, left stim           
+STIMASLY=                0.531 / RMS width in Y, segment A, left stim           
+STIMASRX=                 1.29 / RMS width in X, segment A, right stim          
+STIMASRY=                0.569 / RMS width in Y, segment A, right stim          
+STIMBSLX=                1.987 / RMS width in X, segment B, left stim           
+STIMBSLY=                0.639 / RMS width in Y, segment B, left stim           
+STIMBSRX=                1.494 / RMS width in X, segment B, right stim          
+STIMBSRY=                0.527 / RMS width in Y, segment B, right stim          
+                                                                                
+              / PULSE HEIGHT PARAMETERS (FUV only)                              
+                                                                                
+PHALOWRA=                    2 / PHA screening lower limit for segment A        
+PHALOWRB=                    2 / PHA screening lower limit for segment B        
+PHAUPPRA=                   23 / PHA screening upper limit for segment A        
+PHAUPPRB=                   23 / PHA screening upper limit for segment B        
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOOD_A =                   -1 / number of good pixels                          
+NGOOD_B =                   -1 / number of good pixels                          
+SDQFLAGS=                 8346 / serious data quality flags                     
+SDQOUTER=                    2 / SDQFlags for the outer extraction zone         
+GOODMAXA=               -999.0 / maximum value of good pixels                   
+GOODMAXB=               -999.0 / maximum value of good pixels                   
+GOODMAXC=               -999.0 / maximum value of good pixels                   
+GOODMN_A=               -999.0 / mean value of good pixels                      
+GOODMN_B=               -999.0 / mean value of good pixels                      
+GOODMN_C=               -999.0 / mean value of good pixels                      
+NEVENTS =                16112 / Number of events in raw data file(segments A+B)
+NEVENTSA=                 6531 / Number of events in raw data file (segment A)  
+NEVENTSB=                 9581 / Number of events in raw data file (segment B)  
+NBADEVTA=                 1720 / Tot num of events deleted in screen (segment A)
+NBADEVTB=                 1703 / Tot num of events deleted in screen (segment B)
+RAWTIME =           300.000000 / exposure duration of raw data file (seconds)   
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+NPHA_A  =                 1014 / Number of seg A events flagged in PHA screening
+NPHA_B  =                 1001 / Number of seg B events flagged in PHA screening
+NBRST_A =                    0 / Number of events lost due to bursts            
+NBRST_B =                    0 / Number of events lost due to bursts            
+NBADT_A =                    0 / Number of events flagged by BADTCORR           
+NBADT_B =                    0 / Number of events flagged by BADTCORR           
+NOUT_A  =                  706 / Number of events outside of active area        
+NOUT_B  =                  702 / Number of events outside of active area        
+TBRST_A =                  0.0 / Time lost to bursts (seconds)                  
+TBRST_B =                  0.0 / Time lost to bursts (seconds)                  
+TBADT_A =                  0.0 / Time lost to BADTCORR screening (seconds)      
+TBADT_B =                  0.0 / Time lost to BADTCORR screening (seconds)      
+DEADRT_A=    21.77464525787565 / Count rate used for dead time correction (c/s) 
+DEADRT_B=    31.94348265423206 / Count rate used for dead time correction (c/s) 
+DEADMT_A= 'DATA    '           / Deadtime correction method                     
+DEADMT_B= 'DATA    '           / Deadtime correction method                     
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+CONT2EML=             0.000000 / Intensity conversion: continuum -> emission    
+SCALE_A1=             0.000000 / Size of one pixel (arcsec) along dispersion axi
+OMEGAPIX=             0.000000 / Solid angle (arcsec**2) subtended by one pixel 
+                                                                                
+              / IMAGING PHOTOMETRIC PARAMETERS                                  
+                                                                                
+PHOTFLAM=               -999.0 / inverse sensitivity, ergs/s/cm2/Ang per count/s
+PHOTFNU =               -999.0 / inverse sensitivity, ergs/s/cm2/Hz per count/s 
+PHOTBW  =               -999.0 / RMS bandwidth of filter plus detector (Ang)    
+PHOTPLAM=               -999.0 / Pivot wavelength                               
+PHOTZPT =               -21.10 / ST magnitude zero point                        
+                                                                                
+              / DETECTOR COUNT RATES                                            
+                                                                                
+DEVENTA =                 19.0 / digital event counter, FUV segment A (counts/s)
+DEVENTB =                 36.0 / digital event counter, FUV segment B (counts/s)
+FEVENTA =                 20.0 / DCE Fast Event Counter, FUV segment A(counts/s)
+FEVENTB =                 37.0 / DCE Fast Event Counter, FUV segment B(counts/s)
+                                                                                
+              / DETECTOR VOLTAGES                                               
+                                                                                
+DETHVLA =             -4956.24 / Detector segment A high voltage level (volts)  
+DETHVLB =             -4930.56 / Detector segment B high voltage level (volts)  
+DETHVCA =             -4916.26 / Detector segment A commanded hv level (volts)  
+DETHVCB =              -4853.5 / Detector segment B commanded hv level (volts)  
+DETHVNA =             -4916.26 / Detector segment A nominal hv level (volts)    
+DETHVNB =             -4869.19 / Detector segment B nominal hv level (volts)    
+HVLEVELA=                  154 / Actual segment A commanded HV level (counts)   
+HVLEVELB=                  151 / Actual segment B commanded HV level (counts)   
+                                                                                
+              / TIMETAG EVENTS ORIENTATION KEYWORDS                             
+                                                                                
+TCTYP2  = 'RA---TAN'           / axis type for dimension 1                      
+TCTYP3  = 'DEC--TAN'           / axis type for dimension 2                      
+TCRVL2  =   2.658322079256E+02 / sky coordinates of 1st axis                    
+TCRVL3  =  -6.145498081437E+01 / sky coordinates of 2nd axis                    
+TCRPX2  =               8192.0 / axis1 pixel of tangent plane direction         
+TCRPX3  =                512.0 / axis2 pixel of tangent plane direction         
+TALEN2  =                16384 / length of axis 1                               
+TALEN3  =                 1024 / length of axis 2                               
+TC2_2   =         -5.49875E-06 / partial of first axis coordinate w.r.t. x      
+TC2_3   =         -1.26383E-05 / partial of first axis coordinate w.r.t. y      
+TC3_2   =          3.02889E-06 / partial of second axis coordinate w.r.t. x     
+TC3_3   =         -2.29439E-05 / partial of second axis coordinate w.r.t. y     
+TCUNI2  = 'deg     '           / units of first coordinate value                
+TCUNI3  = 'deg     '           / units of second coordinate value               
+XS-SORT = 'TIME'               /                                                
+                                                                                
+              / TIMETAG EVENTS TABLE COLUMNS                                    
+                                                                                
+CHECKSUM= 'KHAiM93gKG9gK99g'   / HDU checksum updated 2015-12-02T14:15:36       
+DATASUM = '3998921261'         / data unit checksum updated 2015-12-02T14:15:36 
+TTYPE1  = 'TIME    '                                                            
+TFORM1  = '1E      '                                                            
+TUNIT1  = 's       '                                                            
+TTYPE2  = 'RAWX    '                                                            
+TFORM2  = '1I      '                                                            
+TUNIT2  = 'pixel   '                                                            
+TTYPE3  = 'RAWY    '                                                            
+TFORM3  = '1I      '                                                            
+TUNIT3  = 'pixel   '                                                            
+TTYPE4  = 'XCORR   '                                                            
+TFORM4  = '1E      '                                                            
+TUNIT4  = 'pixel   '                                                            
+TTYPE5  = 'YCORR   '                                                            
+TFORM5  = '1E      '                                                            
+TUNIT5  = 'pixel   '                                                            
+TTYPE6  = 'XDOPP   '                                                            
+TFORM6  = '1E      '                                                            
+TUNIT6  = 'pixel   '                                                            
+TTYPE7  = 'XFULL   '                                                            
+TFORM7  = '1E      '                                                            
+TUNIT7  = 'pixel   '                                                            
+TTYPE8  = 'YFULL   '                                                            
+TFORM8  = '1E      '                                                            
+TUNIT8  = 'pixel   '                                                            
+TTYPE9  = 'WAVELENGTH'                                                          
+TFORM9  = '1E      '                                                            
+TUNIT9  = 'angstrom'                                                            
+TDISP9  = 'F9.4    '                                                            
+TTYPE10 = 'EPSILON '                                                            
+TFORM10 = '1E      '                                                            
+TTYPE11 = 'DQ      '                                                            
+TFORM11 = '1I      '                                                            
+TTYPE12 = 'PHA     '                                                            
+TFORM12 = '1B      '                                                            
+LIVETM_A=   0.9998303955461149                                                  
+LIVETM_B=   0.9997534210062214                                                  
+
+# HDU 2 in la7803fiq_corrtag_a.fits:
+XTENSION= 'BINTABLE'           / extension type                                 
+BITPIX  =                    8 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                   16 / length of first data axis                      
+NAXIS2  =                    1 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                    2 / number of fields in each table row             
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'GTI     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq                ' / exposure identifier                     
+                                                                                
+              / TIMETAG GTI TABLE COLUMN DESCRIPTORS                            
+                                                                                
+TTYPE1  = 'START   '           / start of good time interval                    
+TFORM1  = '1D      '           / data format for START: REAL*8                  
+TUNIT1  = 'seconds '           / physical units for START                       
+TTYPE2  = 'STOP    '           / end of good time interval                      
+TFORM2  = '1D      '           / data format for STOP: REAL*8                   
+TUNIT2  = 'seconds '           / physical units for STOP                        
+CHECKSUM= 'MhjePZjZMfjbMZjZ'   / HDU checksum updated 2015-12-02T14:08:47       
+DATASUM = '1392823370'         / data unit checksum updated 2015-12-02T14:08:47 
+
+# HDU 3 in la7803fiq_corrtag_a.fits:
+XTENSION= 'BINTABLE'           / binary table extension                         
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                   48 / length of dimension 1                          
+NAXIS2  =                  301 / length of dimension 2                          
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                   12 / number of table fields                         
+EXTNAME = 'TIMELINE'           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+INHERIT =                    T / inherit the primary header                     
+ROOTNAME= 'la7803fiq                         ' / rootname of the observation set
+EXPNAME = 'la7803fiq                ' / exposure identifier                     
+ASN_MTYP= '            '       / Role of the Member in the Association          
+                                                                                
+              / APERTURE INFORMATION                                            
+                                                                                
+RA_APER =   2.660000000000E+02 / RA of reference aperture center                
+DEC_APER=  -6.150000000000E+01 / Declination of reference aperture center       
+PA_APER =   1.638474273682E+02 / Position Angle of reference aperture center (de
+DISPAXIS=                    0 / dispersion axis; 1 = axis 1, 2 = axis 2, none  
+SHIFT1A =                  0.0 / wavecal shift determined for segment A (pixels)
+SHIFT1B =                  0.0 / wavecal shift determined for segment B (pixels)
+SHIFT2A =                  0.0 / Offset in cross-dispersion direction, A (pixels
+SHIFT2B =                  0.0 / Offset in cross-dispersion direction, B (pixels
+DPIXEL1A=                  0.0 / Average fraction part of pixel coordinate(pixel
+DPIXEL1B=                  0.0 / Average fraction part of pixel coordinate(pixel
+SP_LOC_A=               -999.0 / location of spectral extraction region A       
+SP_LOC_B=               -999.0 / location of spectral extraction region B       
+SP_OFF_A=               -999.0 / XD spectrum offset from expected loc (segment A
+SP_OFF_B=               -999.0 / XD spectrum offset from expected loc (segment B
+SP_SET_A=               -999.0 / Value set by user to override SP_OFF_A         
+SP_SET_B=               -999.0 / Value set by user to override SP_OFF_B         
+SP_ERR_A=               -999.0 / Error calculated by ALGNCORR for SP_OFF_A      
+SP_ERR_B=               -999.0 / Error calculated by ALGNCORR for SP_OFF_B      
+SP_NOM_A=               -999.0 / Expected location of spectrum in XD (segment A)
+SP_NOM_B=               -999.0 / Expected location of spectrum in XD (segment B)
+SP_SLP_A=               -999.0 / slope of segment A spectrum                    
+SP_SLP_B=               -999.0 / slope of segment B spectrum                    
+SP_HGT_A=               -999.0 / height (pixels) of segment A extraction region 
+SP_HGT_B=               -999.0 / height (pixels) of segment B extraction region 
+X_OFFSET=                    0 / offset of detector in a calibrated image       
+B_HGT1_A=               -999.0 / height of spectral background 1 segment A      
+B_HGT1_B=               -999.0 / height of spectral background 1 segment B      
+B_HGT2_A=               -999.0 / height of spectral background 2 segment A      
+B_HGT2_B=               -999.0 / height of spectral background 2 segment B      
+B_BKG1_A=               -999.0 / location of spectral background 1 segment A    
+B_BKG1_B=               -999.0 / location of spectral background 1 segment B    
+B_BKG2_A=               -999.0 / location of spectral background 2 segment A    
+B_BKG2_B=               -999.0 / location of spectral background 2 segment B    
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+ORIENTAT=             -151.153 / position angle of image y axis (deg. e of n)   
+SUNANGLE=           140.476837 / angle between sun and V1 axis                  
+MOONANGL=            39.053761 / angle between moon and V1 axis                 
+SUN_ALT =            -4.377921 / altitude of the sun above Earth's limb         
+FGSLOCK = 'GYROS             ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= 'T'                  / number of gyros scheduled, T=3+OBAD            
+REFFRAME= 'GSC1    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '2009-06-06'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '21:06:50'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=   5.498887974896E+04 / exposure start time (Modified Julian Date)     
+EXPEND  =   5.498888322118E+04 / exposure end time (Modified Julian Date)       
+EXPTIME =              299.968 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+EXPTIMEA=              299.968 / Exposure time for segment A (seconds)          
+EXPTIMEB=           300.000000 / Exposure time for segment B (seconds)          
+                                                                                
+              / ADDITIONAL EXPOSURE INFORMATION                                 
+                                                                                
+EXPSTRTJ=   2.454989379749E+06 / start time (JD) of exposure                    
+EXPENDJ =   2.454989383221E+06 / end time (JD) of exposure                      
+PLANTIME=                300.0 / Planned exposure time (seconds)                
+NINTERPT=                    0 / Number of Exposure Interrupts                  
+                                                                                
+              / TIME-TAG PARAMETERS (TIME_TAG only)                             
+                                                                                
+BUFFTIME=                300.0 / Onboard memory half-buffer-fill time           
+OVERFLOW=                    0 / Number of science data overflows               
+NUMFLASH=                    0 / Integer number of flashes                      
+                                                                                
+              / VELOCITY REFERENCE FRAME CONVERSIONS                            
+                                                                                
+V_HELIO =               -999.0 / Geocentric to heliocentric velocity            
+V_LSRSTD=                  0.0 / Heliocentric to standard solar LSR             
+                                                                                
+              / DOPPLER CORRECTION PARAMETERS                                   
+                                                                                
+ORBITPER=          5749.390266 / Orbital Period used on board for Doppler corr. 
+DOPPER  =               1076.0 / Doppler shift period (seconds)                 
+DOPPMAG =            -1.000000 / Doppler shift magnitude (low-res pixels)       
+DOPPMAGV=             7.552720 / Doppler shift magnitude (Km/sec)               
+DOPPON  =                    F / Doppler correction flag                        
+DOPPZERO=         54988.840514 / Commanded time of zero Doppler shift (MJD)     
+                                                                                
+              / INSTRUMENT DOPPLER CORRECTION PARAMETERS                        
+                                                                                
+ORBTPERT=                 -1.0 / Orbital Period used on board for Doppler corr. 
+DOPMAGT =                 -1.0 / Doppler shift magnitude (low-res pixels)       
+DOPPONT =                    F / Doppler correction flag                        
+DOPZEROT=         54232.294393 / Commanded time of zero Doppler shift (MJD)     
+                                                                                
+              / GLOBAL COUNT PARAMETERS                                         
+                                                                                
+GLOBRT_A=              19.4208 / global count rate                              
+GLOBRT_B=               -999.0 / global count rate                              
+GLOBLIMA= 'UNDETERMINED    '   / was global linearity level exceeded?           
+GLOBLIMB= 'UNDETERMINED    '   / was global linearity level exceeded?           
+                                                                                
+              / SUBARRAY READOUT PARAMETERS                                     
+                                                                                
+NSUBARRY=                    0 / Number of subarrays (1-8)                      
+CORNER0X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER1X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER2X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER3X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER4X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER5X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER6X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER7X=                    0 / subarray axis1 corner pt in unbinned dect. pix 
+CORNER0Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER1Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER2Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER3Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER4Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER5Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER6Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+CORNER7Y=                    0 / subarray axis2 corner pt in unbinned dect. pix 
+SIZE0X  =                16384 / subarray 0 axis1 size in unbinned detector pixe
+SIZE1X  =                    0 / subarray 1 axis1 size in unbinned detector pixe
+SIZE2X  =                    0 / subarray 2 axis1 size in unbinned detector pixe
+SIZE3X  =                    0 / subarray 3 axis1 size in unbinned detector pixe
+SIZE4X  =                16384 / subarray 4 axis1 size in unbinned detector pixe
+SIZE5X  =                    0 / subarray 5 axis1 size in unbinned detector pixe
+SIZE6X  =                    0 / subarray 6 axis1 size in unbinned detector pixe
+SIZE7X  =                    0 / subarray 7 axis1 size in unbinned detector pixe
+SIZE0Y  =                 1024 / subarray 0 axis2 size in unbinned detector pixe
+SIZE1Y  =                    0 / subarray 1 axis2 size in unbinned detector pixe
+SIZE2Y  =                    0 / subarray 2 axis2 size in unbinned detector pixe
+SIZE3Y  =                    0 / subarray 3 axis2 size in unbinned detector pixe
+SIZE4Y  =                 1024 / subarray 4 axis2 size in unbinned detector pixe
+SIZE5Y  =                    0 / subarray 5 axis2 size in unbinned detector pixe
+SIZE6Y  =                    0 / subarray 6 axis2 size in unbinned detector pixe
+SIZE7Y  =                    0 / subarray 7 axis2 size in unbinned detector pixe
+                                                                                
+              / STIM PULSE PARAMETERS (FUV only)                                
+                                                                                
+STIMRATE=                    2 / Approximate STIM pulse injection rate          
+STIMA_LX=              414.409 / Segment A Left STIM pulse X centroid in raw dat
+STIMA_LY=    978.0359999999999 / Segment A Left STIM pulse Y centroid in raw dat
+STIMA_RX=             16036.54 / Segment A Right STIM pulse X centroid in raw da
+STIMA_RY=               26.263 / Segment A Right STIM pulse Y centroid in raw da
+STIMB_LX=               -999.0 / Segment B Left STIM pulse X centroid in raw dat
+STIMB_LY=               -999.0 / Segment B Left STIM pulse Y centroid in raw dat
+STIMB_RX=               -999.0 / Segment B Right STIM pulse X centroid in raw da
+STIMB_RY=               -999.0 / Segment B Right STIM pulse Y centroid in raw da
+STIMA0LX=                389.0 / Reference location, seg A, left stim, X coord  
+STIMA0LY=                984.0 / Reference location, seg A, left stim, Y coord  
+STIMA0RX=              16000.0 / Reference location, seg A, right stim, X coord 
+STIMA0RY=                 33.0 / Reference location, seg A, right stim, Y coord 
+STIMB0LX=               -999.0 / Reference location, seg B, left stim, X coord  
+STIMB0LY=               -999.0 / Reference location, seg B, left stim, Y coord  
+STIMB0RX=               -999.0 / Reference location, seg B, right stim, X coord 
+STIMB0RY=               -999.0 / Reference location, seg B, right stim, Y coord 
+STIMASLX=                1.718 / RMS width in X, segment A, left stim           
+STIMASLY=                0.531 / RMS width in Y, segment A, left stim           
+STIMASRX=                 1.29 / RMS width in X, segment A, right stim          
+STIMASRY=                0.569 / RMS width in Y, segment A, right stim          
+STIMBSLX=               -999.0 / RMS width in X, segment B, left stim           
+STIMBSLY=               -999.0 / RMS width in Y, segment B, left stim           
+STIMBSRX=               -999.0 / RMS width in X, segment B, right stim          
+STIMBSRY=               -999.0 / RMS width in Y, segment B, right stim          
+                                                                                
+              / PULSE HEIGHT PARAMETERS (FUV only)                              
+                                                                                
+PHALOWRA=                    2 / PHA screening lower limit for segment A        
+PHALOWRB=                   -1 / PHA screening lower limit for segment B        
+PHAUPPRA=                   23 / PHA screening upper limit for segment A        
+PHAUPPRB=                   -1 / PHA screening upper limit for segment B        
+                                                                                
+              / DATA PACKET INFORMATION                                         
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+PODPSFF =                    F / podps fill present (T/F)                       
+STDCFFF =                    F / science telemetry fill data present (T=1/F=0)  
+STDCFFP = '0x5569'             / science telemetry fill pattern (hex)           
+                                                                                
+              / IMAGE STATISTICS AND DATA QUALITY FLAGS                         
+                                                                                
+NGOOD_A =                   -1 / number of good pixels                          
+NGOOD_B =                   -1 / number of good pixels                          
+SDQFLAGS=                 8346 / serious data quality flags                     
+SDQOUTER=                    2 / SDQFlags for the outer extraction zone         
+GOODMAXA=               -999.0 / maximum value of good pixels                   
+GOODMAXB=               -999.0 / maximum value of good pixels                   
+GOODMAXC=               -999.0 / maximum value of good pixels                   
+GOODMN_A=               -999.0 / mean value of good pixels                      
+GOODMN_B=               -999.0 / mean value of good pixels                      
+GOODMN_C=               -999.0 / mean value of good pixels                      
+NEVENTS =                16112 / Number of events in raw data file(segments A+B)
+NEVENTSA=                 6531 / Number of events in raw data file (segment A)  
+NEVENTSB=                   -1 / Number of events in raw data file (segment B)  
+NBADEVTA=                 1720 / Tot num of events deleted in screen (segment A)
+NBADEVTB=                    0 / Tot num of events deleted in screen (segment B)
+RAWTIME =           300.000000 / exposure duration of raw data file (seconds)   
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+NPHA_A  =                 1014 / Number of seg A events flagged in PHA screening
+NPHA_B  =                    0 / Number of seg B events flagged in PHA screening
+NBRST_A =                    0 / Number of events lost due to bursts            
+NBRST_B =                    0 / Number of events lost due to bursts            
+NBADT_A =                    0 / Number of events flagged by BADTCORR           
+NBADT_B =                    0 / Number of events flagged by BADTCORR           
+NOUT_A  =                  706 / Number of events outside of active area        
+NOUT_B  =                    0 / Number of events outside of active area        
+TBRST_A =                  0.0 / Time lost to bursts (seconds)                  
+TBRST_B =                  0.0 / Time lost to bursts (seconds)                  
+TBADT_A =                  0.0 / Time lost to BADTCORR screening (seconds)      
+TBADT_B =                  0.0 / Time lost to BADTCORR screening (seconds)      
+DEADRT_A=    21.77464525787565 / Count rate used for dead time correction (c/s) 
+DEADRT_B=               -999.0 / Count rate used for dead time correction (c/s) 
+DEADMT_A= 'DATA    '           / Deadtime correction method                     
+DEADMT_B= '        '           / Deadtime correction method                     
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+CONT2EML=             0.000000 / Intensity conversion: continuum -> emission    
+SCALE_A1=             0.000000 / Size of one pixel (arcsec) along dispersion axi
+OMEGAPIX=             0.000000 / Solid angle (arcsec**2) subtended by one pixel 
+                                                                                
+              / IMAGING PHOTOMETRIC PARAMETERS                                  
+                                                                                
+PHOTFLAM=               -999.0 / inverse sensitivity, ergs/s/cm2/Ang per count/s
+PHOTFNU =               -999.0 / inverse sensitivity, ergs/s/cm2/Hz per count/s 
+PHOTBW  =               -999.0 / RMS bandwidth of filter plus detector (Ang)    
+PHOTPLAM=               -999.0 / Pivot wavelength                               
+PHOTZPT =               -21.10 / ST magnitude zero point                        
+                                                                                
+              / DETECTOR COUNT RATES                                            
+                                                                                
+DEVENTA =                 19.0 / digital event counter, FUV segment A (counts/s)
+DEVENTB =                 36.0 / digital event counter, FUV segment B (counts/s)
+FEVENTA =                 20.0 / DCE Fast Event Counter, FUV segment A(counts/s)
+FEVENTB =                 37.0 / DCE Fast Event Counter, FUV segment B(counts/s)
+                                                                                
+              / DETECTOR VOLTAGES                                               
+                                                                                
+DETHVLA =             -4956.24 / Detector segment A high voltage level (volts)  
+DETHVLB =             -4930.56 / Detector segment B high voltage level (volts)  
+DETHVCA =             -4916.26 / Detector segment A commanded hv level (volts)  
+DETHVCB =              -4853.5 / Detector segment B commanded hv level (volts)  
+DETHVNA =             -4916.26 / Detector segment A nominal hv level (volts)    
+DETHVNB =             -4869.19 / Detector segment B nominal hv level (volts)    
+HVLEVELA=                  154 / Actual segment A commanded HV level (counts)   
+HVLEVELB=                  151 / Actual segment B commanded HV level (counts)   
+                                                                                
+              / TIMETAG EVENTS ORIENTATION KEYWORDS                             
+                                                                                
+TCTYP2  = 'RA---TAN'           / axis type for dimension 1                      
+TCTYP3  = 'DEC--TAN'           / axis type for dimension 2                      
+TCRVL2  =   2.658322079256E+02 / sky coordinates of 1st axis                    
+TCRVL3  =  -6.145498081437E+01 / sky coordinates of 2nd axis                    
+TCRPX2  =               8192.0 / axis1 pixel of tangent plane direction         
+TCRPX3  =                512.0 / axis2 pixel of tangent plane direction         
+TALEN2  =                16384 / length of axis 1                               
+TALEN3  =                 1024 / length of axis 2                               
+TC2_2   =         -5.49875E-06 / partial of first axis coordinate w.r.t. x      
+TC2_3   =         -1.26383E-05 / partial of first axis coordinate w.r.t. y      
+TC3_2   =          3.02889E-06 / partial of second axis coordinate w.r.t. x     
+TC3_3   =         -2.29439E-05 / partial of second axis coordinate w.r.t. y     
+TCUNI2  = 'deg     '           / units of first coordinate value                
+TCUNI3  = 'deg     '           / units of second coordinate value               
+XS-SORT = 'TIME'               /                                                
+                                                                                
+              / TIMETAG EVENTS TABLE COLUMNS                                    
+                                                                                
+CHECKSUM= '95lN92jK92jK92jK'   / HDU checksum updated 2015-12-02T14:14:14       
+DATASUM = '1776344827'         / data unit checksum updated 2015-12-02T14:14:14 
+LIVETM_A=   0.9998303955461149                                                  
+TTYPE1  = 'TIME    '                                                            
+TFORM1  = '1E      '                                                            
+TUNIT1  = 's       '                                                            
+TDISP1  = 'F8.3    '                                                            
+TTYPE2  = 'LONGITUDE'                                                           
+TFORM2  = '1E      '                                                            
+TUNIT2  = 'degree  '                                                            
+TDISP2  = 'F10.6   '                                                            
+TTYPE3  = 'LATITUDE'                                                            
+TFORM3  = '1E      '                                                            
+TUNIT3  = 'degree  '                                                            
+TDISP3  = 'F10.6   '                                                            
+TTYPE4  = 'SUN_ALT '                                                            
+TFORM4  = '1E      '                                                            
+TUNIT4  = 'degree  '                                                            
+TDISP4  = 'F6.2    '                                                            
+TTYPE5  = 'SUN_ZD  '                                                            
+TFORM5  = '1E      '                                                            
+TUNIT5  = 'degree  '                                                            
+TDISP5  = 'F6.2    '                                                            
+TTYPE6  = 'TARGET_ALT'                                                          
+TFORM6  = '1E      '                                                            
+TUNIT6  = 'degree  '                                                            
+TDISP6  = 'F6.2    '                                                            
+TTYPE7  = 'RADIAL_VEL'                                                          
+TFORM7  = '1E      '                                                            
+TUNIT7  = 'km /s   '                                                            
+TDISP7  = 'F7.5    '                                                            
+TTYPE8  = 'SHIFT1  '                                                            
+TFORM8  = '1E      '                                                            
+TUNIT8  = 'pixel   '                                                            
+TDISP8  = 'F7.3    '                                                            
+TTYPE9  = 'LY_ALPHA'                                                            
+TFORM9  = '1E      '                                                            
+TUNIT9  = 'count /s'                                                            
+TDISP9  = 'G15.6   '                                                            
+TTYPE10 = 'OI_1304 '                                                            
+TFORM10 = '1E      '                                                            
+TUNIT10 = 'count /s'                                                            
+TDISP10 = 'G15.6   '                                                            
+TTYPE11 = 'OI_1356 '                                                            
+TFORM11 = '1E      '                                                            
+TUNIT11 = 'count /s'                                                            
+TDISP11 = 'G15.6   '                                                            
+TTYPE12 = 'DARKRATE'                                                            
+TFORM12 = '1E      '                                                            
+TUNIT12 = 'count /s /pixel'                                                     
+TDISP12 = 'G15.6   '                                                            

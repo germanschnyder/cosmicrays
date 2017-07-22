@@ -1,0 +1,572 @@
+# HDU 0 in u21u0201t_q0m.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+EXTEND  =                    T / File may contain standard extensions           
+NEXTEND =                    4 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2009-03-20'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'u21u0201t.q0f                          ' / name of file              
+FILETYPE= 'SDQ      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'WFPC2 '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / WFPC-II DATA DESCRIPTOR KEYWORDS                                
+                                                                                
+ROOTNAME= 'u21u0201t            ' / rootname of the observation set             
+PROCTIME=   5.491028460648E+04 / Pipeline processing time (MJD)                 
+OPUS_VER= 'OPUS 2009_1       ' / OPUS software system version number            
+CAL_VER = '                        ' / CALWP2 code version                      
+                                                                                
+              / SCIENCE INSTRUMENT CONFIGURATION                                
+                                                                                
+MODE    = 'FULL'               / instr. mode: FULL (full res.), AREA (area int.)
+SERIALS = 'OFF'                / serial clocks: ON, OFF                         
+                                                                                
+              / IMAGE TYPE CHARACTERISTICS                                      
+                                                                                
+IMAGETYP= 'DARK              ' / DARK/BIAS/IFLAT/UFLAT/VFLAT/KSPOT/EXT/ECAL     
+CDBSFILE= 'NO                ' / GENERIC/BIAS/DARK/PREF/FLAT/MASK/ATOD/NO       
+PKTFMT  =                   42 / packet format code                             
+                                                                                
+              / FILTER CONFIGURATION                                            
+                                                                                
+FILTNAM1= 'F437N   '           / first filter name                              
+FILTNAM2= 'F1042M  '           / second filter name                             
+FILTER1 =                   17 / first filter number (0-48)                     
+FILTER2 =                   41 / second filter number (0-48)                    
+FILTROT =             0.000000 / partial filter rotation angle (degrees)        
+LRFWAVE =             0.000000 / linear ramp filter wavelength                  
+                                                                                
+              / ARCHIVE SEARCH KEYWORDS                                         
+                                                                                
+BANDWID =                 -1.0 / bandwidth of the filter                        
+CENTRWV =                 -1.0 / central wavelength of the filter               
+                                                                                
+              / INSTRUMENT STATUS USED IN DATA PROCESSING                       
+                                                                                
+UCH1CJTM=              6.63507 / TEC cold junction #1 temperature (Celsius)     
+UCH2CJTM=              5.97156 / TEC cold junction #2 temperature (Celsius)     
+UCH3CJTM=              7.61905 / TEC cold junction #3 temperature (Celsius)     
+UCH4CJTM=              6.58768 / TEC cold junction #4 temperature (Celsius)     
+UBAY3TMP=              14.5969 / bay 3 A1 temperature (deg C)                   
+KSPOTS  = 'OFF'                / Status of Kelsall spot lamps: ON, OFF          
+SHUTTER = 'A'                  / Shutter in place at beginning of the exposure  
+ATODGAIN=                 15.0 / Analog to Digital Gain (Electrons/DN)          
+                                                                                
+              / RSDP CONTROL KEYWORDS                                           
+                                                                                
+MASKCORR= 'PERFORM '           / Do mask correction: PERFORM, OMIT, COMPLETE    
+ATODCORR= 'PERFORM '           / Do A-to-D correction: PERFORM, OMIT, COMPLETE  
+WF4TCORR= 'PERFORM '           / correct WF4 data for temp-dependent amp error  
+BLEVCORR= 'PERFORM '           / Do bias level correction                       
+BIASCORR= 'PERFORM '           / Do bias correction: PERFORM, OMIT, COMPLETE    
+DARKCORR= 'OMIT    '           / Do dark correction: PERFORM, OMIT, COMPLETE    
+FLATCORR= 'OMIT    '           / Do flat field correction                       
+SHADCORR= 'OMIT    '           / Do shaded shutter correction                   
+DOSATMAP= 'OMIT    '           / Output saturated pixel map                     
+DOPHOTOM= 'OMIT    '           / Fill photometry keywords                       
+DOHISTOS= 'OMIT    '           / Make histograms: PERFORM, OMIT, COMPLETE       
+DRIZCORR= 'OMIT    '           / drizzle processing                             
+OUTDTYPE= 'REAL  '             / Output image datatype: REAL, LONG, SHORT       
+                                                                                
+              / CALIBRATION REFERENCE FILES                                     
+                                                                                
+MASKFILE= 'uref$f8213081u.r0h     ' / name of the input DQF of known bad pixels 
+ATODFILE= '                       ' / name of the A-to-D conversion file        
+WF4TFILE= '                       ' / name of the WF4 correction reference file 
+BLEVFILE= 'ucal$u21u0201t.x0h     ' / Engineering file with extended register da
+BLEVDFIL= 'ucal$u21u0201t.q1h     ' / Engineering file DQF                      
+BIASFILE= '                       ' / name of the bias frame reference file     
+BIASDFIL= '                       ' / name of the bias frame reference DQF      
+DARKFILE= '                       ' / name of the dark reference file           
+DARKDFIL= '                       ' / name of the dark reference DQF            
+FLATFILE= '                       ' / name of the flat field reference file     
+FLATDFIL= '                       ' / name of the flat field reference DQF      
+SHADFILE= '                       ' / name of the reference file for shutter sha
+PHOTTAB = '                       ' / name of the photometry calibration table  
+GRAPHTAB= '                       ' / the HST graph table                       
+COMPTAB = '                       ' / the HST components table                  
+IDCTAB  = '                  ' / Distortion correction table                    
+OFFTAB  = '                  ' / Drift correction table                         
+DGEOFILE= 'N/A               ' / Distortion correction image                    
+                                                                                
+              / DEFAULT KEYWORDS SET BY STSCI                                   
+                                                                                
+SATURATE=                 4095 / Data value at which saturation occurs          
+USCALE  =                  1.0 / Scale factor for output image                  
+UZERO   =                  0.0 / Zero point for output image                    
+                                                                                
+              / READOUT DURATION INFORMATION                                    
+                                                                                
+READTIME=                    0 / Length of time for CCD readout in clock ticks  
+                                                                                
+              / PLANETARY SCIENCE KEYWORDS                                      
+                                                                                
+PA_V3   =           184.792603 / position angle of V3-axis of HST (deg)         
+RA_SUN  =   2.654030880061E+02 / right ascension of the sun (deg)               
+DEC_SUN =  -2.337254407778E+01 / declination of the sun (deg)                   
+EQNX_SUN=               2000.0 / equinox of the sun                             
+MTFLAG  =                    F / moving target flag; T if it is a moving target 
+EQRADTRG=             0.000000 / equatorial radius of target (km)               
+FLATNTRG=             0.000000 / flattening of target                           
+NPDECTRG=             0.000000 / north pole declination of target (deg)         
+NPRATRG =             0.000000 / north pole right ascension of target (deg)     
+ROTRTTRG=             0.000000 / rotation rate of target                        
+LONGPMER=             0.000000 / longitude of prime meridian (deg)              
+EPLONGPM=             0.000000 / epoch of longitude of prime meridian (sec)     
+SURFLATD=             0.000000 / surface feature latitude (deg)                 
+SURFLONG=             0.000000 / surface feature longitude (deg)                
+SURFALTD=             0.000000 / surface feature altitude (km)                  
+                                                                                
+              / PODPS FILL VALUES                                               
+                                                                                
+PODPSFF =                    0 / 0=(no  podps fill); 1=(podps fill present)     
+STDCFFF =                    0 / 0=(no st dcf fill); 1=(st dcf fill present)    
+STDCFFP = '0x5569'             / st dcf fill pattern (hex)                      
+RSDPFILL=                 -100 / bad data fill value for calibrated images      
+                                                                                
+              / EXPOSURE TIME AND RELATED INFORMATION                           
+                                                                                
+UEXPODUR=                   40 / commanded duration of exposure (sec)           
+NSHUTA17=                    0 / Number of AP17 shutter B closes                
+DARKTIME=   4.000000000000E+01 / Dark time (seconds)                            
+UEXPOTIM=                20656 / Major frame pulse time preceding exposure start
+PSTRTIME= '1993.351:14:57:39 ' / predicted obs. start time (yyyy.ddd:hh:mm:ss)  
+PSTPTIME= '1993.351:14:59:39 ' / predicted obs. stop time (yyyy.ddd:hh:mm:ss)   
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+SUNANGLE=            89.935501 / angle between sun and V1 axis                  
+MOONANGL=            84.930695 / angle between moon and V1 axis                 
+SUN_ALT =            52.209999 / altitude of the sun above Earth's limb         
+FGSLOCK = 'GYROS             ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= '3'                  / number of gyros scheduled for observation      
+REFFRAME= 'GSC1    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '1993-12-17'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '14:57:17'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=   4.933862311783E+04 / exposure start time (Modified Julian Date)     
+EXPEND  =   4.933862358079E+04 / exposure end time (Modified Julian Date)       
+EXPTIME =   4.000000000000E+01 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+QUALCOM1= 'DARK, groups 3-4 mostly saturated but this is expected              '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = 'OK                                                                  '
+                                                                                
+              / TARGET & PROPOSAL ID                                            
+TARGNAME= 'DARK                          ' / proposer's target name             
+RA_TARG =   0.000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   0.000000000000E+00 / declination of the target (deg) (J2000)        
+ECL_LONG=           221.430537 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =            89.909026 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=            96.314576 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =            29.879663 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+PROPOSID=                 4711 / PEP proposal identifier                        
+PEP_EXPO= '4.0000001      '    / PEP exposure identifier including sequence     
+LINENUM = '1.000          '    / PEP proposal line number                       
+SEQLINE = '4.000          '    / PEP line number of defined sequence            
+SEQNAME = 'IMAGES         '    / PEP define/use sequence name                   
+                                                                                
+                                                                                
+              / OTFR KEYWORDS                                                   
+                                                                                
+T_SGSTAR= 'F                 ' / OMS calculated guide star control              
+                                                                                
+              / PATTERN KEYWORDS                                                
+                                                                                
+PATTERN1= 'NONE                    ' / primary pattern type                     
+P1_SHAPE= '                  ' / primary pattern shape                          
+P1_PURPS= '          '         / primary pattern purpose                        
+P1_NPTS =                    0 / number of points in primary pattern            
+P1_PSPAC=             0.000000 / point spacing for primary pattern (arc-sec)    
+P1_LSPAC=             0.000000 / line spacing for primary pattern (arc-sec)     
+P1_ANGLE=             0.000000 / angle between sides of parallelogram patt (deg)
+P1_FRAME= '         '          / coordinate frame of primary pattern            
+P1_ORINT=             0.000000 / orientation of pattern to coordinate frame (deg
+P1_CENTR= '   '                / center pattern relative to pointing (yes/no)   
+PATTSTEP=                    0 / position number of this point in the pattern   
+
+# HDU 1 in u21u0201t_q0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                  800 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    1 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =                420.0 / x-coordinate of reference pixel                
+CRPIX2  =                424.5 / y-coordinate of reference pixel                
+CRVAL1  =  -1.000000000000E+00 / first axis value at reference pixel            
+CRVAL2  =  -1.000000000000E+00 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =                  1.0 / partial of first axis coordinate w.r.t. x      
+CD1_2   =                  0.0 / partial of first axis coordinate w.r.t. y      
+CD2_1   =                  0.0 / partial of second axis coordinate w.r.t. x     
+CD2_2   =                  1.0 / partial of second axis coordinate w.r.t. y     
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    1 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+                                                                                
+              / IMAGE PARAMETERS                                                
+                                                                                
+MIR_REVR=                    T / is the image mirror reversed?                  
+ORIENTAT=                  0.0 / position angle of image y axis (deg. e of n)   
+FPKTTIME=         49338.623623 / time of the first packet (Modified Julian Date)
+LPKTTIME=         49338.623789 / time of the last packet (Modified Julian Date) 
+DEZERO  =             0.000000 / Mean bias level from EED extended register     
+BIASEVEN=             0.000000 / Bias level from even-numbered columns          
+BIASODD =             0.000000 / Bias level from odd-numbered columns           
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+DATAMEAN=             0.000000 / mean value of the good pixels                  
+                                                                                
+              / DATA QUALITY FILE SUMMARY                                       
+                                                                                
+GPIXELS =                    0 / number of good pixels (DQF=0)                  
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+CALIBDEF=                    0 / number of calibration defect pixels (DQF=2)    
+STATICD =                    0 / number of static defect pixels (DQF=4)         
+ATODSAT =                    0 / number of AtoD saturated pixels (DQF=8)        
+DATALOST=                    0 / number of data lost pixels (DQF=16)            
+BADPIXEL=                    0 / number of generic bad pixels (DQF=32)          
+OVERLAP =                    0 / number of image overlap pixels (DQF=64)        
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                                    '
+PHOTFLAM=             0.000000 / Inverse Sensitivity                            
+PHOTZPT =             0.000000 / Zero point                                     
+PHOTPLAM=             0.000000 / Pivot wavelength                               
+PHOTBW  =             0.000000 / RMS bandwidth of the filter                    
+ZP_CORR =                  0.0 / Delta magnitude correction for contamination   
+                                                                                
+              / IMAGE STATISTICS                                                
+                                                                                
+MEDIAN  =          3400.000000 / middle data value when good qual pixels sorted 
+MEDSHADO=          3395.000000 / median pixel value in shadow of pyramid edge   
+HISTWIDE=           349.000000 / width of the histogram                         
+SKEWNESS=             0.000294 / skewness of the histogram                      
+MEANC10 =          3390.302979 / mean of a 10x10 region at center of chip       
+MEANC25 =          3421.735596 / mean of a 25x25 region at center of chip       
+MEANC50 =          3418.847900 / mean of a 50x50 region at center of chip       
+MEANC100=          3416.680664 / mean of a 100x100 region at center of chip     
+MEANC200=          3421.028809 / mean of a 200x200 region at center of chip     
+MEANC300=          3421.166260 / mean of a 300x300 region at center of chip     
+BACKGRND=          3390.000000 / estimated background level                     
+BIASEVNU=             0.000000 / BIASEVEN value prior to WF4T correction        
+BIASODDU=             0.000000 / BIASODD value prior to WF4T correction         
+CTE_1E2 =   0.000000000000E+00 / expected delta mag from CTE,100 electron pt src
+CTE_1E3 =   0.000000000000E+00 / expected delta mag from CTE,1000 electron pt sr
+CTE_1E4 =   0.000000000000E+00 / expected delta mag from CTE,1e+4 electron pt sr
+
+# HDU 2 in u21u0201t_q0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                  800 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    2 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =                423.5 / x-coordinate of reference pixel                
+CRPIX2  =                414.0 / y-coordinate of reference pixel                
+CRVAL1  =  -1.000000000000E+00 / first axis value at reference pixel            
+CRVAL2  =  -1.000000000000E+00 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =                  1.0 / partial of first axis coordinate w.r.t. x      
+CD1_2   =                  0.0 / partial of first axis coordinate w.r.t. y      
+CD2_1   =                  0.0 / partial of second axis coordinate w.r.t. x     
+CD2_2   =                  1.0 / partial of second axis coordinate w.r.t. y     
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    2 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+                                                                                
+              / IMAGE PARAMETERS                                                
+                                                                                
+MIR_REVR=                    T / is the image mirror reversed?                  
+ORIENTAT=                  0.0 / position angle of image y axis (deg. e of n)   
+FPKTTIME=         49338.623791 / time of the first packet (Modified Julian Date)
+LPKTTIME=         49338.623958 / time of the last packet (Modified Julian Date) 
+DEZERO  =             0.000000 / Mean bias level from EED extended register     
+BIASEVEN=             0.000000 / Bias level from even-numbered columns          
+BIASODD =             0.000000 / Bias level from odd-numbered columns           
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+DATAMEAN=             0.000000 / mean value of the good pixels                  
+                                                                                
+              / DATA QUALITY FILE SUMMARY                                       
+                                                                                
+GPIXELS =                    0 / number of good pixels (DQF=0)                  
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+CALIBDEF=                    0 / number of calibration defect pixels (DQF=2)    
+STATICD =                    0 / number of static defect pixels (DQF=4)         
+ATODSAT =                    0 / number of AtoD saturated pixels (DQF=8)        
+DATALOST=                    0 / number of data lost pixels (DQF=16)            
+BADPIXEL=                    0 / number of generic bad pixels (DQF=32)          
+OVERLAP =                    0 / number of image overlap pixels (DQF=64)        
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                                    '
+PHOTFLAM=             0.000000 / Inverse Sensitivity                            
+PHOTZPT =             0.000000 / Zero point                                     
+PHOTPLAM=             0.000000 / Pivot wavelength                               
+PHOTBW  =             0.000000 / RMS bandwidth of the filter                    
+ZP_CORR =                  0.0 / Delta magnitude correction for contamination   
+                                                                                
+              / IMAGE STATISTICS                                                
+                                                                                
+MEDIAN  =          3253.000000 / middle data value when good qual pixels sorted 
+MEDSHADO=          3247.000000 / median pixel value in shadow of pyramid edge   
+HISTWIDE=           406.000000 / width of the histogram                         
+SKEWNESS=             0.000615 / skewness of the histogram                      
+MEANC10 =          3292.977051 / mean of a 10x10 region at center of chip       
+MEANC25 =          3260.562500 / mean of a 25x25 region at center of chip       
+MEANC50 =          3261.013916 / mean of a 50x50 region at center of chip       
+MEANC100=          3261.378418 / mean of a 100x100 region at center of chip     
+MEANC200=          3256.246582 / mean of a 200x200 region at center of chip     
+MEANC300=          3256.150391 / mean of a 300x300 region at center of chip     
+BACKGRND=          3266.000000 / estimated background level                     
+BIASEVNU=             0.000000 / BIASEVEN value prior to WF4T correction        
+BIASODDU=             0.000000 / BIASODD value prior to WF4T correction         
+CTE_1E2 =   0.000000000000E+00 / expected delta mag from CTE,100 electron pt src
+CTE_1E3 =   0.000000000000E+00 / expected delta mag from CTE,1000 electron pt sr
+CTE_1E4 =   0.000000000000E+00 / expected delta mag from CTE,1e+4 electron pt sr
+
+# HDU 3 in u21u0201t_q0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                  800 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    3 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =                416.5 / x-coordinate of reference pixel                
+CRPIX2  =                424.5 / y-coordinate of reference pixel                
+CRVAL1  =  -1.000000000000E+00 / first axis value at reference pixel            
+CRVAL2  =  -1.000000000000E+00 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =                  1.0 / partial of first axis coordinate w.r.t. x      
+CD1_2   =                  0.0 / partial of first axis coordinate w.r.t. y      
+CD2_1   =                  0.0 / partial of second axis coordinate w.r.t. x     
+CD2_2   =                  1.0 / partial of second axis coordinate w.r.t. y     
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    3 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+                                                                                
+              / IMAGE PARAMETERS                                                
+                                                                                
+MIR_REVR=                    T / is the image mirror reversed?                  
+ORIENTAT=                  0.0 / position angle of image y axis (deg. e of n)   
+FPKTTIME=         49338.623958 / time of the first packet (Modified Julian Date)
+LPKTTIME=         49338.624126 / time of the last packet (Modified Julian Date) 
+DEZERO  =             0.000000 / Mean bias level from EED extended register     
+BIASEVEN=             0.000000 / Bias level from even-numbered columns          
+BIASODD =             0.000000 / Bias level from odd-numbered columns           
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+DATAMEAN=             0.000000 / mean value of the good pixels                  
+                                                                                
+              / DATA QUALITY FILE SUMMARY                                       
+                                                                                
+GPIXELS =                    0 / number of good pixels (DQF=0)                  
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+CALIBDEF=                    0 / number of calibration defect pixels (DQF=2)    
+STATICD =                    0 / number of static defect pixels (DQF=4)         
+ATODSAT =                    0 / number of AtoD saturated pixels (DQF=8)        
+DATALOST=                    0 / number of data lost pixels (DQF=16)            
+BADPIXEL=                    0 / number of generic bad pixels (DQF=32)          
+OVERLAP =                    0 / number of image overlap pixels (DQF=64)        
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                                    '
+PHOTFLAM=             0.000000 / Inverse Sensitivity                            
+PHOTZPT =             0.000000 / Zero point                                     
+PHOTPLAM=             0.000000 / Pivot wavelength                               
+PHOTBW  =             0.000000 / RMS bandwidth of the filter                    
+ZP_CORR =                  0.0 / Delta magnitude correction for contamination   
+                                                                                
+              / IMAGE STATISTICS                                                
+                                                                                
+MEDIAN  =          3960.000000 / middle data value when good qual pixels sorted 
+MEDSHADO=          3971.000000 / median pixel value in shadow of pyramid edge   
+HISTWIDE=           215.000000 / width of the histogram                         
+SKEWNESS=            -0.007828 / skewness of the histogram                      
+MEANC10 =             0.000000 / mean of a 10x10 region at center of chip       
+MEANC25 =          3949.142822 / mean of a 25x25 region at center of chip       
+MEANC50 =          3942.600098 / mean of a 50x50 region at center of chip       
+MEANC100=          3926.540283 / mean of a 100x100 region at center of chip     
+MEANC200=          3937.335693 / mean of a 200x200 region at center of chip     
+MEANC300=          3938.926514 / mean of a 300x300 region at center of chip     
+BACKGRND=          4083.000000 / estimated background level                     
+BIASEVNU=             0.000000 / BIASEVEN value prior to WF4T correction        
+BIASODDU=             0.000000 / BIASODD value prior to WF4T correction         
+CTE_1E2 =   0.000000000000E+00 / expected delta mag from CTE,100 electron pt src
+CTE_1E3 =   0.000000000000E+00 / expected delta mag from CTE,1000 electron pt sr
+CTE_1E4 =   0.000000000000E+00 / expected delta mag from CTE,1e+4 electron pt sr
+
+# HDU 4 in u21u0201t_q0m.fits:
+XTENSION= 'IMAGE   '           / extension type                                 
+BITPIX  =                   16 / bits per data value                            
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                  800 / length of first data axis                      
+NAXIS2  =                  800 / length of second data axis                     
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+INHERIT =                    T / inherit the primary header                     
+EXTNAME = 'SCI     '           / extension name                                 
+EXTVER  =                    4 / extension version number                       
+ROOTNAME= 'u21u0201t                         ' / rootname of the observation set
+EXPNAME = 'u21u0201t                ' / exposure identifier                     
+DATAMIN =             0.000000 / the minimum value of the data                  
+DATAMAX =            -1.000000 / the maximum value of the data                  
+BUNIT   = 'COUNTS            ' / brightness units                               
+BSCALE  =                  1.0 / scale factor for array value to physical value 
+BZERO   =                  0.0 / physical value for an array value of zero      
+                                                                                
+              / World Coordinate System and Related Parameters                  
+                                                                                
+WCSAXES =                    2 / number of World Coordinate System axes         
+CRPIX1  =                423.0 / x-coordinate of reference pixel                
+CRPIX2  =                421.0 / y-coordinate of reference pixel                
+CRVAL1  =  -1.000000000000E+00 / first axis value at reference pixel            
+CRVAL2  =  -1.000000000000E+00 / second axis value at reference pixel           
+CTYPE1  = 'RA---TAN'           / the coordinate type for the first axis         
+CTYPE2  = 'DEC--TAN'           / the coordinate type for the second axis        
+CD1_1   =                  1.0 / partial of first axis coordinate w.r.t. x      
+CD1_2   =                  0.0 / partial of first axis coordinate w.r.t. y      
+CD2_1   =                  0.0 / partial of second axis coordinate w.r.t. x     
+CD2_2   =                  1.0 / partial of second axis coordinate w.r.t. y     
+VAFACTOR=   1.000000000000E+00 / velocity aberration plate scale factor         
+                                                                                
+              / PODPS PARAMETERS                                                
+                                                                                
+DETECTOR=                    4 / CCD number of the detector: PC 1, WFC 2-4      
+                                                                                
+              / OSS PARAMETERS                                                  
+                                                                                
+FILLCNT =                    0 / number of segments containing fill             
+ERRCNT  =                    0 / number of segments containing errors           
+                                                                                
+              / IMAGE PARAMETERS                                                
+                                                                                
+MIR_REVR=                    T / is the image mirror reversed?                  
+ORIENTAT=                  0.0 / position angle of image y axis (deg. e of n)   
+FPKTTIME=         49338.624126 / time of the first packet (Modified Julian Date)
+LPKTTIME=         49338.624294 / time of the last packet (Modified Julian Date) 
+DEZERO  =             0.000000 / Mean bias level from EED extended register     
+BIASEVEN=             0.000000 / Bias level from even-numbered columns          
+BIASODD =             0.000000 / Bias level from odd-numbered columns           
+GOODMIN =             0.000000 / minimum value of good pixels                   
+GOODMAX =             0.000000 / maximum value of good pixels                   
+DATAMEAN=             0.000000 / mean value of the good pixels                  
+                                                                                
+              / DATA QUALITY FILE SUMMARY                                       
+                                                                                
+GPIXELS =                    0 / number of good pixels (DQF=0)                  
+SOFTERRS=                    0 / number of soft error pixels (DQF=1)            
+CALIBDEF=                    0 / number of calibration defect pixels (DQF=2)    
+STATICD =                    0 / number of static defect pixels (DQF=4)         
+ATODSAT =                    0 / number of AtoD saturated pixels (DQF=8)        
+DATALOST=                    0 / number of data lost pixels (DQF=16)            
+BADPIXEL=                    0 / number of generic bad pixels (DQF=32)          
+OVERLAP =                    0 / number of image overlap pixels (DQF=64)        
+                                                                                
+              / PHOTOMETRY KEYWORDS                                             
+                                                                                
+PHOTMODE= '                                                                    '
+PHOTFLAM=             0.000000 / Inverse Sensitivity                            
+PHOTZPT =             0.000000 / Zero point                                     
+PHOTPLAM=             0.000000 / Pivot wavelength                               
+PHOTBW  =             0.000000 / RMS bandwidth of the filter                    
+ZP_CORR =                  0.0 / Delta magnitude correction for contamination   
+                                                                                
+              / IMAGE STATISTICS                                                
+                                                                                
+MEDIAN  =          3930.000000 / middle data value when good qual pixels sorted 
+MEDSHADO=          3936.000000 / median pixel value in shadow of pyramid edge   
+HISTWIDE=           235.000000 / width of the histogram                         
+SKEWNESS=            -0.006616 / skewness of the histogram                      
+MEANC10 =          3847.500000 / mean of a 10x10 region at center of chip       
+MEANC25 =          3833.014404 / mean of a 25x25 region at center of chip       
+MEANC50 =          3858.503418 / mean of a 50x50 region at center of chip       
+MEANC100=          3874.625000 / mean of a 100x100 region at center of chip     
+MEANC200=          3883.392090 / mean of a 200x200 region at center of chip     
+MEANC300=          3883.100098 / mean of a 300x300 region at center of chip     
+BACKGRND=          4074.000000 / estimated background level                     
+BIASEVNU=             0.000000 / BIASEVEN value prior to WF4T correction        
+BIASODDU=             0.000000 / BIASODD value prior to WF4T correction         
+CTE_1E2 =   0.000000000000E+00 / expected delta mag from CTE,100 electron pt src
+CTE_1E3 =   0.000000000000E+00 / expected delta mag from CTE,1000 electron pt sr
+CTE_1E4 =   0.000000000000E+00 / expected delta mag from CTE,1e+4 electron pt sr

@@ -1,0 +1,22 @@
+# HDU 0 in o3sj01ozq_trl.fits:
+SIMPLE  =                    T / FITS STANDARD                                  
+BITPIX  =                    8 / Character information                          
+NAXIS   =                    0 / No image data array present                    
+EXTEND  =                    T / There maybe standard extensions                
+DATE    = '2006-11-23'         / Date tape was written                          
+ORIGIN  = 'STScI-STSDAS'       / Fitsio version 21-Feb-1996                     
+FILENAME= 'null_image'         / ZERO LENGTH DUMMY IMAGE                        
+
+# HDU 1 in o3sj01ozq_trl.fits:
+XTENSION= 'TABLE   '           / FITS STANDARD                                  
+BITPIX  =                    8 / 8-bits per 'pixels'                            
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  132 / No of characters per row                       
+NAXIS2  =                  112 / The number of rows                             
+PCOUNT  =                    0 / No 'random' parameters                         
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                    1 / Number of fields per row                       
+EXTNAME = 'o3sj01ozq.trl'      / Name of table                                  
+TTYPE1  = 'TEXT_FILE'          / One column per line                            
+TBCOL1  =                    1 / Starting column number                         
+TFORM1  = 'A132    '           / Format                                         

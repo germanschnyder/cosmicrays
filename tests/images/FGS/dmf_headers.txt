@@ -1,0 +1,251 @@
+# HDU 0 in fb8u7001m_dmf.fits:
+SIMPLE  =                    T / data conform to FITS standard                  
+BITPIX  =                    8 / bits per data value                            
+NAXIS   =                    0 / number of data axes                            
+EXTEND  =                    F / File may contain standard extensions           
+NEXTEND =                    0 / Number of standard extensions                  
+GROUPS  =                    F / image is in group format                       
+DATE    = '2008-12-23'         / date this file was written (yyyy-mm-dd)        
+FILENAME= 'fb8u7001m_cvt.dmh                      ' / name of file              
+FILETYPE= 'AST      '          / type of data found in data file                
+                                                                                
+TELESCOP= 'HST'                / telescope used to acquire data                 
+INSTRUME= 'FGS   '             / identifier for instrument used to acquire data 
+EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                
+              / DATA DESCRIPTOR KEYWORDS                                        
+                                                                                
+ROOTNAME= 'FB8U7001M                         ' / rootname of the observation set
+DEFAULTS=                    F / default values used in reformatting these data 
+PROC_TYP= 'NORMAL      '       / type of pipeline processing                    
+                                                                                
+              / TARGET INFORMATION                                              
+                                                                                
+TARGNAME= 'DARK-TARGET                   ' / proposer's target name             
+RA_TARG =   4.256408333333E+01 / right ascension of the target (deg) (J2000)    
+DEC_TARG=   7.176813888889E+01 / declination of the target (deg) (J2000)        
+ECL_LONG=            68.056915 / ecliptic longitude of the target (deg) (J2000) 
+ECL_LAT =            51.928624 / ecliptic latitude of the target (deg) (J2000)  
+GAL_LONG=           132.019712 / galactic longitude of the target (deg) (J2000) 
+GAL_LAT =            11.025048 / galactic latitude of the target (deg) (J2000)  
+                                                                                
+              / PROPOSAL INFORMATION                                            
+                                                                                
+PROPOSID=                11945 / PEP proposal identifier                        
+LINENUM = '70.001         '    / proposal logsheet line number                  
+                                                                                
+              / SOFTWARE VERSION KEYWORDS                                       
+                                                                                
+OPUS_VER= 'OPUS 2008_5a      ' / OPUS software system version number            
+                                                                                
+              / SUPPORT SCHEDULE: PROGRAMMATIC DATA                             
+PROGRMID= 'B8U'                / program id (base 36)                           
+PR_INV_L= 'Gilliland                     ' / last name of principal investigator
+PR_INV_F= 'Ronald              ' / first name of principal investigator         
+PR_INV_M= 'L.                  ' / middle name / initial of principal investigat
+ACCPDATE= '       '            / proposal acceptance date (yyyyddd)             
+OBSET_ID= '70'                 / observation set id                             
+CALIBRAT= ' '                  / calibrate data flag                            
+OBSERVTN= '01 '                / observation number (base 36)                   
+EXPACKET=                    4 / expected number of source packets              
+PRODTYPE= '                  ' / output product medium type                     
+OPFORMAT= '                  ' / output product format specification            
+CALIBTYP= ' '                  / calibration type : E, I or Blank               
+CDBSDATA= 'FALSE'              / cdbs notification flag: 'CAL' or 'FALSE'       
+                                                                                
+              / SUPPORT SCHEDULE: DATA GROUP II DATA                            
+WRD11_14=                    0 / word 11/14 (0-255)                             
+PSTRTIME= '2008.356:07:58:20 ' / predicted obs. start time (yyyy.ddd:hh:mm:ss)  
+PSTPTIME= '2008.356:08:40:22 ' / predicted obs. stop time (yyyy.ddd:hh:mm:ss)   
+APEROBJ = 'FGS2      '         / si object aperture id                          
+APERSKY = '          '         / si sky aperture id                             
+TARG_ID = '11945_10       '    / SPSS target ID from proposal+target no.        
+APERTYPE= 'SICS              ' / aperture type (SICS, SIAS, SIDS)               
+RA_V1   =   4.201573309535E+01 / right ascension of v1 axis of st (deg)         
+DEC_V1  =   7.187793804086E+01 / declination of v1 axis of st (deg)             
+PA_V3   =           304.363586 / position angle of V3-axis of HST (deg)         
+APEROFFX=           -30.000000 / x comp of object offset in aperture (arcsec)   
+APEROFFY=             0.000000 / y comp of object offset in aperture (arcsec)   
+ANGLESEP=             0.000000 / ang separation of target from ref obj (arcsec) 
+DGESTAR = 'NB0H000474F1'       / FGS ID(F1,F2,F3) concat. w/ dom. gd. star id   
+SGESTAR = 'NB0H000199F3'       / FGS ID(F1,F2,F3) concat. w/ subdom. gd. star id
+PA_APER =           124.884598 / position ang of aperture used with target (deg)
+PA_REF  =             0.000000 / position ang of target from ref. object (deg)  
+SAAAVOID= '05'                 / SAA model for SAA Avoidance (range 02-99)      
+TARAQMOD= '03'                 / target acquisition mode (values 00, 01, 02, 03)
+POSTNSTX=  -5.148952743771E+03 / position of space telescope x axis (km)        
+POSTNSTY=  -4.141597251727E+03 / position of space telescope y axis (km)        
+POSTNSTZ=   2.126274564824E+03 / position of space telescope z axis (km)        
+VELOCSTX=   5.082096710508E+00 / vel of space telescope along x axis (km/sec)   
+VELOCSTY=  -4.894436642299E+00 / vel of space telescope along y axis (km/sec)   
+VELOCSTZ=   2.773249730893E+00 / vel of space telescope along z axis (km/sec)   
+RA_SUN  =   2.696691560931E+02 / right ascension of the sun (deg)               
+DEC_SUN =  -2.343802450588E+01 / declination of the sun (deg)                   
+RA_MOON =   1.982838851390E+02 / right ascension of the moon (deg)              
+DEC_MOON=  -1.305059797580E+01 / declination of the moon (deg)                  
+VELABBRA=            17.523550 / aberration in position of the target           
+ANNPARRA=             0.000000 / par. shift in position, non-solar sys target   
+V2APERCE=            30.000000 / V2 offset of target from aper fiducial (arcsec)
+V3APERCE=             0.000000 / V3 offset of target from aper fiducial (arcsec)
+EQRADTRG=             0.000000 / equatorial radius of target (km)               
+FLATNTRG=             0.000000 / flattening of target                           
+NPDECTRG=             0.000000 / north pole declination of target (deg)         
+NPRATRG =             0.000000 / north pole right ascension of target (deg)     
+ROTRTTRG=             0.000000 / rotation rate of target                        
+LONGPMER=             0.000000 / longitude of prime meridian (deg)              
+EPLONGPM=             0.000000 / epoch of longitude of prime meridian (sec)     
+SURFLATD=             0.000000 / surface feature latitude (deg)                 
+SURFLONG=             0.000000 / surface feature longitude (deg)                
+SURFALTD=             0.000000 / surface feature altitude (km)                  
+MTFLAG  = ' '                  / moving target flag; T if it is a moving target 
+S0INVMAG=   0.000000000000E+00 / S0 inverse magnitude                           
+S0XDIR  =   0.000000000000E+00 / S0 X direction                                 
+S0YDIR  =   0.000000000000E+00 / S0 Y direction                                 
+S0ZDIR  =   0.000000000000E+00 / S0 Z direction                                 
+TRK_TYPE= 'NO '                / track 48 or track 51 commanding used           
+T51_RATE=                  0.0 / rate of motion commanded (arcsecs/sec)         
+T51_ANGL=                  0.0 / position angle of motion of aperture (deg)     
+TARGDIST=   0.000000000000E+00 / distance to target from Earth's center (km)    
+PAR_CORR= 'F'                  / parallax correction used (Y, N, or A)          
+RA_REF  =   4.256408333333E+01 / right ascension of reference object (deg)      
+DEC_REF =   7.176813888889E+01 / declination of reference object (deg)          
+                                                                                
+              / ONBOARD EPHEMERIS MODEL PARAMETERS                              
+EPCHTIME=   7.560000000000E+08 / epoch time of parameters (secs since 1/1/85)   
+SDMEANAN=   2.495618360920E-16 / 2nd deriv coef for mean anomaly (revs/sec/sec) 
+SDMA3SQ =   3.582311300113E-06 / 3 * (SDMEANAN**2) radians/second**2.           
+HSTHORB =   2.874940351870E+03 / half the duration of the ST orbit (seconds)    
+CIRVELOC=   7.585423816583E+03 / circular orbit linear velocity (meters/second) 
+COSINCLI=   8.793106329606E-01 / cosine of inclination                          
+ECCENTRY=   5.859645709716E-04 / eccentricity                                   
+ECCENTX2=   1.171929141943E-03 / eccentricity times 2                           
+ECBDX4D3=   2.682580795290E-10 / eccentricity cubed times 4/3                   
+ESQDX5D2=   8.583861960848E-07 / eccentricity squared times 5/2                 
+ECBDX3  =   6.035806789402E-10 / eccentricity cubed times 3                     
+FDMEANAN=   1.739166517576E-04 / 1st derivative coef for mean anomly (revs/sec) 
+RCASCNRD=  -1.318168583965E-06 / rt chge right ascension ascend node (rads/sec) 
+RCASCNRV=  -2.097930459664E-07 / rt chge right ascension ascend node (revs/sec) 
+ARGPERIG=   3.269876406614E-01 / argument of perigee (revolutions)              
+MEANANOM=   3.900905456068E+00 / mean anomaly (radians)                         
+RCARGPER=   8.681169162605E-08 / rate change of argument of perigee (revs/sec)  
+RASCASCN=   6.031720125296E-01 / right ascension of ascending node (revolutions)
+SINEINCL=   4.762486858379E-01 / sine of inclination                            
+SEMILREC=   6.941548810862E+06 / semi-latus rectum (meters)                     
+TIMEFFEC=   7.560011880000E+08 / time parameters took effect (secs since 1/1/85)
+OBSSTRTT=   7.564607000000E+08 / predicted obs. start time (secs since 1/1/85)  
+                                                                                
+              / PROPOSAL INFO: Instrument Configuration                         
+CONFIG  = 'FGS            '    / proposed instrument configuration              
+OPMODE  = 'TRANS             ' / proposed operation mode                        
+SPEC_1  = 'F583W               ' / spectral element                             
+SPEC_2  = '                    ' / spectral element                             
+SPEC_3  = '                    ' / spectral element                             
+SPEC_4  = '                    ' / spectral element                             
+APER_1  = '2              '    / instrument aperture                            
+APER_2  = '               '    / instrument aperture                            
+APER_3  = '               '    / instrument aperture                            
+APER_4  = '               '    / instrument aperture                            
+                                                                                
+              / PROPOSAL INFO: Target Description                               
+TAR_TYPE= 'POINT TARGET   '    / target type                                    
+TARDESCR= 'CALIBRATION;SKY BACKGROUND                                          '
+TARGCAT = 'CALIBRATION             ' / first target category                    
+TARKEY1 = 'SKY BACKGROUND                                                      '
+                                                                                
+              / PROPOSAL INFO: Flux Information                                 
+MAG_V   =            17.000000 / expected V Magnitude                           
+SURF_V  =             0.000000 / expected V surface brightness                  
+MAG_B   =             0.000000 / expected B Magnitude                           
+SURF_B  =             0.000000 / expected B surface brightness                  
+MAG_U   =             0.000000 / expected U Magnitude                           
+SURF_U  =             0.000000 / expected U surface brightness                  
+MAG_R   =             0.000000 / expected R Magnitude                           
+SURF_R  =             0.000000 / expected R surface brightness                  
+COL_B_V =             0.000000 / expected B-V color                             
+COL_U_B =             0.000000 / expected U-B color                             
+COL_V_R =             0.000000 / expected V-R color                             
+E_B_V   =             0.000000 / E(B-V)                                         
+EXTNCT_V=             0.000000 / extinction in V                                
+                                                                                
+              / PROPOSAL INFO: Exposure Information                             
+CMD_EXP =          1800.000000 / commanded time per exposure (from TRANS)       
+                                                                                
+              / PROPOSAL INFO: Moving Target Information                        
+                                                                                
+              / PROPOSAL INFO: Target Properties                                
+REDSHIFT=   0.000000000000E+00 / target redshift from proposal                  
+PARALLAX=   0.000000000000E+00 / target parallax from proposal                  
+RA_PROP =   4.256408333333E+01 / target right ascension from proposal (degrees) 
+DEC_PROP=   7.176813888889E+01 / target declination from proposal (degrees)     
+PEQUINOX= 'J2000  '            / equinox of coordinate system from proposal     
+MU_RA   =   0.000000000000E+00 / target proper motion from proposal (degrees RA)
+MU_DEC  =   0.000000000000E+00 / target proper motion from proposal (deg. DEC)  
+MU_EPOCH= 'J2000  '            / epoch of proper motion from proposal           
+SP_TYPE = '               '    / target spectral type from proposal             
+RAD_VEL =   0.000000000000E+00 / target radial velocity from proposal (km/sec)  
+                                                                                
+              / PROPOSAL INFO: Spatial Scan Info                                
+SCAN_TYP= 'N                 ' / C:bostrophidon; D:C with dwell; N:N/A          
+SCAN_WID=   0.000000000000E+00 / scan width (arcsec)                            
+ANG_SIDE=   0.000000000000E+00 / angle between sides of parallelogram (deg)     
+DWELL_LN=                    0 / dwell pts/line for scan pointing (1-99,0 if NA)
+DWELL_TM=   0.000000000000E+00 / wait time (duration) at each dwell point (sec) 
+SCAN_ANG=   0.000000000000E+00 / position angle of scan line (deg)              
+SCAN_RAT=   0.000000000000E+00 / commanded rate of the line scan (arcsec/sec)   
+NO_LINES=                    0 / number of lines per scan (1-99,0 if NA)        
+SCAN_LEN=   0.000000000000E+00 / scan length (arcsec)                           
+SCAN_COR= 'C                 ' / scan coordinate frame of ref: celestial,vehicle
+                                                                                
+              / PROPOSAL INFO: Auxiliary                                        
+PARENTID=                    0 / PEP proposal identifier of the parent proposal 
+PROPTTL1= 'Asteroseismology of Extrasolar Planet Host Stars                    '
+PROP_TYP= 'GO/DD               ' / proposal type                                
+                                                                                
+                                                                                
+              / EXPOSURE INFORMATION                                            
+                                                                                
+ORIENTAT=         484.86734290 / position angle of image y axis (deg. e of n)   
+SUNANGLE=           124.768456 / angle between sun and V1 axis                  
+MOONANGL=           119.471863 / angle between moon and V1 axis                 
+SUN_ALT =            48.677177 / altitude of the sun above Earth's limb         
+FGSLOCK = 'FINE              ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+GYROMODE= '2'                  / number of gyros scheduled for observation      
+REFFRAME= 'ICRS    '           / guide star catalog version                     
+                                                                                
+DATE-OBS= '2008-12-21'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '07:58:19'           / UT time of start of observation (hh:mm:ss)     
+EXPSTART=       54821.33216514 / exposure start time (Modified Julian Date)     
+EXPEND  =       54821.36135380 / exposure end time (Modified Julian Date)       
+EXPTIME =        2521.90005386 / exposure duration (seconds)--calculated        
+EXPFLAG = 'NORMAL       '      / Exposure interruption indicator                
+QUALCOM1= '                                                                    '
+QUALCOM2= '                                                                    '
+QUALCOM3= '                                                                    '
+QUALITY = '                                                                    '
+                                                                                
+              / DATA QUALITY                                                    
+                                                                                
+WIN_STRT= '20083560758      '  / observation window start time                  
+WIN_STOP= '20083560840      '  / observation window stop time                   
+PDB_VER = 'CCS               ' / Project Database version in use                
+MF_EXPCT=                50440 / number of minor frames expected                
+MF_RECVD=                50439 / number of minor frames received                
+MF_BAD  =                    0 / number of bad minor frames received            
+SUCCESS = 'SS'                 / success flag: SS - success, FF - no science dat
+                                                                                
+              / SUN AND MOON COORDINATES                                        
+                                                                                
+XSUN    = -779668.755322683835 / Sun position: geocentric J2000 frame (km)      
+YSUN    = -135017192.740429073 / Sun position: geocentric J2000 frame (km)      
+ZSUN    = -58534547.2230290547 / Sun position: geocentric J2000 frame (km)      
+VXSUN   =     30.2782546536741 / Sun velocity: geocentric J2000 frame (km/sec)  
+VYSUN   =     -0.0514712780678 / Sun velocity: geocentric J2000 frame (km/sec)  
+VZSUN   =     -0.0228224680550 / Sun velocity: geocentric J2000 frame (km/sec)  
+XMOON   = -365718.367769606527 / Moon position: geocentric J2000 frame (km)     
+YMOON   = -120834.797508127492 / Moon position: geocentric J2000 frame (km)     
+ZMOON   = -89279.9735176934046 / Moon position: geocentric J2000 frame (km)     
+VXMOON  =      0.3226651779203 / Moon velocity: geocentric J2000 frame (km/sec) 
+VYMOON  =     -0.8459216498197 / Moon velocity: geocentric J2000 frame (km/sec) 
+VZMOON  =     -0.4017431822696 / Moon velocity: geocentric J2000 frame (km/sec) 
+                                                                                
+                                                                                

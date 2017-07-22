@@ -1,0 +1,405 @@
+# HDU 0 in z06a0101r_q0f.fits:
+SIMPLE  =                    T / file does conform to FITS standard             
+BITPIX  =                   32 / number of bits per data pixel                  
+NAXIS   =                    2 / number of data axes                            
+NAXIS1  =                  500 / length of data axis 1                          
+NAXIS2  =                    3 / length of data axis 2                          
+EXTEND  =                    T / FITS dataset may contain extensions            
+COMMENT   FITS (Flexible Image Transport System) format is defined in 'Astronomy
+COMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H 
+OPSIZE  =                  960 / PSIZE of original image                        
+ORIGIN  = 'ST-DADS '           / Institution that originated the FITS file      
+FITSDATE= '16-DEC-2013'        / Date file was generated                        
+FILENAME= 'z06a0101r_cvt.q0h'  / Original GEIS header file name with _cvt       
+ODATTYPE= 'INTEGER '           / Original datatype                              
+SDASMGNU=                    3 / GCOUNT of original image                       
+DADSFILE= 'Z06A0101R.Q0F'      /                                                
+DADSCLAS= 'CAL     '           /                                                
+DADSDATE= '26-MAY-1994 04:29:24' /                                              
+CRVAL1  =      1.0000000000000 /                                                
+CRPIX1  =      1.0000000000000 /                                                
+CD1_1   =      1.0000000000000 /                                                
+DATAMIN =     0.00000000000000 /                                                
+DATAMAX =     -1.0000000000000 /                                                
+RA_APER =     -1.0000000000000 /                                                
+DEC_APER=     -1.0000000000000 /                                                
+FILLCNT =                    0 /                                                
+ERRCNT  =                    0 /                                                
+PKTTIME =      48020.560472563 /                                                
+CTYPE1  = 'PIXEL   '           /                                                
+OBSRPT  =                    0 /                                                
+OBSINT  =                    0 /                                                
+YDEF    =                    0 /                                                
+XDEF    =                    0 /                                                
+SAMPLE  =     0.00000000000000 /                                                
+DELTAS  =     0.00000000000000 /                                                
+LINE    =     0.00000000000000 /                                                
+EXPOSURE=     0.00000000000000 /                                                
+BINID   =                    0 /                                                
+CARPOS  =                    0 /                                                
+ZSCOEF1 =     0.00000000000000 /                                                
+ZSCOEF2 =     0.00000000000000 /                                                
+ZSCOEF3 =     0.00000000000000 /                                                
+ZSCOEF4 =     0.00000000000000 /                                                
+                                                                                
+                 / GROUP PARAMETERS: OSS                                        
+                                                                                
+                 / GROUP PARAMETERS: PODPS                                      
+                                                                                
+                 / HRS DATA DESCRIPTOR KEYWORDS                                 
+INSTRUME= 'HRS               ' / instrument in use                              
+ROOTNAME= 'Z06A0101R         ' / rootname of the observation set                
+FILETYPE= 'SDQ               ' / shp, udl, ext, sci, img, wav, flx              
+BUNIT   = 'COUNTS            ' / brightness units                               
+                                                                                
+                 / HRS PATTERN KEYWORDS                                         
+NBINS   =                    1 / number of substep bins in this pattern         
+NINIT   =                    1 / number of initial deflections                  
+RPTOBS  =                    0 / expected number of observation repeats         
+INTOBS  =                    0 / expected number of intermediate readouts       
+BINID1  =                    7 / bin id of substep 1 (0 = no data, 7 = dark cur)
+BINID2  =                    0 / bin id of substep 2 (1 = star small aperture)  
+BINID3  =                    0 / bin id of substep 3 (2 = star large aperture)  
+BINID4  =                    0 / bin id of substep 4 (3 = upper interorder)     
+BINID5  =                    0 / bin id of substep 5 (4 = lower interorder)     
+BINID6  =                    0 / bin id of substep 6 (5 = sky small aperture)   
+BINID7  =                    0 / bin id of substep 7 (6 = sky large aperture)   
+IXDEF1  =                 2048 / initial x deflection 1                         
+IXDEF2  =                    0 / initial x deflection 2                         
+IXDEF3  =                    0 / initial x deflection 3                         
+IXDEF4  =                    0 / initial x deflection 4                         
+IXDEF5  =                    0 / initial x deflection 5                         
+IYDEF1  =                 2048 / initial y deflection 1                         
+IYDEF2  =                    0 / initial y deflection 2                         
+IYDEF3  =                    0 / initial y deflection 3                         
+IYDEF4  =                    0 / initial y deflection 4                         
+IYDEF5  =                    0 / initial y deflection 5                         
+HOFF1   =                    0 / horizontal offset bin 2                        
+HOFF2   =                    0 / horizontal offset bin 3                        
+HOFF3   =                    0 / horizontal offset bin 4                        
+HOFF4   =                    0 / horizontal offset bin 5                        
+HOFF5   =                    0 / horizontal offset bin 6                        
+HOFF6   =                    0 / horizontal offset bin 7                        
+VOFF1   =                    0 / vertical offset bin 2                          
+VOFF2   =                    0 / vertical offset bin 3                          
+VOFF3   =                    0 / vertical offset bin 4                          
+VOFF4   =                    0 / vertical offset bin 5                          
+VOFF5   =                    0 / vertical offset bin 6                          
+VOFF6   =                    0 / vertical offset bin 7                          
+RPTCD1  =                    0 / repeat code bin 2 (0 = no def offset)          
+RPTCD2  =                    0 / repeat code bin 3 (1 = every time)             
+RPTCD3  =                    0 / repeat code bin 4 (2 = every 2nd time)         
+RPTCD4  =                    0 / repeat code bin 5 (4 = every 4th time)         
+RPTCD5  =                    0 / repeat code bin 6 (8 = every 8th time)         
+RPTCD6  =                    0 / repeat code bin 7                              
+ZXDCALU =        0.0000000E+00 / x comp null deflection cal correction          
+ZXDCALP =        0.0000000E+00 / proportional x-deflection cal correction       
+ZYDCALU =        0.0000000E+00 / y comp null deflection cal correction          
+ZYDCALP =        0.0000000E+00 / proportional y-deflection cal correction       
+INFOB   =                    0 / deflection pairs/substep pattern               
+INFOC   =                    0 / largest repeat code in the substep pattern     
+SCIDMP  =                   -1 / intermediate data dump (-1 = nodump)           
+MAXGSS  =                    1 / maximum substep patterns/observation           
+MERGED  =                    0 / number of merged spectra in this pattern       
+STEPPATT=                    1 / step pattern sequence                          
+STEPTIME=        0.2000000E+00 / integration time at step pattern position (sec)
+FP_SPLIT= 'NO                ' / fp-split (NO, TWO, FOUR, DSTWO, DSFOUR)        
+COMB_ADD= 'NO                ' / comb-addition (NO, TWO, FOUR, DSTWO, DSFOUR)   
+FINCODE =                  101 / observation termination code                   
+DOPPLER = 'OFF               ' / on-board doppler compensation (ON, OFF)        
+METER   = 'Y                 ' / exposure meter enabled                         
+                                                                                
+                 / CALIBRATION FLAGS AND INDICATORS                             
+OBSMODE = 'RAPID             ' / observation mode                               
+DETECTOR=                    1 / detector in use (1-2)                          
+GRATING = 'SAF     '           / grating,echelle or mirror in use               
+APERTURE= '                  ' / aperture name                                  
+                                                                                
+                 / CALIBRATION REFERENCE FILES                                  
+DIOHFILE= 'zref$aaj0926dz.r0h' / diode response header file                     
+PHCHFILE= 'zref$fnf          ' / photocathode response header file              
+VIGHFILE= 'zref$fnf          ' / vignetting response header file                
+ABSHFILE= 'zref$fnf          ' / absolute flux header file                      
+NETHFILE= 'zref$fnf          ' / absolute flux wavelength net header file       
+DQIHFILE= 'zref$c7u0854mz.r5h' / data quality initialization header file        
+CCR1    = 'ztab$aau13518z.cz1' / photocathode line mapping parameters table     
+CCR2    = 'ztab$ba412190z.cz2' / photocathode sample parameters table           
+CCR3    = 'ztab$c7f1130oz.cz3' / detector parameters table                      
+CCR4    = 'ztab$a3d1045dz.cz4' / wavelength ranges table                        
+CCR5    = 'ztab$bc41510sz.cz5' / spectral order constants table                 
+CCR6    = 'ztab$c3v1133gz.cz6' / dispersion constants table                     
+CCR7    = 'ztab$ba41219bz.cz7' / thermal constants table                        
+CCR8    = 'ztab$bb110387z.cz8' / incidence angle coefficients table             
+CCR9    = 'ztab$bb11038hz.cz9' / echelle interpolation constants table          
+CCRA    = 'ztab$bb11038kz.cza' / echelle non-interpolation constants table      
+CCRB    = 'ztab$bc41437gz.czb' / scattered light correction factors             
+CCG2    = 'mtab$a3d1145ly.cmg' / paired-pulse correction table                  
+                                                                                
+                 / CALIBRATION SWITCHES                                         
+DQI_CORR= 'OMIT              ' / data quality initialization                    
+EXP_CORR= 'OMIT              ' / division by exposure time                      
+DIO_CORR= 'OMIT              ' / diode response correction                      
+PPC_CORR= 'OMIT              ' / paired-pulse correction                        
+MAP_CORR= 'OMIT              ' / mapping function                               
+DOP_CORR= 'OMIT              ' / doppler compensation                           
+PHC_CORR= 'OMIT              ' / removal of photocathode nonuniformity          
+VIG_CORR= 'OMIT              ' / removal of vignetting nonuniformity            
+MER_CORR= 'OMIT              ' / merging of substep bins                        
+ADC_CORR= 'OMIT              ' / application of dispersion constants            
+MDF_CORR= 'OMIT              ' / median filter of background spectra            
+MNF_CORR= 'OMIT              ' / mean filter of background spectra              
+PLY_CORR= 'OMIT              ' / polynomial smoothing of background spectra     
+BCK_CORR= 'OMIT              ' / background removal                             
+IAC_CORR= 'OMIT              ' / incidence angle correction                     
+ECH_CORR= 'OMIT              ' / correction for echelle ripple                  
+FLX_CORR= 'OMIT              ' / absolute flux calibration                      
+HEL_CORR= 'OMIT              ' / conversion to heliocentric wavelengths         
+VAC_CORR= 'OMIT              ' / vacuum to air correction                       
+                                                                                
+                 / CALIBRATION KEYWORDS                                         
+DOPZER  =  0.4800597082035E+05 / doppler shift zero phase time (Mod Julian Date)
+DOPMAG  =        0.0000000E+00 / doppler shift scaling correction magnitude     
+SCLAMP  =                    0 / spectral calibration lamp                      
+ZLCOEF1 =               -999.0 / line mapping function L0                       
+ZLCOEF2 =               -999.0 / line mapping function A                        
+SPORDER =                 -999 / spectral order                                 
+MINWAVE =        0.0000000E+00 / minimum wavelength (angstroms)                 
+MAXWAVE =       -0.1000000E+01 / maximum wavelength (angstroms)                 
+                                                                                
+                 / STATISTICAL KEYWORDS                                         
+DATE    = '25/11/92          ' / date this file was written (dd/mm/yy)          
+PODPSFF = '0                 ' / 0=(no podps fill), 1=(podps fill present)      
+STDCFFF = '0                 ' / 0=(no st dcf fill), 1=(st dcf fill present)    
+STDCFFP = '0000              ' / st dcf fill pattern (hex)                      
+PKTFMT  =                  118 / packet format code                             
+                                                                                
+                 / CDBS KEYWORDS                                                
+                                                                                
+ZFSPYBF =                    0 / control bits for spectrum y-balance            
+ZFXMAPC =                    0 / x deflection of the center of field map        
+ZFYMAPC =                    0 / y deflection of the center of fiels map        
+ZDEBTF  =        0.4000000E-12 / DEB front post amp. temperature                
+ZDEBTR  =       -0.7407407E+01 / DEB rear post amp temperature                  
+ZDETT1  =        0.7666667E+01 / det. 1 temperature                             
+ZDETT2  =        0.7666667E+01 / det. 2 temperature                             
+ZDRT    =       -0.2962963E+01 / digicon radiator tem                           
+ZDT11   =       -0.5519900E+02 / det. 1 detector shield temperature #1          
+ZDT12   =       -0.5491700E+02 / det. 2 detector shield temperature #1          
+ZET11   =       -0.5519900E+02 / det. 1 enclosure temperature #1                
+ZET31   =       -0.5519900E+02 / det. 1 enclosure temperature #3                
+ZFIAT   =       -0.3703704E+00 / fixture interface A temperature                
+ZFIBT   =       -0.2592592E+01 / fixture interface B temperature                
+ZFICT   =       -0.6296296E+01 / fixture interface C temperature                
+ZHDC1   =        0.2048000E+04 / det. 1 horizontal deflection current           
+ZHDC2   =       -0.1706300E+04 / det. 2 horizontal deflection current           
+ZHVPST1 =       -0.5519900E+02 / det. 1 high voltage power supply temperature   
+ZHVPST2 =       -0.5491700E+02 / det. 2 high voltage power supply temperature   
+ZMEBT1  =        0.4333333E+01 / main elec box 1 temperature                    
+ZMEBT2  =       -0.6666667E+01 / main elec box 2 temperature                    
+ZOBBT   =        0.1571429E+02 / optical bench bulkhead temperature             
+ZOBT11  =       -0.5519900E+02 / det. 1 optical bench temperature #1            
+ZPABT1  =        0.1607143E+02 / det. 1 preamp assembly box temperature         
+ZPABT2  =        0.1406250E+02 / det. 2 preamp assembly box temperature         
+ZPCC1   =        0.0000000E+00 / det. 1 photo cathode current                   
+ZPCC2   =        0.0000000E+00 / det. 2 photo cathode current                   
+ZPCV1   =        0.0000000E+00 / det. 1 photo cathode high voltage              
+ZPCV2   =        0.0000000E+00 / det. 2 photo cathode high voltage              
+ZRIUTA  =       -0.4545455E+00 / RIU A internal temperature                     
+ZRIUTB  =       -0.9090909E+00 / RIU B internal temperature                     
+ZSCT1   =       -0.5519900E+02 / det. 1 spectral calibration lamp temperature   
+ZSCT2   =       -0.5491700E+02 / det. 2 spectral calibration lamp temperature   
+ZTST11  =       -0.5519900E+02 / det. 1 thermal shelf temperature #1            
+ZCST    =        0.1500000E+02 / carrousel stator temperature                   
+ZSPYBLU =                    0 / spectrum y-balance offset                      
+                                                                                
+                 / APERTURE POSITION                                            
+RA_APER1= -0.1000000000000E+01 / right ascension of the aperture (deg)          
+DECAPER1= -0.1000000000000E+01 / declination of the aperture (deg)              
+                                                                                
+                 / EXPOSURE INFORMATION                                         
+EQUINOX =               2000.0 / equinox of the celestial coordinate system     
+SUNANGLE=        0.1201559E+03 / angle between sun and V1 axis (deg)            
+MOONANGL=        0.5430112E+02 / angle between moon and V1 axis (deg)           
+SUN_ALT =        0.6658257E+02 / altitude of the sun above Earth's limb (deg)   
+FGSLOCK = 'GYROS             ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+                                                                                
+DATE-OBS= '1990-05-09'         / UT date of start of observation (yyyy-mm-dd)   
+TIME-OBS= '13:26:36          ' / UT time of start of observation (hh:mm:ss)     
+EXPSTART=  0.4802056014704E+05 / exposure start time (Modified Julian Date)     
+EXPEND  =  0.4802056290167E+05 / exposure end time (Modified Julian Date)       
+EXPTIME =        0.3075000E+02 / exposure duration (seconds)--calculated        
+EXPFLAG = 'INCOMPLETE        ' / Exposure interruption indicator                
+                                                                                
+                 / TARGET & PROPOSAL ID                                         
+TARGNAME= 'DARK    '           / proposer's target name                         
+RA_TARG =  0.0000000000000E+00 / right ascension of the target (deg) (J2000)    
+DEC_TARG=  0.0000000000000E+00 / declination of the target (deg) (J2000)        
+PEQUINOX= '                  ' / proposed equinox of celestial coordinate system
+                                                                                
+PROPOSID=                 2112 / PEP proposal identifier                        
+PEP_EXPO= '20.0000000        ' / PEP exposure identifier including sequence     
+LINENUM = '20.000            ' / PEP proposal line number                       
+SEQLINE = '                  ' / PEP line number of defined sequence            
+SEQNAME = '                  ' / PEP define/use sequence name                   
+COMMENT *                                                                       
+COMMENT * ----------------------- CADC / STScI / ST-ECF ----------------------- 
+COMMENT *                                                                       
+COMMENT * At the annual HST archive coordination meeting in 2003, CADC, ST-ECF, 
+COMMENT * and STScI decided to generate an homogeneous set of calibrated        
+COMMENT * FOC and GHRS observations.                                            
+COMMENT *                                                                       
+COMMENT * The motivations were twofold. First, no more calibration activities   
+COMMENT * were occurring for these instruments, nor from the instrument science,
+COMMENT * nor from the calibration software point of view.                      
+COMMENT * Second, the necessary expertise to operate a complex on-the-fly based 
+COMMENT * archive and to support the scientific community was quickly declining 
+COMMENT * for the HST heritage instruments, with the jeopardy of losing the     
+COMMENT * capability of re-calibrating the data in the near future.             
+COMMENT *                                                                       
+COMMENT * This calibrated file was produced with the best software and          
+COMMENT * calibration files available in September 2006. A careful check        
+COMMENT * of the final products was performed, although it was not possible     
+COMMENT * to check all datasets individually.                                   
+COMMENT *                                                                       
+COMMENT * The CADC, STScI and ST-ECF are pleased to make version 1.0 of         
+COMMENT * these homogeneously re-calibrated files available to the community.   
+COMMENT *                                                                       
+COMMENT * Software used:                                                        
+COMMENT *     FOC stsdas.hst-calib.calfoc version 1.3.5.0 (1998)                
+COMMENT *     HRS stsdas.hst-calib.calhrs version 1.3.14  (2004)                
+COMMENT *                                                                       
+COMMENT * Generated: 1-OCT-2006 @ST-ECF                                         
+COMMENT *                                                                       
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the GHRS ISR 93.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     GRATING, OPFORMAT, SPEC_1, TARGNAME, ZLCOEF1 and ZLCOEF2          
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) Non FITS compliant characters (bell, tabs, NULLs) were            
+COMMENT *     removed from HDU1 in ocx, pdq, trl files.                         
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 
+
+# HDU 1 in z06a0101r_q0f.fits:
+XTENSION= 'TABLE   '           / Table extension                                
+BITPIX  =                    8 / Printable ASCII characters                     
+NAXIS   =                    2 / Simple 2-D matrix                              
+NAXIS1  =                  412 / Number of characters per row                   
+NAXIS2  =                    3 / GCOUNT of original file                        
+PCOUNT  =                    0 / No random parameter                            
+GCOUNT  =                    1 / Only one group                                 
+TFIELDS =                   25 / PCOUNT of original file                        
+EXTNAME = 'Z06A0101R.Q0H.TAB'  / GEIS header file name with .tab                
+TTYPE1  = 'CRVAL1  '           /                                                
+TFORM1  = 'D25.16  '           /                                                
+TBCOL1  =                    1 /                                                
+TTYPE2  = 'CRPIX1  '           /                                                
+TFORM2  = 'E15.7   '           /                                                
+TBCOL2  =                   29 /                                                
+TTYPE3  = 'CD1_1   '           /                                                
+TFORM3  = 'E15.7   '           /                                                
+TBCOL3  =                   45 /                                                
+TTYPE4  = 'DATAMIN '           /                                                
+TFORM4  = 'E15.7   '           /                                                
+TBCOL4  =                   61 /                                                
+TTYPE5  = 'DATAMAX '           /                                                
+TFORM5  = 'E15.7   '           /                                                
+TBCOL5  =                   77 /                                                
+TTYPE6  = 'RA_APER '           /                                                
+RA_APER = 'right ascension of aperture (deg)' /                                 
+TFORM6  = 'D25.16  '           /                                                
+TBCOL6  =                   93 /                                                
+TTYPE7  = 'DEC_APER'           /                                                
+DEC_APER= 'declination of aperture (deg)' /                                     
+TFORM7  = 'D25.16  '           /                                                
+TBCOL7  =                  121 /                                                
+TTYPE8  = 'FILLCNT '           /                                                
+FILLCNT = 'number of segments containing fill' /                                
+TFORM8  = 'I11     '           /                                                
+TBCOL8  =                  149 /                                                
+TTYPE9  = 'ERRCNT  '           /                                                
+ERRCNT  = 'the error count of the data' /                                       
+TFORM9  = 'I11     '           /                                                
+TBCOL9  =                  161 /                                                
+TTYPE10 = 'PKTTIME '           /                                                
+PKTTIME = 'time from the packet ancillary data' /                               
+TFORM10 = 'D25.16  '           /                                                
+TBCOL10 =                  173 /                                                
+TTYPE11 = 'CTYPE1  '           /                                                
+TFORM11 = 'A8      '           /                                                
+TBCOL11 =                  201 /                                                
+TTYPE12 = 'OBSRPT  '           /                                                
+OBSRPT  = 'observation repeat number' /                                         
+TFORM12 = 'I11     '           /                                                
+TBCOL12 =                  213 /                                                
+TTYPE13 = 'OBSINT  '           /                                                
+OBSINT  = 'intermediate readout number' /                                       
+TFORM13 = 'I11     '           /                                                
+TBCOL13 =                  225 /                                                
+TTYPE14 = 'YDEF    '           /                                                
+YDEF    = 'vertical deflection' /                                               
+TFORM14 = 'I11     '           /                                                
+TBCOL14 =                  237 /                                                
+TTYPE15 = 'XDEF    '           /                                                
+XDEF    = 'horizontal deflection' /                                             
+TFORM15 = 'I11     '           /                                                
+TBCOL15 =                  249 /                                                
+TTYPE16 = 'SAMPLE  '           /                                                
+SAMPLE  = 'sample position'    /                                                
+TFORM16 = 'E15.7   '           /                                                
+TBCOL16 =                  261 /                                                
+TTYPE17 = 'DELTAS  '           /                                                
+DELTAS  = 'delta sample position' /                                             
+TFORM17 = 'E15.7   '           /                                                
+TBCOL17 =                  277 /                                                
+TTYPE18 = 'LINE    '           /                                                
+LINE    = 'line positions'     /                                                
+TFORM18 = 'E15.7   '           /                                                
+TBCOL18 =                  293 /                                                
+TTYPE19 = 'EXPOSURE'           /                                                
+EXPOSURE= 'exposure time (seconds)' /                                           
+TFORM19 = 'E15.7   '           /                                                
+TBCOL19 =                  309 /                                                
+TTYPE20 = 'BINID   '           /                                                
+BINID   = 'binid   '           /                                                
+TFORM20 = 'I11     '           /                                                
+TBCOL20 =                  325 /                                                
+TTYPE21 = 'CARPOS  '           /                                                
+CARPOS  = 'carrousel position' /                                                
+TFORM21 = 'I11     '           /                                                
+TBCOL21 =                  337 /                                                
+TTYPE22 = 'ZSCOEF1 '           /                                                
+ZSCOEF1 = 'first coefficient of sample mapping' /                               
+TFORM22 = 'E15.7   '           /                                                
+TBCOL22 =                  349 /                                                
+TTYPE23 = 'ZSCOEF2 '           /                                                
+ZSCOEF2 = 'second coefficient of sample mapping' /                              
+TFORM23 = 'E15.7   '           /                                                
+TBCOL23 =                  365 /                                                
+TTYPE24 = 'ZSCOEF3 '           /                                                
+ZSCOEF3 = 'third coefficient of sample mapping' /                               
+TFORM24 = 'E15.7   '           /                                                
+TBCOL24 =                  381 /                                                
+TTYPE25 = 'ZSCOEF4 '           /                                                
+ZSCOEF4 = 'fourth coefficient of sample mapping' /                              
+TFORM25 = 'E15.7   '           /                                                
+TBCOL25 =                  397 /                                                
+COMMENT * ------------------------------ STScI -------------------------------- 
+COMMENT *                                                                       
+COMMENT * Details on the final header updates can be found in the GHRS ISR 93.  
+COMMENT * (1) Headers were fixed to be FITS-compliant.                          
+COMMENT * (2) The following header keys were updated with values from the db:   
+COMMENT *     GRATING, OPFORMAT, SPEC_1, TARGNAME, ZLCOEF1 and ZLCOEF2          
+COMMENT * (3) Many reserved WCS keywords were removed from the FITS ASCII       
+COMMENT *     Table extension (HDU1) because they are only allowed in IMAGE     
+COMMENT *     extensions.                                                       
+COMMENT * (4) Non FITS compliant characters (bell, tabs, NULLs) were            
+COMMENT *     removed from HDU1 in ocx, pdq, trl files.                         
+COMMENT *                                                                       
+COMMENT * Final updates performed at STScI in December 2013.                    
+COMMENT * ------------------------------ STScI -------------------------------- 
