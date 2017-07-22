@@ -18,5 +18,5 @@ python setup.py install
 Then, obtain a list of the files to be processed and trigger parallel jobs:
 
 ```bash
-ls \*flt\* | parallel -j 2 cr_count --filepath {} > flt.out
+ls *flt* | parallel -j 2 cr_count --filepath {} > flt.out
 ```
