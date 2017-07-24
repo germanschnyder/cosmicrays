@@ -179,12 +179,12 @@ class Image(object):
         return self.__get_header('NAXIS{}'.format(idx))
 
     @property
-    def binaxis1(self)->int:
-        return int(self.__get_header('BINAXIS1'))
+    def binaxis1(self)->str:
+        return self.__get_header('BINAXIS1')
 
     @property
-    def binaxis2(self)->int:
-        return int(self.__get_header('BINAXIS2'))
+    def binaxis2(self)->str:
+        return self.__get_header('BINAXIS2')
 
     @property
     def position_angle(self)->str:
