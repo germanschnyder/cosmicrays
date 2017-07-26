@@ -48,22 +48,24 @@ def calculate(crs, normalized_img):
     flux_75_percentile = flux_percentiles[3]
     flux_90_percentile = flux_percentiles[4]
 
-    return OrderedDict(
-        len_mean=len_mean,
-        len_std=len_std,
-        len_skew=len_skew,
-        len_10_percentile=len_10_percentile,
-        len_25_percentile=len_25_percentile,
-        len_50_percentile=len_50_percentile,
-        len_75_percentile=len_75_percentile,
-        len_90_percentile=len_90_percentile,
-        flux_total=flux_total,
-        flux_mean=flux_mean,
-        flux_std=flux_std,
-        flux_skew=flux_skew,
-        flux_10_percentile=flux_10_percentile,
-        flux_25_percentile=flux_25_percentile,
-        flux_50_percentile=flux_50_percentile,
-        flux_75_percentile=flux_75_percentile,
-        flux_90_percentile=flux_90_percentile
-    )
+    res = OrderedDict()
+    
+    res["len_mean"] = len_mean
+    res["len_std"] = len_std
+    res["len_skew"] = len_skew
+    res["len_10_percentile"] = len_10_percentile
+    res["len_25_percentile"] = len_25_percentile
+    res["len_50_percentile"] = len_50_percentile
+    res["len_75_percentile"] = len_75_percentile
+    res["len_90_percentile"] = len_90_percentile
+    res["flux_total"] = flux_total
+    res["flux_mean"] = flux_mean
+    res["flux_std"] = flux_std
+    res["flux_skew"] = flux_skew
+    res["flux_10_percentile"] = flux_10_percentile
+    res["flux_25_percentile"] = flux_25_percentile
+    res["flux_50_percentile"] = flux_50_percentile
+    res["flux_75_percentile"] = flux_75_percentile
+    res["flux_90_percentile"] = flux_90_percentile
+    
+    return res
