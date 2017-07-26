@@ -109,5 +109,6 @@ def output(img: Image, crs, lat, long, height, stats, ptime):
 
     task['binaxis1'] = img.binaxis1
     task['binaxis2'] = img.binaxis2
+    task['bunit'] = img.bunit
 
     return task

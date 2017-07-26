@@ -187,6 +187,10 @@ class Image(object):
         return self.__get_header('BINAXIS2')
 
     @property
+    def bunit(self)->str:
+        return self.__get_header('BUNIT')
+
+    @property
     def position_angle(self)->str:
         return self.__get_pos('PA_V3')
 
