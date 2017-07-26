@@ -100,7 +100,7 @@ def output(img: Image, crs, lat, long, height, stats, ptime):
     task["wcs_dec_aperture"] = str(img.wcs_dec_aperture)
 
     # Add stats
-    for i, (key, value) in enumerate(dict.iteritems()):
+    for i, (key, value) in enumerate(stats.iteritems()):
         task['stat_%s' % key] = str(value)
 
     task['naxis'] = img.naxis
