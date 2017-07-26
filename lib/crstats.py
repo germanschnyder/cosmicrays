@@ -1,6 +1,7 @@
 from numpy import percentile
 from numpy.matlib import mean, std, asarray
 from scipy.stats import skew
+from collections import OrderedDict
 
 
 def calculate(crs, normalized_img):
@@ -47,7 +48,7 @@ def calculate(crs, normalized_img):
     flux_75_percentile = flux_percentiles[3]
     flux_90_percentile = flux_percentiles[4]
 
-    return dict(
+    return OrderedDict(
         len_mean=len_mean,
         len_std=len_std,
         len_skew=len_skew,
