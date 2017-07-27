@@ -15,7 +15,7 @@ if not sys.version_info[0] == 3:
 
 setup(
     name='cosmicrays',
-    version='0.3.0',
+    version='0.4.0',
     description='Project for obtaining statistical information on cosmic rays incidence in FITS images',
     long_description=readme,
     author='Germán Schnyder',
