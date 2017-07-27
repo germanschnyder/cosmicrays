@@ -21,14 +21,30 @@ from common import helpers
 from lib import crutils, calc_pos
 
 
+def str2bool(v):
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
+
 def main():
     logging.basicConfig(level=logging.ERROR)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--filepath', required=True,
                         help='file to parse')
-    parser.add_argument('--write-headers', required=False,
+
+    parser.add_argument('--output-filename', required=False,
+                        help='output filename')
+
+    parser.add_argument('--write-headers', required=False, type=str2bool, nargs='?', default=False,
                         help='write headers in the output')
+
+    parser.add_argument('--include-cr-list', required=False, type=str2bool, nargs='?', default=False,
+                        help='write separate cr info in the output')
 
     args = parser.parse_args()
     input_file = os.path.realpath(args.filepath)
@@ -42,11 +58,40 @@ def main():
     stats = calculate(crs, normalized_img)
     entity = output(img, crs, lat, long, height, stats, 0)
     logging.debug(entity)
+    write_to_file = False
+    if args.output_filename:
+        write_to_file = True
+        writer = csv.writer(open(args.output_filename, "w"))
+    else:
+        writer = csv.writer(sys.stdout)
 
-    writer = csv.writer(sys.stdout)
     if args.write_headers:
         writer.writerow(entity)
     writer.writerow(entity.values())
+
+    cr_info = output_crs(img.observation_set, crs)
+    logging.debug(cr_info)
+
+    if args.include_cr_list:
+        if write_to_file:
+            cr_writer = csv.writer(open(args.output_filename + "_cr_info", "w"))
+        else:
+            cr_writer = writer
+
+        if args.write_headers:
+            cr_writer.writerow(cr_info)
+        cr_writer.writerow(cr_info.values())
+
+def output_crs(observation_set, crs):
+    for cr in crs:
+        task = OrderedDict()
+        task["PartitionKey"] = observation_set
+        task["RowKey"] =  cr.label
+
+        for prop in cr:
+            task[prop] = str(cr[prop])
+
+    return task
 
 
 def output(img: Image, crs, lat, long, height, stats, ptime):
