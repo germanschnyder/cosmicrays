@@ -40,10 +40,10 @@ def main():
     parser.add_argument('--output-filename', required=False,
                         help='output filename')
 
-    parser.add_argument('--write-headers', required=False, type=str2bool, nargs='?', default=False,
+    parser.add_argument('--write-headers', required=False, type=str2bool, default=False,
                         help='write headers in the output')
 
-    parser.add_argument('--include-cr-list', required=False, type=str2bool, nargs='?', default=False,
+    parser.add_argument('--include-cr-list', required=False, type=str2bool, default=False,
                         help='write separate cr info in the output')
 
     parser.add_argument('--lacosmic-iterations', required=False, type=int, default=4,
