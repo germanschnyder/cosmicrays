@@ -61,6 +61,8 @@ def main():
 
     args = parser.parse_args()
 
+    logging.debug(args)
+
     input_file = os.path.realpath(args.filepath)
     data_ext = helpers.extension_from_filename(input_file)
     pos_ext = helpers.pos_ext_from_data_ext(data_ext)
@@ -87,9 +89,11 @@ def main():
     entity = output(img, crs, lat, long, height, stats, 0)
     logging.debug(entity)
     write_to_file = False
+    file = None
     if args.output_filename:
         write_to_file = True
-        writer = csv.writer(open(args.output_filename, "w"))
+        file = open(args.output_filename, 'w')
+        writer = csv.writer(file)
     else:
         writer = csv.writer(sys.stdout)
 
@@ -97,29 +101,46 @@ def main():
         writer.writerow(entity)
     writer.writerow(entity.values())
 
-    cr_info = output_crs(img.observation_set, crs)
-    logging.debug(cr_info)
+    if write_to_file:
+        file.close()
+
+    logging.debug('Basic processing done')
 
     if args.include_cr_list:
-        if write_to_file:
-            cr_writer = csv.writer(open(args.output_filename + "_cr_info", "w"))
+        logging.debug('Gathering separate CR information')
+
+        if len(crs) > 0:
+            if write_to_file:
+                file = open(args.output_filename + "_cr_info", "w")
+                cr_writer = csv.writer(file)
+            else:
+                cr_writer = writer
+
+            cr_info = output_cr(img.observation_set, crs[0])
+            logging.debug(cr_info)
+
+            if args.write_headers:
+                cr_writer.writerow(cr_info)
+
+            cr_writer.writerow(cr_info.values())
+
+            for cr in crs[1:]:
+                cr_writer.writerow(output_cr(img.observation_set, cr).values())
+
+            if write_to_file:
+                file.close()
         else:
-            cr_writer = writer
-
-        if args.write_headers:
-            cr_writer.writerow(cr_info)
-        cr_writer.writerow(cr_info.values())
+            logging.debug('No CRs detected on this image')
 
 
-def output_crs(observation_set, crs):
-    for cr in crs:
-        task = OrderedDict()
-        task["PartitionKey"] = observation_set
-        task["RowKey"] =  cr.label
+def output_cr(observation_set, cr):
 
-        for prop in cr:
-            task[prop] = str(cr[prop])
-
+    task = OrderedDict()
+    task["PartitionKey"] = observation_set
+    task["RowKey"] = cr.label
+    for prop in cr:
+        task[prop] = str(cr[prop])
+    # logging.debug('done cr %d of %d' % (idx, len(crs)))
     return task
 
 
