@@ -46,13 +46,41 @@ def main():
     parser.add_argument('--include-cr-list', required=False, type=str2bool, nargs='?', default=False,
                         help='write separate cr info in the output')
 
+    parser.add_argument('--lacosmic-iterations', required=False, type=int, default=4,
+                        help='number of iterations to run lacosmic algorithm')
+
+    parser.add_argument('--lacosmic-gain', required=False, type=float,
+                        help='gain to be applied to lacosmic algorithm')
+
+    parser.add_argument('--lacosmic-readnoise', default=3, type=float)
+    parser.add_argument('--lacosmic-sigclip', default=5.0, type=float)
+    parser.add_argument('--lacosmic-sigfrac', default=0.3, type=float)
+    parser.add_argument('--lacosmic-objlim', default=5.0, type=float)
+    parser.add_argument('--lacosmic-satlevel', default=-1.0, type=float,
+                        help='saturation level for lacosmic (use negative to skip)')
+
     args = parser.parse_args()
+
     input_file = os.path.realpath(args.filepath)
     data_ext = helpers.extension_from_filename(input_file)
     pos_ext = helpers.pos_ext_from_data_ext(data_ext)
     pos_input_file = input_file.replace(data_ext, pos_ext)
     img = crutils.load(input_file, pos_input_file)
-    _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=2, gain=img.gain)
+
+    gain = img.gain
+    if args.lacosmic_gain is not None:
+        gain = args.lacosmic_gain
+
+    _, cr_pixels = crutils.clean_cr(img.data,
+                                    mask=None,
+                                    iterations=args.lacosmic_iterations,
+                                    gain=gain,
+                                    readnoise=args.lacosmic_readnoise,
+                                    sigclip=args.lacosmic_sigclip,
+                                    sigfrac=args.lacosmic_sigfrac,
+                                    objlim=args.lacosmic_objlim,
+                                    satlevel=args.lacosmic_satlevel)
+
     crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
     long, lat, height = calc_pos.calc_pos(img)
     stats = calculate(crs, normalized_img)
@@ -81,6 +109,7 @@ def main():
         if args.write_headers:
             cr_writer.writerow(cr_info)
         cr_writer.writerow(cr_info.values())
+
 
 def output_crs(observation_set, crs):
     for cr in crs:
