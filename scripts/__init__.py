@@ -21,32 +21,127 @@ from common import helpers
 from lib import crutils, calc_pos
 
 
+def str2bool(v):
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
+
 def main():
     logging.basicConfig(level=logging.ERROR)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--filepath', required=True,
                         help='file to parse')
-    parser.add_argument('--write-headers', required=False,
+
+    parser.add_argument('--output-filename', required=False,
+                        help='output filename')
+
+    parser.add_argument('--write-headers', required=False, type=str2bool, default=False,
                         help='write headers in the output')
 
+    parser.add_argument('--include-cr-list', required=False, type=str2bool, default=False,
+                        help='write separate cr info in the output')
+
+    parser.add_argument('--lacosmic-iterations', required=False, type=int, default=4,
+                        help='number of iterations to run lacosmic algorithm')
+
+    parser.add_argument('--lacosmic-gain', required=False, type=float,
+                        help='gain to be applied to lacosmic algorithm')
+
+    parser.add_argument('--lacosmic-readnoise', default=3, type=float)
+    parser.add_argument('--lacosmic-sigclip', default=5.0, type=float)
+    parser.add_argument('--lacosmic-sigfrac', default=0.3, type=float)
+    parser.add_argument('--lacosmic-objlim', default=5.0, type=float)
+    parser.add_argument('--lacosmic-satlevel', default=-1.0, type=float,
+                        help='saturation level for lacosmic (use negative to skip)')
+
     args = parser.parse_args()
+
+    logging.debug(args)
+
     input_file = os.path.realpath(args.filepath)
     data_ext = helpers.extension_from_filename(input_file)
     pos_ext = helpers.pos_ext_from_data_ext(data_ext)
     pos_input_file = input_file.replace(data_ext, pos_ext)
     img = crutils.load(input_file, pos_input_file)
-    _, cr_pixels = crutils.clean_cr(img.data, mask=None, iterations=2, gain=img.gain)
+
+    gain = img.gain
+    if args.lacosmic_gain is not None:
+        gain = args.lacosmic_gain
+
+    _, cr_pixels = crutils.clean_cr(img.data,
+                                    mask=None,
+                                    iterations=args.lacosmic_iterations,
+                                    gain=gain,
+                                    readnoise=args.lacosmic_readnoise,
+                                    sigclip=args.lacosmic_sigclip,
+                                    sigfrac=args.lacosmic_sigfrac,
+                                    objlim=args.lacosmic_objlim,
+                                    satlevel=args.lacosmic_satlevel)
+
     crs, normalized_img = crutils.reduce_cr(cr_pixels, img.exposition_duration)
     long, lat, height = calc_pos.calc_pos(img)
     stats = calculate(crs, normalized_img)
     entity = output(img, crs, lat, long, height, stats, 0)
     logging.debug(entity)
+    write_to_file = False
+    file = None
+    if args.output_filename:
+        write_to_file = True
+        file = open(args.output_filename, 'w')
+        writer = csv.writer(file)
+    else:
+        writer = csv.writer(sys.stdout)
 
-    writer = csv.writer(sys.stdout)
     if args.write_headers:
         writer.writerow(entity)
     writer.writerow(entity.values())
+
+    if write_to_file:
+        file.close()
+
+    logging.debug('Basic processing done')
+
+    if args.include_cr_list:
+        logging.debug('Gathering separate CR information')
+
+        if len(crs) > 0:
+            if write_to_file:
+                file = open(args.output_filename + "_cr_info", "w")
+                cr_writer = csv.writer(file)
+            else:
+                cr_writer = writer
+
+            cr_info = output_cr(img.observation_set, crs[0])
+            logging.debug(cr_info)
+
+            if args.write_headers:
+                cr_writer.writerow(cr_info)
+
+            cr_writer.writerow(cr_info.values())
+
+            for cr in crs[1:]:
+                cr_writer.writerow(output_cr(img.observation_set, cr).values())
+
+            if write_to_file:
+                file.close()
+        else:
+            logging.debug('No CRs detected on this image')
+
+
+def output_cr(observation_set, cr):
+
+    task = OrderedDict()
+    task["PartitionKey"] = observation_set
+    task["RowKey"] = cr.label
+    for prop in cr:
+        task[prop] = str(cr[prop])
+    # logging.debug('done cr %d of %d' % (idx, len(crs)))
+    return task
 
 
 def output(img: Image, crs, lat, long, height, stats, ptime):
